@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/12/21 18:08:17.000.853,=xmlrtl.dcp</Transaction>
+    <Transaction>2011/12/21 18:08:17.000.843,=designide.dcp</Transaction>
+    <Transaction>2011/12/21 18:08:17.000.850,=vclx.dcp</Transaction>
+    <Transaction>2011/12/21 18:08:17.000.848,=vclactnband.dcp</Transaction>
+    <Transaction>2011/12/21 18:08:17.000.673,=rtl.dcp</Transaction>
+    <Transaction>2011/12/21 18:08:17.000.831,=C:\Users\Manlio Laschena\Documents\Rad_Studio_XE_Downloads\components\progressBar\ALProgressBar.pas</Transaction>
+    <Transaction>2011/12/21 18:08:17.000.845,=vcl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

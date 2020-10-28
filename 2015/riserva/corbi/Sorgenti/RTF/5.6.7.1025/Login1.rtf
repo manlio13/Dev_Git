@@ -1,0 +1,199 @@
+{\rtf1\ansi\ansicpg0\deff0\deflang1033\deflangfe1040{\fonttbl {\f0\fnil\fprq0\fcharset1 Courier New;}{\f1\fnil\fprq0\fcharset1 Courier New;}{\f2\fnil\fprq0\fcharset1 Courier New;}{\f3\fnil\fprq0\fcharset1 Courier New;}{\f4\fnil\fprq0\fcharset1 Courier New;}{\f5\fnil\fprq0\fcharset1 Courier New;}{\f6\fnil\fprq0\fcharset1 Courier New;}{\f7\fnil\fprq0\fcharset1 Courier New;}{\f8\fnil\fprq0\fcharset1 Courier New;}{\f9\fnil\fprq0\fcharset1 Courier New;}{\f10\fnil\fprq0\fcharset1 Courier New;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue128;\red0\green0\blue255;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;\red0\green0\blue255;}
+{\info{\author CnPack Source2RTF Wizard (http://www.cnpack.org)}{\creatim\yr2016\mo2\dy15\hr8\min31}{\comment CnPack Source2RTF Wizard (http://www.cnpack.org)}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1040\b\cf6\f5\fs20 unit\f0\cf0\b0  \cf5\f4\fs20 Login1\f0\cf0 \cf10\f9\fs20 ;\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //19/01/2016\f0\cf0\i0 
+\par 
+\par \b\cf6\f5\fs20 interface\f0\cf0\b0 
+\par 
+\par \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par   \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Windows\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Messages\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 SysUtils\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variants\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Classes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 UITypes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Graphics\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Controls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Forms\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Dialogs\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 StdCtrls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Data\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DB\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 ABSMain\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Types\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 type\f0\cf0\b0 
+\par   \cf5\f4\fs20 TForm1\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \b\cf6\f5\fs20 class\f0\cf0\b0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm\f0\cf0 \cf10\f9\fs20 )\f0\cf0 
+\par     \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TEdit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 FormCreate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Edit1KeyPress\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Key\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Char\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 FormClose\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Action\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TCloseAction\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par 
+\par   \b\cf6\f5\fs20 private\f0\cf0\b0 
+\par     \i\cf2\f1\fs20 \{ Private declarations \}\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 public\f0\cf0\b0 
+\par 
+\par     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //class function Execute: Boolean;\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par   \cf5\f4\fs20 Form1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TForm1\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 dir\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 pwtemp\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0         \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //pwstr \u232?la password in ingresso: cnvstr \u232?la pw convertita\f0\cf0\i0 
+\par   \cf5\f4\fs20 nuovapw\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Boolean\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 false\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 boolean\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // ATTENZIONE VALORE INSERITO AL DEPLOY DEL PROGRAMMA \u232?identico alla pw del Database\f0\cf0\i0 
+\par   \cf5\f4\fs20 Jolly\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 'Corbi77'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //PW dell'amministratore usata anche in Console1\f0\cf0\i0 
+\par \b\cf6\f5\fs20 implementation\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par     \cf5\f4\fs20 Console1\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par \cf4\f3\fs20 \{$R *.dfm\}\f0\cf0 
+\par  \cf4\f3\fs20 \{$D+\}\f0\cf0 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FormCreate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //preliminare login\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //verifica se c'\u232?il db\f0\cf0\i0 
+\par   \cf5\f4\fs20 dir\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 GetCurrentDir\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 '\\'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 pwtemp\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 FileExists\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 dir\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'corbi.ABS'\f0\cf0 \cf10\f9\fs20 )=\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se non c'\u232?il database\f0\cf0\i0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'ATTENZIONE - File Dati corrotto o inesistente'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 ' Il programma verr\u224?chiuso '\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mtError\f0\cf0 \cf10\f9\fs20 ,[\f0\cf0 \cf5\f4\fs20 mbOK\f0\cf0 \cf10\f9\fs20 ],\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \cf10\f9\fs20 );\f0\cf0 
+\par       \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Terminate\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0              \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // se c'\u232?il database\f0\cf0\i0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Servizio'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Password'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 IsNull\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se non c'\u232?la pw  CREARE LA PW\f0\cf0\i0 
+\par         \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par           \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Assegnate una password: max 8 caratteri '\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \cf5\f4\fs20 nuovapw\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //flag per nuova pw\f0\cf0\i0 
+\par           \cf5\f4\fs20 form1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 else\f0\cf0\b0  \cf5\f4\fs20 form1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //  continua se c'\u232?la pw con la routine di riconoscimento\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit1KeyPress\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Key\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Char\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // carico login\f0\cf0\i0 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 L\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 integer\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 p\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Char\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 riconosce\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Key\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 #13\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // all'atto dell'entry della pw\f0\cf0\i0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 ;\f0\cf0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // pwstr \u232?la password attualmente digitata\f0\cf0\i0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 Jolly\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Procedura per ripristinare la pw\f0\cf0\i0 
+\par         \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'ATTENZIONE - Ripristino password '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'Il programma verr\u224?chiuso, rilancialo e'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 
+\par          \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'Digita una nuova password'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Attenzione sembra che porre xx.first dopo edit tolga dalla condizione di edit\f0\cf0\i0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'password'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //cancella la vecchia password per ripristinarla\f0\cf0\i0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Terminate\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 L\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Length\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 L\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par          \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par            \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Attenzione - Non \u232?stata inserita alcuna password'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par            \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 L\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 8\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //verifica la lunghezza massima\f0\cf0\i0 
+\par         \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par           \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Numero di caratteri superiore ad 8, ripeti'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 nuovapw\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \b\cf6\f5\fs20 and\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 )\f0\cf0 \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Se \u232?nuova password\f0\cf0\i0 
+\par         \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 pwtemp\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //si pone la pw nella memoria temporanea\f0\cf0\i0 
+\par          \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //verifica pw\f0\cf0\i0 
+\par          \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Conferma la password inserita'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 nuovapw\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \b\cf6\f5\fs20 and\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //sempre la nuova nel secondo ciclo\f0\cf0\i0 
+\par          \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par             \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 pwtemp\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 pwstr\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par             \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par               \b\cf6\f5\fs20 for\f0\cf0\b0  \cf5\f4\fs20 n\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf7\f6\fs20 1\f0\cf0  \b\cf6\f5\fs20 to\f0\cf0\b0  \cf5\f4\fs20 L\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //procedura di cryptaggio\f0\cf0\i0 
+\par               \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                \cf5\f4\fs20 p\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 chr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 ord\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 ])+(\f0\cf0 \cf5\f4\fs20 L\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf7\f6\fs20 1\f0\cf0 \cf10\f9\fs20 -\f0\cf0 \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 ));\f0\cf0 
+\par                \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 cnvstr\f0\cf0  \cf10\f9\fs20 +\f0\cf0  \cf5\f4\fs20 p\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'password'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 form1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 pwtemp\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 nuovapw\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'La password \u232?stata regolarmente registrata'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'Memorizzala in luogo sicuro'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par              \cf5\f4\fs20 Form1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 Form1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par              \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'ATTENZIONE - I due inserimenti non coincidono'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'Ripeti con attenzione'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mtError\f0\cf0 \cf10\f9\fs20 ,[\f0\cf0 \cf5\f4\fs20 mbOK\f0\cf0 \cf10\f9\fs20 ],\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \cf10\f9\fs20 );\f0\cf0 
+\par                \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \cf5\f4\fs20 pwtemp\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 else\f0\cf0\b0            \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //la pw non \u232?nuova quindi PROCEDURA DI RICONOSCIMENTO\f0\cf0\i0 
+\par            \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                \b\cf6\f5\fs20 for\f0\cf0\b0  \cf5\f4\fs20 n\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf7\f6\fs20 1\f0\cf0  \b\cf6\f5\fs20 to\f0\cf0\b0  \cf5\f4\fs20 L\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //procedura di cryptaggio\f0\cf0\i0 
+\par               \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                \cf5\f4\fs20 p\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 chr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 ord\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 ])+(\f0\cf0 \cf5\f4\fs20 L\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf7\f6\fs20 1\f0\cf0 \cf10\f9\fs20 -\f0\cf0 \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 ));\f0\cf0 
+\par                \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 cnvstr\f0\cf0  \cf10\f9\fs20 +\f0\cf0  \cf5\f4\fs20 p\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \cf5\f4\fs20 riconosce\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'password'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 riconosce\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par                 \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                   \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Accesso consentito'\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 ;\f0\cf0           \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // ACCESSO\f0\cf0\i0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 INSERT\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'IN'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 NOW\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'what'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Accesso alla Consolle'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'OUT'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                 \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par               \b\cf6\f5\fs20 else\f0\cf0\b0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //La password inserita \u232?sbagliata\f0\cf0\i0 
+\par                \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                 \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //ha sbagliato per la seconda volta\f0\cf0\i0 
+\par                   \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                     \b\cf6\f5\fs20 if\f0\cf0\b0   \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Password errata ! Vuoi ripristinarla ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par                        \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par                       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                        \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Digita la password originale di registrazione'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par                        \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                        \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                       \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0  \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 terminate\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par                 \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par                  \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                   \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'ATTENZIONE - Accesso negato'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mtError\f0\cf0 \cf10\f9\fs20 ,[\f0\cf0 \cf5\f4\fs20 mbOK\f0\cf0 \cf10\f9\fs20 ],\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \cf10\f9\fs20 );\f0\cf0 
+\par                   \cf5\f4\fs20 pwstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 cnvstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 cicla\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par                   \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par            \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FormClose\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Action\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TCloseAction\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \cf5\f4\fs20 Action\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 caFree\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 .\f0\cf0 
+\par 
+\par 
+}

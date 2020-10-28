@@ -1,0 +1,13 @@
+
+[OPTIONS]
+ERRORLOG=REG.ERR
+COMPRESS=NO
+CONTENTS=Sommario
+TITLE=reg.hlp
+COPYRIGHT=Copyright ¸mlsoft 1999
+
+[WINDOWS]
+main=,,0,,,0
+
+[FILES]
+REG.RTF

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/03 15:28:50.000.180,=rtl.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:12.000.609,=designide.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:12.000.606,=C:\Users\Manlio Laschena\Documents\RAD Studio\TGridPrint\PrintGrid.pas</Transaction>
+    <Transaction>2013/12/03 15:29:12.000.617,=vclx.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:12.000.620,=xmlrtl.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:12.000.612,=vcl.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:12.000.615,=vclactnband.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:39.000.216,=vcldb.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:39.000.220,=bdertl.dcp</Transaction>
+    <Transaction>2013/12/03 15:29:39.000.209,=dbrtl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

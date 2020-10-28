@@ -1,0 +1,3 @@
+IF EXIST %DEST\AGENDA.DB GOTO CONTINUA
+:CONTINUA
+IF CONFIRM "Attenzione !! Questo e' un aggiornamento da edizione precedente. NON accettare di sovrascrivere i files AGENDA.DB ed AGENDA.PX se non vuoi perdere i dati precedenti. " EXIT

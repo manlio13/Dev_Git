@@ -1,0 +1,19 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <DCC_ExeOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\</DCC_ExeOutput>
+        <VerInfo_PreRelease>true</VerInfo_PreRelease>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_AssertionsAtRuntime>false</DCC_AssertionsAtRuntime>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=MLSoft;FileDescription=;FileVersion=1.0.0.0;InternalName=Game mgnt;LegalCopyright=MLSoft  Milano 2015;LegalTrademarks=;OriginalFilename=Corbi;ProductName=Corbi;ProductVersion=1.0.0.0;Comments=Versione preliminare in test</VerInfo_Keys>
+        <DCC_MapFile>0</DCC_MapFile>
+    </PropertyGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>OptionSet</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality/>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+</Project>

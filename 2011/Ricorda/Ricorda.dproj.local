@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/01/13 17:46:35.000.882,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2011\Ricorda\ml970124.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\DEV\Prima2010\ric5\ml970124.dfm</Transaction>
+    <Transaction>2012/01/13 17:46:35.000.882,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2011\Ricorda\ml970124.pas=C:\Users\Manlio Laschena\Documents\RAD Studio\DEV\Prima2010\ric5\ml970124.pas</Transaction>
+    <Transaction>2012/01/13 17:47:19.000.114,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2011\Ricorda\Ricorda.dproj=C:\Users\Manlio Laschena\Documents\RAD Studio\DEV\Prima2010\ric5\Manlio15.dproj</Transaction>
+    <Transaction>2012/01/13 17:54:44.000.895,C:\Users\Manlio Laschena\Documents\RAD Studio\DEV\Prima2010\ric5\Unit2.pas=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2011\Ricorda\Unit2.pas</Transaction>
+    <Transaction>2012/01/13 17:54:44.000.895,C:\Users\Manlio Laschena\Documents\RAD Studio\DEV\Prima2010\ric5\Unit2.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2011\Ricorda\Unit2.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

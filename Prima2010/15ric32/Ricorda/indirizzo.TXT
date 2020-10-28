@@ -1,0 +1,8 @@
+indirizzo del dummy su ricorda32 ed 3.01 è
+
+$45DD8
+
+occorre ricompilare con le modifiche di quest'indirizzo
+inimlsw.exe
+ctrlini.exe
+reg.exe

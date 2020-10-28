@@ -1,0 +1,2330 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Hint = 'MLSoft'#13#10
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 
+    '                                                                ' +
+    '                   Gara Corrente  - Iscrizioni -'
+  ClientHeight = 626
+  ClientWidth = 714
+  Color = clSilver
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  ShowHint = True
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label7: TLabel
+    Left = 425
+    Top = 222
+    Width = 101
+    Height = 17
+    AutoSize = False
+    Caption = 'Ricerca Cognome'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 41
+    Top = 25
+    Width = 81
+    Height = 22
+    AutoSize = False
+    Caption = 'Codice Gara'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object shp1: TShape
+    Left = 8
+    Top = 559
+    Width = 198
+    Height = 57
+  end
+  object Label9: TLabel
+    Left = 11
+    Top = 536
+    Width = 185
+    Height = 13
+    AutoSize = False
+    Caption = '               Riepilogo iscrizioni'
+    Color = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 124
+    Top = 80
+    Width = 155
+    Height = 22
+    AutoSize = False
+    Caption = 'Iscrizione alla Disciplina'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object img2: TImage
+    Left = 593
+    Top = 219
+    Width = 27
+    Height = 25
+    Picture.Data = {
+      0A544A504547496D61676536030000FFD8FFE000104A46494600010101004800
+      480000FFDB0043000503040404030504040405050506070C08070707070F0B0B
+      090C110F1212110F111113161C1713141A1511111821181A1D1D1F1F1F131722
+      24221E241C1E1F1EFFDB0043010505050706070E08080E1E1411141E1E1E1E1E
+      1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E
+      1E1E1E1E1E1E1E1E1E1E1E1E1EFFC0001108001E001403012200021101031101
+      FFC4001F0000010501010101010100000000000000000102030405060708090A
+      0BFFC400B5100002010303020403050504040000017D01020300041105122131
+      410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+      191A25262728292A3435363738393A434445464748494A535455565758595A63
+      6465666768696A737475767778797A838485868788898A92939495969798999A
+      A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+      D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+      01010101010101010000000000000102030405060708090A0BFFC400B5110002
+      0102040403040705040400010277000102031104052131061241510761711322
+      328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+      292A35363738393A434445464748494A535455565758595A636465666768696A
+      737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+      A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+      E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00D9D5
+      750B6D32C9EEEEDF6A2F000EAC7B003B9AE5B42F1979FA93C5A92C70C1337EE5
+      C748BB6D63DC7BF627D3A7675CB7833FE43DE21FFAFAFF00D9A4AFC4B00B0DF5
+      4AF2AB4F99A4B5BDB76969A69F8DF63F2AE0B86412E1ACDAB63F04EAD5A51835
+      2F69CAD29D48C1727B8F95A6F99C9F37325C9649BBF534514578C7E52158DE1F
+      D2AE34FD4F55B999E264BC9BCC8C212481B98F391FED0AD9A2B6A75E74E9CE9C
+      7695AFF2773D5C16738AC160F1382A4D72621454F4D6D1929AB3E9EF24145145
+      627947FFD9}
+  end
+  object Label2: TLabel
+    Left = 107
+    Top = 49
+    Width = 132
+    Height = 16
+    AutoSize = False
+    Caption = 'Iscrizione al gruppo'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object img3: TImage
+    Left = 548
+    Top = 537
+    Width = 18
+    Height = 25
+    Picture.Data = {
+      0A544A504547496D61676536030000FFD8FFE000104A46494600010101004800
+      480000FFDB0043000503040404030504040405050506070C08070707070F0B0B
+      090C110F1212110F111113161C1713141A1511111821181A1D1D1F1F1F131722
+      24221E241C1E1F1EFFDB0043010505050706070E08080E1E1411141E1E1E1E1E
+      1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E1E
+      1E1E1E1E1E1E1E1E1E1E1E1E1EFFC0001108001E001403012200021101031101
+      FFC4001F0000010501010101010100000000000000000102030405060708090A
+      0BFFC400B5100002010303020403050504040000017D01020300041105122131
+      410613516107227114328191A1082342B1C11552D1F02433627282090A161718
+      191A25262728292A3435363738393A434445464748494A535455565758595A63
+      6465666768696A737475767778797A838485868788898A92939495969798999A
+      A2A3A4A5A6A7A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6
+      D7D8D9DAE1E2E3E4E5E6E7E8E9EAF1F2F3F4F5F6F7F8F9FAFFC4001F01000301
+      01010101010101010000000000000102030405060708090A0BFFC400B5110002
+      0102040403040705040400010277000102031104052131061241510761711322
+      328108144291A1B1C109233352F0156272D10A162434E125F11718191A262728
+      292A35363738393A434445464748494A535455565758595A636465666768696A
+      737475767778797A82838485868788898A92939495969798999AA2A3A4A5A6A7
+      A8A9AAB2B3B4B5B6B7B8B9BAC2C3C4C5C6C7C8C9CAD2D3D4D5D6D7D8D9DAE2E3
+      E4E5E6E7E8E9EAF2F3F4F5F6F7F8F9FAFFDA000C03010002110311003F00D9D5
+      750B6D32C9EEEEDF6A2F000EAC7B003B9AE5B42F1979FA93C5A92C70C1337EE5
+      C748BB6D63DC7BF627D3A7675CB7833FE43DE21FFAFAFF00D9A4AFC4B00B0DF5
+      4AF2AB4F99A4B5BDB76969A69F8DF63F2AE0B86412E1ACDAB63F04EAD5A51835
+      2F69CAD29D48C1727B8F95A6F99C9F37325C9649BBF534514578C7E52158DE1F
+      D2AE34FD4F55B999E264BC9BCC8C212481B98F391FED0AD9A2B6A75E74E9CE9C
+      7695AFF2773D5C16738AC160F1382A4D72621454F4D6D1929AB3E9EF24145145
+      627947FFD9}
+  end
+  object Label3: TLabel
+    Left = 11
+    Top = 42
+    Width = 47
+    Height = 30
+    AutoSize = False
+    Caption = 'Ultimo codice'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    WordWrap = True
+  end
+  object Label4: TLabel
+    Left = 49
+    Top = 47
+    Width = 27
+    Height = 17
+    Alignment = taCenter
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Bevel1: TBevel
+    Left = 4
+    Top = 263
+    Width = 700
+    Height = 362
+    Margins.Left = 4
+    Margins.Right = 4
+    Shape = bsFrame
+    Style = bsRaised
+  end
+  object Label6: TLabel
+    Left = 219
+    Top = 532
+    Width = 242
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Color = clYellow
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 11
+    Top = 81
+    Width = 59
+    Height = 14
+    AutoSize = False
+    Caption = 'Categoria'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clNavy
+    Font.Height = -12
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Bevel2: TBevel
+    Left = 4
+    Top = 8
+    Width = 699
+    Height = 249
+    Margins.Left = 4
+    Margins.Right = 4
+    Shape = bsFrame
+    Style = bsRaised
+  end
+  object Label5: TLabel
+    Left = 15
+    Top = 266
+    Width = 680
+    Height = 19
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 
+      'Modifiche ed Inserimento dati alla Gara selezionata      -     A' +
+      'nalisi dello Storico Gare'
+    Color = clActiveCaption
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 648
+    Top = 545
+    Width = 34
+    Height = 56
+    Caption = 'Esci'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 632
+    Top = 219
+    Width = 54
+    Height = 25
+    Caption = 'Refresh'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 26
+    Top = 578
+    Width = 75
+    Height = 25
+    Caption = 'Mostra'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 107
+    Top = 578
+    Width = 75
+    Height = 25
+    Caption = 'Stampa'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button4Click
+  end
+  object dbgrd72: TDBGrid
+    Left = 340
+    Top = 23
+    Width = 354
+    Height = 190
+    DataSource = ds72
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentFont = False
+    TabOrder = 4
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = dbgrd72CellClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'CODATL'
+        ReadOnly = True
+        Title.Caption = 'Codice'
+        Width = 43
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'COGNOME'
+        ReadOnly = True
+        Title.Alignment = taCenter
+        Width = 151
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        ReadOnly = True
+        Title.Alignment = taCenter
+        Width = 97
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CAT'
+        ReadOnly = True
+        Width = 23
+        Visible = True
+      end>
+  end
+  object dbnvgr7: TDBNavigator
+    Left = 221
+    Top = 552
+    Width = 240
+    Height = 25
+    DataSource = ds7
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbDelete]
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 5
+    BeforeAction = dbnvgr7BeforeAction
+    OnClick = dbnvgr7Click
+  end
+  object cbb72: TComboBox
+    Left = 535
+    Top = 219
+    Width = 42
+    Height = 21
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    OnSelect = cbb72Select
+    Items.Strings = (
+      'A'
+      'B'
+      'C'
+      'D'
+      'E'
+      'F'
+      'G'
+      'H'
+      'I'
+      'J'
+      'K'
+      'M'
+      'N'
+      'O'
+      'P'
+      'Q'
+      'R'
+      'S'
+      'T'
+      'U'
+      'V'
+      'W'
+      'X'
+      'Y'
+      'Z'
+      '')
+  end
+  object dbgrd7: TDBGrid
+    Left = 14
+    Top = 286
+    Width = 690
+    Height = 240
+    DataSource = ds7
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clBlue
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = dbgrd7CellClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'NM'
+        ReadOnly = True
+        Title.Caption = 'Num'
+        Width = 29
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CODGA'
+        Title.Caption = 'Gara'
+        Width = 29
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CODDSPL'
+        Title.Caption = 'Discipl.'
+        Width = 37
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CODATL'
+        Title.Caption = 'Atleta'
+        Width = 46
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'COGNOME'
+        Title.Alignment = taCenter
+        Width = 169
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'CAT'
+        Title.Caption = 'Cat'
+        Width = 23
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NMPET'
+        Title.Caption = 'Petto.'
+        Width = 28
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NMPOS'
+        Title.Caption = 'Pos.'
+        Width = 25
+        Visible = True
+      end
+      item
+        Alignment = taRightJustify
+        Expanded = False
+        FieldName = 'TAME1'
+        Title.Caption = 'Tempo A'
+        Visible = True
+      end
+      item
+        Alignment = taRightJustify
+        Expanded = False
+        FieldName = 'TBME2'
+        Title.Caption = 'Tempo B'
+        Width = 63
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DQ'
+        Width = 33
+        Visible = True
+      end
+      item
+        Alignment = taRightJustify
+        Expanded = False
+        FieldName = 'PEN'
+        Width = 62
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'MANL'
+        Title.Caption = 'Manl'
+        Width = 35
+        Visible = True
+      end>
+  end
+  object dbgrd74: TDBGrid
+    Left = 13
+    Top = 105
+    Width = 319
+    Height = 136
+    DataSource = ds74
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'CODDSPL'
+        ReadOnly = True
+        Title.Caption = 'Codice'
+        Width = 49
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DESCR'
+        Title.Alignment = taCenter
+        Title.Caption = 'Descrizione delle discipline'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clNavy
+        Title.Font.Height = -11
+        Title.Font.Name = 'Tahoma'
+        Title.Font.Style = [fsBold]
+        Width = 183
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'TMAX'
+        Title.Alignment = taCenter
+        Width = 51
+        Visible = True
+      end>
+  end
+  object Edit1: TEdit
+    Left = 123
+    Top = 23
+    Width = 48
+    Height = 21
+    Alignment = taRightJustify
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    OnChange = Edit1Change
+  end
+  object Edit2: TEdit
+    Left = 282
+    Top = 79
+    Width = 48
+    Height = 21
+    Alignment = taRightJustify
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+  end
+  object Button5: TButton
+    Left = 476
+    Top = 536
+    Width = 75
+    Height = 25
+    Caption = 'Storico'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnClick = Button5Click
+  end
+  object cbb74: TComboBox
+    Left = 245
+    Top = 49
+    Width = 85
+    Height = 21
+    DropDownCount = 3
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 12
+    Text = 'Base'
+    OnChange = cbb74Change
+    Items.Strings = (
+      'Scegli'
+      'Base'
+      'GruppoA'
+      'GruppoB')
+  end
+  object rb1: TRadioButton
+    Left = 186
+    Top = 26
+    Width = 51
+    Height = 17
+    Caption = 'Auto'
+    Checked = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 13
+    TabStop = True
+    OnClick = rb1Click
+  end
+  object rb2: TRadioButton
+    Left = 243
+    Top = 26
+    Width = 73
+    Height = 17
+    Caption = 'Manuale'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 14
+    OnClick = rb2Click
+  end
+  object btn1: TBitBtn
+    Left = 10
+    Top = 18
+    Width = 25
+    Height = 25
+    Caption = '?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 15
+    OnClick = btn1Click
+  end
+  object Button6: TButton
+    Left = 300
+    Top = 582
+    Width = 112
+    Height = 37
+    Caption = 'Aggiornamento gara                       codice :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 16
+    WordWrap = True
+    OnClick = Button6Click
+  end
+  object Edit3: TEdit
+    Left = 418
+    Top = 587
+    Width = 52
+    Height = 24
+    Alignment = taRightJustify
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 17
+  end
+  object Button7: TButton
+    Left = 476
+    Top = 586
+    Width = 75
+    Height = 25
+    Caption = '<< Azzera'
+    TabOrder = 18
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 557
+    Top = 586
+    Width = 75
+    Height = 25
+    Caption = 'Sincronizza'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 19
+    OnClick = Button8Click
+  end
+  object Button9: TButton
+    Left = 568
+    Top = 536
+    Width = 64
+    Height = 21
+    Caption = 'Tempi IN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 20
+    OnClick = Button9Click
+  end
+  object Edit4: TEdit
+    Left = 90
+    Top = 79
+    Width = 29
+    Height = 21
+    Alignment = taRightJustify
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 21
+  end
+  object Button10: TButton
+    Left = 219
+    Top = 583
+    Width = 75
+    Height = 35
+    Caption = '      Mostra           il Buffer'
+    TabOrder = 22
+    WordWrap = True
+    OnClick = Button10Click
+  end
+  object CheckBox1: TCheckBox
+    Left = 574
+    Top = 563
+    Width = 53
+    Height = 17
+    Caption = 'DQ IN'
+    TabOrder = 23
+    OnClick = CheckBox1Click
+  end
+  object Button11: TButton
+    Left = 348
+    Top = 219
+    Width = 61
+    Height = 25
+    Caption = 'Reset'
+    TabOrder = 24
+    OnClick = Button11Click
+  end
+  object CheckBox2: TCheckBox
+    Left = 476
+    Top = 564
+    Width = 97
+    Height = 17
+    Caption = 'Correggi'
+    TabOrder = 25
+    OnClick = CheckBox2Click
+  end
+  object ds7: TDataSource
+    DataSet = ABSTable14
+    Left = 384
+    Top = 392
+  end
+  object ds72: TDataSource
+    DataSet = Form2.ABSTable2
+    Left = 432
+    Top = 392
+  end
+  object ABSQuery72: TABSQuery
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    Left = 312
+    Top = 392
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 520
+    Top = 376
+  end
+  object ds74: TDataSource
+    DataSet = Form2.ABSTable4
+    Left = 472
+    Top = 384
+  end
+  object ABSQuery7: TABSQuery
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    RequestLive = True
+    Left = 88
+    Top = 384
+  end
+  object ABSQuery74: TABSQuery
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    Left = 224
+    Top = 384
+  end
+  object frxdbdtst13: TfrxDBDataset
+    UserName = 'frxDBDataset13'
+    CloseDataSource = False
+    DataSet = ABSTable13
+    BCDToCurrency = False
+    Left = 328
+    Top = 320
+  end
+  object ABSQuery73: TABSQuery
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    Left = 152
+    Top = 384
+  end
+  object ABSTable13: TABSTable
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    TableName = 'Maestra'
+    Exclusive = False
+    Left = 112
+    Top = 160
+  end
+  object ds13: TDataSource
+    DataSet = ABSTable13
+    Left = 184
+    Top = 328
+  end
+  object frxrprt7: TfrxReport
+    Version = '4.13.2'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42116.571530497700000000
+    ReportOptions.LastChange = 42354.771304988440000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 264
+    Top = 320
+    Datasets = <
+      item
+        DataSet = frxdbdtst13
+        DataSetName = 'frxDBDataset13'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+      Frame.Width = 3.000000000000000000
+      PrintOnPreviousPage = True
+      object ReportTitle1: TfrxReportTitle
+        Height = 52.913420000000000000
+        Top = 18.897650000000000000
+        Width = 718.110700000000000000
+        object Memo1: TfrxMemoView
+          Align = baCenter
+          Left = 202.204855000000000000
+          Top = 3.779530000000000000
+          Width = 313.700990000000000000
+          Height = 26.456710000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clNavy
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'Riepilogo Iscrizioni alla Gara cod:')
+          ParentFont = False
+        end
+        object frxDBDataset13CODGA: TfrxMemoView
+          Left = 514.016080000000000000
+          Top = 3.779530000000000000
+          Width = 52.913420000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CODGA'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clNavy
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset13."CODGA"]')
+          ParentFont = False
+        end
+        object Picture1: TfrxPictureView
+          Left = 3.779530000000000000
+          Top = 3.779530000000000000
+          Width = 52.913420000000000000
+          Height = 52.913420000000000000
+          ShowHint = False
+          Picture.Data = {
+            055449636F6E0000010001003030000001002000A82500001600000028000000
+            3000000060000000010020000000000000000000000000000000000000000000
+            00000000FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            0000FFFF0000FFFF0000FFFF0000FFFF0000FFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            0000FFFFFF9900FFFF9900FFFF9900FFFF9900FF0000FFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF0000FFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF0000FFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF0000FFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF0000FFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            0000FFFF0000FFFF0000FFFF0000FFFF0000FFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            0000FFFF0000FFFF0000FFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            0000FFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            0000FFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFF0000FFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FF
+            FF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FF9DDBFFFF9DDBFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FF9DDBFFFF9DDBFFFFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FF9DDBFFFF9DDBFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFF9DDBFFFFFF9900FF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FF9DDBFFFF9DDBFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FF9DDBFFFF9DDBFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FF560EFFFFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FF9DDBFFFF9DDBFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FF560EFFFF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FF
+            FF9900FFFF9900FF9DDBFFFF9DDBFFFFFF9900FFFF9900FF9DDBFFFF9DDBFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF
+            9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFF9DDBFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FF560EFFFF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FF560EFFFF560EFFFFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FF560EFFFF560EFFFFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FF560EFFFF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF
+            560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FF
+            FF9900FF560EFFFF560EFFFFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FF560EFFFF560EFFFFFF9900FF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF
+            560EFFFF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFF560EFFFF560EFFFF
+            560EFFFFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFF560EFFFFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            560EFFFF560EFFFFFF9900FFFF9900FFFF9900FF560EFFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FF560EFFFF560EFFFF560EFFFF560EFFFF560EFFFFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FFFF9900FF
+            FF9900FF000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C000000000000A84C000000000000A84C000000000000A84C00000000
+            0000A84C}
+          HightQuality = False
+          Transparent = False
+          TransparentColor = clWhite
+        end
+        object Memo10: TfrxMemoView
+          Left = 551.811380000000000000
+          Top = 34.015770000000000000
+          Width = 90.708720000000000000
+          Height = 15.118120000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            'Situazione al : ')
+          ParentFont = False
+        end
+        object Date: TfrxMemoView
+          Left = 634.961040000000000000
+          Top = 34.015770000000000000
+          Width = 75.590600000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -12
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[Date]')
+          ParentFont = False
+        end
+      end
+      object GroupHeader1: TfrxGroupHeader
+        Height = 71.811070000000000000
+        Top = 132.283550000000000000
+        Width = 718.110700000000000000
+        Condition = 'frxDBDataset13."CODATL"'
+        object Memo2: TfrxMemoView
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Codice Atleta : ')
+        end
+        object frxDBDataset13CODATL1: TfrxMemoView
+          Left = 98.267780000000000000
+          Width = 56.692950000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CODATL'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."CODATL"]')
+        end
+        object frxDBDataset13COGNOME: TfrxMemoView
+          Left = 170.078850000000000000
+          Width = 188.976500000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'COGNOME'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clNavy
+          Font.Height = -15
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[frxDBDataset13."COGNOME"]')
+          ParentFont = False
+        end
+        object Memo3: TfrxMemoView
+          Top = 22.677180000000000000
+          Width = 105.826840000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Dati di contatto: ')
+        end
+        object Memo4: TfrxMemoView
+          Left = 589.606680000000000000
+          Width = 41.574830000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Cat : ')
+        end
+        object frxDBDataset13CAT: TfrxMemoView
+          Left = 650.079160000000000000
+          Width = 41.574830000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CAT'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."CAT"]')
+        end
+        object Memo5: TfrxMemoView
+          Top = 42.574830000000000000
+          Width = 83.149660000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Pettorale n. : ')
+        end
+        object frxDBDataset13NMPET: TfrxMemoView
+          Left = 83.149660000000000000
+          Top = 41.574830000000000000
+          Width = 41.574830000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'NMPET'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."NMPET"]')
+        end
+        object Memo6: TfrxMemoView
+          Left = 154.960730000000000000
+          Top = 41.574830000000000000
+          Width = 68.031540000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Posizione :')
+        end
+        object frxDBDataset13NMPOS: TfrxMemoView
+          Left = 222.992270000000000000
+          Top = 41.574830000000000000
+          Width = 52.913420000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'NMPOS'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."NMPOS"]')
+        end
+        object Memo7: TfrxMemoView
+          Left = 306.141930000000000000
+          Top = 41.574830000000000000
+          Width = 68.031540000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Manleva :')
+        end
+        object frxDBDataset13MANL: TfrxMemoView
+          Left = 370.393940000000000000
+          Top = 41.574830000000000000
+          Width = 41.574830000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'MANL'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."MANL"]')
+        end
+        object Line2: TfrxLineView
+          Left = 3.779530000000000000
+          Width = 706.772110000000000000
+          ShowHint = False
+          Frame.Typ = [ftTop]
+          Frame.LeftLine.Width = 2.000000000000000000
+          Frame.TopLine.Width = 2.000000000000000000
+        end
+        object frxDBDataset13NOME: TfrxMemoView
+          Left = 359.055350000000000000
+          Width = 215.433210000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'NOME'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clNavy
+          Font.Height = -15
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[frxDBDataset13."NOME"]')
+          ParentFont = False
+        end
+        object frxDBDataset13TLF: TfrxMemoView
+          Left = 109.606370000000000000
+          Top = 22.677180000000000000
+          Width = 94.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'TLF'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."TLF"]')
+        end
+        object Line3: TfrxLineView
+          Left = 3.779530000000000000
+          Top = 64.252010000000000000
+          Width = 706.772110000000000000
+          ShowHint = False
+          Frame.Style = fsDashDotDot
+          Frame.Typ = [ftTop]
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 34.015770000000000000
+        Top = 226.771800000000000000
+        Width = 718.110700000000000000
+        DataSet = frxdbdtst13
+        DataSetName = 'frxDBDataset13'
+        RowCount = 0
+        object frxDBDataset13CODDSPL: TfrxMemoView
+          Left = 234.330860000000000000
+          Top = 3.779530000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CODDSPL'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."CODDSPL"]')
+        end
+        object Memo8: TfrxMemoView
+          Left = 71.811070000000000000
+          Top = 3.779530000000000000
+          Width = 158.740260000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Disciplina registrata - cod: ')
+        end
+        object Line1: TfrxLineView
+          Left = 3.779530000000000000
+          Top = 26.456710000000000000
+          Width = 706.772110000000000000
+          ShowHint = False
+          Frame.Typ = [ftTop]
+        end
+        object frxDBDataset13DESCR: TfrxMemoView
+          Left = 321.260050000000000000
+          Top = 3.779530000000000000
+          Width = 238.110390000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'DESCR'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          Memo.UTF8W = (
+            '[frxDBDataset13."DESCR"]')
+        end
+        object Memo9: TfrxMemoView
+          Left = 566.929500000000000000
+          Top = 3.779530000000000000
+          Width = 45.354360000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'TMax :')
+        end
+        object frxDBDataset13TMAX: TfrxMemoView
+          Left = 619.842920000000000000
+          Top = 3.779530000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'TMAX'
+          DataSet = frxdbdtst13
+          DataSetName = 'frxDBDataset13'
+          DisplayFormat.FormatStr = 'nn:ss,zzz'
+          DisplayFormat.Kind = fkDateTime
+          Memo.UTF8W = (
+            '[frxDBDataset13."TMAX"]')
+        end
+      end
+    end
+  end
+  object frxPDFExport7: TfrxPDFExport
+    FileName = 'Iscrizioni'
+    UseFileCache = True
+    DefaultPath = '.\'
+    ShowProgress = True
+    OverwritePrompt = False
+    DataOnly = False
+    PrintOptimized = False
+    Outline = False
+    Background = False
+    HTMLTags = True
+    Quality = 95
+    Author = 'FastReport'
+    Subject = 'FastReport PDF export'
+    ProtectionFlags = [ePrint, eModify, eCopy, eAnnot]
+    HideToolbar = False
+    HideMenubar = False
+    HideWindowUI = False
+    FitWindow = False
+    CenterWindow = False
+    PrintScaling = False
+    Left = 544
+    Top = 328
+  end
+  object ABSTable14: TABSTable
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    BeforeDelete = ABSTable14BeforeDelete
+    StoreDefs = True
+    IndexDefs = <
+      item
+        Name = 'Corrente'
+        Fields = 'NM'
+        Options = [ixPrimary]
+      end>
+    IndexName = 'Corrente'
+    FieldDefs = <
+      item
+        Name = 'NM'
+        DataType = ftInteger
+      end
+      item
+        Name = 'CODGA'
+        DataType = ftInteger
+      end
+      item
+        Name = 'CODDSPL'
+        DataType = ftInteger
+      end
+      item
+        Name = 'CODATL'
+        DataType = ftInteger
+      end
+      item
+        Name = 'COGNOME'
+        DataType = ftString
+        Size = 35
+      end
+      item
+        Name = 'NMPET'
+        DataType = ftInteger
+      end
+      item
+        Name = 'NMPOS'
+        DataType = ftInteger
+      end
+      item
+        Name = 'TAME1'
+        DataType = ftTime
+      end
+      item
+        Name = 'TBME2'
+        DataType = ftTime
+      end
+      item
+        Name = 'DQ'
+        DataType = ftBoolean
+      end
+      item
+        Name = 'PEN'
+        DataType = ftTime
+      end
+      item
+        Name = 'MANL'
+        DataType = ftBoolean
+      end
+      item
+        Name = 'CAT'
+        DataType = ftInteger
+      end>
+    TableName = 'Corrente'
+    Exclusive = True
+    Left = 48
+    Top = 160
+  end
+  object frxReport14: TfrxReport
+    Version = '4.13.2'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42138.482491666700000000
+    ReportOptions.LastChange = 42138.491397500000000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      ''
+      'begin'
+      ''
+      'end.')
+    Left = 624
+    Top = 328
+    Datasets = <
+      item
+        DataSet = frxDBDataset14
+        DataSetName = 'frxDBDataset14'
+      end>
+    Variables = <>
+    Style = <
+      item
+        Name = 'Title'
+        Color = clNone
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+      end
+      item
+        Name = 'Header'
+        Color = clNone
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = [fsBold]
+      end
+      item
+        Name = 'Group header'
+        Color = clNone
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        Frame.Typ = [ftBottom]
+      end
+      item
+        Name = 'Data'
+        Color = clNone
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+      end
+      item
+        Name = 'Group footer'
+        Color = clNone
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        Frame.Typ = [ftTop]
+      end
+      item
+        Name = 'Header line'
+        Color = clNone
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        Frame.Typ = [ftBottom]
+        Frame.Width = 2.000000000000000000
+      end>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      Orientation = poLandscape
+      PaperWidth = 297.000000000000000000
+      PaperHeight = 210.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object ReportTitle1: TfrxReportTitle
+        Height = 26.456710000000000000
+        Top = 18.897650000000000000
+        Width = 1046.929810000000000000
+        object Memo1: TfrxMemoView
+          Left = -71.811070000000000000
+          Width = 1046.929810000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -16
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Tabella aggiornamento situazione iscritti e dati presenti  al :')
+          ParentFont = False
+          Style = 'Title'
+          VAlign = vaCenter
+        end
+        object Date: TfrxMemoView
+          Left = 686.653990000000000000
+          Top = 2.000000000000000000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            '[Date]')
+          ParentFont = False
+        end
+      end
+      object PageHeader1: TfrxPageHeader
+        Height = 34.015770000000000000
+        Top = 68.031540000000000000
+        Width = 1046.929810000000000000
+        object Memo2: TfrxMemoView
+          Width = 1046.929133858270000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftBottom]
+          Frame.Width = 2.000000000000000000
+          ParentFont = False
+          Style = 'Header line'
+        end
+        object Memo3: TfrxMemoView
+          Width = 64.359870689077000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'NM')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo4: TfrxMemoView
+          Left = 64.359870689077000000
+          Width = 71.565976740130700000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'CODGA')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo5: TfrxMemoView
+          Left = 135.925847429208000000
+          Width = 75.683751626447000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'CODDSPL')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo6: TfrxMemoView
+          Left = 211.609599055655000000
+          Width = 73.110142322499300000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'CODATL')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo7: TfrxMemoView
+          Left = 284.719741378154000000
+          Width = 213.873506016177000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'COGNOME')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo8: TfrxMemoView
+          Left = 498.593247394331000000
+          Width = 71.051254879341090000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'NMPET')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo9: TfrxMemoView
+          Left = 569.644502273672000000
+          Width = 71.565976740130700000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'NMPOS')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo10: TfrxMemoView
+          Left = 641.210479013803000000
+          Width = 70.536533018551600000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'TAME1')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo11: TfrxMemoView
+          Left = 711.747012032354900000
+          Width = 70.536533018551600000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'TBME2')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo12: TfrxMemoView
+          Left = 782.283545050906000000
+          Width = 64.102509758682200000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'DQ')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo13: TfrxMemoView
+          Left = 846.386054809588000000
+          Width = 65.904036271445590000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'PEN')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo14: TfrxMemoView
+          Left = 912.290091081034000000
+          Width = 68.735006505788100000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'MANL')
+          ParentFont = False
+          Style = 'Header'
+        end
+        object Memo15: TfrxMemoView
+          Left = 981.025097586822000000
+          Width = 65.904036271445590000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Memo.UTF8W = (
+            'CAT')
+          ParentFont = False
+          Style = 'Header'
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 24.480210000000000000
+        Top = 162.519790000000000000
+        Width = 1046.929810000000000000
+        DataSet = frxDBDataset14
+        DataSetName = 'frxDBDataset14'
+        RowCount = 0
+        object Memo16: TfrxMemoView
+          Width = 64.359870690000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'NM'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."NM"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo17: TfrxMemoView
+          Left = 64.359870689077000000
+          Width = 71.565976740130700000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CODGA'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."CODGA"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo18: TfrxMemoView
+          Left = 135.925847429208000000
+          Width = 75.683751626447000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CODDSPL'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."CODDSPL"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo19: TfrxMemoView
+          Left = 211.609599055655000000
+          Width = 73.110142322499300000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CODATL'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."CODATL"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo20: TfrxMemoView
+          Left = 284.719741378154000000
+          Width = 213.873506016177000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'COGNOME'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."COGNOME"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo21: TfrxMemoView
+          Left = 498.593247394331000000
+          Width = 71.051254879341090000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'NMPET'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."NMPET"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo22: TfrxMemoView
+          Left = 569.644502273672000000
+          Width = 71.565976740130700000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'NMPOS'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."NMPOS"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo23: TfrxMemoView
+          Left = 641.210479013803000000
+          Width = 70.536533018551600000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'TAME1'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."TAME1"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo24: TfrxMemoView
+          Left = 711.747012032354900000
+          Width = 70.536533018551600000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'TBME2'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."TBME2"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo25: TfrxMemoView
+          Left = 782.283545050906000000
+          Width = 64.102509758682200000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'DQ'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."DQ"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo26: TfrxMemoView
+          Left = 846.386054809588000000
+          Width = 65.904036271445590000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'PEN'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."PEN"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo27: TfrxMemoView
+          Left = 912.290091081034000000
+          Width = 68.735006505788100000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'MANL'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."MANL"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Memo28: TfrxMemoView
+          Left = 981.025097586822000000
+          Width = 65.904036271445590000
+          Height = 18.897650000000000000
+          ShowHint = False
+          DataField = 'CAT'
+          DataSet = frxDBDataset14
+          DataSetName = 'frxDBDataset14'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Memo.UTF8W = (
+            '[frxDBDataset14."CAT"]')
+          ParentFont = False
+          Style = 'Data'
+        end
+        object Line1: TfrxLineView
+          Left = -15.118120000000000000
+          Top = 15.118120000000000000
+          Width = 15.118120000000000000
+          ShowHint = False
+          Frame.Typ = [ftTop]
+        end
+        object Line2: TfrxLineView
+          Left = 3.000000000000000000
+          Top = 22.480210000000000000
+          Width = 1037.000000000000000000
+          ShowHint = False
+          Frame.Typ = [ftTop]
+        end
+      end
+      object PageFooter1: TfrxPageFooter
+        Height = 26.456710000000000000
+        Top = 249.448980000000000000
+        Width = 1046.929810000000000000
+        object Memo29: TfrxMemoView
+          Align = baWidth
+          Width = 1046.929810000000000000
+          ShowHint = False
+          Frame.Typ = [ftTop]
+          Frame.Width = 2.000000000000000000
+        end
+        object Memo30: TfrxMemoView
+          Top = 1.000000000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          AutoWidth = True
+          Memo.UTF8W = (
+            '[Date] [Time]')
+        end
+        object Memo31: TfrxMemoView
+          Align = baRight
+          Left = 971.339210000000000000
+          Top = 1.000000000000000000
+          Width = 75.590600000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          HAlign = haRight
+          Memo.UTF8W = (
+            'Page [Page#]')
+        end
+      end
+    end
+  end
+  object frxDBDataset14: TfrxDBDataset
+    UserName = 'frxDBDataset14'
+    CloseDataSource = False
+    DataSet = ABSTable14
+    BCDToCurrency = False
+    Left = 632
+    Top = 368
+  end
+  object ABSQueryDUP: TABSQuery
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    Left = 456
+    Top = 328
+  end
+  object ABSQueryDUP2: TABSQuery
+    CurrentVersion = '7.30 '
+    DatabaseName = 'corbi.abs'
+    InMemory = False
+    ReadOnly = False
+    Left = 392
+    Top = 336
+  end
+end

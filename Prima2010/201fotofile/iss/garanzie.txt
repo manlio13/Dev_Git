@@ -1,0 +1,6 @@
+Non viene garantito alcunchè in relazione all'uso del software e di qualsiasi file che
+lo costituisce. Non si assumono responsabilità di alcun genere per le conseguenze, di
+qualsiasi tipo che si potessero determinare a seguito dell'uso di questo software, sia
+di natura diretta che indiretta. Il software viene distribuito "come è", ed anche se
+è stata effettuata una accurata analisi del suo funzionamento, questo non è in alcun
+modo garantito.
