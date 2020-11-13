@@ -1,0 +1,16 @@
+procedure TMaschera.Timer1Timer(Sender: TObject);
+const
+etichetta='  L  a    t  u  a      A  g  e  n  d  a';
+
+begin
+
+  Maschera.caption:=etichetta;
+
+end;
+  procedure TMaschera.Timer2Timer(Sender: TObject);
+
+begin
+
+  Maschera.caption:='';
+
+end;

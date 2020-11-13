@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/05/27 11:00:55.766,=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/27 11:14:46.602,C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\SpostaFile\Unit1.dfm=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/05/27 11:14:46.602,C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\SpostaFile\Unit1.pas=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/05/27 11:14:56.085,C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\SpostaFile\Project1.dproj=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/05/27 11:21:58.839,C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\SpostaFile\Project1.dproj=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\SpostaFile\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

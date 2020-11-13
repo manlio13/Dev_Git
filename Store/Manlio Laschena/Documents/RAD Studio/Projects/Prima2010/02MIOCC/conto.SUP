@@ -1,0 +1,9 @@
+//SUPPRESSIONPROJ:conto
+//VERSION:5.00
+//ENABLE:Yes
+!include DELPHI.SUP
+ignore failure KERNEL32.DLL:LoadLibraryExA in module EXE
+ignore failure KERNEL32.DLL:MapViewOfFileEx in module IDAPI32.DLL
+ignore failure KERNEL32.DLL:DeleteFileA in module IDAPI32.DLL
+ignore failure KERNEL32.DLL:LockFile in module IDAPI32.DLL
+

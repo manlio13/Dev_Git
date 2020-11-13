@@ -1,0 +1,7 @@
+//SUPPRESSIONPROJ:Manlio15
+//VERSION:5.00
+//ENABLE:Yes
+ignore failure KERNEL32.DLL:LoadLibraryExA in module EXE
+ignore failure USER32.DLL:DeleteMenu in module EXE
+ignore failure USER32.DLL:DestroyIcon in module EXE
+

@@ -1,0 +1,74 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, ABSMain, Data.DB;
+
+type
+  TForm1 = class(TForm)
+    label1: TLabel;
+    Edit1: TEdit;
+    Button1: TButton;
+    ABSTable1: TABSTable;
+    ABSDatabase1: TABSDatabase;
+    ABSQuery1: TABSQuery;
+
+    procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  nl,k:Integer;
+  lista:Boolean=False;
+implementation
+{$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  nl:=0;
+  k:=0;
+  ABSDatabase1.DatabaseFileName:=ExtractFilePath(Application.ExeName)+'scaler.abs';
+  ABSDatabase1.Open;
+  ABSTable1.TableName:='scaler';
+  ABSTable1.Open;
+  if nl=0 then
+   begin
+     Edit1.Width:=40;
+     label1.Caption:=' Fornisci il numero massimo di elementi nella lista.';
+   end;
+  if lista=false then
+   begin
+      Edit1.width:=350;
+      label1.Caption:='Inserisci il primo elemento della lista';
+      ABSTable1.Insert;
+      ABSTable1.FieldByName('cosa').AsString:=label1.Caption;
+      ABSTable1.Post;
+   end;
+
+
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+     if Edit1.Text = '' then
+      begin
+         ShowMessage('Nulla da acquisire');
+         Exit;
+      end else
+      begin
+         nl:=StrToInt(Edit1.Text);
+         label1.Caption:='';
+         Edit1.Text:='';
+      end;
+
+
+end;
+
+end.

@@ -598,8 +598,8 @@ object Form1: TForm1
   object Label25: TLabel
     Left = 216
     Top = 252
-    Width = 54
-    Height = 11
+    Width = 87
+    Height = 34
     Caption = 'Last Value'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText

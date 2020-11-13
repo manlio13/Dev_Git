@@ -1,0 +1,15 @@
+
+[OPTIONS]
+ERRORLOG=REGISTRO.ERR
+COMPRESS=NO
+CONTENTS=registro
+TITLE=registro
+COPYRIGHT=M.Laschena - 1997  : lasc@iol.it
+CITATION=lasc@iol.it
+ICON=help.ico
+
+[WINDOWS]
+main=,,0,,,0
+
+[FILES]
+REGISTRO.RTF

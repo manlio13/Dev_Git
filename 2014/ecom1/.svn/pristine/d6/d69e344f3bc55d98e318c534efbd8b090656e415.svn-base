@@ -1,0 +1,317 @@
+unit Unit1;           // Release 23/11/2014 v.2.0.1 build 63
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Grids, Vcl.DBGrids,
+  Datasnap.DBClient, Data.DB, ABSMain, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.StdCtrls,
+  Vcl.Mask,System.UITypes, Vcl.ComCtrls,System.DateUtils;
+
+type
+  TForm1 = class(TForm)
+    ABSDatabase1: TABSDatabase;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    ABSTable1: TABSTable;
+    DBNavigator1: TDBNavigator;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Label1: TLabel;
+    Edit5: TEdit;
+    Label2: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    ABSQuery1: TABSQuery;
+    Button3: TButton;
+    Edit6: TEdit;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Label3: TLabel;
+    Button7: TButton;
+    Label4: TLabel;
+    Label5: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure DBNavigator1Click(Sender: TObject; Button: TNavigateBtn);
+    procedure Button7Click(Sender: TObject);
+ //  procedure ABSTable1AfterPost(DataSet: TDataSet);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  filtro:string;
+  somma:double;
+  inizio:TDateTime;
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+ABSDatabase1.DatabaseFileName:=ExtractFilePath(Application.ExeName)+'ecom.abs';
+ABSDatabase1.Open;
+ABSTable1.TableName:='ecomTB';
+ABSTable1.Open;
+TFloatField(ABSTable1.FieldByName('Prezzo')).DisplayFormat := '0.00';
+ABSTable1.Last;
+ABSTable1.Edit;
+DataSource1.DataSet.Edit;
+//ABSTable1.Refresh;
+
+//inizializzazione
+edit5.Text:='01/02/2014';
+edit1.Text:=DateToStr(Now);
+edit2.Text:='';
+edit3.Text:='';
+edit4.Text:='';
+
+  {      with ABSQuery1 do   //
+     begin
+       close;
+       //FORMAT('Prezzo','##0.00') ;
+       SQL.text := 'select * from ecomTB';
+       ExecSql;
+       open;
+       TFloatField(ABSQuery1.FieldByName('Prezzo')).DisplayFormat := '##0.00';
+     end;           //stringa per formattare un campo quando risulta da un query
+    ABSQuery1.Close;}
+   // DataSource1.DataSet:=ABSTable1;
+   //  AbsTable1.DisableControls;
+
+try
+  AbsTable1.First; { Go to first record, which sets Eof False }
+  inizio:= ABSTable1.FieldByName('DataOrd').AsDateTime;
+  Label4.Caption:='Dal '+ABSTable1.FieldByName('DataOrd').AsString;
+  while not AbsTable1.Eof do { Cycle until Eof is True }
+  begin
+    somma:=somma+AbsTable1.FieldByName('prezzo').AsFloat;
+    AbsTable1.Next; { Eof False on success; Eof True when Next fails on last record }
+  end;
+finally
+ // AbsTable1.EnableControls;
+  Label3.Caption:='Totale acquistato = '+ floattostr(somma);
+  Label5.Caption:='€ '+FloatToStrF(Somma/((DaysBetween(Now,inizio)*12)/365.25),ffFixed,4,2)+' al mese';
+  somma:=0;
+end;
+
+end;
+
+{procedure TForm1.ABSTable1AfterPost(DataSet: TDataSet); //calcola il totale acquistato
+begin
+ABSTable1.DisableControls;
+  AbsTable1.First;   { Go to first record, which sets Eof False }
+ {Try
+  while AbsTable1.Eof= false do { Cycle until Eof is True }
+  {begin
+    somma:=somma+AbsTable1.FieldByName('prezzo').AsFloat;
+    AbsTable1.Next; { Eof False on success; Eof True when Next fails on last record }
+  {end;
+  finally
+  AbsTable1.EnableControls;
+  Label3.Caption:='Totale acquistato = '+ floattostr(somma);
+   Label5.Caption:='€ '+FloatToStrF(Somma/((DaysBetween(Now,inizio)*12)/365.25),ffFixed,4,2)+' al mese';
+  somma:=0;
+  end;
+   //AbsTable1.Last;
+   FormCreate(Self);
+end;}
+
+
+procedure TForm1.Button1Click(Sender: TObject);  //cerca
+label vai;
+var
+ datafiltro:string;
+ chi: array[1..3] of smallint;
+  i: Integer;
+
+begin
+     i:=0;
+            if edit2.text<>'' then
+              begin
+                i:=i+1;
+                chi[i]:=2;
+              end;
+            if edit3.Text<>'' then
+            begin
+            i:=i+1;
+            chi[i]:=3;
+            end;
+            if edit4.Text<>'' then
+            begin
+            i:=i+1;
+            chi[i]:=4;
+            end;
+
+     if chi[3]>0 then
+     begin
+      filtro:=' Fornitore ='+ QuotedStr(Edit2.Text)+' AND  Prodotto LIKE '+quotedStr('%'+edit3.text+'%')+
+      ' AND  MezzoPag= '+QuotedStr(Edit4.Text);
+      goto vai;
+     end;
+
+     if chi[2]>0 then
+        begin
+          if (edit2.Text<>'') AND (edit3.Text<>'') then
+              filtro:=' Fornitore ='+ QuotedStr(Edit2.Text)+' AND  Prodotto LIKE '+quotedStr('%'+edit3.text+'%');
+          if (edit2.Text<>'') AND (edit4.Text<>'') then
+              filtro:=' Fornitore ='+ QuotedStr(Edit2.Text)+' AND  MezzoPag= '+QuotedStr(Edit4.Text);
+          if (edit3.Text<>'') AND (edit4.Text<>'') then
+              filtro:=' Prodotto LIKE '+quotedStr('%'+edit3.text+'%')+' AND  MezzoPag= '+QuotedStr(Edit4.Text);
+          goto vai;
+        end;
+
+      if chi[1]>0 then
+        begin
+          if (edit2.Text<>'')  then
+              filtro:=' Fornitore ='+ QuotedStr(Edit2.Text);
+          if (edit4.Text<>'')  then
+              filtro:=' MezzoPag= '+QuotedStr(Edit4.Text);
+          if (edit3.Text<>'')  then
+              filtro:=' Prodotto LIKE '+quotedStr('%'+edit3.text+'%');
+          goto vai;
+        end;
+
+     vai:
+     DataSource1.DataSet:=ABSQuery1;
+     with ABSQuery1 do
+     begin
+       close;
+       if i=0 then
+       SQL.text := 'select * from ecomTB' else
+       SQL.text := 'select * from ecomTB where'+filtro;
+       ExecSql;
+       open;
+       TFloatField(ABSQuery1.FieldByName('Prezzo')).DisplayFormat := '##0.00';
+     end;
+     datafiltro:= 'DataOrd <= '+ quotedStr(edit1.Text)+' AND DataOrd >= '+quotedStr(Edit5.Text);
+     ABSQuery1.FilterOptions := [foCaseInsensitive];
+     ABSQuery1.Filter := datafiltro;
+     ABSQuery1.Filtered:=True;
+
+end;
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  edit5.Text:='01/02/2014';
+  edit1.Text:=DateToStr(Now);
+  edit2.Text:='';
+  edit3.Text:='';
+  edit4.Text:='';
+  ABSQuery1.Close;
+  DataSource1.DataSet:=ABSTable1;
+  ABSTable1.Filtered:= False;
+  ABSTable1.Last;
+end;
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+        DataSource1.DataSet:=ABSTable1;
+        ABSQuery1.Close;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+begin
+       DataSource1.DataSet:=ABSQuery1;
+       edit6.Text:= StringReplace(edit6.text,',','.',[rfReplaceAll]);  //SQL vuole il punto come separatore decimale
+       with ABSQuery1 do
+     begin
+       close;
+       SQL.text := edit6.Text;
+       ExecSql;
+       open;
+       TFloatField(ABSQuery1.FieldByName('Prezzo')).DisplayFormat := '##0.00';
+     end;
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+         Edit6.Text:= 'select * from ecomTB ORDER by DataOrd Desc';
+         Button4Click(Sender);
+         Edit6.Text:= 'select * from ecomTB';
+end;
+
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+      if messageDlg('Vuoi veramente cancellare i dati ?',mtConfirmation,mbYesNo,0)=mrNo then
+      exit;
+      ABSTable1.Close;
+      ABSTable1.EmptyTable;
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+begin
+    DataSource1.DataSet:=ABSTable1;
+    ABSQuery1.Close;
+    ABSTable1.edit;
+    ABSTable1.close;
+    ABSDatabase1.Close;
+    Form1.release;
+    application.Terminate;
+end;
+
+procedure TForm1.DBNavigator1Click(Sender: TObject; Button: TNavigateBtn);
+           var
+   d1,d2:TDate;
+   nk:integer;
+begin
+     if (Button = nbInsert) then
+  begin
+        ABSTable1.Last;
+        ABSTable1.Append;
+  end else
+     if (Button = nbPost)  then
+        begin
+              with ABSQuery1 do
+          begin
+            close;
+            //FORMAT('Prezzo','##0.00') ;
+            SQL.text := 'select * from ecomTB ORDER by DataOrd ASC';
+            ExecSql;
+            open;
+            TFloatField(ABSQuery1.FieldByName('Prezzo')).DisplayFormat := '##0.00';
+          end;           //stringa per formattare un campo quando risulta da un query
+          ABSQuery1.Close;
+          DataSource1.DataSet:=ABSTable1;
+          FormCreate(Self);
+        end;
+
+      {    begin
+            ABSTable1.Edit;
+            ABSTable1.post;  //questo salva il record
+            ABSTable1.DisableControls;
+            AbsTable1.First;   { Go to first record, which sets Eof False }
+       {   Try
+            while AbsTable1.Eof= false do { Cycle until Eof is True } //per inserire i gg tra ord e cons
+      {      begin
+             nk:=ABSTable1.recno;
+             d1:=ABSTable1.FieldByName('DataOrd').AsDateTime;
+             d2:=ABSTable1.FieldByName('Datacons').AsDateTime;
+             if d2>d1 then
+              begin
+               ABSTable1.Edit;
+               ABSTable1.FieldByName('delta').AsInteger:= DaysBetween(d2,d1);
+               ABSTable1.Post;
+              //Ogni operazione di editing porta il puntatore all'ultimo record
+              end ;      // Pertanto non si può usare il next dopo l'edit(che determinerebbe un eof),ma
+             ABSTable1.RecNo:=nk; // memorizzare il recno, riportare il puntatore al record editato e..
+             AbsTable1.Next; { Eof False on success; Eof True when Next fails on last record }
+           { end;
+           finally
+            AbsTable1.EnableControls;
+           end;
+          end;}
+end;
+
+end.

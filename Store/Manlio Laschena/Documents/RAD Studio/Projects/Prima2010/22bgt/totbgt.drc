@@ -1,0 +1,542 @@
+#define BdeConst_SSessionActive 65264
+#define BdeConst_SHandleError 65265
+#define BdeConst_SLoginError 65266
+#define BdeConst_SInitError 65267
+#define BdeConst_SIDAPILangID 65268
+#define BdeConst_SBDEError 65269
+#define BdeConst_SIndexDoesNotExist 65270
+#define BdeConst_SNoTableName 65271
+#define BdeConst_SNoCachedUpdates 65272
+#define BdeConst_SInvalidAliasName 65273
+#define BdeConst_SNoFieldAccess 65274
+#define BdeConst_SUntitled 65275
+#define BdeConst_SNoProvider 65276
+#define DbConsts_SExprBadField 65280
+#define DbConsts_SExprBadNullTest 65281
+#define DbConsts_SExprRangeError 65282
+#define DbConsts_SExprNotBoolean 65283
+#define DbConsts_SExprIncorrect 65284
+#define DbConsts_SExprNothing 65285
+#define DbConsts_STextFalse 65286
+#define DbConsts_STextTrue 65287
+#define DbConsts_SRecordNotFound 65288
+#define BdeConst_SDuplicateDatabaseName 65289
+#define BdeConst_SDuplicateSessionName 65290
+#define BdeConst_SInvalidSessionName 65291
+#define BdeConst_SDatabaseNameMissing 65292
+#define BdeConst_SSessionNameMissing 65293
+#define BdeConst_SDatabaseOpen 65294
+#define BdeConst_SDatabaseHandleSet 65295
+#define DbConsts_SNoIndexForFields 65296
+#define DbConsts_SCircularDataLink 65297
+#define DbConsts_SLookupInfoError 65298
+#define DbConsts_SDataSourceChange 65299
+#define DbConsts_SDataSetOpen 65300
+#define DbConsts_SNotEditing 65301
+#define DbConsts_SDataSetClosed 65302
+#define DbConsts_SAutoSessionExclusive 65303
+#define DbConsts_SAutoSessionExists 65304
+#define DbConsts_SAutoSessionActive 65305
+#define DbConsts_SExprTermination 65306
+#define DbConsts_SExprNameError 65307
+#define DbConsts_SExprStringError 65308
+#define DbConsts_SExprInvalidChar 65309
+#define DbConsts_SExprNoRParen 65310
+#define DbConsts_SExprExpected 65311
+#define DbConsts_SFieldRangeError 65312
+#define DbConsts_SInvalidIntegerValue 65313
+#define DbConsts_SInvalidBoolValue 65314
+#define DbConsts_SInvalidFloatValue 65315
+#define DbConsts_SFieldTypeMismatch 65316
+#define DbConsts_SInvalidVarByteArray 65317
+#define DbConsts_SFieldOutOfRange 65318
+#define DbConsts_SBCDOverflow 65319
+#define DbConsts_SFieldRequired 65320
+#define DbConsts_SDataSetMissing 65321
+#define DbConsts_SInvalidCalcType 65322
+#define DbConsts_SFieldReadOnly 65323
+#define DbConsts_SFieldIndexError 65324
+#define DbConsts_SNotIndexField 65325
+#define DbConsts_SIndexFieldMissing 65326
+#define DbConsts_SDuplicateIndexName 65327
+#define Consts_SmkcDel 65328
+#define Consts_SmkcShift 65329
+#define Consts_SmkcCtrl 65330
+#define Consts_SmkcAlt 65331
+#define Consts_SInvalidClipFmt 65332
+#define Consts_SIconToClipboard 65333
+#define Consts_SNoDefaultPrinter 65334
+#define Consts_SBitsIndexError 65335
+#define Consts_SDuplicateMenus 65336
+#define DbConsts_SInvalidFieldSize 65337
+#define DbConsts_SUnknownFieldType 65338
+#define DbConsts_SFieldNameMissing 65339
+#define DbConsts_SDuplicateFieldName 65340
+#define DbConsts_SFieldNotFound 65341
+#define DbConsts_SFieldAccessError 65342
+#define DbConsts_SFieldValueError 65343
+#define Consts_SMsgDlgNoToAll 65344
+#define Consts_SMsgDlgYesToAll 65345
+#define Consts_SmkcBkSp 65346
+#define Consts_SmkcTab 65347
+#define Consts_SmkcEsc 65348
+#define Consts_SmkcEnter 65349
+#define Consts_SmkcSpace 65350
+#define Consts_SmkcPgUp 65351
+#define Consts_SmkcPgDn 65352
+#define Consts_SmkcEnd 65353
+#define Consts_SmkcHome 65354
+#define Consts_SmkcLeft 65355
+#define Consts_SmkcUp 65356
+#define Consts_SmkcRight 65357
+#define Consts_SmkcDown 65358
+#define Consts_SmkcIns 65359
+#define Consts_SInvalidProperty 65360
+#define Consts_SMaskErr 65361
+#define Consts_SMaskEditErr 65362
+#define Consts_SMsgDlgWarning 65363
+#define Consts_SMsgDlgError 65364
+#define Consts_SMsgDlgInformation 65365
+#define Consts_SMsgDlgConfirm 65366
+#define Consts_SMsgDlgYes 65367
+#define Consts_SMsgDlgNo 65368
+#define Consts_SMsgDlgOK 65369
+#define Consts_SMsgDlgCancel 65370
+#define Consts_SMsgDlgHelp 65371
+#define Consts_SMsgDlgAbort 65372
+#define Consts_SMsgDlgRetry 65373
+#define Consts_SMsgDlgIgnore 65374
+#define Consts_SMsgDlgAll 65375
+#define Consts_SYesButton 65376
+#define Consts_SNoButton 65377
+#define Consts_SHelpButton 65378
+#define Consts_SCloseButton 65379
+#define Consts_SIgnoreButton 65380
+#define Consts_SRetryButton 65381
+#define Consts_SAbortButton 65382
+#define Consts_SAllButton 65383
+#define Consts_SCannotDragForm 65384
+#define Consts_SPutObjectError 65385
+#define Consts_SGridTooLarge 65386
+#define Consts_STooManyDeleted 65387
+#define Consts_SIndexOutOfRange 65388
+#define Consts_SFixedColTooBig 65389
+#define Consts_SFixedRowTooBig 65390
+#define Consts_SInvalidStringGridOp 65391
+#define Consts_SParentRequired 65392
+#define Consts_SMDIChildNotVisible 65393
+#define Consts_SVisibleChanged 65394
+#define Consts_SCannotShowModal 65395
+#define Consts_SMenuIndexError 65396
+#define Consts_SMenuReinserted 65397
+#define Consts_SMenuNotFound 65398
+#define Consts_SNotPrinting 65399
+#define Consts_SPrinting 65400
+#define Consts_SInvalidPrinter 65401
+#define Consts_SDeviceOnPort 65402
+#define Consts_SGroupIndexTooLow 65403
+#define Consts_SNoMDIForm 65404
+#define Consts_SControlParentSetToSelf 65405
+#define Consts_SOKButton 65406
+#define Consts_SCancelButton 65407
+#define Consts_SAncestorNotFound 65408
+#define Consts_SInvalidBitmap 65409
+#define Consts_SInvalidIcon 65410
+#define Consts_SInvalidMetafile 65411
+#define Consts_SChangeIconSize 65412
+#define Consts_SUnknownClipboardFormat 65413
+#define Consts_SOutOfResources 65414
+#define Consts_SNoCanvasHandle 65415
+#define Consts_SInvalidImageSize 65416
+#define Consts_SInvalidImageList 65417
+#define Consts_SReplaceImage 65418
+#define Consts_SImageIndexError 65419
+#define Consts_SImageReadFail 65420
+#define Consts_SWindowDCError 65421
+#define Consts_SWindowClass 65422
+#define Consts_SCannotFocus 65423
+#define Consts_SClassNotFound 65424
+#define Consts_SInvalidImage 65425
+#define Consts_SResNotFound 65426
+#define Consts_SListIndexError 65427
+#define Consts_SListCapacityError 65428
+#define Consts_SListCountError 65429
+#define Consts_SSortedListError 65430
+#define Consts_SDuplicateString 65431
+#define Consts_SDuplicateName 65432
+#define Consts_SInvalidName 65433
+#define Consts_SDuplicateClass 65434
+#define Consts_SInvalidPropertyValue 65435
+#define Consts_SInvalidPropertyPath 65436
+#define Consts_SUnknownProperty 65437
+#define Consts_SReadOnlyProperty 65438
+#define Consts_SPropertyException 65439
+#define SysUtils_SShortDayNameFri 65440
+#define SysUtils_SShortDayNameSat 65441
+#define SysUtils_SLongDayNameSun 65442
+#define SysUtils_SLongDayNameMon 65443
+#define SysUtils_SLongDayNameTue 65444
+#define SysUtils_SLongDayNameWed 65445
+#define SysUtils_SLongDayNameThu 65446
+#define SysUtils_SLongDayNameFri 65447
+#define SysUtils_SLongDayNameSat 65448
+#define Consts_SAssignError 65449
+#define Consts_SFCreateError 65450
+#define Consts_SFOpenError 65451
+#define Consts_SReadError 65452
+#define Consts_SWriteError 65453
+#define Consts_SMemoryStreamError 65454
+#define Consts_SCantWriteResourceStreamError 65455
+#define SysUtils_SLongMonthNameFeb 65456
+#define SysUtils_SLongMonthNameMar 65457
+#define SysUtils_SLongMonthNameApr 65458
+#define SysUtils_SLongMonthNameMay 65459
+#define SysUtils_SLongMonthNameJun 65460
+#define SysUtils_SLongMonthNameJul 65461
+#define SysUtils_SLongMonthNameAug 65462
+#define SysUtils_SLongMonthNameSep 65463
+#define SysUtils_SLongMonthNameOct 65464
+#define SysUtils_SLongMonthNameNov 65465
+#define SysUtils_SLongMonthNameDec 65466
+#define SysUtils_SShortDayNameSun 65467
+#define SysUtils_SShortDayNameMon 65468
+#define SysUtils_SShortDayNameTue 65469
+#define SysUtils_SShortDayNameWed 65470
+#define SysUtils_SShortDayNameThu 65471
+#define SysUtils_SWin32Error 65472
+#define SysUtils_SUnkWin32Error 65473
+#define SysUtils_SNL 65474
+#define SysUtils_SShortMonthNameJan 65475
+#define SysUtils_SShortMonthNameFeb 65476
+#define SysUtils_SShortMonthNameMar 65477
+#define SysUtils_SShortMonthNameApr 65478
+#define SysUtils_SShortMonthNameMay 65479
+#define SysUtils_SShortMonthNameJun 65480
+#define SysUtils_SShortMonthNameJul 65481
+#define SysUtils_SShortMonthNameAug 65482
+#define SysUtils_SShortMonthNameSep 65483
+#define SysUtils_SShortMonthNameOct 65484
+#define SysUtils_SShortMonthNameNov 65485
+#define SysUtils_SShortMonthNameDec 65486
+#define SysUtils_SLongMonthNameJan 65487
+#define SysUtils_SArgumentMissing 65488
+#define SysUtils_SInvalidVarCast 65489
+#define SysUtils_SInvalidVarOp 65490
+#define SysUtils_SDispatchError 65491
+#define SysUtils_SReadAccess 65492
+#define SysUtils_SWriteAccess 65493
+#define SysUtils_SFormatTooLong 65494
+#define SysUtils_SVarArrayCreate 65495
+#define SysUtils_SVarNotArray 65496
+#define SysUtils_SVarArrayBounds 65497
+#define SysUtils_SExternalException 65498
+#define SysUtils_SAssertionFailed 65499
+#define SysUtils_SIntfCastError 65500
+#define SysUtils_SAssertError 65501
+#define SysUtils_SAbstractError 65502
+#define SysUtils_SModuleAccessViolation 65503
+#define SysUtils_SRangeError 65504
+#define SysUtils_SIntOverflow 65505
+#define SysUtils_SInvalidOp 65506
+#define SysUtils_SZeroDivide 65507
+#define SysUtils_SOverflow 65508
+#define SysUtils_SUnderflow 65509
+#define SysUtils_SInvalidPointer 65510
+#define SysUtils_SInvalidCast 65511
+#define SysUtils_SAccessViolation 65512
+#define SysUtils_SStackOverflow 65513
+#define SysUtils_SControlC 65514
+#define SysUtils_SPrivilege 65515
+#define SysUtils_SOperationAborted 65516
+#define SysUtils_SException 65517
+#define SysUtils_SExceptTitle 65518
+#define SysUtils_SInvalidFormat 65519
+#define SysUtils_SInvalidInteger 65520
+#define SysUtils_SInvalidFloat 65521
+#define SysUtils_SInvalidDate 65522
+#define SysUtils_SInvalidTime 65523
+#define SysUtils_SInvalidDateTime 65524
+#define SysUtils_SDateEncodeError 65525
+#define SysUtils_SOutOfMemory 65526
+#define SysUtils_SInOutError 65527
+#define SysUtils_SFileNotFound 65528
+#define SysUtils_SInvalidFilename 65529
+#define SysUtils_STooManyOpenFiles 65530
+#define SysUtils_SAccessDenied 65531
+#define SysUtils_SEndOfFile 65532
+#define SysUtils_SDiskFull 65533
+#define SysUtils_SInvalidInput 65534
+#define SysUtils_SDivByZero 65535
+STRINGTABLE
+BEGIN
+	BdeConst_SSessionActive,	"Cannot perform this operation on an active session"
+	BdeConst_SHandleError,	"Error creating cursor handle"
+	BdeConst_SLoginError,	"Cannot connect to database '%s'"
+	BdeConst_SInitError,	"An error occurred while attempting to initialize the Borland Database Engine (error $%.4x)"
+	BdeConst_SIDAPILangID,	"0009"
+	BdeConst_SBDEError,	"BDE error $%.4x"
+	BdeConst_SIndexDoesNotExist,	"Index does not exist. Index: %s"
+	BdeConst_SNoTableName,	"Missing TableName property"
+	BdeConst_SNoCachedUpdates,	"Not in cached update mode"
+	BdeConst_SInvalidAliasName,	"Invalid alias name %s"
+	BdeConst_SNoFieldAccess,	"Cannot access field '%s' in a filter"
+	BdeConst_SUntitled,	"Untitled Application"
+	BdeConst_SNoProvider,	"No provider available"
+	DbConsts_SExprBadField,	"Field '%s' cannot be used in a filter expression"
+	DbConsts_SExprBadNullTest,	"NULL only allowed with '=' and '<>'"
+	DbConsts_SExprRangeError,	"Constant out of range"
+	DbConsts_SExprNotBoolean,	"Field '%s' is not of type Boolean"
+	DbConsts_SExprIncorrect,	"Incorrectly formed filter expression"
+	DbConsts_SExprNothing,	"nothing"
+	DbConsts_STextFalse,	"False"
+	DbConsts_STextTrue,	"True"
+	DbConsts_SRecordNotFound,	"Record not found"
+	BdeConst_SDuplicateDatabaseName,	"Duplicate database name '%s'"
+	BdeConst_SDuplicateSessionName,	"Duplicate session name '%s'"
+	BdeConst_SInvalidSessionName,	"Invalid session name %s"
+	BdeConst_SDatabaseNameMissing,	"Database name missing"
+	BdeConst_SSessionNameMissing,	"Session name missing"
+	BdeConst_SDatabaseOpen,	"Cannot perform this operation on an open database"
+	BdeConst_SDatabaseHandleSet,	"Database handle owned by a different session"
+	DbConsts_SNoIndexForFields,	"'%s' has no index for fields '%s'"
+	DbConsts_SCircularDataLink,	"Circular datalinks are not allowed"
+	DbConsts_SLookupInfoError,	"Lookup information for field '%s' is incomplete"
+	DbConsts_SDataSourceChange,	"DataSource cannot be changed"
+	DbConsts_SDataSetOpen,	"Cannot perform this operation on an open dataset"
+	DbConsts_SNotEditing,	"Dataset not in edit or insert mode"
+	DbConsts_SDataSetClosed,	"Cannot perform this operation on a closed dataset"
+	DbConsts_SAutoSessionExclusive,	"Cannot enable AutoSessionName property with more than one session on a form or data-module"
+	DbConsts_SAutoSessionExists,	"Cannot add a session to the form or data-module while session '%s' has AutoSessionName enabled"
+	DbConsts_SAutoSessionActive,	"Cannot modify SessionName while AutoSessionName is enabled"
+	DbConsts_SExprTermination,	"Filter expression incorrectly terminated"
+	DbConsts_SExprNameError,	"Unterminated field name"
+	DbConsts_SExprStringError,	"Unterminated string constant"
+	DbConsts_SExprInvalidChar,	"Invalid filter expression character: '%s'"
+	DbConsts_SExprNoRParen,	"')' expected but %s found"
+	DbConsts_SExprExpected,	"Expression expected but %s found"
+	DbConsts_SFieldRangeError,	"%g is not a valid value for field '%s'. The allowed range is %g to %g"
+	DbConsts_SInvalidIntegerValue,	"'%s' is not a valid integer value for field '%s'"
+	DbConsts_SInvalidBoolValue,	"'%s' is not a valid boolean value for field '%s'"
+	DbConsts_SInvalidFloatValue,	"'%s' is not a valid floating point value for field '%s'"
+	DbConsts_SFieldTypeMismatch,	"Field '%s' is not of the expected type"
+	DbConsts_SInvalidVarByteArray,	"Invalid variant type or size"
+	DbConsts_SFieldOutOfRange,	"Value of field '%s' is out of range"
+	DbConsts_SBCDOverflow,	"(Overflow)"
+	DbConsts_SFieldRequired,	"Field '%s' must have a value"
+	DbConsts_SDataSetMissing,	"Field '%s' has no dataset"
+	DbConsts_SInvalidCalcType,	"Field '%s' cannot be a calculated or lookup field"
+	DbConsts_SFieldReadOnly,	"Field '%s' cannot be modified"
+	DbConsts_SFieldIndexError,	"Field index out of range"
+	DbConsts_SNotIndexField,	"Field '%s' is not indexed and cannot be modified"
+	DbConsts_SIndexFieldMissing,	"Cannot access index field '%s'"
+	DbConsts_SDuplicateIndexName,	"Duplicate index name '%s'"
+	Consts_SmkcDel,	"Del"
+	Consts_SmkcShift,	"Shift+"
+	Consts_SmkcCtrl,	"Ctrl+"
+	Consts_SmkcAlt,	"Alt+"
+	Consts_SInvalidClipFmt,	"Formato della clipboard non valido"
+	Consts_SIconToClipboard,	"La Clippboard non accetta le icone"
+	Consts_SNoDefaultPrinter,	"Attualmente non \xe8 stata selezionata alcuna stampante"
+	Consts_SBitsIndexError,	"Indice dei Bits fuori dei limiti"
+	Consts_SDuplicateMenus,	"Il Menu '%s' \xe8 gi\xe0 in uso in un altro form"
+	DbConsts_SInvalidFieldSize,	"Invalid field size"
+	DbConsts_SUnknownFieldType,	"Field '%s' is of an unknown type"
+	DbConsts_SFieldNameMissing,	"Field name missing"
+	DbConsts_SDuplicateFieldName,	"Duplicate field name '%s'"
+	DbConsts_SFieldNotFound,	"%s: Field '%s' not found"
+	DbConsts_SFieldAccessError,	"Cannot access field '%s' as type %s"
+	DbConsts_SFieldValueError,	"Invalid value for field '%s'"
+	Consts_SMsgDlgNoToAll,	"N&o per tutti"
+	Consts_SMsgDlgYesToAll,	"S&i per tutti"
+	Consts_SmkcBkSp,	"BkSp"
+	Consts_SmkcTab,	"Tab"
+	Consts_SmkcEsc,	"Esc"
+	Consts_SmkcEnter,	"Enter"
+	Consts_SmkcSpace,	"Space"
+	Consts_SmkcPgUp,	"PgUp"
+	Consts_SmkcPgDn,	"PgDn"
+	Consts_SmkcEnd,	"End"
+	Consts_SmkcHome,	"Home"
+	Consts_SmkcLeft,	"Left"
+	Consts_SmkcUp,	"Up"
+	Consts_SmkcRight,	"Right"
+	Consts_SmkcDown,	"Down"
+	Consts_SmkcIns,	"Ins"
+	Consts_SInvalidProperty,	"valore di propriet\xe0 non valido"
+	Consts_SMaskErr,	"Valore fornito non valido"
+	Consts_SMaskEditErr,	"Valore fornito non valido. Esc per annullare"
+	Consts_SMsgDlgWarning,	"Avviso"
+	Consts_SMsgDlgError,	"Errore"
+	Consts_SMsgDlgInformation,	"Informazione"
+	Consts_SMsgDlgConfirm,	"Conferma"
+	Consts_SMsgDlgYes,	"&Si"
+	Consts_SMsgDlgNo,	"&No"
+	Consts_SMsgDlgOK,	"OK"
+	Consts_SMsgDlgCancel,	"Annulla"
+	Consts_SMsgDlgHelp,	"&Aiuto"
+	Consts_SMsgDlgAbort,	"&Annulla"
+	Consts_SMsgDlgRetry,	"&Riprova"
+	Consts_SMsgDlgIgnore,	"&Ignora"
+	Consts_SMsgDlgAll,	"&Tutti"
+	Consts_SYesButton,	"&Si"
+	Consts_SNoButton,	"&No"
+	Consts_SHelpButton,	"&Aiuto"
+	Consts_SCloseButton,	"&Chiudi"
+	Consts_SIgnoreButton,	"&Ignora"
+	Consts_SRetryButton,	"&Riprova"
+	Consts_SAbortButton,	"Annulla"
+	Consts_SAllButton,	"&Tutti"
+	Consts_SCannotDragForm,	"Non \xe8 possibile spostare un form"
+	Consts_SPutObjectError,	"Poni l'oggetto ad elemento non definito"
+	Consts_SGridTooLarge,	"Grid troppo larga"
+	Consts_STooManyDeleted,	"Cancellate troppe righe"
+	Consts_SIndexOutOfRange,	"Indice di Grid fuori limite"
+	Consts_SFixedColTooBig,	"il numero di colonne Fixed deve essere inferiore al numero delle colonne"
+	Consts_SFixedRowTooBig,	"Il numero delle righe Fixed deve essere inferiore al numero delle righe"
+	Consts_SInvalidStringGridOp,	"Non \xe8 possibile inserire o cancellare righe dalla Grid"
+	Consts_SParentRequired,	"Il controllo '%s' non ha una finestra originante"
+	Consts_SMDIChildNotVisible,	"Non \xe8 possibile nascondere un MDI Child Form"
+	Consts_SVisibleChanged,	"Non \xe8 possibile cambiare Visible in OnShow oppure OnHide"
+	Consts_SCannotShowModal,	"Non \xe8 possibile rendere modal una finestra visible "
+	Consts_SMenuIndexError,	"Indice del menu fuori dei limiti"
+	Consts_SMenuReinserted,	"Menu inserito due volte"
+	Consts_SMenuNotFound,	"Sub-menu non presente nel menu"
+	Consts_SNotPrinting,	"La stampante non \xe8 al momento in stampa"
+	Consts_SPrinting,	"Stampa in corso"
+	Consts_SInvalidPrinter,	"La stampante selzionata non \xe8 valida"
+	Consts_SDeviceOnPort,	"%s su %s"
+	Consts_SGroupIndexTooLow,	"GroupIndex non pu\xf2 essere inferiore al valore relativo ad un precedente elemento del menu"
+	Consts_SNoMDIForm,	"Non \xe8 possibile creare il form. Al momento non vi \xe8 un form MDI attivo"
+	Consts_SControlParentSetToSelf,	"Un controllo non pu\xf2 avere se stesso come generatore"
+	Consts_SOKButton,	"OK"
+	Consts_SCancelButton,	"Annulla"
+	Consts_SAncestorNotFound,	"Antenato di '%s' non trovato"
+	Consts_SInvalidBitmap,	"L'immagine Bitmap non \xe8 valida"
+	Consts_SInvalidIcon,	"L'icona non \xe8 valida"
+	Consts_SInvalidMetafile,	"Metafile non valido"
+	Consts_SChangeIconSize,	"Non \xe8 possibile modificare la dimensione di un icona"
+	Consts_SUnknownClipboardFormat,	"Formato della clipboard non supportato"
+	Consts_SOutOfResources,	"Risorse di sistema esaurite"
+	Consts_SNoCanvasHandle,	"Canvas che non consente il disegno"
+	Consts_SInvalidImageSize,	"Dimensione di immagine non consentita"
+	Consts_SInvalidImageList,	"Lista immagini non valida"
+	Consts_SReplaceImage,	"Nn \xe8 possibile sostituire l'immagine"
+	Consts_SImageIndexError,	"Lista indice delle immagini non valida"
+	Consts_SImageReadFail,	"Mancata lettura della lista dati immagini dallo stream"
+	Consts_SWindowDCError,	"Errore nel creare la finestra"
+	Consts_SWindowClass,	"Errore nel creare la classe window"
+	Consts_SCannotFocus,	"Non \xe8 possibile avere il focus su una finestra disabilitata o invisibile"
+	Consts_SClassNotFound,	"La Classe %s not esiste"
+	Consts_SInvalidImage,	"Formato di stream non valido"
+	Consts_SResNotFound,	"Non trovo la risorsa %s "
+	Consts_SListIndexError,	"Indice di lista fuori dai limiti (%d)"
+	Consts_SListCapacityError,	"Capacita della lista oltre i limiti (%d)"
+	Consts_SListCountError,	"Conteggio della lista oltre i limiti (%d)"
+	Consts_SSortedListError,	"Operazione non consentita su una lista riordinata"
+	Consts_SDuplicateString,	"Lista di stringa non ammette duplicati"
+	Consts_SDuplicateName,	"Un componente denominato %s gi\xe0 esiste"
+	Consts_SInvalidName,	"''%s'' non \xe8 un nome di componente valido"
+	Consts_SDuplicateClass,	"Una classe denominata %s gi\xe0 esiste"
+	Consts_SInvalidPropertyValue,	"valore di propriet\xe0 non valido"
+	Consts_SInvalidPropertyPath,	"percorso di propriet\xe0 non valido"
+	Consts_SUnknownProperty,	"Propiet\xe0 inesistente"
+	Consts_SReadOnlyProperty,	"Propriet\xe0 di sola lettura"
+	Consts_SPropertyException,	"Errore nel leggere %s.%s: %s"
+	SysUtils_SShortDayNameFri,	"Ven"
+	SysUtils_SShortDayNameSat,	"Sab"
+	SysUtils_SLongDayNameSun,	"Domenica"
+	SysUtils_SLongDayNameMon,	"Luned\xec"
+	SysUtils_SLongDayNameTue,	"Marted\xec"
+	SysUtils_SLongDayNameWed,	"Mercoled\xec"
+	SysUtils_SLongDayNameThu,	"Gioved\xec"
+	SysUtils_SLongDayNameFri,	"Venerd\xec"
+	SysUtils_SLongDayNameSat,	"Sabato"
+	Consts_SAssignError,	"Non riesco ad assegnare  %s  a %s"
+	Consts_SFCreateError,	"Non posso creare il file %s"
+	Consts_SFOpenError,	"Non posso aprire il file %s"
+	Consts_SReadError,	"Errore di lettura dello Stream "
+	Consts_SWriteError,	"Errore di scrittura dello Stream "
+	Consts_SMemoryStreamError,	"Manca memoria per espandere la memoria di stream"
+	Consts_SCantWriteResourceStreamError,	"Non posso scrivere su di uno stream di sola lettura"
+	SysUtils_SLongMonthNameFeb,	"Febbraio"
+	SysUtils_SLongMonthNameMar,	"Marzo"
+	SysUtils_SLongMonthNameApr,	"Aprile"
+	SysUtils_SLongMonthNameMay,	"Maggio"
+	SysUtils_SLongMonthNameJun,	"Giugno"
+	SysUtils_SLongMonthNameJul,	"Luglio"
+	SysUtils_SLongMonthNameAug,	"Agosto"
+	SysUtils_SLongMonthNameSep,	"Settembre"
+	SysUtils_SLongMonthNameOct,	"Ottobre"
+	SysUtils_SLongMonthNameNov,	"Novembre"
+	SysUtils_SLongMonthNameDec,	"Dicembre"
+	SysUtils_SShortDayNameSun,	"Dom"
+	SysUtils_SShortDayNameMon,	"Lun"
+	SysUtils_SShortDayNameTue,	"Mar"
+	SysUtils_SShortDayNameWed,	"Mer"
+	SysUtils_SShortDayNameThu,	"Gio"
+	SysUtils_SWin32Error,	"Errore di Win32 .  Codice: %d.\n%s"
+	SysUtils_SUnkWin32Error,	"Funzione API  Win32 non funzionante"
+	SysUtils_SNL,	"L'applicazione non \xe8 licenziataria di questa prestazione"
+	SysUtils_SShortMonthNameJan,	"Gen"
+	SysUtils_SShortMonthNameFeb,	"Feb"
+	SysUtils_SShortMonthNameMar,	"Mar"
+	SysUtils_SShortMonthNameApr,	"Apr"
+	SysUtils_SShortMonthNameMay,	"Mag"
+	SysUtils_SShortMonthNameJun,	"Giu"
+	SysUtils_SShortMonthNameJul,	"Lug"
+	SysUtils_SShortMonthNameAug,	"Ago"
+	SysUtils_SShortMonthNameSep,	"Set"
+	SysUtils_SShortMonthNameOct,	"Ott"
+	SysUtils_SShortMonthNameNov,	"Nov"
+	SysUtils_SShortMonthNameDec,	"Dic"
+	SysUtils_SLongMonthNameJan,	"Gennaio"
+	SysUtils_SArgumentMissing,	"Non esiste argomento per il formato '%s'"
+	SysUtils_SInvalidVarCast,	"Conversione di tipo non valida"
+	SysUtils_SInvalidVarOp,	"Operazione su variante non valida"
+	SysUtils_SDispatchError,	"Uso di metodo su variante non supportato"
+	SysUtils_SReadAccess,	"Lettura"
+	SysUtils_SWriteAccess,	"Scrittura"
+	SysUtils_SFormatTooLong,	"Stringa di formato troppo lunga"
+	SysUtils_SVarArrayCreate,	"Errore nel creare la matrice dei varianti"
+	SysUtils_SVarNotArray,	"Il Variant non \xe8 una matrice"
+	SysUtils_SVarArrayBounds,	"L'indice della matrice \xe8 fuori dei limiti"
+	SysUtils_SExternalException,	"Eccezione esterna %x"
+	SysUtils_SAssertionFailed,	"Mancata accettazione"
+	SysUtils_SIntfCastError,	"Interfaccia non supportata"
+	SysUtils_SAssertError,	"%s (%s, linea %d)"
+	SysUtils_SAbstractError,	"Errore nel metodo Abstract"
+	SysUtils_SModuleAccessViolation,	"Violazione di accesso all'indirizzo %p nel modulo '%s'. %s di indirizzo %p"
+	SysUtils_SRangeError,	"Errore al controllo dell'intervallo"
+	SysUtils_SIntOverflow,	"Overflow di intero"
+	SysUtils_SInvalidOp,	"Operazione non valida in virgola mobile"
+	SysUtils_SZeroDivide,	"Divisione per zero in virgola mobile."
+	SysUtils_SOverflow,	"Overflow in virgola mobile"
+	SysUtils_SUnderflow,	"Underflow in virgola mobile"
+	SysUtils_SInvalidPointer,	"Operazione con pointer non valida"
+	SysUtils_SInvalidCast,	"Typecast di classe non valido"
+	SysUtils_SAccessViolation,	"Violazione di accesso all'indirizzo %p. %s dell'indirizzo %p"
+	SysUtils_SStackOverflow,	"Overflow dello Stack"
+	SysUtils_SControlC,	"Pressione di Ctrl-C"
+	SysUtils_SPrivilege,	"Istruzione privilegiata"
+	SysUtils_SOperationAborted,	"Operazione annullata"
+	SysUtils_SException,	"Eccezione %s nel modulo %s al %p.\n%s%s"
+	SysUtils_SExceptTitle,	"Errore di Application "
+	SysUtils_SInvalidFormat,	"Formato '%s'non valido o incompatibile con l'argomento"
+	SysUtils_SInvalidInteger,	"'%s' non \xe8 un valore intero valido"
+	SysUtils_SInvalidFloat,	"'%s' non \xe8 un valore a virgola mobile valido"
+	SysUtils_SInvalidDate,	"'%s' non \xe8 una data valida"
+	SysUtils_SInvalidTime,	"'%s' non \xe8 un tempo valido"
+	SysUtils_SInvalidDateTime,	"'%s' non \xe8 un valore data-tempo valido"
+	SysUtils_SDateEncodeError,	"argomento non valido nella codifica della data"
+	SysUtils_SOutOfMemory,	"Memoria esaurita"
+	SysUtils_SInOutError,	"I/O errore %d"
+	SysUtils_SFileNotFound,	"File non trovato"
+	SysUtils_SInvalidFilename,	"Nome file non valido"
+	SysUtils_STooManyOpenFiles,	"Troppi file aperti"
+	SysUtils_SAccessDenied,	"Accesso al file negato"
+	SysUtils_SEndOfFile,	"Lettura oltre la fine del file"
+	SysUtils_SDiskFull,	"Disco pieno"
+	SysUtils_SInvalidInput,	"Dato numerico non valido"
+	SysUtils_SDivByZero,	"Divisione per zero"
+END
+

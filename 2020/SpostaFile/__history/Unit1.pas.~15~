@@ -1,0 +1,78 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls,IniFiles;
+
+type
+  TForm1 = class(TForm)
+    Edit1: TEdit;
+    Label1: TLabel;
+    Edit2: TEdit;
+    Label2: TLabel;
+    Button1: TButton;
+    Edit3: TEdit;
+    Label3: TLabel;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  myIni: TiniFile;
+  dir:string;
+  phase :integer =0;
+
+implementation
+
+{$R *.dfm}
+
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  sourceP,TargetP,extP,SS,TT,err : string;
+  sr: TsearchRec;
+  cnt: Integer;
+  s,t: Pchar;
+  RETURN: Boolean;
+label
+  again;
+
+begin
+  if phase=0 then
+    dir:=GetCurrentDir+'\';
+    if fileexists(dir+'filemove.ini')=false then
+    begin //se non esiste da la possibilità di creare il file ini
+    phase:=phase+1;
+    Again:
+    Form1.Visible:=true;
+    SetWindowPos(Handle,  HWND_TOPMOST,  left,   0,   0,   0,   SWP_NOACTIVATE or SWP_NOMOVE or SWP_NOSIZE); //on top
+    label1.visible:=true;
+    label1.Caption := 'File extension ';
+    Edit1.Visible :=True;
+    Edit1.SetFocus;
+    label2.Visible:=true;
+    label2.Caption := 'Source Path';
+    Edit2.Visible :=True;
+    button1.Visible:=True;
+    label3.Visible:=True;
+    label3.Caption := 'Target Path';
+    Edit3.Visible :=True;
+    Button3.Visible:=visible;
+    button2.Visible:=True;
+    end ;
+
+
+
+end;
+
+
+end.

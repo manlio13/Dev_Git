@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg0\deff0\deflang1033\deflangfe1040{\fonttbl {\f0\fnil\fprq0\fcharset1 Courier New;}{\f1\fnil\fprq0\fcharset1 Courier New;}{\f2\fnil\fprq0\fcharset1 Courier New;}{\f3\fnil\fprq0\fcharset1 Courier New;}{\f4\fnil\fprq0\fcharset1 Courier New;}{\f5\fnil\fprq0\fcharset1 Courier New;}{\f6\fnil\fprq0\fcharset1 Courier New;}{\f7\fnil\fprq0\fcharset1 Courier New;}{\f8\fnil\fprq0\fcharset1 Courier New;}{\f9\fnil\fprq0\fcharset1 Courier New;}{\f10\fnil\fprq0\fcharset1 Courier New;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue128;\red0\green0\blue255;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;\red0\green0\blue255;}
+{\info{\author CnPack Source2RTF Wizard (http://www.cnpack.org)}{\creatim\yr2016\mo3\dy10\hr20\min54}{\comment CnPack Source2RTF Wizard (http://www.cnpack.org)}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1040\b\cf6\f5\fs20 unit\f0\cf0\b0  \cf5\f4\fs20 aiuto\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 interface\f0\cf0\b0 
+\par 
+\par \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par   \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Windows\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Messages\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 SysUtils\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variants\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Classes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Graphics\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Controls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Forms\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Dialogs\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 StdCtrls\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 type\f0\cf0\b0 
+\par   \cf5\f4\fs20 TForm7\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \b\cf6\f5\fs20 class\f0\cf0\b0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm\f0\cf0 \cf10\f9\fs20 )\f0\cf0 
+\par     \cf5\f4\fs20 mmo1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TMemo\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par   \b\cf6\f5\fs20 private\f0\cf0\b0 
+\par     \i\cf2\f1\fs20 \{ Private declarations \}\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 public\f0\cf0\b0 
+\par     \i\cf2\f1\fs20 \{ Public declarations \}\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par   \cf5\f4\fs20 Form7\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TForm7\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 implementation\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par  \cf5\f4\fs20 Gara\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf4\f3\fs20 \{$R *.dfm\}\f0\cf0 
+\par  \cf4\f3\fs20 \{$D+\}\f0\cf0 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm7\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \cf5\f4\fs20 Form7\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 .\f0\cf0 
+\par 
+}

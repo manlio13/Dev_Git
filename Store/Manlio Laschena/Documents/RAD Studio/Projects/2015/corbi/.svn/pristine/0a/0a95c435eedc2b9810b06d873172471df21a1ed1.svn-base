@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/03/14 14:09:27.000.913,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit1.dfm</Transaction>
+    <Transaction>2015/03/14 14:09:40.000.302,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Corbi.dproj</Transaction>
+    <Transaction>2015/03/22 14:39:02.000.781,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Corbi.dproj=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Corbi.dproj</Transaction>
+    <Transaction>2015/03/26 10:11:18.000.554,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Console1.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit2.dfm</Transaction>
+    <Transaction>2015/03/29 10:18:49.000.005,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit3.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\AnaAtl.dfm</Transaction>
+    <Transaction>2015/04/03 23:37:03.000.081,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit4.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\AnaDspl.dfm</Transaction>
+    <Transaction>2015/04/04 16:21:01.000.088,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit5.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\AnaGa.dfm</Transaction>
+    <Transaction>2015/04/11 17:53:37.000.297,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit6.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Gara.dfm</Transaction>
+    <Transaction>2015/04/18 15:05:31.000.389,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit7.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\help.dfm</Transaction>
+    <Transaction>2015/04/23 07:56:35.000.530,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit8.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Classifiche.dfm</Transaction>
+    <Transaction>2015/05/01 11:33:39.000.218,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit9.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Tempi.dfm</Transaction>
+    <Transaction>2015/05/20 19:03:16.000.068,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\help.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\aiuto.dfm</Transaction>
+    <Transaction>2016/01/31 16:27:59.000.934,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Mancanti.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2015\corbi\Unit10.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,23 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Borland]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine]
+"DLLPATH"="C:\\CAP"
+"CONFIGFILE01"="C:\\CAP\\IDAPI.CFG"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\Drivers]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\Drivers\Paradox]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\Database Engine\Settings\Drivers\Paradox\init]
+@=""
+"LANGDRIVER"="intl"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Borland\BLW32]
+"BLAPIPATH"="C:\\cap"
+"LOCALE_LIB2"="C:\\CAP\\Europe.bll"
+"LOCALE_LIB1"="C:\\CAP\\USA.BLL"
+

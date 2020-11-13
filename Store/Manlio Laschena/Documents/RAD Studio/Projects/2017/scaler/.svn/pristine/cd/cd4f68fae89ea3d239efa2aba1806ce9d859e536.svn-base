@@ -1,0 +1,115 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, ABSMain, Data.DB;
+
+type
+  TForm1 = class(TForm)
+    label1: TLabel;
+    Edit1: TEdit;
+    Button1: TButton;
+    ABSTable1: TABSTable;
+    ABSDatabase1: TABSDatabase;
+    ABSQuery1: TABSQuery;
+
+    procedure FormCreate(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure inserimento(Sender:TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  nl,k:Integer;
+  lista:Boolean=False;
+implementation
+{$R *.dfm}
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  nl:=0;
+  k:=0;
+  ABSDatabase1.DatabaseFileName:=ExtractFilePath(Application.ExeName)+'scaler.abs';
+  ABSDatabase1.Open;
+  ABSTable1.TableName:='scaler';
+  ABSTable1.Open;
+  inserimento(Self);
+
+end;
+
+
+procedure TForm1.inserimento(Sender: TObject);
+begin
+if nl=0 then
+   begin
+     Edit1.Width:=40;
+     label1.Caption:=' Fornisci il numero massimo di elementi nella lista.';
+     Exit;
+   end else
+   if (lista=false) and (nl>0) then
+       begin
+
+            k:=k+1;
+            begin
+                if k=nl+1 then
+               begin
+                lista:=True;
+                ShowMessage('fine inserimento lista');
+                Exit;
+               end;
+
+              Edit1.width:=350;
+              Edit1.SetFocus;
+              label1.Caption:='Inserisci l''elemento n: '+intToStr(k)+' della lista';
+              Exit;
+            end;
+
+
+       end
+
+end;
+
+
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+     if Edit1.Text = ''then
+      begin
+         ShowMessage('Nulla da acquisire');
+         Exit;
+      end else
+      if nl=0 then
+      begin
+         nl:=StrToInt(Edit1.Text);
+         label1.Caption:='';
+         Edit1.Text:='';
+         inserimento(Self);
+      end else
+         if (lista = false)and (Edit1.Text <>'') then
+            begin
+              ABSTable1.Insert;
+              ABSTable1.FieldByName('cosa').AsString:=Edit1.text;
+              ABSTable1.Post;
+              Edit1.Text:='';
+              label1.Caption:='';
+              inserimento(self);
+            end;
+
+
+
+
+
+
+
+
+
+
+end;
+
+end.
