@@ -1,106 +1,216 @@
 object Form1: TForm1
-  Left = 740
-  Top = 415
-  BorderIcons = [biSystemMenu]
+  Left = 686
+  Top = 386
   Caption = 'Form1'
-  ClientHeight = 212
-  ClientWidth = 543
-  Color = clCream
-  Font.Charset = DEFAULT_CHARSET
+  ClientHeight = 162
+  ClientWidth = 635
+  Color = clGradientActiveCaption
+  Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
-  Font.Height = -12
-  Font.Name = 'Tahoma'
-  Font.Style = []
+  Font.Height = -16
+  Font.Name = 'Lucida Sans'
+  Font.Style = [fsBold]
   OldCreateOrder = False
   Position = poDesigned
-  OnCreate = FormCreate
-  PixelsPerInch = 106
-  TextHeight = 14
+  PixelsPerInch = 96
+  TextHeight = 18
   object Label1: TLabel
-    Left = 32
-    Top = 0
-    Width = 53
+    Left = 8
+    Top = 71
+    Width = 50
     Height = 14
-    Caption = 'Extension'
+    Caption = 'Column'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 14
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label2: TLabel
-    Left = 32
-    Top = 48
-    Width = 67
-    Height = 14
-    Caption = 'Source Path'
+    Left = 559
+    Top = 8
+    Width = 47
+    Height = 18
+    Caption = 'TITLE'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Label3: TLabel
-    Left = 32
-    Top = 96
-    Width = 66
-    Height = 14
-    Caption = 'Target Path'
+    Left = 415
+    Top = 41
+    Width = 73
+    Height = 18
+    Caption = 'AUTHOR'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 81
+    Top = 71
+    Width = 32
+    Height = 16
+    Caption = 'Row'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Edit1: TEdit
-    Left = 32
-    Top = 20
-    Width = 65
-    Height = 22
+    Left = 8
+    Top = 8
+    Width = 545
+    Height = 27
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 32
-    Top = 68
-    Width = 449
-    Height = 22
+    Left = 8
+    Top = 41
+    Width = 401
+    Height = 24
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 1
   end
-  object Button1: TButton
-    Left = 480
-    Top = 67
-    Width = 41
-    Height = 25
-    Caption = '...'
-    TabOrder = 2
-    OnClick = Button1Click
-  end
   object Edit3: TEdit
-    Left = 32
-    Top = 116
-    Width = 449
-    Height = 22
+    Left = 81
+    Top = 87
+    Width = 64
+    Height = 26
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+  end
+  object Edit4: TEdit
+    Left = 8
+    Top = 85
+    Width = 67
+    Height = 26
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 3
   end
-  object Button2: TButton
-    Left = 480
-    Top = 116
-    Width = 41
+  object Button1: TButton
+    Left = 8
+    Top = 119
+    Width = 67
     Height = 25
-    Caption = '...'
+    Caption = 'Add'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 4
-    OnClick = Button2Click
+  end
+  object Button2: TButton
+    Left = 88
+    Top = 119
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
   end
   object Button3: TButton
-    Left = 32
-    Top = 164
+    Left = 176
+    Top = 119
     Width = 75
     Height = 25
-    Caption = 'Exit'
-    TabOrder = 5
-    OnClick = Button3Click
+    Caption = 'Find'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
   end
   object Button4: TButton
-    Left = 152
-    Top = 164
+    Left = 264
+    Top = 119
     Width = 75
     Height = 25
-    Caption = 'WriteINI'
-    TabOrder = 6
-    OnClick = Button4Click
+    Caption = 'List'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
   end
   object Button5: TButton
-    Left = 272
-    Top = 164
+    Left = 478
+    Top = 119
     Width = 75
     Height = 25
-    Caption = 'Resume'
-    TabOrder = 7
-    OnClick = Button5Click
+    Cancel = True
+    Caption = 'Done'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+  end
+  object ABSDatabase1: TABSDatabase
+    CurrentVersion = '7.92 '
+    Exclusive = False
+    MaxConnections = 500
+    MultiUser = False
+    SessionName = 'Default'
+    Left = 424
+    Top = 72
+  end
+  object ABSTable1: TABSTable
+    CurrentVersion = '7.92 '
+    InMemory = False
+    ReadOnly = False
+    Exclusive = False
+    Left = 536
+    Top = 64
+  end
+  object ABSQuery1: TABSQuery
+    CurrentVersion = '7.92 '
+    InMemory = False
+    ReadOnly = False
+    Left = 592
+    Top = 56
   end
 end

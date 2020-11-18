@@ -103,22 +103,25 @@
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_MinorVer>11</VerInfo_MinorVer>
+        <Debugger_CWD>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\</Debugger_CWD>
+        <Debugger_DebugSourcePath>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
         <VerInfo_PreRelease>true</VerInfo_PreRelease>
         <Manifest_File>None</Manifest_File>
         <DCC_LongStrings>false</DCC_LongStrings>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-        <VerInfo_MajorVer>3</VerInfo_MajorVer>
-        <VerInfo_Build>32</VerInfo_Build>
-        <BRCC_OutputDir>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</BRCC_OutputDir>
+        <VerInfo_MajorVer>2020</VerInfo_MajorVer>
+        <VerInfo_Build>34</VerInfo_Build>
+        <BRCC_OutputDir>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\</BRCC_OutputDir>
         <Icon_MainIcon>Cesto_Icon.ico</Icon_MainIcon>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <OutputExt>exe</OutputExt>
-        <VerInfo_Release>1</VerInfo_Release>
-        <VerInfo_Keys>CompanyName=MLSoft;FileDescription=Log with memo and pic;FileVersion=3.0.1.32;InternalName=Cesto;LegalCopyright=MLSoft - Milan - 2017;LegalTrademarks=;OriginalFilename=;ProductName=Bucket;ProductVersion=1.0.0.0;Comments=mailto:MLSoft@iol.it</VerInfo_Keys>
-        <DCC_ExeOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_ExeOutput>
-        <DCC_DcpOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_DcpOutput>
-        <DCC_DcuOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_DcuOutput>
+        <VerInfo_Release>16</VerInfo_Release>
+        <VerInfo_Keys>CompanyName=MLSoft;FileDescription=Log with memo and pic;FileVersion=2020.11.16.34;InternalName=Cesto;LegalCopyright=MLSoft - Milan - 2017;LegalTrademarks=;OriginalFilename=;ProductName=Bucket;ProductVersion=1.0.0.0;Comments=mailto:MLSoft@iol.it;LastCompiledTime=2020/11/16 13:23:53</VerInfo_Keys>
+        <DCC_ExeOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_ExeOutput>
+        <DCC_DcpOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_DcpOutput>
+        <DCC_DcuOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_DcuOutput>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -148,10 +151,10 @@
                 <VersionInfo>
                     <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
                     <VersionInfo Name="AutoIncBuild">False</VersionInfo>
-                    <VersionInfo Name="MajorVer">1</VersionInfo>
-                    <VersionInfo Name="MinorVer">0</VersionInfo>
-                    <VersionInfo Name="Release">0</VersionInfo>
-                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="MajorVer">2020</VersionInfo>
+                    <VersionInfo Name="MinorVer">11</VersionInfo>
+                    <VersionInfo Name="Release">16</VersionInfo>
+                    <VersionInfo Name="Build">34</VersionInfo>
                     <VersionInfo Name="Debug">False</VersionInfo>
                     <VersionInfo Name="PreRelease">False</VersionInfo>
                     <VersionInfo Name="Special">False</VersionInfo>
@@ -163,7 +166,7 @@
                 <VersionInfoKeys>
                     <VersionInfoKeys Name="CompanyName"/>
                     <VersionInfoKeys Name="FileDescription"/>
-                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">2020.11.16.34</VersionInfoKeys>
                     <VersionInfoKeys Name="InternalName"/>
                     <VersionInfoKeys Name="LegalCopyright"/>
                     <VersionInfoKeys Name="LegalTrademarks"/>
@@ -194,15 +197,13 @@
                     <VersionInfoKeys Name="installLocation"/>
                     <VersionInfoKeys Name="largeHeap"/>
                     <VersionInfoKeys Name="theme"/>
+                    <VersionInfoKeys Name="LastCompiledTime">2020/11/16 13:23:53</VersionInfoKeys>
                 </VersionInfoKeys>
                 <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclib190.bpl">Embarcadero InterBase Express Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclribbon190.bpl">Embarcadero Ribbon Controls</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k190.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp190.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\ipworks9.bpl">/n software inc. - IP*Works! V9 - www.nsoftware.com</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclib190.bpl">File c:\program files (x86)\embarcadero\rad studio\12.0\bin\dclib190.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclribbon190.bpl">File c:\program files (x86)\embarcadero\rad studio\12.0\bin\dclribbon190.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\12.0\Bpl\VCard.bpl">File C:\Users\Public\Documents\RAD Studio\12.0\Bpl\VCard.bpl not found</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\Public\Documents\RAD Studio\12.0\Bpl\PacVcard.bpl">File C:\Users\Public\Documents\RAD Studio\12.0\Bpl\PacVcard.bpl not found</Excluded_Packages>
                 </Excluded_Packages>
                 <Source>
                     <Source Name="MainSource">Cesto.dpr</Source>
