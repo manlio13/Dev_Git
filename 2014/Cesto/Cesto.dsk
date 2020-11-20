@@ -17,22 +17,27 @@ File_13=TSourceModule,'C:\Users\Public\Documents\ComponentAce\AbsoluteDatabase\D
 [Modules]
 Module0=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Unit1.pas
 Module1=default.htm
-Count=2
+Module2=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Cesto.dproj
+Count=3
 EditWindowCount=1
 
 [C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Unit1.pas]
 ModuleType=TSourceModule
 FormState=1
-FormOnTop=1
+FormOnTop=0
 
 [default.htm]
 ModuleType=TURLModule
 
+[C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Cesto.dproj]
+ModuleType=TBaseProject
+
 [EditWindow0]
-ViewCount=2
+ViewCount=3
 CurrentEditView=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Unit1.pas
 View0=0
 View1=1
+View2=2
 PercentageSizes=1
 Create=1
 Visible=1
@@ -69,13 +74,24 @@ WelcomePageURL=bds:/default.htm
 [View1]
 CustomEditViewType=TEditView
 Module=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Unit1.pas
-CursorX=16
-CursorY=139
-TopLine=91
+CursorX=31
+CursorY=524
+TopLine=502
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Unit1.pas
+
+[View2]
+CustomEditViewType=TEditView
+Module=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Cesto.dpr
+CursorX=3
+CursorY=15
+TopLine=1
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Cesto.dpr
 
 [Watches]
 Count=11
@@ -224,8 +240,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Action,
-ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,Font=0,"LiveBindings Designer=0"
+SelectedItem=,
+ExpandedItems=
 
 [TFileExplorerForm]
 PercentageSizes=1
