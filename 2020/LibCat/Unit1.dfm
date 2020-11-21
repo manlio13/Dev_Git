@@ -436,6 +436,7 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 4
+    OnClick = Button1Click
   end
   object Button2: TButton
     Left = 88

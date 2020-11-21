@@ -46,7 +46,15 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-   ABSTable1.Append
+   if (Edit1.Text='')OR (Edit2.Text='') or (Edit3.Text='') or (Edit4.Text='') then
+     begin
+     ShowMessage('Please fill in data');
+     Exit;
+     end else
+      begin
+
+      end;
+
 end;
 
 procedure TForm1.Button5Click(Sender: TObject);

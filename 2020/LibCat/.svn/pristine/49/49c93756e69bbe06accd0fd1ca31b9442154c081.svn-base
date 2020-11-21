@@ -1,0 +1,24 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Build>13</VerInfo_Build>
+        <Icon_MainIcon>LibCat_Icon3.ico</Icon_MainIcon>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.13;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=;LastCompiledTime=2020/11/21 16:04:02</VerInfo_Keys>
+        <VerInfo_Debug>true</VerInfo_Debug>
+        <DCC_ExeOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\.\$(Platform)\$(Config)</DCC_ExeOutput>
+        <DCC_DcpOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\</DCC_DcpOutput>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_DcuOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\</DCC_DcuOutput>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_UnitSearchPath>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+    </PropertyGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>OptionSet</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality/>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+</Project>

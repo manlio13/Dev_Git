@@ -29,6 +29,7 @@ type
 
     procedure FormCreate(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,15 +44,41 @@ implementation
 
 {$R *.dfm}
 
-procedure TForm1.Button5Click(Sender: TObject);
+procedure TForm1.Button1Click(Sender: TObject);
 begin
-  //DataSource1.DataSet:=ABSTable1;
+   if (Edit1.Text='')OR (Edit2.Text='') or (Edit3.Text='') or (Edit4.Text='') then
+     begin
+     ShowMessage('Please fill in data');
+     Exit;
+     end else
+      begin
+       ABSTable1.Append;
+            ABSTable1.FieldByName('Title').AsString:=Edit1.Text;
+            ABSTable1.FieldByName('Author').AsString:=Edit2.Text;
+            ABSTable1.FieldByName('Row').AsString:=Edit3.Text;
+            ABSTable1.FieldByName('Column').AsString:=Edit4.Text;
+       ABSTable1.Post;
+          Edit1.Text:='';
+          Edit2.Text:='';
+          Edit3.Text:='';
+          Edit4.Text:='';
+         ShowMessage('Uploaded');
+         Exit;
+       end;
+
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);     //Done
+begin
+  if MessageDlg('Do you want to quit? ',mtConfirmation, mbYesNo,0)=mrYes then
+  begin
   ABSQuery1.Close;
   ABSTable1.edit;
   ABSTable1.close;
   ABSDatabase1.Close;
   Form1.release;
   application.Terminate;
+  end else Exit;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

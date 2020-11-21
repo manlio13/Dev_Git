@@ -1,25 +1,22 @@
 ﻿[Closed Files]
 File_0=TSourceModule,'C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\LibCat.vrc',0,1,41,1,62,0,0,,
-File_1=TSourceModule,'C:\Users\Manlio_Laschena\Downloads\temp\Unit1.pas',0,1,1,1,1,0,0,,
-File_2=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\VCL\Vcl.Forms.pas',0,1,3722,1,3741,0,0,{{1709,4}
-File_3=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\source\data\Data.DB.pas',0,1,3160,1,3179,0,0,,
-File_4=TSourceModule,'C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Unit1.pas',0,1,91,16,139,0,0,,
-File_5=TSourceModule,'C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Ecom\Unit1.pas',0,1,104,69,105,0,0,,
-File_6=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\VCL\Vcl.Controls.pas',0,1,6971,1,6992,0,0,,
-File_7=TSourceModule,'C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\Diesel2\Unit1.pas',0,1,379,33,400,0,0,,
-File_8=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\RTL\SYS\System.pas',0,1,16038,1,16078,0,0,,
-File_9=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\RTL\SYS\System.SysUtils.pas',0,1,5618,1,5641,0,0,,
-File_10=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\RTL\SYS\SysInit.pas',0,1,1172,1,1193,0,0,,
-File_11=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\source\data\vclctrls\Vcl.DbGrids.pas',0,1,2912,1,2928,0,0,,
-File_12=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\VCL\Vcl.Grids.pas',0,1,2448,1,2464,0,0,,
-File_13=TSourceModule,'C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog\Unit1.pas',0,1,66,38,101,0,0,,
-File_14=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\source\rtl\common\System.Classes.pas',0,1,16998,1,17014,0,0,,
+File_1=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\VCL\Vcl.Forms.pas',0,1,3722,1,3741,0,0,{{1709,4}
+File_2=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\source\data\Data.DB.pas',0,1,3160,1,3179,0,0,,
+File_3=TSourceModule,'C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\Cesto\Unit1.pas',0,1,91,16,139,0,0,,
+File_4=TSourceModule,'C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Ecom\Unit1.pas',0,1,104,69,105,0,0,,
+File_5=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\VCL\Vcl.Controls.pas',0,1,6971,1,6992,0,0,,
+File_6=TSourceModule,'C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\Diesel2\Unit1.pas',0,1,379,33,400,0,0,,
+File_7=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\RTL\SYS\System.pas',0,1,16038,1,16078,0,0,,
+File_8=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\RTL\SYS\System.SysUtils.pas',0,1,5618,1,5641,0,0,,
+File_9=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\RTL\SYS\SysInit.pas',0,1,1172,1,1193,0,0,,
+File_10=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\source\data\vclctrls\Vcl.DbGrids.pas',0,1,2912,1,2928,0,0,,
+File_11=TSourceModule,'c:\program files (x86)\embarcadero\rad studio\12.0\SOURCE\VCL\Vcl.Grids.pas',0,1,2448,1,2464,0,0,,
+File_12=TSourceModule,'C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog\Unit1.pas',0,1,66,38,101,0,0,,
 
 [Modules]
 Module0=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\Unit1.pas
 Module1=default.htm
-Module2=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\LibCat.dproj
-Count=3
+Count=2
 EditWindowCount=1
 
 [C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\Unit1.pas]
@@ -30,15 +27,11 @@ FormOnTop=0
 [default.htm]
 ModuleType=TURLModule
 
-[C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\LibCat.dproj]
-ModuleType=TBaseProject
-
 [EditWindow0]
-ViewCount=3
+ViewCount=2
 CurrentEditView=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\Unit1.pas
 View0=0
 View1=1
-View2=2
 PercentageSizes=1
 Create=1
 Visible=1
@@ -46,21 +39,21 @@ Docked=1
 State=0
 Left=0
 Top=0
-Width=8849
-Height=7638
+Width=10000
+Height=9267
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=8849
-ClientHeight=7638
+ClientWidth=10000
+ClientHeight=9267
 DockedToMainForm=1
 BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1896
 LeftPanelClients=PropertyInspector,DockSite3
-LeftPanelData=00000800010100000000511000000000000001680700000000000001000000005C0E000009000000446F636B53697465330100000000021D00001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=00000800010100000000CC1300000000000001680700000000000001000000005C0E000009000000446F636B53697465330100000000312300001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=2000
 RightPanelClients=DockSite2,DockSite4
-RightPanelData=00000800010100000000511000000000000001D00700000000000001000000004412000009000000446F636B53697465320100000000021D000009000000446F636B5369746534FFFFFFFF
+RightPanelData=00000800010100000000CC1300000000000001D00700000000000001000000004412000009000000446F636B536974653201000000003123000009000000446F636B5369746534FFFFFFFF
 BottomPanelSize=0
 BottomPanelClients=DockSite1,MessageView
 BottomPanelData=0000080001020200000009000000446F636B53697465310F0000004D65737361676556696577466F726D1534000000000000022606000000000000FFFFFFFF
@@ -75,24 +68,13 @@ WelcomePageURL=bds:/default.htm
 [View1]
 CustomEditViewType=TEditView
 Module=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\Unit1.pas
-CursorX=95
-CursorY=84
-TopLine=58
+CursorX=82
+CursorY=57
+TopLine=38
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\Unit1.pas
-
-[View2]
-CustomEditViewType=TEditView
-Module=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\LibCat.dpr
-CursorX=1
-CursorY=13
-TopLine=15
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2020\LibCat\LibCat.dpr
 
 [Watches]
 Count=0
@@ -135,16 +117,18 @@ PercentageSizes=1
 Create=1
 Visible=1
 Docked=0
-State=0
-Left=0
-Top=714
+State=2
+Left=146
+Top=276
 Width=8932
 Height=8524
 MaxLeft=-5
 MaxTop=-10
-ClientWidth=8849
-ClientHeight=8152
-BottomPanelSize=7426
+MaxWidth=8932
+MaxHeight=8524
+ClientWidth=10000
+ClientHeight=9781
+BottomPanelSize=9009
 BottomPanelClients=EditWindow0
 BottomPanelData=0000080000000000000000000000000000000000000000000000000100000000000000000C0000004564697457696E646F775F30FFFFFFFF
 
@@ -195,11 +179,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=2610
+Height=4238
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=2610
+ClientHeight=4238
 TBDockHeight=7152
 LRDockWidth=2000
 Dockable=1
@@ -214,16 +198,21 @@ State=0
 Left=0
 Top=420
 Width=1896
-Height=3638
+Height=5267
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1896
-ClientHeight=3638
+ClientHeight=5267
 TBDockHeight=9029
 LRDockWidth=1896
 Dockable=1
 StayOnTop=0
 SplitPos=111
+
+[PropInspDesignerSelection]
+ArrangeBy=Name
+SelectedItem=,
+ExpandedItems=ExportToSqlOptions=0,FilterOptions=0,"LiveBindings Designer=0"
 
 [TFileExplorerForm]
 PercentageSizes=1
@@ -737,11 +726,11 @@ State=0
 Left=0
 Top=528
 Width=2000
-Height=2610
+Height=4238
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=2610
+ClientHeight=4238
 TBDockHeight=9029
 LRDockWidth=2000
 Dockable=1
