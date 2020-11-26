@@ -1,0 +1,64 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Grid'
+  ClientHeight = 179
+  ClientWidth = 697
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBNavigator1: TDBNavigator
+    Left = 232
+    Top = 146
+    Width = 240
+    Height = 25
+    DataSource = Form1.DataSource1
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = -6
+    Top = -5
+    Width = 703
+    Height = 145
+    DataSource = Form1.DataSource1
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Title'
+        Width = 361
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Author'
+        Width = 232
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Column'
+        Width = 43
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Row'
+        Width = 39
+        Visible = True
+      end>
+  end
+end

@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, ABSMain, Data.DB;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, ABSMain, Data.DB,
+  frxClass, frxDBSet, frxExportPDF, Unit2;
 
    function GetAppVersionStr : string; forward;
 
@@ -26,10 +27,15 @@ type
     ABSDatabase1: TABSDatabase;
     ABSQuery1: TABSQuery;
     ABSTable1: TABSTable;
+    frxReport1: TfrxReport;
+    frxDBDataset1: TfrxDBDataset;
+    frxPDFExport1: TfrxPDFExport;
+    DataSource1: TDataSource;
 
     procedure FormCreate(Sender: TObject);
     procedure Button5Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,12 +49,22 @@ var
 implementation
 
 {$R *.dfm}
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  ABSDatabase1.DatabaseFilename:= ExtractFilePath(Application.ExeName)+'LibCat.ABS';
+  ABSDatabase1.Open;
+  ABSTable1.TableName:='Cat';
+  ABSTable1.Open;
+  ABSTable1.Last;
+  GetAppVersionStr;
+  Form1.Caption:=Form1.Caption +': Books Catalogue, ver. ' + Versione;
+end;
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TForm1.Button1Click(Sender: TObject);              //Add
 begin
    if (Edit1.Text='')OR (Edit2.Text='') or (Edit3.Text='') or (Edit4.Text='') then
      begin
-     ShowMessage('Please fill in data');
+     ShowMessage('Please fill in Data to be stored ');
      Exit;
      end else
       begin
@@ -68,7 +84,47 @@ begin
 
 end;
 
-procedure TForm1.Button5Click(Sender: TObject);     //Done
+procedure TForm1.Button3Click(Sender: TObject);        //Find
+
+begin
+     //  DataSource1.DataSet:=ABSQuery1;
+    if ((Edit1.Text='') AND (Edit2.Text='')) then
+     begin
+     ShowMessage('Please fill in Title-Box or Author-Box string to be searched'#13#10'Between %-% if likewise');
+      Exit;
+     end else
+       if ((Edit1.Text<>'') AND (Edit2.Text<>'')) then
+        begin
+       Showmessage('Only one field can be searched at time')
+       end else
+
+   if ((Edit1.Text<>'') AND (Edit2.Text='')) then
+     begin
+
+       with ABSQuery1 do
+       begin
+         Close;
+         SQL.Text:='select * from Cat where Title like '+ quotedstr('%'+Edit1.text+'%');
+         ExecSQL;
+         Open;
+       end;
+     end else
+     begin
+        with ABSQuery1 do
+       begin
+         Close;
+         SQL.Text:='select * from Cat where Author like ' + quotedstr('%'+Edit2.text+'%');
+         ExecSQL;
+         Open;
+       end;
+     end;
+      Form1.Visible:=False;
+      Form2.Visible:=True;
+    //Exit;
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);     //Exit
+
 begin
   if MessageDlg('Do you want to quit? ',mtConfirmation, mbYesNo,0)=mrYes then
   begin
@@ -81,16 +137,7 @@ begin
   end else Exit;
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-  ABSDatabase1.DatabaseFilename:= ExtractFilePath(Application.ExeName)+'LibCat.ABS';
-  ABSDatabase1.Open;
-  ABSTable1.TableName:='Cat';
-  ABSTable1.Open;
-  ABSTable1.Last;
-  GetAppVersionStr;
-  Form1.Caption:=Form1.Caption +': Books Catalogue, ver. ' + Versione;
-end;
+
 
 
 function GetAppVersionStr: string;

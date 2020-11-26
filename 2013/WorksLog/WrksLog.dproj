@@ -110,27 +110,28 @@
         <VerInfo_Release>0</VerInfo_Release>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
-        <DCC_ExeOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_ExeOutput>
+        <DCC_ExeOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_ExeOutput>
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <DCC_DcpOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_DcpOutput>
-        <DCC_UnitSearchPath>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-        <DCC_DcuOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_DcuOutput>
-        <BRCC_OutputDir>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</BRCC_OutputDir>
+        <VerInfo_Release>26</VerInfo_Release>
+        <DCC_DcpOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_DcpOutput>
+        <DCC_UnitSearchPath>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2013\WorksLog\;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_DcuOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_DcuOutput>
+        <BRCC_OutputDir>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</BRCC_OutputDir>
         <Debugger_DebugSourcePath>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_AutoGenVersion>false</VerInfo_AutoGenVersion>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
         <Manifest_File>None</Manifest_File>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=6.0.3.13;InternalName=;LegalCopyright=;LegalTrademarks=MLSoft 2014;OriginalFilename=DailyLog;ProductName=WorksLog;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
-        <VerInfo_MajorVer>6</VerInfo_MajorVer>
-        <VerInfo_MinorVer>0</VerInfo_MinorVer>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=2.11.26.13;InternalName=;LegalCopyright=;LegalTrademarks=MLSoft 2014;OriginalFilename=DailyLog;ProductName=WorksLog;ProductVersion=1.0.0.0;Comments=;LastCompiledTime=2020/11/26 14:30:50</VerInfo_Keys>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <VerInfo_MinorVer>11</VerInfo_MinorVer>
         <VerInfo_Build>13</VerInfo_Build>
-        <DCC_ExeOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_ExeOutput>
+        <DCC_ExeOutput>C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2013\WorksLog\</DCC_ExeOutput>
         <Debugger_CWD>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2013\WorksLog</Debugger_CWD>
     </PropertyGroup>
     <ItemGroup>
@@ -166,10 +167,10 @@
                 <VersionInfo>
                     <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
                     <VersionInfo Name="AutoIncBuild">True</VersionInfo>
-                    <VersionInfo Name="MajorVer">4</VersionInfo>
-                    <VersionInfo Name="MinorVer">2</VersionInfo>
-                    <VersionInfo Name="Release">3</VersionInfo>
-                    <VersionInfo Name="Build">49</VersionInfo>
+                    <VersionInfo Name="MajorVer">2020</VersionInfo>
+                    <VersionInfo Name="MinorVer">11</VersionInfo>
+                    <VersionInfo Name="Release">26</VersionInfo>
+                    <VersionInfo Name="Build">13</VersionInfo>
                     <VersionInfo Name="Debug">False</VersionInfo>
                     <VersionInfo Name="PreRelease">True</VersionInfo>
                     <VersionInfo Name="Special">False</VersionInfo>
@@ -181,7 +182,7 @@
                 <VersionInfoKeys>
                     <VersionInfoKeys Name="CompanyName">MLSoft</VersionInfoKeys>
                     <VersionInfoKeys Name="FileDescription">daily logging</VersionInfoKeys>
-                    <VersionInfoKeys Name="FileVersion">4.2.3.49</VersionInfoKeys>
+                    <VersionInfoKeys Name="FileVersion">2020.11.26.13</VersionInfoKeys>
                     <VersionInfoKeys Name="InternalName">Log</VersionInfoKeys>
                     <VersionInfoKeys Name="LegalCopyright">@MLSoft</VersionInfoKeys>
                     <VersionInfoKeys Name="LegalTrademarks"/>
@@ -189,11 +190,11 @@
                     <VersionInfoKeys Name="ProductName"/>
                     <VersionInfoKeys Name="ProductVersion">3.0</VersionInfoKeys>
                     <VersionInfoKeys Name="Comments">mlsoft@iol.it</VersionInfoKeys>
+                    <VersionInfoKeys Name="LastCompiledTime">2020/11/26 14:30:50</VersionInfoKeys>
                 </VersionInfoKeys>
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k190.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp190.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\ipworks9.bpl">/n software inc. - IP*Works! V9 - www.nsoftware.com</Excluded_Packages>
                 </Excluded_Packages>
                 <Source>
                     <Source Name="MainSource">WrksLog.dpr</Source>
