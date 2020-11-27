@@ -1,6 +1,7 @@
 object Form2: TForm2
   Left = 0
   Top = 0
+  Hint = 'MLSoft 2020'
   Caption = 'Grid'
   ClientHeight = 200
   ClientWidth = 711
@@ -12,6 +13,7 @@ object Form2: TForm2
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  ShowHint = True
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
@@ -21,6 +23,8 @@ object Form2: TForm2
     Width = 240
     Height = 25
     DataSource = Form1.DataSource1
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 0
   end
   object DBGrid1: TDBGrid
@@ -68,11 +72,17 @@ object Form2: TForm2
       end>
   end
   object Button1: TButton
-    Left = 505
+    Left = 511
     Top = 160
     Width = 75
     Height = 25
     Caption = 'Done'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 2
     OnClick = Button1Click
   end
@@ -82,7 +92,28 @@ object Form2: TForm2
     Width = 75
     Height = 25
     Caption = 'Exit'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
     TabOrder = 3
     OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 22
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'Edit'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = Button3Click
   end
 end

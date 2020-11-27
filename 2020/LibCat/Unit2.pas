@@ -13,9 +13,11 @@ type
     DBGrid1: TDBGrid;
     Button1: TButton;
     Button2: TButton;
+    Button3: TButton;
     procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,6 +55,24 @@ begin
 
    Form1.DataSource1.DataSet:=Form1.ABSQuery1;
 
+end;
+
+procedure TForm2.Button3Click(Sender: TObject);
+var
+successo:Boolean;
+begin
+   ricorda:=Form1.ABSQuery1.FieldByName('Num').AsInteger;
+   //showmessage (IntToStr(ricorda));
+  // SearchOptions := [loPartialKey];
+  //   LocateSuccess := CustTable.Locate('Company', 'Professional Divers, Ltd.', SearchOptions);
+  Form1.DataSource1.DataSet:=Form1.ABSTable1;
+  successo:=Form1.ABSTable1.Locate('Num',ricorda,[loPartialKey]);
+  if successo =True then
+    ShowMessage('Make your edit using local navigator')else
+    begin
+    Showmessage('unpredictable error , Search again pls');
+    Exit;
+    end;
 end;
 
 end.

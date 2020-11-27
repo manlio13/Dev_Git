@@ -16,7 +16,6 @@ type
     Edit3: TEdit;
     Edit4: TEdit;
     Button1: TButton;
-    Button2: TButton;
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
@@ -45,7 +44,7 @@ type
 var
   Form1: TForm1;
   versione:string;
-
+  ricorda :Integer;
 implementation
 
 {$R *.dfm}
@@ -90,7 +89,7 @@ begin
      //  DataSource1.DataSet:=ABSQuery1;
     if ((Edit1.Text='') AND (Edit2.Text='')) then
      begin
-     ShowMessage('Please fill in Title-Box or Author-Box string to be searched'#13#10'Between %-% if likewise');
+     ShowMessage('Please fill in Title-Box or Author-Box string to be searched');
       Exit;
      end else
        if ((Edit1.Text<>'') AND (Edit2.Text<>'')) then

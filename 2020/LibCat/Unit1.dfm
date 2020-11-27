@@ -1,6 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 463
+  Hint = 'MLSoft 2020'
   Caption = 'LibCat '
   ClientHeight = 162
   ClientWidth = 635
@@ -315,6 +316,7 @@ object Form1: TForm1
     00000000A15E000000000000A15E000000000000A15E000000000000A15E}
   OldCreateOrder = False
   Position = poDesktopCenter
+  ShowHint = True
   Visible = True
   OnCreate = FormCreate
   PixelsPerInch = 96
@@ -438,20 +440,6 @@ object Form1: TForm1
     TabOrder = 4
     OnClick = Button1Click
   end
-  object Button2: TButton
-    Left = 88
-    Top = 119
-    Width = 75
-    Height = 25
-    Caption = 'Edit'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -16
-    Font.Name = 'Lucida Sans'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 5
-  end
   object Button3: TButton
     Left = 176
     Top = 119
@@ -464,7 +452,7 @@ object Form1: TForm1
     Font.Name = 'Lucida Sans'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 6
+    TabOrder = 5
     OnClick = Button3Click
   end
   object Button4: TButton
@@ -479,7 +467,7 @@ object Form1: TForm1
     Font.Name = 'Lucida Sans'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 7
+    TabOrder = 6
   end
   object Button5: TButton
     Left = 478
@@ -494,7 +482,7 @@ object Form1: TForm1
     Font.Name = 'Lucida Sans'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 8
+    TabOrder = 7
     OnClick = Button5Click
   end
   object ABSDatabase1: TABSDatabase
