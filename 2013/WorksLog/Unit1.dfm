@@ -9,12 +9,12 @@ object Form1: TForm1
   BorderStyle = bsDialog
   BorderWidth = 3
   Caption = 'Works   LOG   v. 7.0'
-  ClientHeight = 515
-  ClientWidth = 869
+  ClientHeight = 589
+  ClientWidth = 993
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clNavy
-  Font.Height = -12
+  Font.Height = -13
   Font.Name = 'Tahoma'
   Font.Style = []
   HelpFile = '.\log.chm'
@@ -327,15 +327,15 @@ object Form1: TForm1
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   DesignSize = (
-    869
-    515)
-  PixelsPerInch = 96
-  TextHeight = 14
+    993
+    589)
+  PixelsPerInch = 101
+  TextHeight = 16
   object Label1: TLabel
-    Left = 641
-    Top = 397
-    Width = 74
-    Height = 48
+    Left = 733
+    Top = 454
+    Width = 84
+    Height = 55
     AutoSize = False
     Caption = 'Double click to copy field into Location'
     Color = clSilver
@@ -343,18 +343,18 @@ object Form1: TForm1
     WordWrap = True
   end
   object Label2: TLabel
-    Left = 26
-    Top = 460
-    Width = 153
-    Height = 28
+    Left = 30
+    Top = 526
+    Width = 127
+    Height = 32
     Caption = '*Field "what" max 70 chars  *F1 for Help'
     WordWrap = True
   end
   object Label3: TLabel
-    Left = 8
-    Top = 33
-    Width = 853
-    Height = 14
+    Left = 9
+    Top = 38
+    Width = 975
+    Height = 16
     AutoSize = False
     Caption = 
       '    Date           (to search)                                  ' +
@@ -362,23 +362,23 @@ object Form1: TForm1
       '   Location                  Who                 Type'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -12
+    Font.Height = -14
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
   end
   object DBGrid1: TDBGrid
-    Left = 8
-    Top = 80
-    Width = 853
-    Height = 306
+    Left = 9
+    Top = 91
+    Width = 975
+    Height = 350
     Anchors = []
     Color = clWhite
     DataSource = DataSource1
     FixedColor = clOlive
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
-    Font.Height = -13
+    Font.Height = -14
     Font.Name = 'Tahoma'
     Font.Pitch = fpVariable
     Font.Style = []
@@ -441,105 +441,105 @@ object Form1: TForm1
       end>
   end
   object DBNavigator1: TDBNavigator
-    Left = 18
-    Top = 401
-    Width = 240
-    Height = 25
+    Left = 21
+    Top = 458
+    Width = 270
+    Height = 29
     DataSource = DataSource1
     TabOrder = 0
     BeforeAction = DBNavigator1BeforeAction
   end
   object Edit1: TEdit
-    Left = 8
-    Top = 53
-    Width = 65
-    Height = 21
+    Left = 9
+    Top = 61
+    Width = 74
+    Height = 24
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     TabOrder = 2
   end
   object Edit2: TEdit
-    Left = 79
-    Top = 53
-    Width = 470
-    Height = 21
+    Left = 90
+    Top = 61
+    Width = 537
+    Height = 24
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     TabOrder = 3
   end
   object Edit3: TEdit
-    Left = 555
-    Top = 53
-    Width = 98
-    Height = 21
+    Left = 634
+    Top = 61
+    Width = 112
+    Height = 24
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     TabOrder = 4
   end
   object Edit4: TEdit
-    Left = 659
-    Top = 53
-    Width = 98
-    Height = 21
+    Left = 753
+    Top = 61
+    Width = 112
+    Height = 24
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     TabOrder = 5
   end
   object Edit5: TEdit
-    Left = 763
-    Top = 53
-    Width = 98
-    Height = 21
+    Left = 872
+    Top = 61
+    Width = 112
+    Height = 24
     Color = clYellow
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     TabOrder = 6
   end
   object LabeledEdit1: TLabeledEdit
-    Left = 95
+    Left = 109
     Top = 2
-    Width = 649
-    Height = 24
+    Width = 741
+    Height = 28
     BorderStyle = bsNone
     Color = clAqua
-    EditLabel.Width = 70
-    EditLabel.Height = 14
+    EditLabel.Width = 77
+    EditLabel.Height = 17
     EditLabel.Caption = 'LabeledEdit1'
     EditLabel.Color = clGray
     EditLabel.Font.Charset = DEFAULT_CHARSET
     EditLabel.Font.Color = clNavy
-    EditLabel.Font.Height = -12
+    EditLabel.Font.Height = -14
     EditLabel.Font.Name = 'Tahoma'
     EditLabel.Font.Style = []
     EditLabel.ParentColor = False
     EditLabel.ParentFont = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -13
+    Font.Height = -14
     Font.Name = 'System'
     Font.Pitch = fpVariable
     Font.Style = [fsBold]
@@ -551,63 +551,63 @@ object Form1: TForm1
       'ime with AND (default) or OR setting'
   end
   object Button1: TButton
-    Left = 275
-    Top = 401
-    Width = 75
-    Height = 25
+    Left = 314
+    Top = 458
+    Width = 86
+    Height = 29
     Caption = 'Lookup'
     TabOrder = 8
     OnClick = Button1Click
   end
   object RadioButton1: TRadioButton
-    Left = 370
-    Top = 405
-    Width = 49
-    Height = 17
+    Left = 423
+    Top = 463
+    Width = 56
+    Height = 19
     Caption = 'AND'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -12
+    Font.Height = -14
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 9
   end
   object RadioButton2: TRadioButton
-    Left = 370
-    Top = 428
-    Width = 49
-    Height = 17
+    Left = 423
+    Top = 489
+    Width = 56
+    Height = 20
     Caption = 'OR'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clNavy
-    Font.Height = -12
+    Font.Height = -14
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 10
   end
   object Button2: TButton
-    Left = 434
-    Top = 403
-    Width = 89
-    Height = 25
+    Left = 496
+    Top = 461
+    Width = 102
+    Height = 28
     Caption = 'Clear Search'
     TabOrder = 11
     OnClick = Button2Click
   end
   object DBGrid2: TDBGrid
-    Left = 529
-    Top = 397
-    Width = 106
-    Height = 110
+    Left = 605
+    Top = 454
+    Width = 121
+    Height = 125
     Color = clHighlight
     DataSource = DataSource2
     DrawingStyle = gdsClassic
     FixedColor = clHighlight
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clYellow
-    Font.Height = -11
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold]
     Options = [dgEditing, dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
@@ -639,89 +639,89 @@ object Form1: TForm1
       end>
   end
   object Button3: TButton
-    Left = 721
-    Top = 403
-    Width = 75
-    Height = 25
+    Left = 824
+    Top = 461
+    Width = 86
+    Height = 28
     Caption = 'Rec.Delete'
     TabOrder = 13
     OnClick = Button3Click
   end
   object RadioGroup1: TRadioGroup
-    Left = 721
-    Top = 434
-    Width = 135
-    Height = 73
+    Left = 824
+    Top = 496
+    Width = 154
+    Height = 83
     Caption = 'Tag 3'
     TabOrder = 14
   end
   object RadioButton3: TRadioButton
-    Left = 738
-    Top = 450
-    Width = 113
-    Height = 17
+    Left = 843
+    Top = 514
+    Width = 130
+    Height = 20
     Caption = 'Maintenance'
     Checked = True
     TabOrder = 15
     TabStop = True
   end
   object RadioButton4: TRadioButton
-    Left = 738
-    Top = 467
-    Width = 113
-    Height = 17
+    Left = 843
+    Top = 534
+    Width = 130
+    Height = 19
     Caption = 'Installation'
     TabOrder = 16
   end
   object RadioButton5: TRadioButton
-    Left = 738
-    Top = 484
-    Width = 113
-    Height = 17
+    Left = 843
+    Top = 553
+    Width = 130
+    Height = 20
     Caption = 'Repair'
     TabOrder = 17
   end
   object Button4: TButton
-    Left = 275
-    Top = 448
-    Width = 75
-    Height = 25
+    Left = 314
+    Top = 512
+    Width = 86
+    Height = 29
     Caption = 'DB Reset'
     TabOrder = 18
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 361
-    Top = 449
-    Width = 75
-    Height = 25
+    Left = 413
+    Top = 513
+    Width = 85
+    Height = 29
     Caption = 'Print'
     TabOrder = 19
     OnClick = Button5Click
   end
   object Button6: TButton
-    Left = 275
-    Top = 484
-    Width = 75
-    Height = 25
+    Left = 314
+    Top = 553
+    Width = 86
+    Height = 29
     Caption = 'Done'
     TabOrder = 20
     OnClick = Button6Click
   end
   object Button7: TButton
-    Left = 434
-    Top = 482
-    Width = 75
-    Height = 25
+    Left = 496
+    Top = 551
+    Width = 86
+    Height = 28
     Caption = 'Backup'
     TabOrder = 21
     OnClick = Button7Click
   end
   object Button8: TButton
-    Left = 449
-    Top = 449
-    Width = 75
-    Height = 25
+    Left = 513
+    Top = 513
+    Width = 86
+    Height = 29
     Caption = 'Report'
     TabOrder = 22
     OnClick = Button8Click
@@ -732,7 +732,7 @@ object Form1: TForm1
     Top = 184
   end
   object ABSTable1: TABSTable
-    CurrentVersion = '7.80 '
+    CurrentVersion = '7.92 '
     DatabaseName = 'DailyLog.abs'
     InMemory = False
     ReadOnly = False
@@ -776,7 +776,7 @@ object Form1: TForm1
     Top = 184
   end
   object ABSTable2: TABSTable
-    CurrentVersion = '7.80 '
+    CurrentVersion = '7.92 '
     DatabaseName = 'DailyLog.abs'
     InMemory = False
     ReadOnly = False
@@ -794,7 +794,7 @@ object Form1: TForm1
     Top = 176
   end
   object ABSDatabase1: TABSDatabase
-    CurrentVersion = '7.80 '
+    CurrentVersion = '7.92 '
     DatabaseFileName = 'DailyLog.ABS'
     DatabaseName = 'DailyLog.abs'
     Exclusive = False
@@ -992,7 +992,7 @@ object Form1: TForm1
     Top = 304
   end
   object ABSQuery1: TABSQuery
-    CurrentVersion = '7.80 '
+    CurrentVersion = '7.92 '
     DatabaseName = 'DailyLog.abs'
     InMemory = False
     ReadOnly = False
