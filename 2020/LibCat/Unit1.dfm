@@ -1,10 +1,13 @@
 object Form1: TForm1
-  Left = 0
-  Top = 463
+  Left = 580
+  Top = 478
   Hint = 'MLSoft 2020'
+  BorderIcons = []
+  BorderStyle = bsDialog
+  BorderWidth = 6
   Caption = 'LibCat '
-  ClientHeight = 171
-  ClientWidth = 670
+  ClientHeight = 142
+  ClientWidth = 630
   Color = clGradientActiveCaption
   Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
@@ -316,15 +319,16 @@ object Form1: TForm1
     00000000A15E000000000000A15E000000000000A15E000000000000A15E0000
     00000000A15E000000000000A15E000000000000A15E000000000000A15E}
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poDesigned
+  Scaled = False
   ShowHint = True
   Visible = True
   OnCreate = FormCreate
   PixelsPerInch = 101
   TextHeight = 19
   object Label1: TLabel
-    Left = 8
-    Top = 75
+    Left = 0
+    Top = 67
     Width = 50
     Height = 15
     Caption = 'Column'
@@ -336,8 +340,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 590
-    Top = 8
+    Left = 582
+    Top = 0
     Width = 50
     Height = 19
     Caption = 'TITLE'
@@ -349,8 +353,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 438
-    Top = 43
+    Left = 430
+    Top = 35
     Width = 78
     Height = 19
     Caption = 'AUTHOR'
@@ -362,8 +366,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 86
-    Top = 75
+    Left = 78
+    Top = 67
     Width = 33
     Height = 17
     Caption = 'Row'
@@ -375,8 +379,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Edit1: TEdit
-    Left = 8
-    Top = 8
+    Left = 0
+    Top = 0
     Width = 576
     Height = 29
     Font.Charset = ANSI_CHARSET
@@ -388,8 +392,8 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 8
-    Top = 43
+    Left = 0
+    Top = 35
     Width = 424
     Height = 25
     Font.Charset = DEFAULT_CHARSET
@@ -401,8 +405,8 @@ object Form1: TForm1
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 86
-    Top = 92
+    Left = 77
+    Top = 82
     Width = 67
     Height = 27
     Font.Charset = ANSI_CHARSET
@@ -414,8 +418,8 @@ object Form1: TForm1
     TabOrder = 2
   end
   object Edit4: TEdit
-    Left = 8
-    Top = 90
+    Left = 0
+    Top = 82
     Width = 71
     Height = 27
     Font.Charset = ANSI_CHARSET
@@ -427,8 +431,8 @@ object Form1: TForm1
     TabOrder = 3
   end
   object Button1: TButton
-    Left = 8
-    Top = 126
+    Left = 0
+    Top = 118
     Width = 71
     Height = 26
     Caption = 'Add'
@@ -442,8 +446,8 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object Button3: TButton
-    Left = 186
-    Top = 126
+    Left = 178
+    Top = 118
     Width = 79
     Height = 26
     Caption = 'Find'
@@ -457,8 +461,8 @@ object Form1: TForm1
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 303
-    Top = 126
+    Left = 295
+    Top = 118
     Width = 79
     Height = 26
     Caption = 'List'
@@ -472,8 +476,8 @@ object Form1: TForm1
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 505
-    Top = 126
+    Left = 497
+    Top = 118
     Width = 79
     Height = 26
     Cancel = True
@@ -504,7 +508,7 @@ object Form1: TForm1
     InMemory = False
     ReadOnly = False
     Left = 536
-    Top = 80
+    Top = 72
   end
   object ABSTable1: TABSTable
     CurrentVersion = '7.92 '
@@ -555,7 +559,7 @@ object Form1: TForm1
     DataSet = ABSQuery1
     BCDToCurrency = False
     Left = 240
-    Top = 88
+    Top = 72
   end
   object frxPDFExport1: TfrxPDFExport
     UseFileCache = True
@@ -576,13 +580,13 @@ object Form1: TForm1
     FitWindow = False
     CenterWindow = False
     PrintScaling = False
-    Left = 296
-    Top = 88
+    Left = 304
+    Top = 72
   end
   object DataSource1: TDataSource
     DataSet = ABSQuery1
-    Left = 368
-    Top = 96
+    Left = 376
+    Top = 72
   end
   object frxReport1: TfrxReport
     Version = '4.13.2'
@@ -601,7 +605,7 @@ object Form1: TForm1
       ''
       'end.')
     Left = 168
-    Top = 88
+    Top = 72
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -808,6 +812,24 @@ object Form1: TForm1
           HAlign = haRight
           Memo.UTF8W = (
             'Page [Page#]')
+        end
+        object COUNT: TfrxMemoView
+          Left = 468.000000000000000000
+          Top = 4.094310000000000000
+          Width = 116.370130000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            '[COUNT(MasterData1)]')
+        end
+        object Memo7: TfrxMemoView
+          Left = 321.000000000000000000
+          Top = 4.094310000000000000
+          Width = 123.488250000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'Number of records: ')
         end
       end
       object GroupHeader1: TfrxGroupHeader
