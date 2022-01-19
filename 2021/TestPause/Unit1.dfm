@@ -12,6 +12,7 @@ object Form1: TForm1
   Font.Style = []
   OldCreateOrder = False
   Position = poDesigned
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object pnlMain: TPanel
@@ -19,7 +20,6 @@ object Form1: TForm1
     Top = 72
     Width = 281
     Height = 137
-    Enabled = False
     TabOrder = 0
     object Label1: TLabel
       Left = 64
@@ -27,7 +27,7 @@ object Form1: TForm1
       Width = 105
       Height = 17
       AutoSize = False
-      Caption = 'label'
+      Caption = '            funziona'
     end
     object btnCancel: TButton
       Left = 160
@@ -53,7 +53,7 @@ object Form1: TForm1
     Top = 8
     Width = 75
     Height = 25
-    Caption = 'PrinteLetters'
+    Caption = 'PrintLetters'
     TabOrder = 1
     OnClick = PrinteLettersClick
   end
