@@ -1,0 +1,445 @@
+date/time          : 2020-01-18, 17:59:39, 601ms
+computer name      : DELLHOST
+user name          : Manlio_Laschena <admin>
+registered owner   : Manlio_Laschena
+operating system   : Windows 7 x64 Service Pack 1 build 7601
+system language    : Italian
+system up time     : 10 hours 58 minutes
+program up time    : 208 milliseconds
+processors         : 8x Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+physical memory    : 9406/16302 MB (free/total)
+free disk space    : (C:) 362,30 GB
+display mode       : 1920x1080, 32 bit
+process id         : $2ff8
+allocated memory   : 55,91 MB
+largest free block : 1,14 GB
+executable         : Ecom.exe
+exec. date/time    : 2020-01-18 17:59
+version            : 2020.1.18.253
+compiled with      : Delphi XE5
+madExcept version  : 5.0.0
+callstack crc      : $0af38f38, $d7fa2e0e, $d7fa2e0e
+exception number   : 1
+exception class    : EDatabaseError
+exception message  : ABSTable1: Cannot modify a read-only dataset.
+
+main thread ($2f14):
+0068000d +0c9 Ecom.exe     Data.DB         DatabaseError
+0069664a +036 Ecom.exe     Data.DB         TDataSet.CheckCanModify
+00695a4d +029 Ecom.exe     Data.DB         TDataSet.Edit
+008a490f +0df Ecom.exe     Unit1     99 +9 TForm1.FormCreate
+0063463d +031 Ecom.exe     Vcl.Forms       TCustomForm.DoCreate
+0063425d +011 Ecom.exe     Vcl.Forms       TCustomForm.AfterConstruction
+0040831d +01d Ecom.exe     System    85 +0 @AfterConstruction
+0063420f +19b Ecom.exe     Vcl.Forms       TCustomForm.Create
+0063ec7e +076 Ecom.exe     Vcl.Forms       TApplication.CreateForm
+008caf71 +03d Ecom.exe     Ecom      18 +3 initialization
+75b4343b +010 kernel32.dll                 BaseThreadInitThunk
+
+thread $2aa0:
+77040156 +0e ntdll.dll     NtWaitForMultipleObjects
+75b4343b +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1124:
+77041f3f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75b4343b +10 kernel32.dll  BaseThreadInitThunk
+
+thread $2f64:
+77041f3f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75b4343b +10 kernel32.dll  BaseThreadInitThunk
+
+thread $1cc8:
+77041f3f +0b ntdll.dll     NtWaitForWorkViaWorkerFactory
+75b4343b +10 kernel32.dll  BaseThreadInitThunk
+
+modules:
+00400000 Ecom.exe       2020.1.18.253      C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\ecom
+0fc80000 FaultRep.dll   6.1.7601.24521     C:\windows\system32
+141c0000 HHCtrl.OCX     6.1.7601.24134     C:\windows\system32
+5d280000 propsys.dll    7.0.7601.17514     C:\windows\system32
+69310000 wsock32.dll    6.1.7600.16385     C:\windows\system32
+6c240000 winspool.drv   6.1.7601.24383     C:\windows\system32
+70e30000 WINSTA.dll     6.1.7601.18540     C:\windows\system32
+713c0000 dwmapi.dll     6.1.7601.18917     C:\windows\system32
+713e0000 uxtheme.dll    6.1.7600.16385     C:\windows\system32
+714a0000 ntmarta.dll    6.1.7600.16385     C:\windows\system32
+71590000 comctl32.DLL   6.10.7601.24483    C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.24483_none_2b200f664577e14b
+718a0000 mpr.dll        6.1.7600.16385     C:\windows\system32
+71ac0000 comctl32.dll   5.82.7601.18837    C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.18837_none_ec86b8d6858ec0bc
+71dc0000 version.dll    6.1.7600.16385     C:\windows\system32
+72630000 wtsapi32.dll   6.1.7601.17514     C:\windows\system32
+74730000 CRYPTBASE.dll  6.1.7601.24545     C:\windows\syswow64
+74740000 SspiCli.dll    6.1.7601.24545     C:\windows\syswow64
+747a0000 GDI32.dll      6.1.7601.24540     C:\windows\syswow64
+74830000 sechost.dll    6.1.7601.18869     C:\windows\SysWOW64
+74850000 RPCRT4.dll     6.1.7601.24545     C:\windows\syswow64
+74940000 CFGMGR32.dll   6.1.7601.17621     C:\windows\syswow64
+74970000 IMM32.DLL      6.1.7601.17514     C:\windows\system32
+74a70000 ole32.dll      6.1.7601.24537     C:\windows\syswow64
+74c70000 MSCTF.dll      6.1.7601.24520     C:\windows\syswow64
+74d40000 msvcrt.dll     7.0.7601.17744     C:\windows\syswow64
+75470000 WLDAP32.dll    6.1.7601.23889     C:\windows\syswow64
+754d0000 SHLWAPI.dll    6.1.7601.17514     C:\windows\syswow64
+75530000 comdlg32.dll   6.1.7601.17514     C:\windows\syswow64
+75710000 CLBCatQ.DLL    2001.12.8530.16385 C:\windows\syswow64
+757a0000 SETUPAPI.dll   6.1.7601.17514     C:\windows\syswow64
+75940000 oleaut32.dll   6.1.7601.24537     C:\windows\syswow64
+759e0000 DEVOBJ.dll     6.1.7601.17621     C:\windows\syswow64
+75a20000 USP10.dll      1.626.7601.24535   C:\windows\syswow64
+75ad0000 KERNELBASE.dll 6.1.7601.24545     C:\windows\syswow64
+75b30000 kernel32.dll   6.1.7601.24545     C:\windows\syswow64
+75c40000 NSI.dll        6.1.7601.23889     C:\windows\syswow64
+75c60000 LPK.dll        6.1.7601.24537     C:\windows\syswow64
+75dc0000 shell32.dll    6.1.7601.24468     C:\windows\syswow64
+76a10000 WS2_32.dll     6.1.7601.23451     C:\windows\syswow64
+76a60000 USER32.dll     6.1.7601.24545     C:\windows\syswow64
+76b90000 ADVAPI32.dll   6.1.7601.24545     C:\windows\syswow64
+77020000 ntdll.dll      6.1.7601.24545     C:\windows\SysWOW64
+
+processes:
+0000 Idle                           0 0    0
+0004 System                         0 0    0
+022c smss.exe                       0 0    0    normal
+0318 csrss.exe                      0 0    0    normal
+0340 wininit.exe                    0 0    0    high
+0354 csrss.exe                      1 174  81   normal
+037c services.exe                   0 0    0    normal
+0390 lsass.exe                      0 0    0    normal
+0398 lsm.exe                        0 0    0    normal
+03f8 winlogon.exe                   1 6    0    high
+02c4 svchost.exe                    0 0    0    normal
+0394 bdservicehost.exe              0 0    0    normal
+0558 NVDisplay.Container.exe        0 0    0    normal
+0574 nvwmi64.exe                    0 0    0    normal
+05a8 svchost.exe                    0 0    0    normal
+05e8 bdservicehost.exe              0 0    0    normal
+0634 svchost.exe                    0 0    0    normal
+06d0 svchost.exe                    0 0    0    normal
+06fc svchost.exe                    0 0    0    normal
+0714 svchost.exe                    0 0    0    normal
+0760 audiodg.exe                    0 0    0
+0570 svchost.exe                    0 0    0    normal
+07f0 NVDisplay.Container.exe        1 43   17   normal
+07f8 nvwmi64.exe                    1 13   5    normal
+0ae4 spoolsv.exe                    0 0    0    normal
+0b04 svchost.exe                    0 0    0    normal
+0b90 anti_ransomware_service.exe    0 0    0    normal       C:\Program Files (x86)\Common Files\Acronis\ActiveProtection
+0bd0 schedul2.exe                   0 0    0    normal
+0828 armsvc.exe                     0 0    0    normal       C:\Program Files (x86)\Common Files\Adobe\ARM\1.0
+0894 schedhlp.exe                   1 10   4    normal       C:\Program Files (x86)\Common Files\Acronis\Schedule2
+08c0 afcdpsrv.exe                   0 0    0    idle         C:\Program Files (x86)\Common Files\Acronis\CDP
+0a1c AppleMobileDeviceService.exe   0 0    0    normal
+0da8 dwm.exe                        1 19   2    high
+0dc4 explorer.exe                   1 874  458  normal
+0f08 taskhost.exe                   1 23   22   normal
+0f70 Bkapcs.exe                     0 0    0    normal
+0f88 mDNSResponder.exe              0 0    0    normal
+0fc0 OfficeClickToRun.exe           0 0    0    normal
+0d4c DbxSvc.exe                     0 0    0    normal
+0dd0 svchost.exe                    0 0    0    normal
+088c ibguard.exe                    0 0    0    normal
+0ff4 mms_mini.exe                   0 0    0    normal       C:\Program Files (x86)\Common Files\Acronis\Infrastructure
+1010 MSCamS64.exe                   0 0    0    normal
+1054 ProductAgentService.exe        0 0    0    normal       C:\Program Files\Bitdefender Agent
+1074 svchost.exe                    0 0    0    normal
+109c updatesrv.exe                  0 0    0    normal
+10fc VisualSVNServer.exe            0 0    0    normal
+118c MBAMService.exe                0 0    0    normal
+11a8 VisualSVNServer.exe            0 0    0    normal
+1450 DiscoverySrv.exe               0 0    0    normal       C:\Program Files\Bitdefender Agent
+1534 Yadis.exe                      1 142  22   normal
+1590 vVX6000.exe                    1 20   30   normal       C:\Windows
+15dc Google Calendar Backup.exe     1 33   34   normal
+15f8 bdagent.exe                    1 40   34   normal
+1630 iTunesHelper.exe               1 9    9    normal
+1698 taskeng.exe                    1 9    3    normal
+16e0 sidebar.exe                    1 33   30   normal
+1750 PrinterProDesktop.exe          1 72   37   normal       C:\Program Files (x86)\Printer Pro Desktop
+1774 CCleaner64.exe                 1 68   35   normal
+17f8 SyncBackSE.exe                 1 206  203  normal
+16d4 PDStyleAgent.exe               1 9    3    below normal
+0358 rundll32.exe                   1 15   8    normal
+183c Send Anywhere.exe              1 23   29   normal       C:\Program Files (x86)\Send Anywhere
+1a90 unsecapp.exe                   1 9    3    normal
+1b20 WmiPrvSE.exe                   0 0    0    normal
+1a24 iCloudServices.exe             1 327  37   normal       C:\Program Files (x86)\Common Files\Apple\Internet Services
+1a40 iCloudDrive.exe                1 24   33   normal       C:\Program Files (x86)\Common Files\Apple\Internet Services
+114c ApplePhotoStreams.exe          1 23   8    normal       C:\Program Files (x86)\Common Files\Apple\Internet Services
+1bbc iCloudPhotos.exe               1 23   30   normal       C:\Program Files (x86)\Common Files\Apple\Internet Services
+1958 Clock.exe                      1 23   11   normal
+193c CopyTexty.exe                  1 225  111  normal       C:\Users\Manlio_Laschena\Desktop
+015c TrueImageMonitor.exe           1 17   14   normal       C:\Program Files (x86)\Acronis\TrueImageHome
+00c8 TibMounterMonitor.exe          1 4    1    normal       C:\Program Files (x86)\Common Files\Acronis\TibMounter
+1948 Dropbox.exe                    1 91   92   normal       C:\Program Files (x86)\Dropbox\Client
+1834 jusched.exe                    1 9    2    normal       C:\Program Files (x86)\Common Files\Java\Java Update
+0fb0 ISHelper.exe                   1 65   49   normal       C:\Program Files (x86)\Common Files\iSkysoft\iSkysoft Helper Compact
+1b48 DesktopDigitalClock.exe        1 106  76   normal
+194c Dropbox.exe                    1 9    4    normal       C:\Program Files (x86)\Dropbox\Client
+180c Dropbox.exe                    1 4    1    normal       C:\Program Files (x86)\Dropbox\Client
+1c1c APSDaemon.exe                  1 9    7    normal       C:\Program Files (x86)\Common Files\Apple\Apple Application Support
+1c38 VCDDaemon.exe                  1 18   7    normal       C:\Program Files (x86)\Elaborate Bytes\VirtualCloneDrive
+1ec8 Send Anywhere.exe              1 4    1    normal       C:\Program Files (x86)\Send Anywhere
+1ed0 Send Anywhere.exe              1 9    3    normal       C:\Program Files (x86)\Send Anywhere
+1fd4 cloud-drive-ui.exe             1 52   45   normal       C:\Users\Manlio_Laschena\AppData\Local\SynologyDrive\SynologyDrive.app\bin
+18a8 Connect.exe                    1 185  93   normal
+1f70 cloud-drive-connect.exe        1 4    1    normal       C:\Users\Manlio_Laschena\AppData\Local\SynologyDrive\SynologyDrive.app\bin
+1ff8 conhost.exe                    1 20   1    normal
+1fec GoogleCrashHandler.exe         0 0    0    idle         C:\Program Files (x86)\Google\Update\1.3.35.422
+1bdc GoogleCrashHandler64.exe       0 0    0    idle
+0f54 cloud-drive-daemon.exe         1 11   5    normal       C:\Users\Manlio_Laschena\AppData\Local\SynologyDrive\SynologyDrive.app\bin
+1824 conhost.exe                    1 20   1    normal
+22ac iPodService.exe                0 0    0    normal
+22dc svchost.exe                    0 0    0    normal
+2350 TrustedInstaller.exe           0 0    0    normal
+2374 SearchIndexer.exe              0 0    0    normal
+20f0 ibserver.exe                   0 0    0    normal
+219c svchost.exe                    0 0    0    normal
+2448 secd.exe                       1 9    6    normal       C:\Program Files (x86)\Common Files\Apple\Apple Application Support
+2450 WUDFHost.exe                   0 0    0    normal
+255c wmpnetwk.exe                   0 0    0    normal
+19e8 QtWebEngineProcess.exe         1 4    1    idle         C:\Program Files (x86)\Dropbox\Client\88.4.172
+2438 QtWebEngineProcess.exe         1 4    1    idle         C:\Program Files (x86)\Dropbox\Client\88.4.172
+2178 QtWebEngineProcess.exe         1 4    1    idle         C:\Program Files (x86)\Dropbox\Client\88.4.172
+17b0 mbamtray.exe                   1 21   25   normal       C:\Program Files\Malwarebytes\Anti-Malware
+251c PhotoshopElementsFileAgent.exe 0 0    0    normal       C:\Program Files (x86)\Adobe\Elements 12 Organizer
+1c90 bdredline.exe                  0 0    0    normal
+1ccc syncagentsrv.exe               0 0    0    normal       C:\Program Files (x86)\Common Files\Acronis\SyncAgent
+2b04 vsvnjobsvc.exe                 0 0    0    normal
+26e0 jucheck.exe                    1 12   6    normal       C:\Program Files (x86)\Common Files\Java\Java Update
+11bc AAM Updates Notifier.exe       1 13   7    below normal C:\Program Files (x86)\Common Files\Adobe\OOBE\PDApp\UWA
+0c5c OUTLOOK.EXE                    1 625  449  normal       C:\Program Files (x86)\Microsoft Office\root\Office16
+1a60 iexplore.exe                   1 294  92   normal
+29c0 IEXPLORE.EXE                   1 55   59   normal       C:\Program Files (x86)\Internet Explorer
+24f8 WINWORD.EXE                    1 153  39   normal       H:\PROGRA~2\Microsoft Office\Office14
+0e18 splwow64.exe                   1 4    2    normal
+058c TSVNCache.exe                  1 9    5    normal
+1148 dexplore.exe                   1 183  150  normal       C:\Program Files (x86)\Common Files\Microsoft Shared\Help 9
+2764 MsSpellCheckingFacility.exe    1 4    1    normal
+0cd0 bds.exe                        1 3414 1156 normal       C:\Program Files (x86)\Embarcadero\RAD Studio\12.0\bin
+245c svchost.exe                    0 0    0    normal
+3208 VSSVC.exe                      0 0    0    normal
+3be8 DBManager.exe                  1 191  146  normal       C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014
+3b24 taskeng.exe                    0 0    0    below normal
+3b78 dllhost.exe                    1 9    4    normal
+2fa0 DllHost.exe                    1 9    4    normal       C:\windows\SysWOW64
+2ff8 Ecom.exe                       1 77   52   normal       C:\Users\Manlio_Laschena\Documents\RAD Studio\Projects\2014\ecom
+
+hardware:
++ Computer
+  - ACPI x64-based PC
++ Disk drives
+  - ORICO 6518US3 USB Device
+  - Seagate Expansion USB Device
+  - TOSHIBA External USB 3.0 USB Device
+  - WDC WD5000LPLX-75ZNTT0 ATA Device
+  - WDC WD5000LPLX-75ZNTT0 ATA Device
+  - WDC WD5000LPLX-75ZNTT0 ATA Device
+  - WDC WD5000LPLX-75ZNTT0 ATA Device
++ Display adapters
+  - CyberLink Mirror Driver (driver 1.0.0.0)
+  - NVIDIA NVS 315 (driver 23.21.13.9200)
++ DVD/CD-ROM drives
+  - ELBY CLONEDRIVE SCSI CdRom Device
+  - HL-DT-ST DVD+-RW GTA0N SCSI CdRom Device
+  - PIONEER BD-RW   BDR-209M USB Device
++ Human Interface Devices
+  - Dispositivo compatibile HID
+  - Dispositivo compatibile HID
+  - Dispositivo controllo consumi compatibile HID
+  - Dispositivo di input USB
+  - Dispositivo di input USB
+  - Dispositivo di input USB
++ IDE ATA/ATAPI controllers
+  - ATA Channel 0
+  - ATA Channel 1
+  - Controller standard PCI IDE
++ Imaging devices
+  - Microsoft LifeCam VX-6000
++ Keyboards
+  - Tastiera HID
++ Mice and other pointing devices
+  - Mouse compatibile HID
++ Monitors
+  - Monitor generico Plug and Play
+  - Monitor generico Plug and Play
++ Network adapters
+  - Intel(R) Ethernet Connection I217-LM (driver 12.12.80.19)
+  - Microsoft ISATAP Adapter
+  - Miniport WAN (PPPOE)
+  - Teredo Tunneling Pseudo-Interface
+  - WAN Miniport (IKEv2)
+  - WAN Miniport (IP)
+  - WAN Miniport (IPv6)
+  - WAN Miniport (L2TP)
+  - WAN Miniport (Network Monitor)
+  - WAN Miniport (PPTP)
+  - WAN Miniport (SSTP)
++ Ports (COM & LPT)
+  - Porta di comunicazione (COM1)
++ Processors
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+  - Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
++ Sound, video and game controllers
+  - Dispositivo High Definition Audio
+  - Microsoft LifeCam VX-6000.
+  - NVIDIA High Definition Audio (driver 1.3.36.6)
++ Storage controllers
+  - Intel(R) C600+/C220+ series chipset sSATA AHCI Controller (driver 4.1.0.1046)
+  - Virtual CloneDrive (driver 5.4.7.0)
++ Storage volume shadow copies
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
+  - Copia shadow volume generico
++ System devices
+  - Adattatore PCI standard da PCI a PCI
+  - Adattatore PCI standard da PCI a PCI
+  - Adattatore PCI standard da PCI a PCI
+  - Adattatore PCI standard da PCI a PCI
+  - Adattatore PCI standard da PCI a PCI
+  - Adattatore PCI standard da PCI a PCI
+  - Adattatore PCI standard per bus ISA
+  - Adattatore PCI standard per CPU host
+  - Altoparlante di sistema
+  - Archiviazione volumi
+  - Bus PCI
+  - Bus PCI
+  - Controller di accesso diretto alla memoria (DMA)
+  - Controller di interrupt programmabile (PIC)
+  - Controller di interrupt programmabile avanzato
+  - Controller per High Definition Audio
+  - Controller per High Definition Audio
+  - Coprocessore matematico
+  - Dispositivo modulo ACPI
+  - Dispositivo modulo ACPI
+  - Dispositivo modulo ACPI
+  - Dispositivo modulo ACPI
+  - Driver BIOS Microsoft System Management
+  - Driver enumeratore unità virtuale Microsoft
+  - Driver file come volume
+  - Driver mouse di Terminal Server
+  - Driver tastiera di Terminal Server
+  - Enumeratore bus composito
+  - Enumeratore bus radice UMBus
+  - Enumeratore di dispositivi software Plug and Play
+  - Enumeratore UMBus
+  - Intel(R) Management Engine Interface  (driver 10.0.30.1054)
+  - Orologio di sistema CMOS a tempo reale
+  - Pulsante alimentazione ACPI
+  - Pulsante caratteristica ACPI fissa
+  - Remote Desktop Device Redirector Bus
+  - Risorse scheda madre
+  - Risorse scheda madre
+  - Sistema compatibile ACPI Microsoft
+  - Strumentazione gestione Microsoft Windows per ACPI
+  - Strumentazione gestione Microsoft Windows per ACPI
+  - Strumentazione gestione Microsoft Windows per ACPI
+  - Strumentazione gestione Microsoft Windows per ACPI
+  - SXUPTP Driver (driver 3.5.9.0)
+  - Timer di sistema
+  - Timer eventi alta precisione
++ Universal Image Mounter
+  - UIM Direct Device Image Plugin (driver 7.0.0.0)
+  - UIM Drive Backup Image Plugin (driver 7.0.0.0)
+  - Universal Image Mounter Controller (driver 7.0.0.0)
++ Universal Serial Bus controllers
+  - ASMedia XHCI 1.1 Controller (driver 1.16.23.0)
+  - Controller host standard avanzato da PCI a USB
+  - Controller host standard avanzato da PCI a USB
+  - Dispositivo di archiviazione di massa USB
+  - Dispositivo di archiviazione di massa USB
+  - Dispositivo di archiviazione di massa USB
+  - Dispositivo di archiviazione di massa USB
+  - Dispositivo USB composito
+  - Dispositivo USB composito
+  - Generic USB Hub
+  - Generic USB Hub
+  - Generic USB Hub (driver 1.16.23.0)
+  - Generic USB Hub (driver 1.16.23.0)
+  - Hub radice USB
+  - Hub radice USB
+  - USB Root Hub (driver 1.16.23.0)
++ User-mode block device
+  - Block device mounter (driver 1.0.0.1)
+
+cpu registers:
+eax = 05ab4bf0
+ebx = 02671710
+ecx = 00000000
+edx = 00ba5b48
+esi = 026ec974
+edi = 00000000
+eip = 00680012
+esp = 0018fd7c
+ebp = 0018fdf0
+
+stack dump:
+0018fd7c  12 00 68 00 de fa ed 0e - 01 00 00 00 07 00 00 00  ..h.............
+0018fd8c  90 fd 18 00 12 00 68 00 - f0 4b ab 05 10 17 67 02  ......h..K....g.
+0018fd9c  74 c9 6e 02 00 00 00 00 - f0 fd 18 00 ac fd 18 00  t.n.............
+0018fdac  f8 fd 18 00 bc 8f 40 00 - f0 fd 18 00 84 42 63 00  ......@......Bc.
+0018fdbc  10 17 67 02 ec ca 6c 02 - 11 00 00 00 74 c9 6e 02  ..g...l.....t.n.
+0018fdcc  11 5f 78 00 00 00 00 00 - b8 5f 78 07 eb db 78 00  ._x......_x...x.
+0018fddc  f8 fd 18 00 12 dc 78 00 - 19 dc 78 00 18 d0 65 00  ......x...x...e.
+0018fdec  00 00 00 00 0c fe 18 00 - 4f 66 69 00 20 fe 18 00  ........Ofi. ...
+0018fdfc  bc 8f 40 00 0c fe 18 00 - 10 17 67 02 00 00 00 00  ..@.......g.....
+0018fe0c  ac fe 18 00 52 5a 69 00 - 84 42 63 00 20 75 17 04  ....RZi..Bc. u..
+0018fe1c  14 49 8a 00 b4 fe 18 00 - bc 8f 40 00 ac fe 18 00  .I........@.....
+0018fe2c  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fe3c  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fe4c  00 00 00 00 00 00 00 00 - 00 00 00 00 20 75 17 04  ............ u..
+0018fe5c  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fe6c  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fe7c  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fe8c  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0018fe9c  00 00 00 00 00 00 00 00 - 00 00 00 00 20 75 17 04  ............ u..
+0018feac  d0 fe 18 00 43 46 63 00 - e4 fe 18 00 8c 8d 40 00  ....CFc.......@.
+
+disassembling:
+[...]
+008a48f8 098   mov     eax, [ebp-4]
+008a48fb       mov     eax, [eax+$3b4]
+008a4901       call    -$20f226 ($6956e0)     ; Data.DB.TDataSet.Last
+008a4906 099   mov     eax, [ebp-4]
+008a4909       mov     eax, [eax+$3b4]
+008a490f     > call    -$20eef0 ($695a24)     ; Data.DB.TDataSet.Edit
+008a4914 100   mov     eax, [ebp-4]
+008a4917       mov     eax, [eax+$428]
+008a491d       call    -$20eefe ($695a24)     ; Data.DB.TDataSet.Edit
+008a4922 101   mov     eax, [ebp-4]
+008a4925       mov     eax, [eax+$3ac]
+[...]
+

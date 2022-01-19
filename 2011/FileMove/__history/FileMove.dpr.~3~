@@ -1,0 +1,14 @@
+program FileMove;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.Title := 'File Move';
+  Application.Run;
+end.

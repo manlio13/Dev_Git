@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/05/28 14:06:49.000.425,=rtl.dcp</Transaction>
+    <Transaction>2015/05/28 14:07:26.000.607,=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Varie\Vcard\ACEVCard.pas</Transaction>
+    <Transaction>2015/05/28 14:08:28.000.646,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Package1.dproj=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Varie\Vcard\PacVcard.dproj</Transaction>
+    <Transaction>2015/05/28 14:10:17.000.439,=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Varie\Vcard\ACEVCCls.pas</Transaction>
+    <Transaction>2015/05/28 14:10:52.000.865,=vcl.dcp</Transaction>
+    <Transaction>2015/05/29 09:34:48.838,=designide.dcp</Transaction>
+    <Transaction>2015/05/29 09:34:48.841,=vclactnband.dcp</Transaction>
+    <Transaction>2015/05/29 09:34:48.844,=vclx.dcp</Transaction>
+    <Transaction>2015/05/29 09:34:48.847,=xmlrtl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>

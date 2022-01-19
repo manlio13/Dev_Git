@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.13.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42142,7745021296" ReportOptions.Description.Text="" ReportOptions.LastChange="42143,4445488657" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403380203546F7002500844617461736574730101063620446174615365743D2266727844424461746173657442412220446174615365744E616D653D226672784442446174617365744241220001063620446174615365743D2266727844424461746173657447412220446174615365744E616D653D226672784442446174617365744741220001063620446174615365743D2266727844424461746173657447422220446174615365744E616D653D226672784442446174617365744742220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="69,67718" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="50" Top="2,10235" Width="571,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Prospetto discipline relative alla gara del                                       Emesso il "/>
+      <TfrxMemoView Name="Date" Left="622" Top="2,10235" Width="68,37013" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[Date]"/>
+      <TfrxMemoView Name="Memo2" Left="54" Top="30,10235" Width="186,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Descrizione della Gara :"/>
+      <TfrxMemoView Name="Memo3" Left="386" Top="1,10235" Width="96,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[mia1]"/>
+      <TfrxMemoView Name="Memo4" Left="264" Top="30,10235" Width="289,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-15" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[mia2]"/>
+    </TfrxReportTitle>
+    <TfrxHeader Name="Header1" Height="31,17316" Left="0" Top="147,40167" Width="718,1107">
+      <TfrxMemoView Name="Memo5" Left="54" Top="0,59833" Width="191,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="8" ParentFont="False" Text="Discipline del Gruppo Base"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" Height="24,67718" Left="0" Top="200,31509" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDatasetBA" DataSetName="frxDBDatasetBA" RowCount="0">
+      <TfrxMemoView Name="frxDBDatasetBACODDSPL" Left="73" Top="0,92115" Width="80,37013" Height="18,89765" ShowHint="False" DataField="CODDSPL" DataSet="frxDBDatasetBA" DataSetName="frxDBDatasetBA" Text="[frxDBDatasetBA.&#34;CODDSPL&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetBADESCR" Left="161" Top="0,92115" Width="238,11039" Height="18,89765" ShowHint="False" DataField="DESCR" DataSet="frxDBDatasetBA" DataSetName="frxDBDatasetBA" Text="[frxDBDatasetBA.&#34;DESCR&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetBATMAX" Left="566" Top="0,46444" Width="108,37013" Height="18,89765" ShowHint="False" DataField="TMAX" DataSet="frxDBDatasetBA" DataSetName="frxDBDatasetBA" DisplayFormat.FormatStr="nn:ss,zzz" DisplayFormat.Kind="fkDateTime" Text="[frxDBDatasetBA.&#34;TMAX&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="10" Top="0,78726" Width="55,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Codice:"/>
+      <TfrxMemoView Name="Memo7" Left="479" Top="0,78726" Width="83,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Tempo Max"/>
+    </TfrxMasterData>
+    <TfrxMasterData Name="MasterData2" Height="22,67718" Left="0" Top="294,80334" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDatasetGA" DataSetName="frxDBDatasetGA" RowCount="0">
+      <TfrxMemoView Name="Memo9" Left="10" Top="1,51948" Width="55,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Codice:"/>
+      <TfrxMemoView Name="frxDBDatasetGACODDSPL" Left="73" Top="1,51948" Width="79,37013" Height="18,89765" ShowHint="False" DataField="CODDSPL" DataSet="frxDBDatasetGA" DataSetName="frxDBDatasetGA" Text="[frxDBDatasetGA.&#34;CODDSPL&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetGADESCR" Left="161" Top="0,51948" Width="238,11039" Height="18,89765" ShowHint="False" DataField="DESCR" DataSet="frxDBDatasetGA" DataSetName="frxDBDatasetGA" Text="[frxDBDatasetGA.&#34;DESCR&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="479" Top="2,29901" Width="78,48825" Height="18,89765" ShowHint="False" Text="Tempo Max"/>
+      <TfrxMemoView Name="frxDBDatasetGATMAX" Left="564" Top="0,51948" Width="105,37013" Height="18,89765" ShowHint="False" DataField="TMAX" DataSet="frxDBDatasetGA" DataSetName="frxDBDatasetGA" DisplayFormat.FormatStr="nn:ss,zzz" DisplayFormat.Kind="fkDateTime" Text="[frxDBDatasetGA.&#34;TMAX&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header2" Height="22,67718" Left="0" Top="249,44898" Width="718,1107">
+      <TfrxMemoView Name="Memo8" Left="54" Top="1,99196" Width="191,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="8" ParentFont="False" Text="Discipline del Gruppo A"/>
+    </TfrxHeader>
+    <TfrxHeader Name="Header3" Height="22,67718" Left="0" Top="340,1577" Width="718,1107">
+      <TfrxMemoView Name="Memo11" Left="54" Top="1,28324" Width="191,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="8" ParentFont="False" Text="Discipline del Gruppo B"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData3" Height="25,67718" Left="0" Top="385,51206" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDatasetGB" DataSetName="frxDBDatasetGB" RowCount="0">
+      <TfrxMemoView Name="frxDBDatasetGACODDSPL1" Left="73" Top="1,22016" Width="79,37013" Height="18,89765" ShowHint="False" DataField="CODDSPL" DataSet="frxDBDatasetGA" DataSetName="frxDBDatasetGA" Text="[frxDBDatasetGA.&#34;CODDSPL&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="10" Top="0,92888" Width="55,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Codice:"/>
+      <TfrxMemoView Name="Memo13" Left="478" Top="3,70841" Width="78,48825" Height="18,89765" ShowHint="False" Text="Tempo Max"/>
+      <TfrxMemoView Name="frxDBDatasetGBDESCR" Left="162" Top="0,92888" Width="238,11039" Height="18,89765" ShowHint="False" DataField="DESCR" DataSet="frxDBDatasetGB" DataSetName="frxDBDatasetGB" Text="[frxDBDatasetGB.&#34;DESCR&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetGBTMAX" Left="563,66141" Top="1,70841" Width="107,37013" Height="18,89765" ShowHint="False" DataField="TMAX" DataSet="frxDBDatasetGB" DataSetName="frxDBDatasetGB" DisplayFormat.FormatStr="nn:ss,zzz" DisplayFormat.Kind="fkDateTime" Text="[frxDBDatasetGB.&#34;TMAX&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

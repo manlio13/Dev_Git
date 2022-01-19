@@ -1,0 +1,23 @@
+[OPTIONS]
+ERRORLOG=AGENDA.ERR
+COMPRESS=NO
+CONTENTS=Help_di_Agenda_2.0
+TITLE=agenda
+COPYRIGHT=M.Laschena - Milano -Internet: lasc@iol.it
+CITATION=agenda Ed. 2.0 - 1997
+ICON=\delphi\fls\manlio1\tel2.ico
+
+[WINDOWS]
+main=,,0,,,0
+
+[FILES]
+AGENDA.RTF
+
+[MAP]
+#define Varie	1
+#define Messaggi_di_errore	2
+#define Generalit_	3
+#define Directory_di_lavoro	0
+
+[CONFIG]
+BrowseButtons ()

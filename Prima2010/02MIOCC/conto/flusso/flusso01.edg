@@ -1,0 +1,1528 @@
+EDGE Diagram File
+Version 2.1
+
+## Globals Section:
+
+X 0
+Y 492
+Scale 100
+PosterRows 1
+PosterCols 1
+Color1 255,255,255
+Color2 192,192,192
+Color3 130,130,130
+Color4 0,0,0
+Color5 0,255,255
+Color6 0,0,255
+Color7 0,0,160
+Color8 128,0,128
+Color9 255,128,0
+Color10 255,0,0
+Color11 128,0,64
+Color12 128,64,0
+Color13 0,255,0
+Color14 0,128,0
+Color15 128,128,255
+Color16 255,255,0
+GridX 10
+GridY 10
+SnapX 10
+SnapY 10
+ShadowColor 0,0,0
+ShadowX 5
+ShadowY 5
+ShowGrid TRUE
+AlignToGrid TRUE
+SmartConnect TRUE
+SBarWidth 108
+SBarFigCols 2
+SBarLblCols 1
+SBarConCols 2
+SBarFigHeight 28
+SBarLblHeight 32
+SBarConHeight 20
+Parent ""
+TranspBMPs FALSE
+TranspColor 255,255,255
+
+DevMode 212
+{
+  48 50 20 4C 61 73 65 72 4A 65 74 20 49 49 49 50
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  00 04 01 04 94 00 40 00 03 67 00 04 01 00 09 00
+  00 00 00 00 00 00 01 00 01 00 2C 01 01 00 01 00
+  2C 01 02 00 00 00 00 00 00 00 00 00 00 00 00 00
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00
+  00 00 00 00 01 00 40 00 4D 53 55 44 4F 03 48 50
+  20 4C 61 73 65 72 4A 65 74 20 49 49 49 50 00 00
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 A0 01
+  00 00 00 00 00 00 00 00 00 00 00 00 00 00 64 00
+  0A 00 00 00
+}
+
+DevNames 60
+{
+  08 00 11 00 22 00 01 00 57 49 4E 53 50 4F 4F 4C
+  00 48 50 20 4C 61 73 65 72 4A 65 74 20 49 49 49
+  50 00 5C 5C 44 65 6C 6C 5C 68 70 00 00 00 00 00
+  00 00 00 00 00 00 00 00 00 00 00 00
+}
+
+## Figure Symbols Section:
+
+FigureSymbol "process"
+{
+  TextBox >100,>100,<900,<900
+  Fill
+  {
+    Rect 0,0,1000,1000
+  }
+  Outline
+  {
+    Rect 0,0,1000,1000
+  }
+}
+
+FigureSymbol "input/ouput"
+{
+  TextBox >200,>100,<800,<900
+  Fill
+  {
+    Polygon 5 >200,0 1000,0 <800,1000 0,1000 >200,0
+  }
+  Outline
+  {
+    Polyline 5 >200,0 1000,0 <800,1000 0,1000 >200,0
+  }
+  Hot 5 >200,0 1000,0 <800,1000 0,1000 >200,0
+}
+
+FigureSymbol "decision"
+{
+  TextBox 275,275,725,725
+  Fill
+  {
+    Polygon 5 500,0 1000,500 500,1000 0,500 500,0
+  }
+  Outline
+  {
+    Polyline 5 500,0 1000,500 500,1000 0,500 500,0
+  }
+  Hot 5 500,0 1000,500 500,1000 0,500 500,0
+}
+
+FigureSymbol "sort"
+{
+  Fill
+  {
+    Polygon 5 500,0 1000,500 500,1000 0,500 500,0
+  }
+  Outline
+  {
+    Polyline 5 500,0 1000,500 500,1000 0,500 500,0
+    Line 0,500 1000,500
+  }
+  Hot 5 500,0 1000,500 500,1000 0,500 500,0
+}
+
+FigureSymbol "auxiliary"
+{
+  TextBox >100,>100,<900,<900
+  Fill
+  {
+    Rect 0,0,1000,1000
+  }
+  Outline
+  {
+    Rect 0,0,1000,1000
+  }
+}
+
+FigureSymbol "core"
+{
+  TextBox >200,>200,<900,<900
+  Fill
+  {
+    Rect 0,0,1000,1000
+  }
+  Outline
+  {
+    Rect 0,0,1000,1000
+    Line >100,0 >100,1000
+    Line 0,>100 1000,>100
+  }
+  MiniOutline
+  {
+    Rect 0,0,1000,1000
+    Line >250,0 >250,1000
+    Line 0,>250 1000,>250
+  }
+}
+
+FigureSymbol "merge"
+{
+  TextBox 250,100,750,600
+  Fill
+  {
+    Polygon 4 0,0 1000,0 500,1000 0,0
+  }
+  Outline
+  {
+    Polyline 4 0,0 1000,0 500,1000 0,0
+  }
+  Hot 4 0,0 1000,0 500,1000 0,0
+}
+
+FigureSymbol "extract"
+{
+  TextBox 250,400,750,900
+  Fill
+  {
+    Polygon 4 0,1000 500,0 1000,1000 0,1000
+  }
+  Outline
+  {
+    Polyline 4 0,1000 500,0 1000,1000 0,1000
+  }
+  Hot 4 0,1000 500,0 1000,1000 0,1000
+}
+
+FigureSymbol "collate"
+{
+  Fill
+  {
+    Polygon 4 0,0 1000,0 500,500 0,0
+    Polygon 4 0,1000 1000,1000 500,500 0,1000
+  }
+  Outline
+  {
+    Polyline 4 0,0 1000,0 500,500 0,0
+    Polyline 4 0,1000 1000,1000 500,500 0,1000
+  }
+  Hot 7 500,500 0,0 1000,0 500,500 0,1000 1000,1000 500,500
+}
+
+FigureSymbol "predefined"
+{
+  TextBox >200,>100,<800,<900
+  Fill
+  {
+    Rect 0,0,1000,1000
+  }
+  Outline
+  {
+    Rect 0,0,1000,1000
+    Line >100,0 >100,1000
+    Line <900,0 <900,1000
+  }
+  MiniOutline
+  {
+    Rect 0,0,1000,1000
+    Line 100,0 100,1000
+    Line 880,0 880,1000
+  }
+}
+
+FigureSymbol "preparation"
+{
+  TextBox >150,>100,<850,<900
+  Fill
+  {
+    Polygon 7 >200,0 <800,0 1000,500 <800,1000 >200,1000 0,500 >200,0
+  }
+  Outline
+  {
+    Polyline 7 >200,0 <800,0 1000,500 <800,1000 >200,1000 0,500 >200,0
+  }
+  Hot 7 >200,0 <800,0 1000,500 <800,1000 >200,1000 0,500 >200,0
+}
+
+FigureSymbol "manual operation"
+{
+  TextBox >150,>100,<850,<900
+  Fill
+  {
+    Polygon 5 0,0 1000,0 <800,1000 >200,1000 0,0
+  }
+  Outline
+  {
+    Polyline 5 0,0 1000,0 <800,1000 >200,1000 0,0
+  }
+  Hot 5 0,0 1000,0 <800,1000 >200,1000 0,0
+}
+
+FigureSymbol "connector"
+{
+  TextBox 100,100,900,900
+  Fill
+  {
+    Ellipse 0,0,1000,1000
+  }
+  Outline
+  {
+    Ellipse 0,0,1000,1000
+  }
+  Hot 17 599,1000 783,924 924,783 1000,599 1000,402 924,218 783,77 599,1-
+   402,1 218,77 77,218 1,402 1,599 77,783 218,924 402,1000-
+   599,1000
+}
+
+FigureSymbol "terminal"
+{
+  TextBox >200,>100,<800,<900
+  Fill
+  {
+    Rect >500,0,<500,1000
+    Ellipse 0,0,>999,1000
+    Ellipse <1,0,1000,1000
+  }
+  Outline
+  {
+    Line >500,0 <500,0
+    Line >500,1000 <500,1000
+    Arc 0,0,>999,1000 >500,0 >500,1000
+    Arc <1,0,1000,1000 <500,1000 <500,0
+  }
+  Hot 17 >401,1 >217,77 >77,218 >1,402 >1,599 >77,783 >217,924 >401,1000-
+   <599,1000 <783,924 <923,783 <999,599 <999,402 <923,218 <783,77 <599,1-
+   >401,1
+}
+
+FigureSymbol "punched card"
+{
+  TextBox >100,>100,<900,<900
+  Fill
+  {
+    Polygon 6 >250,0 1000,0 1000,1000 0,1000 0,>250 >250,0
+  }
+  Outline
+  {
+    Polyline 6 >250,0 1000,0 1000,1000 0,1000 0,>250 >250,0
+  }
+  MiniOutline
+  {
+    Polyline 6 250,0 1000,0 1000,1000 0,1000 0,400 250,0
+  }
+  Hot 6 >250,0 1000,0 1000,1000 0,1000 0,>250 >250,0
+}
+
+FigureSymbol "card file"
+{
+  TextBox >200,>250,<775,<850
+  Fill
+  {
+    Polygon 6 >300,>75 <900,>75 <900,1000 0,1000 0,>375 >300,>75
+  }
+  Outline
+  {
+    Polyline 6 >300,>75 <900,>75 <900,1000 0,1000 0,>375 >300,>75
+    Polyline 3 <700,0 1000,0 1000,>250
+  }
+  MiniOutline
+  {
+    Polyline 6 250,150 900,150 900,1000 0,1000 0,500 250,150
+    Polyline 3 700,0 1000,0 1000,500
+  }
+  Hot 6 >300,>75 <900,>75 <900,1000 0,1000 0,>375 >300,>75
+}
+
+FigureSymbol "card deck"
+{
+  TextBox >200,>250,<775,<850
+  Fill
+  {
+    Polygon 8 1000,1000 1000,>75 <925,0 >300,0 0,>300 0,<925 >75,1000 1000,1000
+  }
+  Outline
+  {
+    Polyline 8 1000,1000 1000,>75 <925,0 >300,0 0,>300 0,<925 >75,1000 1000,1000
+    Polyline 4 >75,1000 >75,>375 >375,>75 1000,>75
+    Line 0,>300 >75,>375
+    Line >300,0 >375,>75
+  }
+  MiniOutline
+  {
+    Polyline 8 1000,1000 1000,150 900,0 250,0 0,250 0,900 100,1000 1000,1000
+    Polyline 4 100,1000 100,400 400,150 1000,150
+    Line 0,250 100,400
+    Line 250,0 400,150
+  }
+  Hot 7 >375,0 1000,0 1000,<925 <900,1000 0,1000 0,>375 >375,0
+}
+
+FigureSymbol "document"
+{
+  TextBox >100,>100,<900,<750
+  Fill
+  {
+    Rect 0,0,1000,<900
+    Ellipse 0,<800,500,1000
+    Chord 500,<800,1000,1000 1000,<900 500,<900
+  }
+  Outline
+  {
+    Polyline 4 0,<900 0,0 1000,0 1000,<900
+    Arc 0,<800,500,1000 0,<900 500,<900
+    Arc 500,<800,1000,1000 1000,<900 500,<900
+  }
+  MiniOutline
+  {
+    Polyline 4 0,900 0,0 1000,0 1000,900
+    Arc 0,600,550,1000 0,750 550,750
+    Arc 480,700,1000,1000 1000,850 480,850
+  }
+  Hot 11 1,<941 147,<1000 354,<1000 500,<941 501,<860 647,<801 854,<801 1000,<860-
+   1000,0 0,0 1,<941
+}
+
+FigureSymbol "punched tape"
+{
+  TextBox >100,>250,<900,<750
+  Fill
+  {
+    Rect 0,>100,1000,<900
+    Ellipse 0,<800,500,1000
+    Chord 500,<800,1000,1000 1000,<900 500,<900
+    Chord 0,>200,500,0 0,>100 500,>100
+    Ellipse 500,>200,1000,0
+  }
+  Outline
+  {
+    Line 0,>100 0,<900
+    Line 1000,>100 1000,<900
+    Arc 0,<800,500,1000 0,<900 500,<900
+    Arc 500,<800,1000,1000 1000,<900 500,<900
+    Arc 0,>200,500,0 0,>100 500,>100
+    Arc 500,>200,1000,0 1000,>100 500,>100
+  }
+  MiniOutline
+  {
+    Line 0,200 0,850
+    Line 1000,200 1000,850
+    Arc 0,600,550,1000 0,750 550,750
+    Arc 480,700,1000,1000 1000,850 480,850
+    Arc 0,0,550,350 0,100 550,100
+    Arc 480,50,1000,350 1000,200 480,200
+  }
+  Hot 17 1,<941 147,<1000 354,<1000 500,<941 501,<860 647,<801 854,<801 1000,<860-
+   1000,>60 854,>1 647,>1 501,>60 500,>141 354,>200 147,>200 1,>141-
+   1,<941
+}
+
+FigureSymbol "manual input"
+{
+  TextBox >100,>250,<900,<900
+  Fill
+  {
+    Polygon 5 0,>250 1000,0 1000,1000 0,1000 0,>250
+  }
+  Outline
+  {
+    Polyline 5 0,>250 1000,0 1000,1000 0,1000 0,>250
+  }
+  Hot 5 0,>250 1000,0 1000,1000 0,1000 0,>250
+}
+
+FigureSymbol "drum"
+{
+  TextBox >300,>100,<850,<900
+  Fill
+  {
+    Rect >100,0,<900,1000
+    Ellipse 0,0,>200,1000
+    Ellipse <800,0,1000,1000
+  }
+  Outline
+  {
+    Line >100,0 <900,0
+    Line >100,1000 <900,1000
+    Ellipse 0,0,>200,1000
+    Arc <800,0,1000,1000 <900,1000 <900,0
+  }
+  MiniOutline
+  {
+    Line 100,0 950,0
+    Line 100,1000 900,1000
+    Ellipse 0,0,200,1000
+    Arc 800,0,1000,1000 900,1000 900,0
+  }
+  Hot 17 >81,1 >44,77 >16,218 >1,402 >1,599 >16,783 >44,924 >81,1000-
+   <920,1000 <957,924 <985,783 <1000,599 <1000,402 <985,218 <957,77 <920,1-
+   >81,1
+}
+
+FigureSymbol "disk"
+{
+  TextBox >100,>350,<900,<900
+  Fill
+  {
+    Rect 0,>100,1000,<900
+    Ellipse 0,0,1000,>200
+    Ellipse 0,<800,1000,1000
+  }
+  Outline
+  {
+    Line 0,>100 0,<900
+    Line 1000,>100 1000,<900
+    Ellipse 0,0,1000,>200
+    Arc 0,<800,1000,1000 0,<900 1000,<900
+    Arc 0,>50,1000,>250 0,>150 1000,>150
+    Arc 0,>100,1000,>300 0,>200 1000,>200
+  }
+  MiniOutline
+  {
+    Line 0,200 0,800
+    Line 1000,100 1000,900
+    Ellipse 0,0,1000,400
+    Arc 0,600,1000,1000 0,800 1000,800
+  }
+  Hot 17 1,>81 77,>44 218,>16 402,>1 599,>1 783,>16 924,>44 1000,>81-
+   1000,<920 924,<957 783,<985 599,<1000 402,<1000 218,<985 77,<957 1,<920-
+   1,>81
+}
+
+FigureSymbol "magtape"
+{
+  TextBox >150,>150,<850,<850
+  Fill
+  {
+    Ellipse 0,0,1000,1000
+  }
+  Outline
+  {
+    Ellipse 0,0,1000,1000
+    Line 500,1000 1000,1000
+  }
+  Hot 17 599,1000 783,924 924,783 1000,599 1000,402 924,218 783,77 599,1-
+   402,1 218,77 77,218 1,402 1,599 77,783 218,924 402,1000-
+   599,1000
+}
+
+FigureSymbol "offline storage"
+{
+  TextBox 250,100,750,600
+  Fill
+  {
+    Polygon 4 0,0 1000,0 500,1000 0,0
+  }
+  Outline
+  {
+    Polyline 4 0,0 1000,0 500,1000 0,0
+    Line 375,750 625,750
+  }
+  Hot 4 0,0 1000,0 500,1000 0,0
+}
+
+FigureSymbol "online storage"
+{
+  TextBox >100,>100,<650,<900
+  Fill
+  {
+    Rect >150,0,1000,1000
+    Ellipse 0,0,>300,1000
+  }
+  Outline
+  {
+    Line >150,0 <850,0
+    Line >150,1000 <850,1000
+    Arc 0,0,>300,1000 >150,0 >150,1000
+    Arc <700,0,1000,1000 <850,0 <850,1000
+  }
+  MiniOutline
+  {
+    Line 150,0 850,0
+    Line 150,1000 850,1000
+    Arc 0,0,300,1000 150,0 150,1000
+    Arc 700,0,1000,1000 850,0 850,1000
+  }
+  Hot 17 >121,1 >66,77 >24,218 >1,402 >1,599 >24,783 >66,924 >121,1000-
+   <821,1000 <766,924 <724,783 <701,599 <701,402 <724,218 <766,77 <821,1-
+   >121,1
+}
+
+FigureSymbol "display"
+{
+  TextBox >300,>100,<900,<900
+  Fill
+  {
+    Ellipse <800,0,1000,1000
+    Polygon 6 0,500 >400,0 <900,0 <900,1000 >400,1000 0,500
+  }
+  Outline
+  {
+    Polyline 5 <900,1000 >400,1000 0,500 >400,0 <900,0
+    Arc <800,0,1000,1000 <900,1000 <900,0
+  }
+  Hot 12 <920,1000 <957,924 <985,783 <1000,599 <1000,402 <985,218 <957,77 <920,0-
+   >400,0 0,500 >400,1000 <920,1000
+}
+
+FigureSymbol "comment"
+{
+  TextBox >100,>100,1000,<900
+  Outline
+  {
+    Polyline 4 1000,0 0,0 0,1000 1000,1000
+  }
+}
+
+## End Symbols Section:
+
+EndSymbol "block"
+{
+  LineTo 100
+  Fill
+  {
+    Polygon 4 500,500 1000,300 1000,700 500,500
+  }
+  Outline
+  {
+    Polyline 4 500,500 1000,300 1000,700 500,500
+  }
+}
+
+EndSymbol "stick"
+{
+  Outline
+  {
+    Polyline 3 1000,300 500,500 1000,700
+  }
+}
+
+## Figure Styles Section:
+
+FigureStyle "Label"
+{
+  Label TRUE
+  Height 64
+  Width 128
+  Description "An annotation or comment"
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+FigureStyle "Title"
+{
+  Label TRUE
+  Height 64
+  Width 128
+  Description "A heading or title"
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+FigureStyle "Process"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  Description "A process, operation, or function"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "process"
+}
+
+FigureStyle "Input/Output"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  Description "An input or output operation"
+  FillColor 0,255,255
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "input/ouput"
+}
+
+FigureStyle "Decision"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  Description "A branch of control based on a conditional expression"
+  FillColor 0,255,0
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "decision"
+}
+
+FigureStyle "Auxiliary Operation"
+{
+  HasButton TRUE
+  Height 160
+  Width 160
+  Description "An operation carried out offline"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "auxiliary"
+}
+
+FigureStyle "Preparation"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "preparation"
+}
+
+FigureStyle "Predefined Process"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  Description "A process (such as a subroutine) that has been defined elsewhere"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "predefined"
+}
+
+FigureStyle "Manual Operation"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  Description "An operation performed offline by hand"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "manual operation"
+}
+
+FigureStyle "Merge"
+{
+  Height 160
+  Width 288
+  Description "Two or more files to be merged together"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "merge"
+}
+
+FigureStyle "Extract"
+{
+  Height 160
+  Width 288
+  Description "Data removed from (a file)"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "extract"
+}
+
+FigureStyle "Connector"
+{
+  HasButton TRUE
+  Height 64
+  Width 64
+  Description "A symbol for connecting two separate parts of the flowchart"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "connector"
+}
+
+FigureStyle "Terminal"
+{
+  HasButton TRUE
+  Height 64
+  Width 288
+  Description "A beginning, end, or interruption point"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "terminal"
+}
+
+FigureStyle "Manual Input"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "manual input"
+}
+
+FigureStyle "Document"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  Description "Data output in the form of a document"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "document"
+}
+
+FigureStyle "Disk"
+{
+  HasButton TRUE
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "disk"
+}
+
+FigureStyle "Display"
+{
+  Height 160
+  Width 288
+  Description "Output to a display device"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "display"
+}
+
+FigureStyle "Sort"
+{
+  Height 128
+  Width 128
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "sort"
+}
+
+FigureStyle "Collate"
+{
+  Height 128
+  Width 128
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "collate"
+}
+
+FigureStyle "Punched Card"
+{
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "punched card"
+}
+
+FigureStyle "Card Deck"
+{
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "card deck"
+}
+
+FigureStyle "Card File"
+{
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "card file"
+}
+
+FigureStyle "Online Storage"
+{
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "online storage"
+}
+
+FigureStyle "Magnetic Tape"
+{
+  Height 160
+  Width 160
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "magtape"
+}
+
+FigureStyle "Core"
+{
+  Height 160
+  Width 160
+  Description "I/O operation using primary storage"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "core"
+}
+
+FigureStyle "Offline Storage"
+{
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "offline storage"
+}
+
+FigureStyle "Punched Tape"
+{
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "punched tape"
+}
+
+FigureStyle "Magnetic Drum"
+{
+  Height 160
+  Width 288
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "drum"
+}
+
+FigureStyle "Comment"
+{
+  Height 160
+  Width 288
+  Description "Explanatory notes"
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00024E12
+  Symbol "comment"
+}
+
+## Connector Styles Section:
+
+ConnectorStyle "No Arrow"
+{
+  HasButton TRUE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+ConnectorStyle "Solid Arrow"
+{
+  HasButton TRUE
+  End1 "null"
+  End2 "block"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+ConnectorStyle "Stick Arrow"
+{
+  HasButton TRUE
+  End1 "null"
+  End2 "stick"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+ConnectorStyle "Outline Arrow"
+{
+  HasButton TRUE
+  End1 "null"
+  End2 "block"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  End2FillColor 255,255,255
+  Behavior 0x00000000
+}
+
+## Figures & Connectors Section:
+
+Figure 1
+{
+  Label TRUE
+  Style "Title"
+  Text "Flusso fase pareggio partite"
+  Bounds 667,128,1009,161
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+Figure 2
+{
+  Style "Input/Output"
+  Text "inserisci dato da`estratto conto`banca"
+  Bounds 696,210,984,370
+  FillColor 0,255,255
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "input/ouput"
+}
+
+Figure 3
+{
+  Style "Process"
+  Text 'ricerca per:|1. importo |2.causale|3.data|tra gli "M"'
+  Bounds 695,405,983,603
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "process"
+}
+
+Figure 4
+{
+  Label TRUE
+  Style "Title"
+  Text "si"
+  Bounds 973,674,993,707
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+Figure 5
+{
+  Label TRUE
+  Style "Title"
+  Text "no"
+  Bounds 737,807,768,840
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+Figure 6
+{
+  Style "Decision"
+  Text "trovato"
+  Bounds 686,660,974,820
+  FillColor 0,255,0
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "decision"
+}
+
+Figure 7
+{
+  Style "Process"
+  Text "mostro la`registrazione"
+  Bounds 1053,676,1341,836
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "process"
+}
+
+Figure 8
+{
+  Style "Process"
+  Text "ricerca con importo`+/- 5%|e sort min.scostam."
+  Bounds 703,870,991,1030
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "process"
+}
+
+Figure 9
+{
+  Style "Decision"
+  Text "trovato"
+  Bounds 696,1080,984,1240
+  FillColor 0,255,0
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "decision"
+}
+
+Figure 10
+{
+  Label TRUE
+  Style "Title"
+  Text "si"
+  Bounds 1006,1092,1026,1125
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+Figure 11
+{
+  Label TRUE
+  Style "Title"
+  Text "no"
+  Bounds 719,1244,750,1277
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+Figure 12
+{
+  Style "Process"
+  Text "lista"
+  Bounds 1050,1130,1130,1190
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "process"
+}
+
+Figure 13
+{
+  Style "Process"
+  Text "commuto su ricerca`manuale"
+  Bounds 706,1300,994,1460
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "process"
+}
+
+Figure 14
+{
+  Style "Decision"
+  Text "scelgo"
+  Bounds 1176,1080,1464,1240
+  FillColor 0,255,0
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "decision"
+}
+
+Figure 15
+{
+  Label TRUE
+  Style "Title"
+  Text "si"
+  Bounds 1466,1064,1486,1097
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+Figure 16
+{
+  Label TRUE
+  Style "Title"
+  Text "no"
+  Bounds 1211,1216,1242,1249
+  TextFormat 0x0044
+  Behavior 0x000241E1
+  Symbol "lbl"
+}
+
+Connector 17
+{
+  Style "No Arrow"
+  Figure1 2
+  Figure2 -1
+  EndPoint1 840,369
+  EndPoint2 840,400
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Figure 18
+{
+  Text ""
+  Bounds 823,603,838,618
+  FillColor 0,0,0
+  BorderWidth 0
+  BindToStyle FALSE
+  TextFormat 0x0000
+  Behavior 0x00327A12
+  Symbol "null"
+}
+
+Connector 19
+{
+  Style "No Arrow"
+  Figure1 3
+  Figure2 18
+  EndPoint1 831,603
+  EndPoint2 830,610
+  SuppressEnd1 FALSE
+  SuppressEnd2 TRUE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 20
+{
+  Style "No Arrow"
+  Figure1 18
+  Figure2 -1
+  EndPoint1 830,610
+  EndPoint2 830,660
+  SuppressEnd1 TRUE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 21
+{
+  Style "No Arrow"
+  Figure1 3
+  Figure2 18
+  EndPoint1 831,603
+  EndPoint2 830,610
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 22
+{
+  Style "No Arrow"
+  Figure1 -1
+  Figure2 -1
+  EndPoint1 830,820
+  EndPoint2 830,870
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 23
+{
+  Style "No Arrow"
+  Figure1 6
+  Figure2 -1
+  EndPoint1 972,740
+  EndPoint2 1050,740
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 24
+{
+  Style "No Arrow"
+  Figure1 8
+  Figure2 -1
+  EndPoint1 847,1030
+  EndPoint2 847,1080
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 25
+{
+  Style "No Arrow"
+  Figure1 -1
+  Figure2 -1
+  EndPoint1 840,1240
+  EndPoint2 840,1290
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 26
+{
+  Style "No Arrow"
+  Figure1 9
+  Figure2 12
+  EndPoint1 982,1160
+  EndPoint2 1050,1160
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 27
+{
+  Style "No Arrow"
+  Figure1 -1
+  Figure2 -1
+  EndPoint1 1130,1160
+  EndPoint2 1180,1160
+  SuppressEnd1 FALSE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Figure 28
+{
+  Text ""
+  Bounds 1313,913,1328,928
+  FillColor 0,0,0
+  BorderWidth 0
+  BindToStyle FALSE
+  TextFormat 0x0000
+  Behavior 0x00327A12
+  Symbol "null"
+}
+
+Connector 29
+{
+  Style "No Arrow"
+  Figure1 -1
+  Figure2 28
+  EndPoint1 1320,1080
+  EndPoint2 1320,920
+  SuppressEnd1 FALSE
+  SuppressEnd2 TRUE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Figure 30
+{
+  Text ""
+  Bounds 1183,913,1198,928
+  FillColor 0,0,0
+  BorderWidth 0
+  BindToStyle FALSE
+  TextFormat 0x0000
+  Behavior 0x00327A12
+  Symbol "null"
+}
+
+Connector 31
+{
+  Style "No Arrow"
+  Figure1 28
+  Figure2 30
+  EndPoint1 1320,920
+  EndPoint2 1190,920
+  SuppressEnd1 TRUE
+  SuppressEnd2 TRUE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 32
+{
+  Style "No Arrow"
+  Figure1 30
+  Figure2 7
+  EndPoint1 1190,920
+  EndPoint2 1194,836
+  SuppressEnd1 TRUE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Figure 33
+{
+  Text ""
+  Bounds 1313,1363,1328,1378
+  FillColor 0,0,0
+  BorderWidth 0
+  BindToStyle FALSE
+  TextFormat 0x0000
+  Behavior 0x00327A12
+  Symbol "null"
+}
+
+Connector 34
+{
+  Style "No Arrow"
+  Figure1 14
+  Figure2 33
+  EndPoint1 1320,1238
+  EndPoint2 1320,1370
+  SuppressEnd1 FALSE
+  SuppressEnd2 TRUE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 35
+{
+  Style "No Arrow"
+  Figure1 33
+  Figure2 13
+  EndPoint1 1320,1370
+  EndPoint2 994,1377
+  SuppressEnd1 TRUE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Figure 36
+{
+  Style "Input/Output"
+  Text 'sostituisco la "M"`con la "E"'
+  Bounds 1376,1270,1664,1430
+  FillColor 0,255,255
+  BorderWidth 2
+  TextFormat 0x0022
+  Behavior 0x00048E12
+  Symbol "input/ouput"
+}
+
+Figure 37
+{
+  Text ""
+  Bounds 1523,1153,1538,1168
+  FillColor 0,0,0
+  BorderWidth 0
+  BindToStyle FALSE
+  TextFormat 0x0000
+  Behavior 0x00327A12
+  Symbol "null"
+}
+
+Connector 38
+{
+  Style "No Arrow"
+  Figure1 14
+  Figure2 37
+  EndPoint1 1462,1160
+  EndPoint2 1530,1160
+  SuppressEnd1 FALSE
+  SuppressEnd2 TRUE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+Connector 39
+{
+  Style "No Arrow"
+  Figure1 37
+  Figure2 -1
+  EndPoint1 1530,1160
+  EndPoint2 1530,1260
+  SuppressEnd1 TRUE
+  SuppressEnd2 FALSE
+  End1 "null"
+  End2 "null"
+  End1Length 18
+  End2Length 18
+  LineWidth 2
+  EndBorderWidth 2
+  Behavior 0x00000000
+}
+
+## Staples Section:

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.13.2" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="42141,5632261921" ReportOptions.Description.Text="" ReportOptions.LastChange="42144,6095878472" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403E80003546F7003B8000844617461736574730101063420446174615365743D22667278444244617461736574522220446174615365744E616D653D2266727844424461746173657452220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="297" PaperHeight="210" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="15" Frame.Width="4" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Height="52,67718" Left="0" Top="18,89765" Width="1046,92981">
+      <TfrxMemoView Name="Memo1" Left="166" Top="5,10235" Width="685,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Tabella dei risultati complessivi per la Gara                      per le discipline selezionate"/>
+      <TfrxMemoView Name="frxDBDatasetRCODGA" Left="502" Top="5,10235" Width="88,37013" Height="18,89765" ShowHint="False" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="[frxDBDatasetR.&#34;CODGA&#34;]"/>
+      <TfrxLineView Name="Line1" Left="3" Top="48,10235" Width="1040" Height="0" ShowHint="False" Frame.Typ="4" Frame.Width="3"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" Height="42,67718" Left="0" Top="287,24428" Width="1046,92981" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" RowCount="0">
+      <TfrxMemoView Name="frxDBDatasetRCODATL" Left="65" Top="4,00773" Width="42,37013" Height="18,89765" ShowHint="False" DataField="CODATL" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;CODATL&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRCOGNOME" Left="109" Top="4,00773" Width="123,68522" Height="18,89765" ShowHint="False" DataField="COGNOME" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;COGNOME&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRNOME" Left="235" Top="4,00773" Width="97,68522" Height="18,89765" ShowHint="False" DataField="NOME" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;NOME&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRNAZIONE" Left="335" Top="4,00773" Width="114,68522" Height="18,89765" ShowHint="False" DataField="NAZIONE" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;NAZIONE&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRCAT" Left="453" Top="4,00773" Width="36,37013" Height="18,89765" ShowHint="False" DataField="CAT" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;CAT&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRTAME1" Left="494" Top="4,00773" Width="79,37013" Height="18,89765" ShowHint="False" DataField="TAME1" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;TAME1&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRTBME2" Left="583" Top="4,00773" Width="77,37013" Height="18,89765" ShowHint="False" DataField="TBME2" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;TBME2&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRTMC" Left="663" Top="2,00773" Width="79,37013" Height="18,89765" ShowHint="False" DataField="TMC" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;TMC&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRPEN" Left="747" Top="4,00773" Width="69,37013" Height="18,89765" ShowHint="False" DataField="PEN" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;PEN&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRDQ" Left="817" Top="4,00773" Width="44,37013" Height="18,89765" ShowHint="False" DataField="DQ" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" DisplayFormat.FormatStr="No,Yes" DisplayFormat.Kind="fkBoolean" Text="[frxDBDatasetR.&#34;DQ&#34;]"/>
+      <TfrxMemoView Name="frxDBDatasetRRNK" Left="861" Top="3,00773" Width="79,37013" Height="18,89765" ShowHint="False" DataField="RNK" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;RNK&#34;]"/>
+      <TfrxLineView Name="Line3" Left="2" Top="36,09431" Width="1042" Height="0" ShowHint="False" Frame.Typ="4"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" Height="58,67718" Left="0" Top="204,09462" Width="1046,92981">
+      <TfrxMemoView Name="Memo2" Left="60" Top="14,53525" Width="855,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Cod.    Cognome                 Nome                Nazione                 Categ.  Tempo1          Tempo2       Tempo Med.   Penalità    DQ       Punti     "/>
+      <TfrxLineView Name="Line2" Left="5" Top="50,24397" Width="1038" Height="0" ShowHint="False" Frame.Typ="4"/>
+    </TfrxHeader>
+    <TfrxGroupHeader Name="GroupHeader1" Height="49,73222" Left="0" Top="132,28355" Width="1046,92981" Condition="frxDBDatasetR.&#34;CODDSPL&#34;">
+      <TfrxMemoView Name="Memo3" Left="28" Top="8,83457" Width="141,48825" Height="18,89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Disciplina -  Codice :"/>
+      <TfrxMemoView Name="frxDBDatasetRCODDSPL" Left="175" Top="8,83457" Width="49,37013" Height="18,89765" ShowHint="False" DataField="CODDSPL" DataSet="frxDBDatasetR" DataSetName="frxDBDatasetR" Text="[frxDBDatasetR.&#34;CODDSPL&#34;]"/>
+      <TfrxLineView Name="Line4" Left="4" Top="42,71645" Width="1039" Height="0" ShowHint="False" Frame.Style="fsDash" Frame.Typ="4" Frame.Width="3"/>
+    </TfrxGroupHeader>
+  </TfrxReportPage>
+</TfrxReport>

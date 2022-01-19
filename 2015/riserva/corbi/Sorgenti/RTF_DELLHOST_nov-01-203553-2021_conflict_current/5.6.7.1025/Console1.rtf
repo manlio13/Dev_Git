@@ -1,0 +1,491 @@
+{\rtf1\ansi\ansicpg0\deff0\deflang1033\deflangfe1040{\fonttbl {\f0\fnil\fprq0\fcharset1 Courier New;}{\f1\fnil\fprq0\fcharset1 Courier New;}{\f2\fnil\fprq0\fcharset1 Courier New;}{\f3\fnil\fprq0\fcharset1 Courier New;}{\f4\fnil\fprq0\fcharset1 Courier New;}{\f5\fnil\fprq0\fcharset1 Courier New;}{\f6\fnil\fprq0\fcharset1 Courier New;}{\f7\fnil\fprq0\fcharset1 Courier New;}{\f8\fnil\fprq0\fcharset1 Courier New;}{\f9\fnil\fprq0\fcharset1 Courier New;}{\f10\fnil\fprq0\fcharset1 Courier New;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue128;\red0\green0\blue255;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;\red0\green0\blue255;}
+{\info{\author CnPack Source2RTF Wizard (http://www.cnpack.org)}{\creatim\yr2016\mo2\dy15\hr8\min31}{\comment CnPack Source2RTF Wizard (http://www.cnpack.org)}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1040\b\cf6\f5\fs20 unit\f0\cf0\b0  \cf5\f4\fs20 Console1\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 interface\f0\cf0\b0 
+\par 
+\par \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par   \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Windows\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Messages\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 SysUtils\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variants\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Classes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Graphics\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Controls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Forms\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Dialogs\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 StdCtrls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Data\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DB\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 ABSMain\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 frxClass\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 frxDBSet\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Types\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 JvBaseDlg\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 JvSHFileOperation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 frxExportPDF\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ExtCtrls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 UITypes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Imaging\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 jpeg\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ShellAPI\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 HtmlHelpViewer\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Buttons\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 AppEvnts\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 type\f0\cf0\b0 
+\par   \cf5\f4\fs20 TForm2\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \b\cf6\f5\fs20 class\f0\cf0\b0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm\f0\cf0 \cf10\f9\fs20 )\f0\cf0 
+\par     \cf5\f4\fs20 Esci\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button3\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button4\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSDatabase1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSDatabase\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable3\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable3D\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxDBDataset1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxDBDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable7\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button5\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button6\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button7\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxPDFExport1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxPDFExport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button8\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button9\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSQuery2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSQuery\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxReport2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxDBDataset2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxDBDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button10\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button11\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxReportLog\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxDBDatasetLog\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxDBDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 JvSHFile1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TJvSHFileOperation\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxReport1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 BitBtn1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TBitBtn\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Image1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TImage\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ApplicationEvents1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TApplicationEvents\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 FormCreate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 EsciClick\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button2Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button3Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button4Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 JVSHFile1Show\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button5Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button6Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button7Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button8Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button9Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button10Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button11Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 BitBtn1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 ApplicationEvents1ShortCut\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Msg\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TWMKey\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Handled\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par 
+\par 
+\par   \b\cf6\f5\fs20 private\f0\cf0\b0 
+\par     \i\cf2\f1\fs20 \{ Private declarations \}\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 public\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 function\f0\cf0\b0  \cf5\f4\fs20 GetAppVersionStr\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \i\cf2\f1\fs20 \{ Public declarations \}\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 consflg\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // quando \u232?True Form2 \u232?closed\f0\cf0\i0 
+\par   \cf5\f4\fs20 Log1\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 versione\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 riparato\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //KBHook: HHook;\f0\cf0\i0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //function KeyboardHookProc(Code: Integer; WordParam: Word; LongParam: LongInt): LongInt; stdcall;\f0\cf0\i0 
+\par \b\cf6\f5\fs20 implementation\f0\cf0\b0 
+\par  \b\cf6\f5\fs20 uses\f0\cf0\b0       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per utilizzare il form3 e Form4 ecc\f0\cf0\i0 
+\par   \cf5\f4\fs20 AnaAtl\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Login1\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 AnaDspl\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 AnaGa\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Gara\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Classifiche\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 aiuto\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \cf4\f3\fs20 \{$R *.dfm\}\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FormCreate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par   \cf5\f4\fs20 ABSDatabase1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DatabaseFileName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ExtractFilePath\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ExeName\f0\cf0 \cf10\f9\fs20 )+\f0\cf0 \cf9\f8\fs20 'corbi.ABS'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Application.HelpFile := ExtractFilePath(Application.ExeName) + 'Corbi.chm';\f0\cf0\i0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSDatabase1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Servizio'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //registra su Servizio\f0\cf0\i0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 INSERT\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'IN'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 NOW\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'what'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Accesso alla Consolle'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'OUT'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Base'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'AnaDspl'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'GRPA'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'GRPB'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'AnaGa'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable7\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Gara'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'AnaAtl'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'SelezioneGare'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable3D\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'SelezioneDSPL'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'repBase'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'repGRPA'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'repGRPB'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 TableName\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'T16T'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 consflg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0         \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per associare l'hook alla pressione di un tasto\f0\cf0\i0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //KBHook:=SetWindowsHookEx(WH_KEYBOARD,@KeyboardHookProc,HInstance,GetCurrentThreadId());\f0\cf0\i0 
+\par   \cf5\f4\fs20 GetAppVersionStr\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 caption\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 caption\f0\cf0  \cf10\f9\fs20 +\f0\cf0  \cf9\f8\fs20 '  - ver: '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 versione\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par  \i\cf2\f1\fs20 \{ function KeyboardHookProc(Code: Integer; WordParam: Word; LongParam: LongInt) : LongInt;\f0\cf0\i0 
+\par \i\cf2\f1\fs20    begin           //per chiamare l'help da F1\f0\cf0\i0 
+\par \i\cf2\f1\fs20        if WordParam=VK_F1 then\f0\cf0\i0 
+\par \i\cf2\f1\fs20          ShellExecute(0,'open',PChar('Corbi.chm'), nil, nil, SW_SHOWNormal)\f0\cf0\i0 
+\par \i\cf2\f1\fs20        else\f0\cf0\i0 
+\par \i\cf2\f1\fs20      Result:=0; //necessaria per sbloccare l'intercettazione per tasti diversi da F1\f0\cf0\i0 
+\par \i\cf2\f1\fs20    end;  \}\f0\cf0\i0 
+\par 
+\par  \i\cf2\f1\fs20 \{       //forma ridotta\f0\cf0\i0 
+\par \i\cf2\f1\fs20  function TForm2.GetAppVersionStr: string;\f0\cf0\i0 
+\par \i\cf2\f1\fs20 var\f0\cf0\i0 
+\par \i\cf2\f1\fs20   Rec: LongRec;\f0\cf0\i0 
+\par \i\cf2\f1\fs20 begin\f0\cf0\i0 
+\par \i\cf2\f1\fs20   Rec := LongRec(GetFileVersion(ParamStr(0)));\f0\cf0\i0 
+\par \i\cf2\f1\fs20   Result := Format('%d.%d', [Rec.Hi, Rec.Lo]);\f0\cf0\i0 
+\par \i\cf2\f1\fs20   versione:=Result\f0\cf0\i0 
+\par \i\cf2\f1\fs20 end;\f0\cf0\i0 
+\par \i\cf2\f1\fs20   \}\f0\cf0\i0 
+\par 
+\par \b\cf6\f5\fs20 function\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 GetAppVersionStr\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par \cf5\f4\fs20 Exe\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 Size\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Handle\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 DWORD\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 Buffer\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TBytes\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 FixedPtr\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 PVSFixedFileInfo\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par   \cf5\f4\fs20 Exe\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 ParamStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par   \cf5\f4\fs20 Size\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 GetFileVersionInfoSize\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 PChar\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Exe\f0\cf0 \cf10\f9\fs20 ),\f0\cf0  \cf5\f4\fs20 Handle\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Size\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \cf5\f4\fs20 RaiseLastOSError\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 SetLength\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Buffer\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Size\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \b\cf6\f5\fs20 not\f0\cf0\b0  \cf5\f4\fs20 GetFileVersionInfo\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 PChar\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Exe\f0\cf0 \cf10\f9\fs20 ),\f0\cf0  \cf5\f4\fs20 Handle\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Size\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Buffer\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \cf5\f4\fs20 RaiseLastOSError\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \b\cf6\f5\fs20 not\f0\cf0\b0  \cf5\f4\fs20 VerQueryValue\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Buffer\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf9\f8\fs20 '\\'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Pointer\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 FixedPtr\f0\cf0 \cf10\f9\fs20 ),\f0\cf0  \cf5\f4\fs20 Size\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \cf5\f4\fs20 RaiseLastOSError\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Result\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Format\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 '%d.%d.%d.%d'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 LongRec\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 FixedPtr\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dwFileVersionMS\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 Hi\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //major\f0\cf0\i0 
+\par    \cf5\f4\fs20 LongRec\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 FixedPtr\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dwFileVersionMS\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 Lo\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //minor\f0\cf0\i0 
+\par    \cf5\f4\fs20 LongRec\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 FixedPtr\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dwFileVersionLS\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 Hi\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //release\f0\cf0\i0 
+\par    \cf5\f4\fs20 LongRec\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 FixedPtr\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dwFileVersionLS\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 Lo\f0\cf0 \cf10\f9\fs20 ]);\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //build\f0\cf0\i0 
+\par  \cf5\f4\fs20 versione\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Result\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 JVSHFile1Show\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par     \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Effettuato il backup del Database'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Anagrafica atleti\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0                  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Form2 =Consolle\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 visible\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 atlflg\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 Form3\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 Form3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 show\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 else\f0\cf0\b0       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //essendo atlflg True occorre ri-creare il Form3 prima di poterlo\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // rendere visibile se si ripete il click\f0\cf0\i0 
+\par        \cf5\f4\fs20 Form3\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \cf5\f4\fs20 Form3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 atlflg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button2Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Anagrafiva discipline\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 visible\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Dsplflg\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 Form4\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 Form4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 show\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 else\f0\cf0\b0       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //essendo atlflg True occorre ri-creare il Form3 prima di poterlo\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // rendere visibile se si ripete il click\f0\cf0\i0 
+\par        \cf5\f4\fs20 Form4\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \cf5\f4\fs20 Form4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button3Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Anagrafica Gare\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 visible\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 AnaGAFlg\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 show\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 else\f0\cf0\b0       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //essendo AnaGAFlg True occorre ri-creare il Form5 prima di poterlo\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // rendere visibile se si ripete il click\f0\cf0\i0 
+\par        \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button4Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Gara Corrente Iscrizioni\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 visible\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 GAFlg\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par         \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par         \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 show\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 else\f0\cf0\b0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //essendo GAFlg True (cio\u232?Form chiuso) occorre ri-creare il Form6\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //prima di poterlo rendere visibile se si ripete il click\f0\cf0\i0 
+\par        \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button5Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Backup\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Confermi di voler effettuare il backup del DataBase ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par              \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 ABSDatabase1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 JVSHFile1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Execute\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //  JVSHFile1.OnClose(Self);\f0\cf0\i0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Last\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Password'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'IN'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 NOW\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'what'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Effettuato Backup'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0  \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button6Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Ripara\f0\cf0\i0 
+\par  \b\cf6\f5\fs20 Var\f0\cf0\b0 
+\par  \cf5\f4\fs20 result\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSDatabase1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 result\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 ABSDatabase1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RepairDatabase\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 result\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par      \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Il Database \u232?stato verificato '\f0\cf0 \cf10\f9\fs20 )\f0\cf0 \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par      \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Il Database \u232?corrotto - Usa il backup'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button7Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Classifiche\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 visible\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 ClassFlg\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 show\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 else\f0\cf0\b0       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //essendo ClassFlg True occorre ri-creare il Form8 prima di poterlo\f0\cf0\i0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // rendere visibile se si ripete il click\f0\cf0\i0 
+\par          \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 TForm8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Create\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button8Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Azzera Storico\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Stai per azzerare l'\f0\cf0 \cf9\f8\fs20 'intero Storico delle Classifiche. Vuoi continuare ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Tutta lo Storico \u232?stato cancellato !'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Last\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'IN'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 NOW\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'what'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Cancellato lo Storico delle Classifiche'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button9Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Complessivo\f0\cf0\i0 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par \cf5\f4\fs20 ca1\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 ca2\f0\cf0  \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Integer\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 d1\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 d2\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 TDateTime\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \cf5\f4\fs20 ca2\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \b\cf6\f5\fs20 Try\f0\cf0\b0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Desideri ottenere il punteggio storico per Atleta ?'\f0\cf0 
+\par    \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'Dovrai fornire i codici della prima ed ultima Gara da conteggiare'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrNo\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 ca1\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 StrToInt\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 InputBox\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Codice Gara iniziale'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 'Inserisci la prima'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ));\f0\cf0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 ca1\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par         \cf5\f4\fs20 ca2\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 StrToInt\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 InputBox\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Codice Gara finale'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 'Inserisci l'\f0\cf0 \cf9\f8\fs20 'ultima'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ));\f0\cf0 
+\par    \b\cf6\f5\fs20 Except\f0\cf0\b0 
+\par      \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Errore nell'\f0\cf0 \cf9\f8\fs20 'inserimento del dato'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \b\cf6\f5\fs20 End\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 ca1\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \cf5\f4\fs20 d1\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DATAGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par         \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Gara codice '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 inttostr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 ca1\f0\cf0 \cf10\f9\fs20 )+\f0\cf0 \cf9\f8\fs20 ' non esiste.'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par         \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 ca2\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \cf5\f4\fs20 d2\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DATAGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par         \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'La Gara con codice '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 inttostr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 ca2\f0\cf0 \cf10\f9\fs20 )+\f0\cf0 \cf9\f8\fs20 ' non contiene dati di classifiche.'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par         \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par     \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable19\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0            \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //T19 = totale\f0\cf0\i0 
+\par     \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable19\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable19\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 with\f0\cf0\b0  \cf5\f4\fs20 ABSQuery2\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 SQL\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'INSERT INTO totale(CODATL,COGNOME,NOME,NAZIONE,RNK) SELECT CODATL,COGNOME,NOME,NAZIONE,SUM(RNK) AS RNK '\f0\cf0  \cf10\f9\fs20 +\f0\cf0 
+\par          \cf9\f8\fs20 ' FROM T16T where CODGA BETWEEN '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 IntToStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 ca1\f0\cf0 \cf10\f9\fs20 ))+\f0\cf0 \cf9\f8\fs20 ' AND '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 IntToStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 ca2\f0\cf0 \cf10\f9\fs20 ))+\f0\cf0 
+\par          \cf9\f8\fs20 ' GROUP BY CODATL,COGNOME,NOME,NAZIONE ORDER BY RNK desc'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 ExecSQL\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Open;\f0\cf0\i0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \cf5\f4\fs20 frxReport2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variables\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf9\f8\fs20 'ini'\f0\cf0 \cf10\f9\fs20 ]:=\f0\cf0  \cf5\f4\fs20 quotedstr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 DateToStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 d1\f0\cf0 \cf10\f9\fs20 ));\f0\cf0 
+\par        \cf5\f4\fs20 frxReport2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variables\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf9\f8\fs20 'fin'\f0\cf0 \cf10\f9\fs20 ]:=\f0\cf0  \cf5\f4\fs20 quotedstr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 DateToStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 d2\f0\cf0 \cf10\f9\fs20 ));\f0\cf0 
+\par        \cf5\f4\fs20 frxReport2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ShowReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable19\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable19\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button10Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0                   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per mascherare i caratteri premetter #31\f0\cf0\i0 
+\par 
+\par     \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 InputBox\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Richiesta PW'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 #31\f0\cf0 \cf9\f8\fs20 'Inserisci PW dell'\f0\cf0 \cf9\f8\fs20 'Amministratore'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 'Corbi77'\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxReportLog\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ShowReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button11Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Cancella il log\f0\cf0\i0 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Integer\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 InputBox\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Richiesta PW'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 #31\f0\cf0 \cf9\f8\fs20 'Inserisci PW dell'\f0\cf0 \cf9\f8\fs20 'Amministratore'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 'Corbi77'\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Il LOG ha '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 IntToStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 n\f0\cf0 \cf10\f9\fs20 )+\f0\cf0 \cf9\f8\fs20 ' records, vuoi cancellarlo ? '\f0\cf0 
+\par     \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrNo\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par      \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \b\cf6\f5\fs20 while\f0\cf0\b0  \b\cf6\f5\fs20 not\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Eof\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Password'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Next\f0\cf0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //NB il delete causa gi\u224?un next\f0\cf0\i0 
+\par      \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EsciClick\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Esci\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Last\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'OUT'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 NOW\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'what'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Chiusura della Sessione'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 ABSDataBase1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 release\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 consflg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par  \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Terminate\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //tramite l'uso del componente applicationEvent si chiama l'help\f0\cf0\i0 
+\par    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //mettere negli Uses HTMLHelpViewer . Non serve altro\f0\cf0\i0 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ApplicationEvents1ShortCut\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Msg\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TWMKey\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 Handled\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Msg\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CharCode\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 VK_F1\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par    \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \cf5\f4\fs20 ShellExecute\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf9\f8\fs20 'open'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 PChar\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Corbi.chm'\f0\cf0 \cf10\f9\fs20 ),\f0\cf0  \b\cf6\f5\fs20 nil\f0\cf0\b0 \cf10\f9\fs20 ,\f0\cf0  \b\cf6\f5\fs20 nil\f0\cf0\b0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 SW_SHOWNormal\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Handled\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 BitBtn1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //RESET del Database\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Stai per azzerare l'\f0\cf0 \cf9\f8\fs20 'intero Database. Vuoi continuare ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtWarning\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Questa operazione non \u232?ripristinabile, '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 
+\par      \cf9\f8\fs20 'Tutti gli archivi verranno cancellati !'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 ' Vuoi continuare ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtWarning\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable7\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable7\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable13\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable13\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable14\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable14\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable18\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable18\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16T\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16R\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable16R\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable18\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable18\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable19\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable19\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable3D\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable3D\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Tutti gli archivi sono stati azzerati.'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0  \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0  \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 .\f0\cf0 
+\par 
+}

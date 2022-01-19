@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/10/05 20:11:50.000.061,=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/06/18 16:03:08.000.269,=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/06/18 16:09:38.000.148,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2019\Dati\Unit1.dfm=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2019/06/18 16:09:38.000.148,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2019\Dati\Unit1.pas=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/06/18 16:09:55.000.362,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2019\Dati\Project1.dproj=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2019/06/23 11:22:51.000.090,C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2019\Dati\Dati.dproj=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2019\Dati\Project1.dproj</Transaction>
+    <Transaction>2019/06/23 13:25:22.000.291,=C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2019\Dati\ModelSupport_Dati\default.txaPackage</Transaction>
+  </Transactions>
+</BorlandProject>

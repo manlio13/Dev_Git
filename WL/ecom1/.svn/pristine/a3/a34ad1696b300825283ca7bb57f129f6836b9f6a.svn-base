@@ -1,0 +1,369 @@
+object Form1: TForm1
+  Left = 500
+  Top = 332
+  Anchors = []
+  Caption = 'Controllo acquisti online v: 4.0.4.'
+  ClientHeight = 418
+  ClientWidth = 946
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 10
+    Top = 46
+    Width = 646
+    Height = 13
+    Caption = 
+      'DataOrd...a    Fornitore               Prodotto                 ' +
+      '                               MezzoPag                         ' +
+      '                                  Filtro libero SQL'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 3
+    Width = 65
+    Height = 13
+    Caption = 'DataOrd...da'
+  end
+  object Label3: TLabel
+    Left = 249
+    Top = 20
+    Width = 144
+    Height = 20
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 408
+    Top = 19
+    Width = 81
+    Height = 21
+    AutoSize = False
+  end
+  object Label5: TLabel
+    Left = 507
+    Top = 19
+    Width = 214
+    Height = 21
+    AutoSize = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 9
+    Top = 91
+    Width = 929
+    Height = 265
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [dgEditing, dgTitles, dgIndicator, dgColLines, dgRowLines, dgTabs, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentColor = True
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'DataOrd'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Fornitore'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Prodotto'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Prezzo'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DataPag'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'MezzoPag'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DataSped'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DataCons'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'delta'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Uso'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Note'
+        Visible = True
+      end>
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 8
+    Top = 375
+    Width = 240
+    Height = 25
+    DataSource = DataSource1
+    TabOrder = 1
+    OnClick = DBNavigator1Click
+  end
+  object Edit1: TEdit
+    Left = 9
+    Top = 64
+    Width = 65
+    Height = 21
+    TabOrder = 2
+    Text = 'gg/mm/aaaa'
+  end
+  object Edit2: TEdit
+    Left = 80
+    Top = 64
+    Width = 82
+    Height = 21
+    TabOrder = 3
+  end
+  object Edit3: TEdit
+    Left = 168
+    Top = 64
+    Width = 177
+    Height = 21
+    TabOrder = 4
+  end
+  object Edit4: TEdit
+    Left = 351
+    Top = 64
+    Width = 90
+    Height = 21
+    TabOrder = 5
+  end
+  object Edit5: TEdit
+    Left = 8
+    Top = 19
+    Width = 65
+    Height = 21
+    TabOrder = 6
+    Text = '01/02/2014'
+  end
+  object Button1: TButton
+    Left = 79
+    Top = 15
+    Width = 75
+    Height = 25
+    Caption = 'Cerca'
+    TabOrder = 7
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 168
+    Top = 15
+    Width = 75
+    Height = 25
+    Caption = 'Reset'
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 270
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Query>Table'
+    TabOrder = 9
+    OnClick = Button3Click
+  end
+  object Edit6: TEdit
+    Left = 447
+    Top = 64
+    Width = 426
+    Height = 21
+    TabOrder = 10
+    Text = 'select * from ecomTB'
+  end
+  object Button4: TButton
+    Left = 672
+    Top = 40
+    Width = 75
+    Height = 18
+    Caption = 'Filtra'
+    TabOrder = 11
+    OnClick = Button4Click
+  end
+  object Button5: TButton
+    Left = 753
+    Top = 40
+    Width = 75
+    Height = 18
+    Caption = 'Reset'
+    TabOrder = 12
+    OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 376
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Svuota '
+    TabOrder = 13
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 480
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Done'
+    TabOrder = 14
+    OnClick = Button7Click
+  end
+  object Button8: TButton
+    Left = 581
+    Top = 376
+    Width = 75
+    Height = 25
+    Caption = 'Backup'
+    TabOrder = 15
+    OnClick = Button8Click
+  end
+  object ABSDatabase1: TABSDatabase
+    CurrentVersion = '7.80 '
+    DatabaseFileName = 
+      'C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Ecom' +
+      '\ecom.ABS'
+    DatabaseName = 'ecom.abs'
+    Exclusive = False
+    MaxConnections = 500
+    MultiUser = False
+    SessionName = 'Default'
+    Left = 128
+    Top = 160
+  end
+  object DataSource1: TDataSource
+    DataSet = ABSTable1
+    Left = 256
+    Top = 112
+  end
+  object ABSTable1: TABSTable
+    CurrentVersion = '7.80 '
+    DatabaseName = 'ecom.abs'
+    InMemory = False
+    ReadOnly = False
+    StoreDefs = True
+    IndexFieldNames = 'num'
+    FieldDefs = <
+      item
+        Name = 'num'
+        DataType = ftAutoInc
+      end
+      item
+        Name = 'DataOrd'
+        Attributes = [faRequired]
+        DataType = ftDate
+      end
+      item
+        Name = 'Fornitore'
+        Attributes = [faRequired]
+        DataType = ftString
+        Size = 10
+      end
+      item
+        Name = 'Prodotto'
+        Attributes = [faRequired]
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'Prezzo'
+        DataType = ftFloat
+      end
+      item
+        Name = 'DataPag'
+        DataType = ftDate
+      end
+      item
+        Name = 'MezzoPag'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'Note'
+        DataType = ftString
+        Size = 20
+      end
+      item
+        Name = 'DataSped'
+        DataType = ftDate
+      end
+      item
+        Name = 'DataCons'
+        DataType = ftDate
+      end
+      item
+        Name = 'delta'
+        DataType = ftSmallint
+      end
+      item
+        Name = 'Uso'
+        DataType = ftString
+        Size = 10
+      end>
+    TableName = 'ecomTB'
+    Exclusive = False
+    Left = 192
+    Top = 104
+  end
+  object ABSQuery1: TABSQuery
+    CurrentVersion = '7.80 '
+    DatabaseName = 'ecom.abs'
+    InMemory = False
+    ReadOnly = False
+    Left = 312
+    Top = 112
+  end
+  object jvshfile1: TJvSHFileOperation
+    SourceFiles.Strings = (
+      'ecom.abs')
+    DestFiles.Strings = (
+      'ecom.bkp')
+    Left = 480
+    Top = 168
+  end
+end

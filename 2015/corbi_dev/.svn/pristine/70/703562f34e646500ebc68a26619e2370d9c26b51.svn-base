@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg0\deff0\deflang1033\deflangfe1040{\fonttbl {\f0\fnil\fprq0\fcharset1 Courier New;}{\f1\fnil\fprq0\fcharset1 Courier New;}{\f2\fnil\fprq0\fcharset1 Courier New;}{\f3\fnil\fprq0\fcharset1 Courier New;}{\f4\fnil\fprq0\fcharset1 Courier New;}{\f5\fnil\fprq0\fcharset1 Courier New;}{\f6\fnil\fprq0\fcharset1 Courier New;}{\f7\fnil\fprq0\fcharset1 Courier New;}{\f8\fnil\fprq0\fcharset1 Courier New;}{\f9\fnil\fprq0\fcharset1 Courier New;}{\f10\fnil\fprq0\fcharset1 Courier New;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue128;\red0\green0\blue255;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;\red0\green0\blue255;}
+{\info{\author CnPack Source2RTF Wizard (http://www.cnpack.org)}{\creatim\yr2016\mo2\dy15\hr8\min31}{\comment CnPack Source2RTF Wizard (http://www.cnpack.org)}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1040
+\par \b\cf6\f5\fs20 program\f0\cf0\b0  \cf5\f4\fs20 Corbi\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Forms\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Console1\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'Console1.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form2\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Login1\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'Login1.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form1\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 AnaAtl\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'AnaAtl.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form3\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Themes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Styles\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 AnaDspl\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'AnaDspl.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form4\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 AnaGa\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'AnaGa.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form5\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Gara\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'Gara.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form6\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 aiuto\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'aiuto.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form7\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Classifiche\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'Classifiche.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form8\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Tempi\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'Tempi.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form9\}\f0\cf0\i0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Dialogs\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Windows\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 UITypes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Mancanti\f0\cf0  \b\cf6\f5\fs20 in\f0\cf0\b0  \cf9\f8\fs20 'Mancanti.pas'\f0\cf0  \i\cf2\f1\fs20 \{Form10\}\f0\cf0\i0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par \cf4\f3\fs20 \{$R *.res\}\f0\cf0 
+\par   \b\cf6\f5\fs20 const\f0\cf0\b0 
+\par    \cf5\f4\fs20 TentaLancio\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 'CodeCall.Net Mutex'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 resourcestring\f0\cf0\b0                       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par    \cf5\f4\fs20 DUPLICATE_MSG\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 'Il programma \u232?stato gi\u224?lanciato. Non consente duplicati'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 var\f0\cf0\b0                           \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par    \cf5\f4\fs20 vMutex\f0\cf0  \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 THandle\f0\cf0 \cf10\f9\fs20 ;\f0\cf0            \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par \cf4\f3\fs20 \{$D+\}\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0                                    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //codice per evitare doppia instanza\f0\cf0\i0 
+\par   \cf5\f4\fs20 vMutex\f0\cf0  \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 CreateMutex\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \b\cf6\f5\fs20 nil\f0\cf0\b0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 TentaLancio\f0\cf0 \cf10\f9\fs20 );\f0\cf0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 GetLastError\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 ERROR_ALREADY_EXISTS\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0                                         \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par         \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 DUPLICATE_MSG\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mtError\f0\cf0 \cf10\f9\fs20 ,[\f0\cf0 \cf5\f4\fs20 mbOK\f0\cf0 \cf10\f9\fs20 ],\f0\cf0 \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 );\f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par         \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0                                       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0                                          \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par     \b\cf6\f5\fs20 try\f0\cf0\b0                                             \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Initialize\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 MainFormOnTaskbar\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Application.Title := 'Corbi';\f0\cf0\i0 
+\par      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Application.HelpFile := '.\\corbi.chm';\f0\cf0\i0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm2\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm1\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form1\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm7\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form7\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm9\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form9\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm10\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form10\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm8\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form8\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm6\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form6\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm3\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form3\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm4\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form4\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 CreateForm\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par 
+\par      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //posporre a Form2 che contiene il database\f0\cf0\i0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ShowMainForm\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Run\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Application\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 NormalizeAllTopMosts\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 finally\f0\cf0\b0                                         \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par       \cf5\f4\fs20 CloseHandle\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 vMutex\f0\cf0 \cf10\f9\fs20 );\f0\cf0                          \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0                                            \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //no2\f0\cf0\i0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 .\f0\cf0 
+\par 
+}

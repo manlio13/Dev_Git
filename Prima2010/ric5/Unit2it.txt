@@ -1,0 +1,77 @@
+object Form2: TForm2
+  Left = 223
+  Top = 407
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'log degli scaduti'
+  ClientHeight = 248
+  ClientWidth = 539
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clBlue
+  Font.Height = -12
+  Font.Name = 'MS Sans Serif'
+  Font.Style = [fsItalic]
+  OnActivate = FormActivate
+  PixelsPerInch = 106
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 12
+    Width = 429
+    Height = 21
+    AutoSize = False
+    Caption = 
+      'Questi eventi sono trascorsi, controlla e spunta quelli che ti s' +
+      'ono già noti'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Top = 232
+    Width = 171
+    Height = 13
+    Caption = 'Massiimo numero di registrazioni 50'
+  end
+  object BitBtn1: TBitBtn
+    Left = 488
+    Top = 8
+    Width = 29
+    Height = 25
+    ModalResult = 1
+    TabOrder = 0
+    OnClick = BitBtn1Click
+    Glyph.Data = {
+      76010000424D7601000000000000760000002800000020000000100000000100
+      0400000000000001000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF999999999999
+      9999999FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9FFFFFFFFFFFFF0000F0FFF0F0
+      FFF0FF9FFFFFFFFFFFFF0FFFF00F00F0FFF0FF9FFFFFFFFFFFFF0FFFFF0F0FF0
+      FFF0FF9FFFFFFFFFFFFF0FFFFF000FF0FFF0FF9FFFFFFFFFFFFF000FFFF0FFF0
+      FFF0FF9FFFFFFFFFFFFF0FFFFFF0FFF0FFF0FF9FFFFFFFFFFFFF0FFFFF000FF0
+      FFF0FF9FFFFFFFFFFFFF0FFFF00F00F0FFF0FF9FFFFFFFFFFFFF0000F0FFF0F0
+      F000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9FFFFFFFFFFFFF999999999999
+      9999999FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+    NumGlyphs = 2
+  end
+  object Cklstbox1: TCheckListBox
+    Left = 4
+    Top = 40
+    Width = 529
+    Height = 185
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlue
+    Font.Height = -12
+    Font.Name = 'Book Antiqua'
+    Font.Style = []
+    ItemHeight = 15
+    ParentFont = False
+    TabOrder = 1
+  end
+end

@@ -1,0 +1,44 @@
+$TITLE=Ricorda 1.0
+$TARGET=c:\ricorda
+$GROUP=ricorda;SHOW-COMBO
+$BANNER-MESSAGE=Sto installando il tuo scadenzario : Ricorda 1.0;CENTERED
+
+$USE-WIZARDS=1
+$COPYRIGHT-MESSAGE=LEGGIMI.ORA;&Io accetto;Io &Non accetto;Avviso importante
+
+REM ---- $DISK1=11 files, di cui 4 istallati per 402000 bytes.
+
+$DISK1=ricorda.exe;ricorda.hlp;uninst.dll;uninstal.exe
+
+$SPACE=402000
+
+REM [------ ICONS ---------]
+
+$ICON=$DEST\ricorda.exe;ricorda
+$ICON=$DEST\ricorda.HLP;help
+$ICON=$DEST\UNINSTAL.EXE;disinstalla
+
+
+
+$COPYBUFFER=32000
+
+$MAKE-UNINSTALL-LOG
+$REGISTER-UNINSTALL=$DEST\UNINSTAL.EXE
+$PAINTDIALOGS
+$SHOW-FILE-PERCENT
+
+
+$BANNER-FONT-SIZE=28
+$BANNER-SHADOW-COLOR=0,0,255
+$BANNER-TEXT-COLOR=$00FFFF00
+$BANNER-TEXT-BACKGROUND=$00FF00FF
+$BANNER-WINDOW-BRUSH=0,0,255
+
+$SMALL-METER-COLOR=128,0,128
+$BIG-METER-COLOR=0,0,255
+$CLOSE-GROUP-BOX=2;3;4;6;
+$ABORT-UNINSTAL-QUESTION=Interrompere adesso potrebbe causare dei problemi !\nVuoi veramente interrompere ?
+$ABORT-MESSAGE=Sto per interrompere l'installazione!\nE' questo che vuoi ?
+
+$OK-BUTTON-TITLE=&OK
+$CANCEL-BUTTON-TITLE=&ANNULLA

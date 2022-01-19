@@ -1,0 +1,85 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'MLSoft'
+  ClientHeight = 311
+  ClientWidth = 386
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 16
+    Width = 51
+    Height = 18
+    Caption = 'Label1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Visible = False
+  end
+  object Button1: TButton
+    Left = 40
+    Top = 56
+    Width = 75
+    Height = 25
+    Caption = ' Estrazione'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Left = 40
+    Top = 96
+    Width = 305
+    Height = 193
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ItemHeight = 13
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 270
+    Top = 56
+    Width = 75
+    Height = 25
+    Caption = 'Esci'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 152
+    Top = 56
+    Width = 75
+    Height = 25
+    Caption = 'Cancella'
+    TabOrder = 3
+    OnClick = Button3Click
+  end
+end

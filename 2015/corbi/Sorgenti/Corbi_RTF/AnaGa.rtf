@@ -1,0 +1,707 @@
+{\rtf1\ansi\ansicpg0\deff0\deflang1033\deflangfe1040{\fonttbl {\f0\fnil\fprq0\fcharset1 Courier New;}{\f1\fnil\fprq0\fcharset1 Courier New;}{\f2\fnil\fprq0\fcharset1 Courier New;}{\f3\fnil\fprq0\fcharset1 Courier New;}{\f4\fnil\fprq0\fcharset1 Courier New;}{\f5\fnil\fprq0\fcharset1 Courier New;}{\f6\fnil\fprq0\fcharset1 Courier New;}{\f7\fnil\fprq0\fcharset1 Courier New;}{\f8\fnil\fprq0\fcharset1 Courier New;}{\f9\fnil\fprq0\fcharset1 Courier New;}{\f10\fnil\fprq0\fcharset1 Courier New;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue128;\red0\green0\blue255;\red0\green128\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;\red0\green0\blue255;}
+{\info{\author CnPack Source2RTF Wizard (http://www.cnpack.org)}{\creatim\yr2016\mo3\dy17\hr12\min5}{\comment CnPack Source2RTF Wizard (http://www.cnpack.org)}}
+{\*\generator Msftedit 5.41.15.1507;}\viewkind4\uc1\pard\lang1040\b\cf6\f5\fs20 unit\f0\cf0\b0  \cf5\f4\fs20 AnaGa\f0\cf0 \cf10\f9\fs20 ;\f0\cf0              \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Anagrafica Gare   11/04/2015\f0\cf0\i0 
+\par 
+\par \b\cf6\f5\fs20 interface\f0\cf0\b0 
+\par 
+\par \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par   \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Windows\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Winapi\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Messages\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 SysUtils\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variants\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Classes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Graphics\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Controls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Forms\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Dialogs\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Data\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DB\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Grids\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DBGrids\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 System\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 UITypes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 StdCtrls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ExtCtrls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Vcl\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DBCtrls\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 ABSMain\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 frxClass\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 frxDBSet\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par   \cf5\f4\fs20 frxExportPDF\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 type\f0\cf0\b0 
+\par   \cf5\f4\fs20 TForm5\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \b\cf6\f5\fs20 class\f0\cf0\b0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 TForm\f0\cf0 \cf10\f9\fs20 )\f0\cf0 
+\par     \cf5\f4\fs20 dbgrd51\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDBGrid\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ds51\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDataSource\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 dbgrd52\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDBGrid\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ds52\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDataSource\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 dbnvgr51\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDBNavigator\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 dbgrd55\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDBGrid\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDataSource\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 dbnvgr55\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TDBNavigator\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 cbb55\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TComboBox\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 ABSQuery6\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TABSQuery\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label3\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TEdit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Edit2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TEdit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label4\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button3\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button4\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 shp1\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TShape\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label5\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label6\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Edit3\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TEdit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button5\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button6\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxReport51\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxDBDataset51\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxDBDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button7\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxPDFExport51\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxPDFExport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button8\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button9\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Button10\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 shp2\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TShape\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 Label7\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TLabel\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxReport5\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxDBDatasetBA\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxDBDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxDBDatasetGA\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxDBDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 frxDBDatasetGB\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TfrxDBDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 FormCreate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 FormCloseQuery\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 CanClose\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 cbb55Change\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 dbgrd52MouseUp\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 Button\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TMouseButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Shift\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TShiftState\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 X\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Y\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Integer\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 dbnvgr51Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 Button\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TNavigateBtn\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 dbgrd55MouseDown\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 Button\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TMouseButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Shift\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TShiftState\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 X\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Y\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Integer\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Pulizia\f0\cf0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 dbgrd51CellClick\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Column\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TColumn\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button2Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button3Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button4Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button5Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button6Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Edit3Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button7Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button8Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button9Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par     \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 Button10Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par 
+\par   \b\cf6\f5\fs20 private\f0\cf0\b0 
+\par     \i\cf2\f1\fs20 \{ Private declarations \}\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 public\f0\cf0\b0 
+\par     \i\cf2\f1\fs20 \{ Public declarations \}\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par   \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 AnaGAFlg\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 CanClose\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 filtro\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 tabl\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 garastr\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 giornostr\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 TDataset\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 implementation\f0\cf0\b0 
+\par \b\cf6\f5\fs20 uses\f0\cf0\b0 
+\par \cf5\f4\fs20 Console1\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \cf4\f3\fs20 \{$R *.dfm\}\f0\cf0 
+\par  \cf4\f3\fs20 \{$D+\}\f0\cf0 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FormCreate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Crea il Form5\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Form2.ABSTable5.TableName:='AnaGa';\f0\cf0\i0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Form2.ABSTable6.TableName:='Base';\f0\cf0\i0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 AnaGaFlg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 ds51\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 \i\cf2\f1\fs20 //aggiunto per evitare circular DataLink error\f0\cf0\i0 
+\par    \cf5\f4\fs20 ds52\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Form2.ABSTable4.TableName:='AnaDspl';\f0\cf0\i0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Form2.ABSTable8.TableName:='GRPA';\f0\cf0\i0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Form2.ABSTable9.TableName:='GRPB';\f0\cf0\i0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 shp1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Brush\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Color\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 clOlive\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per colorare la shape\f0\cf0\i0 
+\par    \cf5\f4\fs20 shp2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Brush\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Color\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 clRed\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per colorare la shape\f0\cf0\i0 
+\par   \cf5\f4\fs20 TDateTimeField\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'TMAX'\f0\cf0 \cf10\f9\fs20 )).\f0\cf0 \cf5\f4\fs20 DisplayFormat\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'nn:ss,zzz'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Esci\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se ha inserito un record\f0\cf0\i0 
+\par      \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 FormCloseQuery\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 canclose\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Pulizia\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //occorre verificare se i db sono gi\u224?chiusi\f0\cf0\i0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Last\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Password'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'OUT'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 NOW\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // NB chiama il can close\f0\cf0\i0 
+\par       \cf5\f4\fs20 AnaGAFlg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per consentire di monitorizzare che Form5 \u232?closed\f0\cf0\i0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Visible\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button2Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //CERCA\f0\cf0\i0 
+\par \b\cf6\f5\fs20 label\f0\cf0\b0 
+\par \cf5\f4\fs20 vai\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par \cf5\f4\fs20 chi\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 array\f0\cf0\b0 \cf10\f9\fs20 [\f0\cf0 \cf7\f6\fs20 1..2\f0\cf0 \cf10\f9\fs20 ]\f0\cf0 \b\cf6\f5\fs20 of\f0\cf0\b0  \cf5\f4\fs20 shortint\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 ShortInt\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \cf5\f4\fs20 ds51\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ABSQuery6\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ;\f0\cf0           \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //determina se data e/o luogo \u232?in ricerca\f0\cf0\i0 
+\par      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 text\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf7\f6\fs20 1\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 chi\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 ]:=\f0\cf0 \cf7\f6\fs20 1\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 edit2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf7\f6\fs20 1\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 chi\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 ]:=\f0\cf0 \cf7\f6\fs20 2\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 chi\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf7\f6\fs20 2\f0\cf0 \cf10\f9\fs20 ]>\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //elabora i query\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 filtro\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'DATA LIKE '\f0\cf0 \cf10\f9\fs20 +\f0\cf0  \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 )+\f0\cf0 \cf9\f8\fs20 ' AND LUOGO LIKE '\f0\cf0 
+\par        \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 quotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 edit2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 text\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \b\cf6\f5\fs20 goto\f0\cf0\b0  \cf5\f4\fs20 vai\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 chi\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf7\f6\fs20 1\f0\cf0 \cf10\f9\fs20 ]>\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 )\f0\cf0   \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par         \cf5\f4\fs20 filtro\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf9\f8\fs20 'DATA LIKE '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 quotedstr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 edit2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 <>\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 )\f0\cf0   \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par         \cf5\f4\fs20 filtro\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'LUOGO LIKE '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 Edit2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 '%'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par         \b\cf6\f5\fs20 goto\f0\cf0\b0  \cf5\f4\fs20 vai\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 vai\f0\cf0  \cf10\f9\fs20 :\f0\cf0 
+\par       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //effettua il query\f0\cf0\i0 
+\par          \b\cf6\f5\fs20 with\f0\cf0\b0  \cf5\f4\fs20 ABSQuery6\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 i\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par         \cf5\f4\fs20 SQL\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf9\f8\fs20 'select * from AnaGA where '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 filtro\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Attenzione agli spazi prima e dopo gli apici\f0\cf0\i0 
+\par         \cf5\f4\fs20 ExecSql\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par         \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par           \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Nessun elemento di ricerca inserito'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par  \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button3Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Annulla\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \cf5\f4\fs20 Edit1\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Edit2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 ds51\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button4Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //AZZERA\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Stai per azzerare l'\f0\cf0 \cf9\f8\fs20 'intera Anagrafe delle Gare. Vuoi continuare ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Tutta l'\f0\cf0 \cf9\f8\fs20 'anagrafe \u232?stata cancellata !'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 cbb55Change\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 \i\cf2\f1\fs20 // Seleziona un dato della Combobox\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0              \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //effettuando una scelta viene definita la Table attiva\f0\cf0\i0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cbb55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 'Base'\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 tabl\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'Base'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Crea la Tabella Discipline Base'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 
+\par          \cf9\f8\fs20 'Clicca sul LUOGO della Gara'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0  \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'per inserire il suo codice.'\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Tab 6\f0\cf0\i0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cbb55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 'GruppoA'\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 tabl\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'GRPA'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Crea la Tabella Discipline Gruppo A '\f0\cf0 \cf10\f9\fs20 );\f0\cf0 \i\cf2\f1\fs20 //Tab 8\f0\cf0\i0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cbb55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 'GruppoB'\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 tabl\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 'GRPB'\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //in questo modo mostra gli accoppiamenti gia esistenti\f0\cf0\i0 
+\par          \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Crea la Tabella Discipline Gruppo B '\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Tab 9\f0\cf0\i0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par        \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Accoppiamento GARA - DISCIPLIN\f0\cf0\i0 
+\par         \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Inserimento codice Gara\f0\cf0\i0 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dbgrd51CellClick\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Column\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TColumn\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 Var\f0\cf0\b0 
+\par  \cf5\f4\fs20 CoGaSi\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ActiveControl\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \b\cf6\f5\fs20 nil\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per togliere eventuali focus precedenti\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cbb55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ItemIndex\f0\cf0 \cf10\f9\fs20 >-\f0\cf0 \cf7\f6\fs20 1\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //verifica l'esistenza di un precedente accoppiamento per quella Gara\f0\cf0\i0 
+\par        \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ABSQuery6\f0\cf0 \cf10\f9\fs20 ;\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //nella tabella degli accoppiamenti (TA)\f0\cf0\i0 
+\par          \b\cf6\f5\fs20 with\f0\cf0\b0  \cf5\f4\fs20 ABSQuery6\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par            \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //inserire una variabile nel query\f0\cf0\i0 
+\par            \cf5\f4\fs20 SQL\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf9\f8\fs20 'Select * from '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 tabl\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 ' where CODGA = '\f0\cf0 \cf10\f9\fs20 +\f0\cf0  \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par            \cf5\f4\fs20 ExecSql\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 ABSQuery6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //nel caso ci sia g\u224?la GARA nella tabella\f0\cf0\i0 
+\par           \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Hai gi\u224?elaborato questa Gara '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'Vuoi aggiungere discipline ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par             \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrNo\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par             \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par               \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Vuoi Rifarla del tutto ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par                \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \b\cf6\f5\fs20 with\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // nel Query c'\u232?gi\u224?l'elenco degli accoppiamenti di quella Gara\f0\cf0\i0 
+\par                  \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                    \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \b\cf6\f5\fs20 while\f0\cf0\b0 \cf10\f9\fs20 (\f0\cf0 \b\cf6\f5\fs20 not\f0\cf0\b0  \cf5\f4\fs20 Eof\f0\cf0 \cf10\f9\fs20 )\f0\cf0 \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par                   \b\cf6\f5\fs20 begin\f0\cf0\b0              \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //seleziona e cancella\f0\cf0\i0 
+\par                    \cf5\f4\fs20 CoGaSi\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0 
+\par                    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 CoGaSi\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                    \cf5\f4\fs20 Next\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //showmessage con posizione\f0\cf0\i0 
+\par       \cf5\f4\fs20 ShowMessagePos\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Questi sono gli accoppiamenti gi\u224?inseriti'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf7\f6\fs20 650\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf7\f6\fs20 250\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par 
+\par       \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //ritorna al dataset primario\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Codice Gara = '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 ' ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par         \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 strToInt\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par         \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \cf5\f4\fs20 showmessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Clicca sulla DESCRIZIONE della disciplina da accoppiare'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par         \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par           \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \cf5\f4\fs20 Exit\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par        \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Effettua prima una scelta di Gruppo'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dbgrd52MouseUp\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 Button\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TMouseButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Shift\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TShiftState\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 X\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Y\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Integer\f0\cf0 \cf10\f9\fs20 );\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Accoppiamento GARA - DISCIPLINE\f0\cf0\i0 
+\par   \b\cf6\f5\fs20 var\f0\cf0\b0                                   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Inserimento codice DISCIPLINE\f0\cf0\i0 
+\par   \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cbb55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ItemIndex\f0\cf0 \cf10\f9\fs20 >-\f0\cf0 \cf7\f6\fs20 1\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par      \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par         \b\cf6\f5\fs20 begin\f0\cf0\b0              \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per definire su quale gara iserire le DSPL\f0\cf0\i0 
+\par           \cf5\f4\fs20 showmessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Clicca prima sul luogo della GARA'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Codice Disciplina = '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 ' ?'\f0\cf0  \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par           \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //verifica che non sia gi\u224?inserito\f0\cf0\i0 
+\par            \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 ABSQuery6\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \b\cf6\f5\fs20 with\f0\cf0\b0  \cf5\f4\fs20 ABSQuery6\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par                \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                  \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //inserire una variabile nel query\f0\cf0\i0 
+\par                  \cf5\f4\fs20 SQL\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf9\f8\fs20 'Select * from '\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf5\f4\fs20 tabl\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 ' where CODGA = '\f0\cf0 \cf10\f9\fs20 +\f0\cf0  \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 )+\f0\cf0 
+\par                  \cf9\f8\fs20 ' and  CODDSPL = '\f0\cf0 \cf10\f9\fs20 +\f0\cf0  \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par                  \cf5\f4\fs20 ExecSql\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 ABSQuery6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //caso in cui c'\u232?gi\u224?la DSPL in TA\f0\cf0\i0 
+\par                     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                       \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'ERRORE - Questa disciplina \u232?gi\u224?inserita'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par                       \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //riporta il dbgrid a leggere i valori\f0\cf0\i0 
+\par                       \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                       \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 strToInt\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par            \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                 \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Vuoi inserire altre Discipline'\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 #13\f0\cf0 \cf10\f9\fs20 +\f0\cf0 \cf9\f8\fs20 'nella stessa Gara ?'\f0\cf0  \cf10\f9\fs20 ,\f0\cf0 
+\par                 \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par                   \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                      \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                      \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 strToInt\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par                      \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                      \cf5\f4\fs20 showmessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Clicca sulla DESCRIZIONE della disciplina da accoppiare'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par                   \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par                     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                      \cf5\f4\fs20 sg\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //azzera il codice gara precedente\f0\cf0\i0 
+\par                      \cf5\f4\fs20 s\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                      \cf5\f4\fs20 ds55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DataSet\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 tabella\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                      \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par          \b\cf6\f5\fs20 else\f0\cf0\b0  \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par      \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 else\f0\cf0\b0  \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Effettua prima una scelta di tabella'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dbgrd55MouseDown\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 Button\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TMouseButton\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 Shift\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TShiftState\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 X\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 Y\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Integer\f0\cf0 \cf10\f9\fs20 );\f0\cf0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //verifica la scelta\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 cbb55\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ItemIndex\f0\cf0 \cf10\f9\fs20 =-\f0\cf0 \cf7\f6\fs20 1\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Effettua prima una scelta di tabella'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 dbnvgr51Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf5\f4\fs20 Button\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TNavigateBtn\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0                     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //intercetta il dbnavigator\f0\cf0\i0 
+\par      \b\cf6\f5\fs20 case\f0\cf0\b0  \cf5\f4\fs20 button\f0\cf0  \b\cf6\f5\fs20 of\f0\cf0\b0 
+\par        \cf5\f4\fs20 nbInsert\f0\cf0 \cf10\f9\fs20 :\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se inserisce un nuovo record\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Last\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Append\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //inserisce il flag nel nuovo record\f0\cf0\i0 
+\par        \cf5\f4\fs20 dbgrd51\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 SetFocus\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 DBGrd51\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 SelectedField\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DATA'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0  \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 nbPost\f0\cf0 \cf10\f9\fs20 :\f0\cf0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se lo carica nella tabella\f0\cf0\i0 
+\par        \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par        \cf5\f4\fs20 nbDelete\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se cancella il record - serve anche per evitare di entrare in Query\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par        \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FormCloseQuery\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 ;\f0\cf0  \b\cf6\f5\fs20 var\f0\cf0\b0  \cf5\f4\fs20 CanClose\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0                                 \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Chiusura del Form5 Gara\f0\cf0\i0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Hai un dato da salvare ?'\f0\cf0  \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0 
+\par     \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 CanClose\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par         \cf5\f4\fs20 CanClose\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //conferma il Falso di inserisco5\f0\cf0\i0 
+\par           \cf5\f4\fs20 inserisco5\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \cf5\f4\fs20 Button1Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Self\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit3Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Acquisisce la gara per il report\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0                  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // ripristina le tabelle\f0\cf0\i0 
+\par      \cf5\f4\fs20 Edit3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Form2.ABSTable10.TableName:='repBase';\f0\cf0\i0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //  Form2.ABSTable11.TableName:='repGRPA';\f0\cf0\i0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //  Form2.ABSTable12.TableName:='repGRPB';\f0\cf0\i0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Open\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Edit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button5Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //prepara il report\f0\cf0\i0 
+\par  \b\cf6\f5\fs20 label\f0\cf0\b0 
+\par   \cf5\f4\fs20 GA\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 GB\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 FINE\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par   \cf5\f4\fs20 codgasi\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 dsplsi\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 codgan\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Integer\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \cf5\f4\fs20 DSPLstr\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \b\cf6\f5\fs20 string\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Riempire le 3 tabelle\f0\cf0\i0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Edit3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf9\f8\fs20 ''\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Devi inserire il codice della Gara'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //il codice GARA \u232?presente\f0\cf0\i0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Verifica l'esistenza della Gara negli accoppiamenti Base etc.\f0\cf0\i0 
+\par 
+\par           \cf5\f4\fs20 codgasi\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 Edit3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 text\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0 
+\par           \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 codgasi\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 False\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par              \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Questo codice Gara \u232?inesistente '\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par                \cf5\f4\fs20 Exit\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par              \b\cf6\f5\fs20 begin\f0\cf0\b0           \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Trovata la gara ed il giorno di esecuzione\f0\cf0\i0 
+\par                \cf5\f4\fs20 codgan\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 StrToInt\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Edit3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par                \cf5\f4\fs20 garastr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'LUOGO'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                \cf5\f4\fs20 giornostr\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DATA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par                             \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //trovare le discipline della BASE\f0\cf0\i0 
+\par         \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //la tabella Base \u232?gia piena\f0\cf0\i0 
+\par          \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par            \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Il report delle discipline Base \u232?gi\u224?fatto. Vuoi rifarlo?'\f0\cf0  \cf10\f9\fs20 ,\f0\cf0 
+\par                 \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par               \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0  \b\cf6\f5\fs20 goto\f0\cf0\b0  \cf5\f4\fs20 GA\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DisableControls\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \b\cf6\f5\fs20 try\f0\cf0\b0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \b\cf6\f5\fs20 while\f0\cf0\b0  \b\cf6\f5\fs20 not\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Eof\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par              \b\cf6\f5\fs20 begin\f0\cf0\b0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per ogni codga ricavare il cod dspl e memorizzare la DESCR nella Tabella\f0\cf0\i0 
+\par                 \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 codgan\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par                  \b\cf6\f5\fs20 begin\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se il codice gara corrisponde\f0\cf0\i0 
+\par                    \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 \i\cf2\f1\fs20 //memorizza la disciplina\f0\cf0\i0 
+\par                    \cf5\f4\fs20 dsplsi\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0 \i\cf2\f1\fs20 //cerca la disciplina sull'anagrafica\f0\cf0\i0 
+\par                      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 dsplsi\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //quando la trova\f0\cf0\i0 
+\par                        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                          \cf5\f4\fs20 DSPLstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DESCR'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 \i\cf2\f1\fs20 //memorizza la descrizione\f0\cf0\i0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //la registra sulla tabella del report\f0\cf0\i0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DESCR'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 DSPLstr\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'TMAX'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'TMAX'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable10\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Next\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par              \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \b\cf6\f5\fs20 finally\f0\cf0\b0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EnableControls\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Registrate le discipline Base'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par           \cf5\f4\fs20 GA\f0\cf0  \cf10\f9\fs20 :\f0\cf0 
+\par                     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //trovare le discipline del GruppoA\f0\cf0\i0 
+\par         \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //\u232?vuota la tabella GRPA ?\f0\cf0\i0 
+\par          \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par            \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Il report delle discipline Gruppo A \u232?gi\u224?fatto. Vuoi rifarlo?'\f0\cf0  \cf10\f9\fs20 ,\f0\cf0 
+\par                 \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par               \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0  \b\cf6\f5\fs20 goto\f0\cf0\b0  \cf5\f4\fs20 GB\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par         \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DisableControls\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 try\f0\cf0\b0 
+\par           \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \b\cf6\f5\fs20 while\f0\cf0\b0  \b\cf6\f5\fs20 not\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Eof\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par            \b\cf6\f5\fs20 begin\f0\cf0\b0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per ogni codga ricavare il cod dspl e memorizzare la DESCR nella Tabella\f0\cf0\i0 
+\par                \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 codgan\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par                  \b\cf6\f5\fs20 begin\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se il codice gara corrisponde\f0\cf0\i0 
+\par                    \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 \i\cf2\f1\fs20 //memorizza la disciplina\f0\cf0\i0 
+\par                    \cf5\f4\fs20 dsplsi\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0 \i\cf2\f1\fs20 //cerca la disciplina sull'anagrafica\f0\cf0\i0 
+\par                      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 dsplsi\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //quando la trova\f0\cf0\i0 
+\par                        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                          \cf5\f4\fs20 DSPLstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DESCR'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 \i\cf2\f1\fs20 //memorizza la descrizione\f0\cf0\i0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //la registra sulla tabella del report\f0\cf0\i0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DESCR'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 DSPLstr\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'TMAX'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'TMAX'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable11\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Next\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 finally\f0\cf0\b0 
+\par           \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EnableControls\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Registrate le discipline Gruppo A'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par           \cf5\f4\fs20 GB\f0\cf0  \cf10\f9\fs20 :\f0\cf0 
+\par 
+\par         \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //\u232?vuota la tabella Base ?\f0\cf0\i0 
+\par          \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par            \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Il report delle discipline Gruppo B \u232?gi\u224?fatto. Vuoi rifarlo?'\f0\cf0  \cf10\f9\fs20 ,\f0\cf0 
+\par                 \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par               \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par               \b\cf6\f5\fs20 end\f0\cf0\b0  \b\cf6\f5\fs20 else\f0\cf0\b0  \b\cf6\f5\fs20 goto\f0\cf0\b0  \cf5\f4\fs20 FINE\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par          \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par         \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 DisableControls\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 try\f0\cf0\b0 
+\par           \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 First\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \b\cf6\f5\fs20 while\f0\cf0\b0  \b\cf6\f5\fs20 not\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Eof\f0\cf0  \b\cf6\f5\fs20 do\f0\cf0\b0 
+\par            \b\cf6\f5\fs20 begin\f0\cf0\b0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //per ogni codga ricavare il cod dspl e memorizzare la DESCR nella Tabella\f0\cf0\i0 
+\par                \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 codgan\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par                  \b\cf6\f5\fs20 begin\f0\cf0\b0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //se il codice gara corrisponde\f0\cf0\i0 
+\par                    \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 \i\cf2\f1\fs20 //memorizza la disciplina\f0\cf0\i0 
+\par                    \cf5\f4\fs20 dsplsi\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0 \i\cf2\f1\fs20 //cerca la disciplina sull'anagrafica\f0\cf0\i0 
+\par                      \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 dsplsi\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0  \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //quando la trova\f0\cf0\i0 
+\par                        \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par                          \cf5\f4\fs20 DSPLstr\f0\cf0 \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DESCR'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 \i\cf2\f1\fs20 //memorizza la descrizione\f0\cf0\i0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Insert\f0\cf0 \cf10\f9\fs20 ;\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //la registra sulla tabella del report\f0\cf0\i0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsInteger\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 DSPLn\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'DESCR'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsString\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 DSPLstr\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'TMAX'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable4\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 FieldByName\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'TMAX'\f0\cf0 \cf10\f9\fs20 ).\f0\cf0 \cf5\f4\fs20 AsDateTime\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                          \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable12\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Post\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par                        \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par                  \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Next\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par            \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par         \b\cf6\f5\fs20 finally\f0\cf0\b0 
+\par           \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EnableControls\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par           \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Registrate le discipline Gruppo B'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par         \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par           \cf5\f4\fs20 FINE\f0\cf0  \cf10\f9\fs20 :\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Presentare il report   Nota bene come si passano le variabili\f0\cf0\i0 
+\par       \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 frxReport5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variables\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf9\f8\fs20 'mia1'\f0\cf0 \cf10\f9\fs20 ]\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 giornostr\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par       \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 frxReport5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Variables\f0\cf0 \cf10\f9\fs20 [\f0\cf0 \cf9\f8\fs20 'mia2'\f0\cf0 \cf10\f9\fs20 ]\f0\cf0  \cf10\f9\fs20 :=\f0\cf0  \cf5\f4\fs20 QuotedStr\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 garastr\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par      \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Form5.frxPDFExport51.FileName:='Accoppiamenti';\f0\cf0\i0 
+\par       \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 frxReport5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ShowReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 Edit3\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Text\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf9\f8\fs20 ''\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button6Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 frxReport5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Print\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par                             \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // ELENCA o STAMPA L'anagrafe Gare\f0\cf0\i0 
+\par              \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button7Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par      \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 frxReport51\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ShowReport\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Vuoi stamparlo ?'\f0\cf0  \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mtconfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrNo\f0\cf0 
+\par        \b\cf6\f5\fs20 then\f0\cf0\b0   \cf5\f4\fs20 Exit\f0\cf0  \b\cf6\f5\fs20 else\f0\cf0\b0 
+\par          \cf5\f4\fs20 Form5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 frxReport51\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Print\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button8Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Azzera gruppo Base\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Stai per azzerare l'\f0\cf0 \cf9\f8\fs20 'intera Anagrafe del Gruppo Base. Vuoi continuare ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Tutta l'\f0\cf0 \cf9\f8\fs20 'anagrafe \u232?stata cancellata !'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button9Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0    \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 // Azzera gruppo A\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Stai per azzerare l'\f0\cf0 \cf9\f8\fs20 'intera Anagrafe del Gruppo A. Vuoi continuare ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Tutta l'\f0\cf0 \cf9\f8\fs20 'anagrafe \u232?stata cancellata !'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Button10Click\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0  \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0     \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Azzera gruppo B\f0\cf0\i0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 MessageDlg\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Stai per azzerare l'\f0\cf0 \cf9\f8\fs20 'intera Anagrafe del Gruppo B. Vuoi continuare ?'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 
+\par           \cf5\f4\fs20 mtConfirmation\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf10\f9\fs20 [\f0\cf0 \cf5\f4\fs20 mbYes\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 ],\f0\cf0  \cf7\f6\fs20 0\f0\cf0 \cf10\f9\fs20 ,\f0\cf0  \cf5\f4\fs20 mbNo\f0\cf0 \cf10\f9\fs20 )\f0\cf0  \cf10\f9\fs20 =\f0\cf0  \cf5\f4\fs20 mrYes\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par           \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Close\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 EmptyTable\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par             \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Tutta l'\f0\cf0 \cf9\f8\fs20 'anagrafe \u232?stata cancellata !'\f0\cf0 \cf10\f9\fs20 );\f0\cf0 
+\par           \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Pulizia dei record vuoti\f0\cf0\i0 
+\par \b\cf6\f5\fs20 procedure\f0\cf0\b0  \cf5\f4\fs20 TForm5\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Pulizia\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf5\f4\fs20 Sender\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 TObject\f0\cf0 \cf10\f9\fs20 );\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //Quando crei una Procedura premetti il Form\f0\cf0\i0 
+\par \b\cf6\f5\fs20 var\f0\cf0\b0 
+\par \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :\f0\cf0 \cf5\f4\fs20 Boolean\f0\cf0  \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par     \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 null\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //senza LocateOptions\f0\cf0\i0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par    \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 null\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //senza LocateOptions\f0\cf0\i0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par    \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 null\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //senza LocateOptions\f0\cf0\i0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 null\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //senza LocateOptions\f0\cf0\i0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable8\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par     \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable6\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 RecordCount\f0\cf0 \cf10\f9\fs20 >\f0\cf0 \cf7\f6\fs20 0\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par   \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par     \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODDSPL'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 null\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //senza LocateOptions\f0\cf0\i0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par      \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Locate\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'CODGA'\f0\cf0 \cf10\f9\fs20 ,\f0\cf0 \cf5\f4\fs20 null\f0\cf0 \cf10\f9\fs20 ,[]);\f0\cf0   \cf10\f9\fs20 \f0\cf0 \i\cf2\f1\fs20 //senza LocateOptions\f0\cf0\i0 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par     \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par       \cf5\f4\fs20 Form2\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 ABSTable9\f0\cf0 \cf10\f9\fs20 .\f0\cf0 \cf5\f4\fs20 Delete\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 True\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \cf5\f4\fs20 trovato\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par     \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par   \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par 
+\par    \b\cf6\f5\fs20 if\f0\cf0\b0  \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 =\f0\cf0 \cf5\f4\fs20 True\f0\cf0  \b\cf6\f5\fs20 then\f0\cf0\b0 
+\par       \b\cf6\f5\fs20 begin\f0\cf0\b0 
+\par          \cf5\f4\fs20 ShowMessage\f0\cf0 \cf10\f9\fs20 (\f0\cf0 \cf9\f8\fs20 'Rimosso ogni record senza codice Gara o Disciplina'\f0\cf0  \cf10\f9\fs20 );\f0\cf0 
+\par          \cf5\f4\fs20 rimosso\f0\cf0 \cf10\f9\fs20 :=\f0\cf0 \cf5\f4\fs20 False\f0\cf0 \cf10\f9\fs20 ;\f0\cf0 
+\par       \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 ;\f0\cf0 
+\par \b\cf6\f5\fs20 end\f0\cf0\b0 \cf10\f9\fs20 .\f0\cf0 
+\par 
+\par 
+}

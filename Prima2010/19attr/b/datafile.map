@@ -1,0 +1,3962 @@
+
+ Start         Length     Name                   Class
+ 0001:00000000 000307D8H .text                   CODE
+ 0002:00000000 00000B08H .data                   DATA
+ 0002:00000B08 00000751H .bss                    BSS
+
+
+Detailed map of segments
+
+ 0001:00000000 00003F14 C=CODE     S=.text    G=(none)   M=System   ACBP=A9
+ 0001:00003F14 00000170 C=CODE     S=.text    G=(none)   M=SysInit  ACBP=A9
+ 0001:00004084 00000914 C=CODE     S=.text    G=(none)   M=Windows  ACBP=A9
+ 0001:00004998 00000038 C=CODE     S=.text    G=(none)   M=Messages ACBP=A9
+ 0001:000049D0 0000645A C=CODE     S=.text    G=(none)   M=SysUtils ACBP=A9
+ 0001:0000AE2C 00000038 C=CODE     S=.text    G=(none)   M=ActiveX  ACBP=A9
+ 0001:0000AE64 000002E8 C=CODE     S=.text    G=(none)   M=Consts   ACBP=A9
+ 0001:0000B14C 00000468 C=CODE     S=.text    G=(none)   M=TypInfo  ACBP=A9
+ 0001:0000B5B4 000064BB C=CODE     S=.text    G=(none)   M=Classes  ACBP=A9
+ 0001:00011A70 00007F7A C=CODE     S=.text    G=(none)   M=Graphics ACBP=A9
+ 0001:000199EC 000000A4 C=CODE     S=.text    G=(none)   M=Commctrl ACBP=A9
+ 0001:00019A90 00000038 C=CODE     S=.text    G=(none)   M=Imm      ACBP=A9
+ 0001:00019AC8 00000038 C=CODE     S=.text    G=(none)   M=WinSpool ACBP=A9
+ 0001:00019B00 00000044 C=CODE     S=.text    G=(none)   M=Printers ACBP=A9
+ 0001:00019B44 00007543 C=CODE     S=.text    G=(none)   M=Controls ACBP=A9
+ 0001:00021088 000021EA C=CODE     S=.text    G=(none)   M=Menus    ACBP=A9
+ 0001:00023274 00008347 C=CODE     S=.text    G=(none)   M=Forms    ACBP=A9
+ 0001:0002B5BC 00000040 C=CODE     S=.text    G=(none)   M=CommDlg  ACBP=A9
+ 0001:0002B5FC 0000270C C=CODE     S=.text    G=(none)   M=StdCtrls ACBP=A9
+ 0001:0002DD08 00000930 C=CODE     S=.text    G=(none)   M=ExtCtrls ACBP=A9
+ 0001:0002E638 00000038 C=CODE     S=.text    G=(none)   M=Dlgs     ACBP=A9
+ 0001:0002E670 000019ED C=CODE     S=.text    G=(none)   M=Dialogs  ACBP=A9
+ 0001:00030060 0000061C C=CODE     S=.text    G=(none)   M=ml990403 ACBP=A9
+ 0001:0003067C 0000015C C=CODE     S=.text    G=(none)   M=datafile ACBP=A9
+ 0002:00000000 0000009A C=DATA     S=.data    G=DGROUP   M=System   ACBP=A9
+ 0002:0000009C 00000010 C=DATA     S=.data    G=DGROUP   M=SysInit  ACBP=A9
+ 0002:000000AC 0000021C C=DATA     S=.data    G=DGROUP   M=SysUtils ACBP=A9
+ 0002:000002C8 00000004 C=DATA     S=.data    G=DGROUP   M=TypInfo  ACBP=A9
+ 0002:000002CC 00000018 C=DATA     S=.data    G=DGROUP   M=Classes  ACBP=A9
+ 0002:000002E4 000002B4 C=DATA     S=.data    G=DGROUP   M=Graphics ACBP=A9
+ 0002:00000598 00000004 C=DATA     S=.data    G=DGROUP   M=Printers ACBP=A9
+ 0002:0000059C 000000CC C=DATA     S=.data    G=DGROUP   M=Controls ACBP=A9
+ 0002:00000668 000000A6 C=DATA     S=.data    G=DGROUP   M=Menus    ACBP=A9
+ 0002:00000710 000000FC C=DATA     S=.data    G=DGROUP   M=Forms    ACBP=A9
+ 0002:0000080C 0000004C C=DATA     S=.data    G=DGROUP   M=StdCtrls ACBP=A9
+ 0002:00000858 000000FC C=DATA     S=.data    G=DGROUP   M=Dialogs  ACBP=A9
+ 0002:00001000 000004AC C=BSS      S=.bss     G=DGROUP   M=System   ACBP=A9
+ 0002:000014AC 00000018 C=BSS      S=.bss     G=DGROUP   M=SysInit  ACBP=A9
+ 0002:000014C4 00000004 C=BSS      S=.bss     G=DGROUP   M=Windows  ACBP=A9
+ 0002:000014C8 00000004 C=BSS      S=.bss     G=DGROUP   M=Messages ACBP=A9
+ 0002:000014CC 00000110 C=BSS      S=.bss     G=DGROUP   M=SysUtils ACBP=A9
+ 0002:000015DC 00000004 C=BSS      S=.bss     G=DGROUP   M=ActiveX  ACBP=A9
+ 0002:000015E0 00000004 C=BSS      S=.bss     G=DGROUP   M=Consts   ACBP=A9
+ 0002:000015E4 00000004 C=BSS      S=.bss     G=DGROUP   M=TypInfo  ACBP=A9
+ 0002:000015E8 00000018 C=BSS      S=.bss     G=DGROUP   M=Classes  ACBP=A9
+ 0002:00001600 0000005C C=BSS      S=.bss     G=DGROUP   M=Graphics ACBP=A9
+ 0002:0000165C 00000004 C=BSS      S=.bss     G=DGROUP   M=Commctrl ACBP=A9
+ 0002:00001660 00000004 C=BSS      S=.bss     G=DGROUP   M=Imm      ACBP=A9
+ 0002:00001664 00000004 C=BSS      S=.bss     G=DGROUP   M=WinSpool ACBP=A9
+ 0002:00001668 00000004 C=BSS      S=.bss     G=DGROUP   M=Printers ACBP=A9
+ 0002:0000166C 00000070 C=BSS      S=.bss     G=DGROUP   M=Controls ACBP=A9
+ 0002:000016DC 0000000C C=BSS      S=.bss     G=DGROUP   M=Menus    ACBP=A9
+ 0002:000016E8 00000040 C=BSS      S=.bss     G=DGROUP   M=Forms    ACBP=A9
+ 0002:00001728 00000004 C=BSS      S=.bss     G=DGROUP   M=CommDlg  ACBP=A9
+ 0002:0000172C 00000004 C=BSS      S=.bss     G=DGROUP   M=StdCtrls ACBP=A9
+ 0002:00001730 00000004 C=BSS      S=.bss     G=DGROUP   M=ExtCtrls ACBP=A9
+ 0002:00001734 00000004 C=BSS      S=.bss     G=DGROUP   M=Dlgs     ACBP=A9
+ 0002:00001738 0000000D C=BSS      S=.bss     G=DGROUP   M=Dialogs  ACBP=A9
+ 0002:00001748 00000008 C=BSS      S=.bss     G=DGROUP   M=ml990403 ACBP=A9
+
+
+  Address         Publics by Name
+
+ 0001:0000A198       .
+ 0002:000015D0       .1
+ 0002:0000174C       .1
+ 0002:000015E0       .1
+ 0001:00001754       @AbstractError
+ 0001:000039A5       @Append
+ 0001:00001BD4       @AsClass
+ 0001:0000387E       @Assign
+ 0001:00001824       @AStrCmp
+ 0001:00001C20       @CallDynaInst
+ 0001:00001D28       @ClassCreate
+ 0001:00001D64       @ClassDestroy
+ 0001:00003920       @Close
+ 0001:00002E80       @Dispose
+ 0001:0000210C       @DoneExcept
+ 0001:00001894       @FillChar
+ 0001:00002E60       @Finalize
+ 0001:00002DA0       @FinalizeArray
+ 0001:00002D74       @FinalizeRecord
+ 0001:00001C38       @FindDynaInst
+ 0001:000038F9       @Flush
+ 0001:00001638       @FreeMem
+ 0001:00001620       @GetMem
+ 0001:00003F90       @GetTls
+ 0001:000025A8       @Halt
+ 0001:00002490       @Halt0
+ 0001:00001E68       @HandleAnyException
+ 0001:00002064       @HandleFinally
+ 0001:00001F2C       @HandleOnException
+ 0001:00004028       @InitExe
+ 0001:00002D68       @Initialize
+ 0001:00002CD8       @InitializeArray
+ 0001:00002CAC       @InitializeRecord
+ 0001:000023EC       @InitImports
+ 0001:000023D0       @InitResStringImports
+ 0001:000023B4       @InitResStrings
+ 0001:00003648       @IntfClear
+ 0001:00003660       @IntfCopy
+ 0001:00001AA4       @IntOver
+ 0001:00001BBC       @IsClass
+ 0001:00002A00       @LStrAddRef
+ 0001:000025E4       @LStrArrayClr
+ 0001:00002614       @LStrAsg
+ 0001:00002854       @LStrCat
+ 0001:00002898       @LStrCat3
+ 0001:0000290C       @LStrCatN
+ 0001:000025C0       @LStrClr
+ 0001:0000295C       @LStrCmp
+ 0001:00002A50       @LStrCopy
+ 0001:00002A90       @LStrDelete
+ 0001:000027FC       @LStrFromArray
+ 0001:00002774       @LStrFromChar
+ 0001:00002784       @LStrFromPChar
+ 0001:000026A4       @LStrFromPCharLen
+ 0001:000027B4       @LStrFromPWChar
+ 0001:000026D4       @LStrFromPWCharLen
+ 0001:000027F0       @LStrFromString
+ 0001:00002814       @LStrFromWStr
+ 0001:00002658       @LStrLAsg
+ 0001:0000284C       @LStrLen
+ 0001:00002AD8       @LStrPos
+ 0001:00002B20       @LStrSetLength
+ 0001:00002A10       @LStrToPChar
+ 0001:00002828       @LStrToString
+ 0001:00002E6C       @New
+ 0001:00002680       @NewAnsiString
+ 0001:00003B24       @Pow10
+ 0001:000017A0       @PStrCmp
+ 0001:00001770       @PStrNCpy
+ 0001:000020B8       @RaiseAgain
+ 0001:0000209C       @RaiseExcept
+ 0001:00001650       @ReallocMem
+ 0001:00003997       @ResetText
+ 0001:0000399E       @RewritText
+ 0001:000025B4       @RunError
+ 0001:00002384       @StartExe
+ 0001:0000213C       @TryFinallyExit
+ 0001:000018B4       @ValLong
+ 0001:00003154       @VarCast
+ 0001:00002FE8       @VarClear
+ 0001:00003284       @VarClr
+ 0001:0000301C       @VarCopy
+ 0001:00003248       @VarToLStr
+ 0001:00003A8B       @Write0Char
+ 0001:00003AF4       @Write0CString
+ 0001:00003A50       @Write0String
+ 0001:00003ADD       @WriteChar
+ 0001:00003AF8       @WriteCString
+ 0001:00003A77       @WriteLn
+ 0001:00003A5A       @WriteString
+ 0001:00002BA4       @WStrArrayClr
+ 0001:00002BC8       @WStrAsg
+ 0001:00002B8C       @WStrClr
+ 0001:00002C9C       @WStrFromLStr
+ 0001:00002BEC       @WStrFromPCharLen
+ 0001:00002C80       @WStrFromPWCharLen
+ 0001:00001974       @_CLenToPasStr
+ 0001:0000195C       @_CToPasStr
+ 0001:000038D4       @_Flush
+ 0001:000016E4       @_IOTest
+ 0001:00009198       AbstractErrorHandler
+ 0002:00001018       AbstractErrorProc
+ 0002:00000118       AccessMode
+ 0001:0000445C       ActivateKeyboardLayout
+ 0001:0000AE5C       ActiveX
+ 0001:00005540       AddExitProc
+ 0001:0000349C       AddModuleUnloadProc
+ 0001:00004464       AdjustWindowRectEx
+ 0001:00024A98       AllocateHWnd
+ 0001:000054D4       AllocMem
+ 0002:00001400       AllocMemCount
+ 0002:00001404       AllocMemSize
+ 0001:00005644       AnsiCompareText
+ 0001:00005980       AnsiLastChar
+ 0001:0000446C       AnsiLower
+ 0001:00005604       AnsiLowerCase
+ 0001:00009BCC       AnsiLowerCaseFileName
+ 0001:00009B70       AnsiPos
+ 0001:00005694       AnsiStrLIComp
+ 0001:00009CB8       AnsiStrPos
+ 0001:00009DA8       AnsiStrRScan
+ 0001:00009DFC       AnsiStrScan
+ 0001:00006AB8       AppendChars
+ 0001:00006F0C       AppendFormat
+ 0001:00006B4C       AppendNumber
+ 0001:00006B28       AppendString
+ 0002:000016E8       Application
+ 0001:000090DC       AssertErrorHandler
+ 0002:00001014       AssertErrorProc
+ 0001:0000C8AC       BeginGlobalLoading
+ 0001:00004474       BeginPaint
+ 0001:00004264       BitBlt
+ 0001:0000C338       Bounds
+ 0001:00009878       ByteToCharIndex
+ 0001:0000983C       ByteToCharLen
+ 0001:000097CC       ByteType
+ 0001:00009740       ByteTypeTest
+ 0001:0000447C       CallNextHookEx
+ 0001:0000A034       CallTerminateProcs
+ 0001:00004484       CallWindowProc
+ 0001:0001B338       CancelDrag
+ 0001:0000448C       CharLowerBuff
+ 0001:000131FC       CharsetToIdent
+ 0001:000099C4       CharToByteIndex
+ 0001:00009A54       CharToByteLen
+ 0001:00004494       CheckMenuItem
+ 0001:000119F8       Classes
+ 0001:0000449C       ClientToScreen
+ 0001:0000409C       CloseHandle
+ 0002:00001028       CmdLine
+ 0002:00001024       CmdShow
+ 0001:00012FF4       ColorToIdent
+ 0001:00012FE4       ColorToRGB
+ 0001:00019A88       Commctrl
+ 0001:0002B5F4       CommDlg
+ 0001:00005590       CompareMem
+ 0001:000040A4       CompareString
+ 0001:000055B0       CompareText
+ 0001:0000B144       Consts
+ 0001:00021064       Controls
+ 0001:00008BA8       ConvertAddr
+ 0001:00006C60       ConvertEraString
+ 0001:00005484       ConvertError
+ 0001:000054A4       ConvertErrorFmt
+ 0001:00006DEC       ConvertYearString
+ 0001:0000426C       CopyEnhMetaFile
+ 0001:00017B28       CopyPalette
+ 0001:00009908       CountChars
+ 0001:000092E4       CreateAVObject
+ 0001:00004274       CreateBitmap
+ 0001:0000427C       CreateBrushIndirect
+ 0001:00004284       CreateCompatibleBitmap
+ 0001:0000428C       CreateCompatibleDC
+ 0001:0000429C       CreateDIBitmap
+ 0001:00004294       CreateDIBSection
+ 0001:000040AC       CreateEvent
+ 0001:000040B4       CreateFile
+ 0001:000042A4       CreateFontIndirect
+ 0001:000042AC       CreateHalftonePalette
+ 0001:000044A4       CreateIcon
+ 0001:00008F6C       CreateInOutError
+ 0001:000044AC       CreateMenu
+ 0001:0002F96C       CreateMessageDialog
+ 0001:000042B4       CreatePalette
+ 0001:000042BC       CreatePenIndirect
+ 0001:000044B4       CreatePopupMenu
+ 0001:000042C4       CreateRectRgn
+ 0001:000042CC       CreateSolidBrush
+ 0001:000040BC       CreateThread
+ 0001:0000492C       CreateWindow
+ 0001:000044BC       CreateWindowEx
+ 0002:0000059C       CreationControl
+ 0002:00000710       Ctl3DBtnWndProc
+ 0002:00000718       Ctl3DCtlColorEx
+ 0002:00000714       Ctl3DDlgFramePaint
+ 0002:000014D4       CurrencyDecimals
+ 0002:000014D0       CurrencyFormat
+ 0002:000014CC       CurrencyString
+ 0001:00006A98       CurrentYear
+ 0001:0001AB80       CursorToIdent
+ 0001:0003076C       datafile
+ 0002:000014D5       DateSeparator
+ 0001:00005B60       DateTimeToFileDate
+ 0001:000076C8       DateTimeToString
+ 0001:000064A4       DateTimeToTimeStamp
+ 0001:00006A60       DayOfWeek
+ 0002:00000310       DDBsOnly
+ 0001:00024B54       DeallocateHWnd
+ 0002:00000008       DebugHook
+ 0002:000014D3       DecimalSeparator
+ 0001:00006894       DecodeDate
+ 0001:0000661C       DecodeTime
+ 0002:00000000       Default8087CW
+ 0002:000002E4       DefFontData
+ 0001:000044C4       DefFrameProc
+ 0002:000001C8       DefLongDayNames
+ 0002:0000017C       DefLongMonthNames
+ 0001:000044CC       DefMDIChildProc
+ 0002:000001AC       DefShortDayNames
+ 0002:0000014C       DefShortMonthNames
+ 0001:000044D4       DefWindowProc
+ 0001:000040C4       DeleteCriticalSection
+ 0001:000042D4       DeleteDC
+ 0001:000042DC       DeleteEnhMetaFile
+ 0001:000044DC       DeleteMenu
+ 0001:000042E4       DeleteObject
+ 0001:000044E4       DestroyCursor
+ 0001:000044EC       DestroyIcon
+ 0001:000044F4       DestroyMenu
+ 0001:000044FC       DestroyWindow
+ 0001:00030040       Dialogs
+ 0001:0002447C       DisableTaskWindows
+ 0001:00004504       DispatchMessage
+ 0001:00005468       DivMod
+ 0001:0002E668       Dlgs
+ 0001:000066C8       DoEncodeDate
+ 0001:000064E4       DoEncodeTime
+ 0001:000054FC       DoExitProc
+ 0001:00024920       DoneCtl3D
+ 0001:00009670       DoneExceptions
+ 0001:000040CC       DosDateTimeToFileTime
+ 0001:0000450C       DrawEdge
+ 0001:00004514       DrawIcon
+ 0001:0000451C       DrawMenuBar
+ 0001:00004524       DrawText
+ 0002:000000AC       EmptyStr
+ 0001:0000452C       EnableMenuItem
+ 0001:0002452C       EnableTaskWindows
+ 0001:00004534       EnableWindow
+ 0001:00006818       EncodeDate
+ 0001:0000659C       EncodeTime
+ 0001:0000C904       EndGlobalLoading
+ 0001:0000453C       EndPaint
+ 0001:000040D4       EnterCriticalSection
+ 0001:000040DC       EnumCalendarInfoA
+ 0001:000083BC       EnumEraNames
+ 0001:00008418       EnumEraYearOffsets
+ 0001:000042EC       EnumFontFamiliesEx
+ 0001:000042F4       EnumFonts
+ 0001:00004544       EnumThreadWindows
+ 0001:0000454C       EnumWindows
+ 0001:00008F0C       EOutOfMemory.Destroy
+ 0001:00008F30       EOutOfMemory.FreeInstance
+ 0001:00004554       EqualRect
+ 0002:00001598       EraNames
+ 0001:00007A68       EraToYear
+ 0002:000015B4       EraYearOffsets
+ 0002:00001038       ErrorAddr
+ 0001:00009070       ErrorHandler
+ 0002:000001E4       ErrorMap
+ 0002:00001004       ErrorProc
+ 0001:00008B78       ExceptAddr
+ 0002:00001008       ExceptClsProc
+ 0001:00009584       ExceptHandler
+ 0001:00008E44       Exception.Create
+ 0001:00008E84       Exception.CreateFmt
+ 0002:00001010       ExceptionClass
+ 0001:00008BB4       ExceptionErrorMessage
+ 0002:0000021C       ExceptMap
+ 0001:00008B48       ExceptObject
+ 0002:0000100C       ExceptObjProc
+ 0002:00001000       ExceptProc
+ 0001:000042FC       ExcludeClipRect
+ 0002:00001030       ExitCode
+ 0002:00001034       ExitProc
+ 0002:00000114       ExitProcList
+ 0001:0002E630       ExtCtrls
+ 0001:00005A94       ExtractFileExt
+ 0001:00005A48       ExtractFileName
+ 0001:0000596C       FileClose
+ 0001:0000589C       FileCreate
+ 0001:00005AF4       FileDateToDateTime
+ 0002:00001042       FileMode
+ 0001:0000584C       FileOpen
+ 0001:000058D0       FileRead
+ 0001:00005940       FileSeek
+ 0001:000040E4       FileTimeToDosDateTime
+ 0001:000040EC       FileTimeToLocalFileTime
+ 0001:000301E4       FileTimeToStr
+ 0001:00005908       FileWrite
+ 0001:0000455C       FillRect
+ 0001:0002B548       Finalization
+ 0001:0002B5C4       Finalization
+ 0001:0002DCD0       Finalization
+ 0001:0002E600       Finalization
+ 0001:0002E638       Finalization
+ 0001:000231C8       Finalization
+ 0001:00004960       Finalization
+ 0001:00021018       Finalization
+ 0001:00004998       Finalization
+ 0001:0000AC88       Finalization
+ 0001:00019B00       Finalization
+ 0001:00019AC8       Finalization
+ 0001:00019A90       Finalization
+ 0001:00019A58       Finalization
+ 0001:00019838       Finalization
+ 0001:0001197C       Finalization
+ 0001:0002FFE4       Finalization
+ 0001:0000404C       Finalization
+ 0001:00003DF8       Finalization
+ 0001:0000B57C       Finalization
+ 0001:00030644       Finalization
+ 0001:0000B114       Finalization
+ 0001:0003067C       Finalization
+ 0001:0000AE2C       Finalization
+ 0001:0000C44C       FindClass
+ 0001:000032B4       FindClassHInstance
+ 0001:0001A9B4       FindControl
+ 0001:0001B384       FindDragTarget
+ 0002:000015EC       FindGlobalComponent
+ 0001:0000328C       FindHInstance
+ 0001:000040F4       FindResource
+ 0001:000032C0       FindResourceHInstance
+ 0001:0001B350       FindVCLWindow
+ 0001:0000A8F8       FloatToDecimal
+ 0001:0000A1BA       FloatToText
+ 0001:0000A523       FloatToTextFmt
+ 0002:00000140       FMSecsPerDay
+ 0001:00006388       FmtStr
+ 0001:00024644       ForegroundTask
+ 0002:00001748       Form1
+ 0001:00006360       Format
+ 0002:00000148       Format
+ 0001:00005F84       FormatBuf
+ 0001:00005F70       FormatClearStr
+ 0001:00005EDC       FormatError
+ 0002:00000138       FormatErrorStrs
+ 0001:000040FC       FormatMessage
+ 0001:00005F54       FormatVarToStr
+ 0001:0002B59C       Forms
+ 0001:00003B24       FPower10
+ 0001:00004564       FrameRect
+ 0001:00004104       FreeLibrary
+ 0001:00017014       FreeMemoryContexts
+ 0001:00024A74       FreeObjectInstance
+ 0001:0000410C       FreeResource
+ 0001:0000A070       FreeTerminateProcs
+ 0001:0000456C       GetActiveWindow
+ 0001:00004304       GetBitmapBits
+ 0001:0000430C       GetBrushOrgEx
+ 0001:00004574       GetCapture
+ 0001:0001AC28       GetCaptureControl
+ 0001:0000C3E4       GetClass
+ 0001:0000457C       GetClassInfo
+ 0001:00004584       GetClientRect
+ 0001:0000458C       GetClipboardData
+ 0001:00006B9C       GetCount
+ 0001:00004114       GetCPInfo
+ 0001:00004314       GetCurrentPositionEx
+ 0001:0000411C       GetCurrentProcessId
+ 0001:00004124       GetCurrentThreadId
+ 0001:00004594       GetCursor
+ 0001:0000459C       GetCursorPos
+ 0001:00006BE8       GetDate
+ 0001:0000412C       GetDateFormat
+ 0001:0000792C       GetDateOrder
+ 0001:000045A4       GetDC
+ 0001:000045AC       GetDCEx
+ 0001:0001973C       GetDefFontCharSet
+ 0001:000045B4       GetDesktopWindow
+ 0001:0000432C       GetDeviceCaps
+ 0001:000154A8       GetDIB
+ 0001:0000431C       GetDIBColorTable
+ 0001:00004324       GetDIBits
+ 0001:000153F0       GetDIBSizes
+ 0001:000045BC       GetDlgItem
+ 0001:00004334       GetEnhMetaFileBits
+ 0001:0000433C       GetEnhMetaFileHeader
+ 0001:00004344       GetEnhMetaFilePaletteEntries
+ 0001:0000B158       GetEnumValue
+ 0001:00008484       GetEraNamesAndYearOffsets
+ 0001:00007A04       GetEraYearOffset
+ 0001:000092B8       GetExceptionClass
+ 0001:000094B4       GetExceptionObject
+ 0001:00004134       GetFileTime
+ 0001:000045C4       GetFocus
+ 0001:000045CC       GetForegroundWindow
+ 0001:000087E4       GetFormatSettings
+ 0001:000045D4       GetIconInfo
+ 0001:000045EC       GetKeyboardLayout
+ 0001:000045F4       GetKeyboardLayoutList
+ 0001:000045DC       GetKeyNameText
+ 0001:000045E4       GetKeyState
+ 0001:000045FC       GetLastActivePopup
+ 0001:0000413C       GetLastError
+ 0001:000081D4       GetLocaleChar
+ 0001:0000414C       GetLocaleInfo
+ 0001:00008170       GetLocaleStr
+ 0001:00004144       GetLocalTime
+ 0001:0001ABE4       GetLongHint
+ 0001:00004604       GetMenu
+ 0001:0000460C       GetMenuItemCount
+ 0001:00004614       GetMenuState
+ 0001:0000461C       GetMenuString
+ 0001:00004154       GetModuleFileName
+ 0001:0000415C       GetModuleHandle
+ 0001:00008254       GetMonthDayNames
+ 0001:0000434C       GetObject
+ 0001:0002B5BC       GetOpenFileName
+ 0001:0000B210       GetOrdProp
+ 0001:00004354       GetPaletteEntries
+ 0001:00004624       GetParent
+ 0001:00024CAC       GetParentForm
+ 0001:0000435C       GetPixel
+ 0001:00004164       GetProcAddress
+ 0001:0000462C       GetProp
+ 0001:0000B1A4       GetPropInfo
+ 0001:00004634       GetScrollPos
+ 0001:0001ABA0       GetShortHint
+ 0001:00004364       GetStockObject
+ 0001:0000463C       GetSubMenu
+ 0001:00004644       GetSysColor
+ 0001:0000416C       GetSystemInfo
+ 0001:0000464C       GetSystemMenu
+ 0001:00004654       GetSystemMetrics
+ 0001:0000436C       GetSystemPaletteEntries
+ 0001:00004374       GetTextExtentPoint
+ 0001:0000437C       GetTextMetrics
+ 0001:00004174       GetThreadLocale
+ 0001:00006C20       GetTime
+ 0001:0000B14C       GetTypeData
+ 0001:0000417C       GetVersion
+ 0001:00004184       GetVersionEx
+ 0001:0000465C       GetWindow
+ 0001:00004664       GetWindowDC
+ 0001:0000466C       GetWindowLong
+ 0001:0000438C       GetWindowOrgEx
+ 0001:00004674       GetWindowPlacement
+ 0001:0000467C       GetWindowRect
+ 0001:00004684       GetWindowRgn
+ 0001:0000468C       GetWindowText
+ 0001:00004694       GetWindowThreadProcessId
+ 0001:00004384       GetWinMetaFileBits
+ 0001:0000418C       GlobalAddAtom
+ 0001:00004194       GlobalAlloc
+ 0001:000048B4       GlobalAllocPtr
+ 0001:0000419C       GlobalDeleteAtom
+ 0001:0000F0D8       GlobalFixupReferences
+ 0001:000041A4       GlobalFree
+ 0001:000048E0       GlobalFreePtr
+ 0001:000041B4       GlobalHandle
+ 0001:000041AC       GlobalLock
+ 0001:000041BC       GlobalReAlloc
+ 0001:000048C4       GlobalReAllocPtr
+ 0001:000041C4       GlobalUnlock
+ 0001:00019900       Graphics
+ 0002:00000004       HeapAllocFlags
+ 0001:000048A8       HiByte
+ 0002:000014B8       HInstance
+ 0002:0000071C       HintWindowClass
+ 0001:0001320C       IdentToCharset
+ 0001:00013004       IdentToColor
+ 0001:0001AB90       IdentToCursor
+ 0001:0000C7A0       IdentToInt
+ 0001:00019A0C       ImageList_AddIcon
+ 0001:00019A18       ImageList_BeginDrag
+ 0001:000199EC       ImageList_Create
+ 0001:000199F4       ImageList_Destroy
+ 0001:00019A28       ImageList_DragEnter
+ 0001:00019A30       ImageList_DragLeave
+ 0001:00019A38       ImageList_DragMove
+ 0001:00019A48       ImageList_DragShowNolock
+ 0001:00019A20       ImageList_EndDrag
+ 0001:00019A50       ImageList_GetDragImage
+ 0001:000199FC       ImageList_ReplaceIcon
+ 0001:00019A04       ImageList_SetBkColor
+ 0001:00019A40       ImageList_SetDragCursorImage
+ 0001:00019AC0       Imm
+ 0001:00020EA4       Imm32IsIME
+ 0002:00000144       IMSecsPerDay
+ 0001:0000469C       InflateRect
+ 0001:000246E8       InitCtl3D
+ 0001:000095AC       InitExceptions
+ 0001:000041CC       InitializeCriticalSection
+ 0001:0000C9E0       InitInheritedComponent
+ 0001:000096D8       InitPlatformId
+ 0002:0000102C       InitProc
+ 0001:00009E5C       InitSysLocale
+ 0001:0001A8FC       InitWndProc
+ 0002:00001048       Input
+ 0001:000046A4       InsertMenu
+ 0001:000046AC       InsertMenuItem
+ 0001:00004394       IntersectClipRect
+ 0001:000046B4       IntersectRect
+ 0001:0000C7E0       IntToIdent
+ 0001:000057E4       IntToStr
+ 0001:000046BC       InvalidateRect
+ 0002:000015D8       InvalidPointer
+ 0001:00024C0C       IsAccel
+ 0002:00001040       IsConsole
+ 0001:00009B14       IsDelimiter
+ 0001:000046C4       IsDialogMessage
+ 0001:000046CC       IsIconic
+ 0001:0000667C       IsLeapYear
+ 0002:00001020       IsLibrary
+ 0002:00001041       IsMultiThread
+ 0001:00009AC8       IsPathDelimiter
+ 0001:000046D4       IsRectEmpty
+ 0001:00005768       IsValidIdent
+ 0001:000046DC       IsWindow
+ 0001:000046E4       IsWindowEnabled
+ 0001:000046EC       IsWindowVisible
+ 0001:000046F4       IsZoomed
+ 0001:00024BD0       KeyDataToShiftState
+ 0001:00024B7C       KeysToShiftState
+ 0001:000046FC       KillTimer
+ 0001:000059C8       LastDelimiter
+ 0002:000000F4       LeadBytes
+ 0001:000041D4       LeaveCriticalSection
+ 0002:0000000C       LibModuleList
+ 0001:00004704       LoadCursor
+ 0001:0000470C       LoadIcon
+ 0001:000041DC       LoadLibrary
+ 0001:000041E4       LoadResource
+ 0001:000032DC       LoadResourceModule
+ 0001:00003600       LoadResString
+ 0001:00004714       LoadString
+ 0001:000041EC       LocalFileTimeToFileTime
+ 0001:00008210       LocalGetLocaleStr
+ 0001:000041F4       LockResource
+ 0002:000014DC       LongDateFormat
+ 0002:00001570       LongDayNames
+ 0002:00001524       LongMonthNames
+ 0002:000014F0       LongTimeFormat
+ 0002:0000101C       MainInstance
+ 0002:000015E8       MainThreadID
+ 0001:0000489C       MakeLong
+ 0001:000249DC       MakeObjectInstance
+ 0001:000048F4       MakeROP4
+ 0001:00009204       MapException
+ 0001:0000471C       MapVirtualKey
+ 0001:00004724       MapWindowPoints
+ 0001:0000439C       MaskBlt
+ 0001:00023224       Menus
+ 0001:0000472C       MessageBox
+ 0001:0002FDD4       MessageDlg
+ 0001:0002FDF4       MessageDlgPosHelp
+ 0001:000049C8       Messages
+ 0001:00030674       ml990403
+ 0002:000014AC       ModuleIsLib
+ 0002:00000010       ModuleUnloadList
+ 0002:000000C4       MonthDays
+ 0001:00001714       Move
+ 0001:000043A4       MoveToEx
+ 0001:0001B410       MoveWindowOrg
+ 0001:000041FC       MulDiv
+ 0002:000014D1       NegCurrFormat
+ 0002:0000166C       NewStyleControls
+ 0001:0000C8D4       NotifyGlobalLoading
+ 0002:000013F0       Null
+ 0001:00004734       OemToAnsi
+ 0001:0000473C       OffsetRect
+ 0001:00002F24       OleStrToStrVar
+ 0002:000015D4       OutOfMemory
+ 0002:00001214       Output
+ 0001:00012BE0       PaletteChanged
+ 0001:000043AC       PatBlt
+ 0001:00004744       PeekMessage
+ 0001:000043B4       PlayEnhMetaFile
+ 0001:0000C304       Point
+ 0001:00004914       PointToSmallPoint
+ 0001:0000474C       PostMessage
+ 0001:00004754       PostQuitMessage
+ 0001:00019B3C       Printers
+ 0001:0000475C       PtInRect
+ 0001:00009F48       RaiseLastWin32Error
+ 0002:0000103C       RandSeed
+ 0001:00004204       ReadFile
+ 0001:000043BC       RealizePalette
+ 0001:0000C31C       Rect
+ 0001:000043CC       Rectangle
+ 0001:000043C4       RectVisible
+ 0001:00004084       RegCloseKey
+ 0001:00004764       RegisterClass
+ 0001:0000C53C       RegisterClass
+ 0001:0000C62C       RegisterClasses
+ 0001:0000C770       RegisterIntegerConsts
+ 0001:00003580       RegisterModule
+ 0001:0000476C       RegisterWindowMessage
+ 0001:0000408C       RegOpenKeyEx
+ 0001:00004094       RegQueryValueEx
+ 0001:00004774       ReleaseCapture
+ 0001:0000477C       ReleaseDC
+ 0001:0000F260       RemoveFixupReferences
+ 0001:0000F2C8       RemoveFixups
+ 0001:00004784       RemoveMenu
+ 0001:000034C0       RemoveModuleUnloadProc
+ 0001:0000478C       RemoveProp
+ 0001:000043D4       RestoreDC
+ 0001:000043DC       SaveDC
+ 0001:00007734       ScanBlanks
+ 0001:000078D4       ScanChar
+ 0001:00007AFC       ScanDate
+ 0001:0000777C       ScanNumber
+ 0001:00007834       ScanString
+ 0001:00007E58       ScanTime
+ 0001:0000799C       ScanToNumber
+ 0002:000016EC       Screen
+ 0001:00004794       ScreenToClient
+ 0001:0000479C       ScrollWindow
+ 0001:000043E4       SelectObject
+ 0001:000043EC       SelectPalette
+ 0001:0001A9D0       SendAppMessage
+ 0001:000047A4       SendMessage
+ 0001:000047AC       SetActiveWindow
+ 0001:0002496C       SetAutoSubClass
+ 0001:000043F4       SetBkColor
+ 0001:000043FC       SetBkMode
+ 0001:00004404       SetBrushOrgEx
+ 0001:000047B4       SetCapture
+ 0001:0001AC50       SetCaptureControl
+ 0001:000047BC       SetCursor
+ 0001:0000440C       SetDIBColorTable
+ 0001:0000420C       SetEndOfFile
+ 0001:00004414       SetEnhMetaFileBits
+ 0001:00004214       SetErrorMode
+ 0001:0000421C       SetEvent
+ 0001:00004224       SetFilePointer
+ 0001:0000422C       SetFileTime
+ 0001:0000B4AC       SetFloatProp
+ 0001:000047C4       SetFocus
+ 0001:000047CC       SetForegroundWindow
+ 0001:00020DC8       SetImeMode
+ 0001:000047D4       SetMenu
+ 0001:0000B544       SetMethodProp
+ 0001:0000B284       SetOrdProp
+ 0001:000047DC       SetProp
+ 0001:000047E4       SetRect
+ 0001:0000441C       SetROP2
+ 0001:000047EC       SetScrollInfo
+ 0001:000047F4       SetScrollPos
+ 0001:00004424       SetStretchBltMode
+ 0001:0000B478       SetStrProp
+ 0001:0000442C       SetTextColor
+ 0001:00004234       SetThreadLocale
+ 0001:000047FC       SetTimer
+ 0001:00004434       SetViewportOrgEx
+ 0001:00004804       SetWindowLong
+ 0001:00004444       SetWindowOrgEx
+ 0001:0000480C       SetWindowPlacement
+ 0001:00004814       SetWindowPos
+ 0001:0000482C       SetWindowRgn
+ 0001:00004824       SetWindowsHookEx
+ 0001:0000481C       SetWindowText
+ 0001:0000443C       SetWinMetaFileBits
+ 0002:00000124       ShareMode
+ 0001:0002176C       ShortCutToText
+ 0002:000014D8       ShortDateFormat
+ 0002:00001554       ShortDayNames
+ 0002:000014F4       ShortMonthNames
+ 0002:000014EC       ShortTimeFormat
+ 0001:00004834       ShowCursor
+ 0001:00008D74       ShowException
+ 0001:0000483C       ShowOwnedPopups
+ 0001:00004844       ShowWindow
+ 0001:0000423C       SizeofResource
+ 0001:0000C30C       SmallPoint
+ 0001:00004900       SmallPointToPoint
+ 0001:0002DD00       StdCtrls
+ 0001:00005E14       StrAlloc
+ 0001:00005E48       StrBufSize
+ 0001:0000980C       StrByteType
+ 0001:00005D18       StrComp
+ 0001:00005C60       StrCopy
+ 0001:00005EB8       StrDispose
+ 0001:00005C88       StrECopy
+ 0001:00005C10       StrEnd
+ 0001:0000444C       StretchBlt
+ 0001:000062D4       StrFmt
+ 0001:00002F4C       StringToOleStr
+ 0001:00005CB4       StrLCopy
+ 0001:00005BF8       StrLen
+ 0001:0000631C       StrLFmt
+ 0001:00005D3C       StrLIComp
+ 0001:00005C24       StrMove
+ 0001:00005E70       StrNew
+ 0001:00005DF8       StrPas
+ 0001:00005CE8       StrPCopy
+ 0001:00005DA4       StrPos
+ 0001:00005D84       StrScan
+ 0001:00008034       StrToDateTime
+ 0001:00030408       StrToFileTime
+ 0001:0000581C       StrToIntDef
+ 0001:00024944       Subclass3DDlg
+ 0001:00008104       SysErrorMessage
+ 0001:000011DC       SysFreeMem
+ 0001:00001054       SysGetMem
+ 0001:0000407C       SysInit
+ 0002:0000158C       SysLocale
+ 0001:0000155C       SysReallocMem
+ 0001:00003E58       System
+ 0002:00001600       SystemPalette16
+ 0001:0000484C       SystemParametersInfo
+ 0001:0000ADC8       SysUtils
+ 0001:0002A37C       TApplication.BringToFront
+ 0001:0002B01C       TApplication.CancelHint
+ 0001:00029974       TApplication.ControlDestroyed
+ 0001:00029598       TApplication.Create
+ 0001:0002A6F0       TApplication.CreateForm
+ 0001:000297EC       TApplication.CreateHandle
+ 0001:00029714       TApplication.Destroy
+ 0001:0002A3B8       TApplication.GetTitle
+ 0001:0002A844       TApplication.HandleException
+ 0001:0002A5E8       TApplication.HandleMessage
+ 0001:0002AB58       TApplication.HelpCommand
+ 0001:0002AB4C       TApplication.HelpContext
+ 0001:0002AFE0       TApplication.HideHint
+ 0001:0002AEF0       TApplication.HintMouseMessage
+ 0001:0002A600       TApplication.HookMainWindow
+ 0001:0002A6D8       TApplication.Initialize
+ 0001:0002A8D4       TApplication.MessageBox
+ 0001:0002A2AC       TApplication.Minimize
+ 0001:00029AE0       TApplication.NormalizeAllTopMosts
+ 0001:00029AD8       TApplication.NormalizeTopMosts
+ 0001:0002A2F4       TApplication.Restore
+ 0001:00029AE8       TApplication.RestoreTopMosts
+ 0001:0002A77C       TApplication.Run
+ 0001:0002ADAC       TApplication.SetHint
+ 0001:0002AB60       TApplication.SetShowHint
+ 0001:0002A400       TApplication.SetTitle
+ 0001:0002A948       TApplication.ShowException
+ 0001:0002A830       TApplication.Terminate
+ 0001:0002A65C       TApplication.UnhookMainWindow
+ 0001:00017E38       TBitmap.Assign
+ 0001:00017FEC       TBitmap.Changed
+ 0001:00017D98       TBitmap.Create
+ 0001:00017DFC       TBitmap.Destroy
+ 0001:00017FF8       TBitmap.Draw
+ 0001:00018248       TBitmap.FreeImage
+ 0001:000182B0       TBitmap.GetCanvas
+ 0001:00018298       TBitmap.GetEmpty
+ 0001:000182F0       TBitmap.GetHandle
+ 0001:00018314       TBitmap.GetHandleType
+ 0001:00018340       TBitmap.GetHeight
+ 0001:00018350       TBitmap.GetMaskHandle
+ 0001:00018364       TBitmap.GetMonochrome
+ 0001:00018380       TBitmap.GetPalette
+ 0001:00018394       TBitmap.GetTransparentColor
+ 0001:000183DC       TBitmap.GetWidth
+ 0001:00018468       TBitmap.HandleNeeded
+ 0001:00018590       TBitmap.LoadFromClipboardFormat
+ 0001:00018650       TBitmap.LoadFromStream
+ 0001:00018478       TBitmap.MaskHandleNeeded
+ 0001:000184D8       TBitmap.PaletteNeeded
+ 0001:00018760       TBitmap.ReadData
+ 0001:0001911C       TBitmap.SaveToClipboardFormat
+ 0001:00019114       TBitmap.SaveToStream
+ 0001:00018C34       TBitmap.SetHandleType
+ 0001:00018D68       TBitmap.SetHeight
+ 0001:00018DBC       TBitmap.SetPalette
+ 0001:00018E90       TBitmap.SetWidth
+ 0001:00018EE4       TBitmap.WriteData
+ 0001:00017350       TBitmapImage.Destroy
+ 0001:000173A0       TBitmapImage.FreeHandle
+ 0001:0000D020       TBits.Destroy
+ 0001:0000D18C       TBits.OpenBit
+ 0001:0000D160       TBits.SetBit
+ 0001:0000D0B0       TBits.SetSize
+ 0001:00013B04       TBrush.Assign
+ 0001:00013AA8       TBrush.Create
+ 0001:00013AE0       TBrush.Destroy
+ 0001:00013C1C       TBrush.GetColor
+ 0001:00013C58       TBrush.GetHandle
+ 0001:00013D38       TBrush.GetStyle
+ 0001:00013C24       TBrush.SetColor
+ 0001:00013D40       TBrush.SetStyle
+ 0001:0002DA48       TButton.Click
+ 0001:0002DBE4       TButton.CMDialogChar
+ 0001:0002DB78       TButton.CMDialogKey
+ 0001:0002DC64       TButton.CMFocusChanged
+ 0001:0002DB60       TButton.CNCommand
+ 0001:0002D9E4       TButton.Create
+ 0001:0002DB04       TButton.CreateParams
+ 0001:0002DB44       TButton.CreateWnd
+ 0001:0002DA70       TButton.SetButtonStyle
+ 0001:0002DACC       TButton.SetDefault
+ 0001:0002DCB8       TButton.WMEraseBkgnd
+ 0001:0002D974       TButtonControl.WndProc
+ 0001:000142E8       TCanvas.Changed
+ 0001:000142D4       TCanvas.Changing
+ 0001:00013D74       TCanvas.Create
+ 0001:000141B4       TCanvas.CreateHandle
+ 0001:00013E30       TCanvas.Destroy
+ 0001:00013E88       TCanvas.FillRect
+ 0001:00014138       TCanvas.GetHandle
+ 0001:000140C8       TCanvas.GetPenPos
+ 0001:0001410C       TCanvas.GetPixel
+ 0001:00013EC4       TCanvas.Lock
+ 0001:00013EEC       TCanvas.MoveTo
+ 0001:00013F18       TCanvas.Rectangle
+ 0001:00014260       TCanvas.RequiredState
+ 0001:000140BC       TCanvas.SetBrush
+ 0001:000140A0       TCanvas.SetFont
+ 0001:000141B8       TCanvas.SetHandle
+ 0001:000140B0       TCanvas.SetPen
+ 0001:000140EC       TCanvas.SetPenPos
+ 0001:00013F60       TCanvas.StretchDraw
+ 0001:00013F9C       TCanvas.TextExtent
+ 0001:00013FFC       TCanvas.TextHeight
+ 0001:00013FE0       TCanvas.TextWidth
+ 0001:0001401C       TCanvas.TryLock
+ 0001:00014078       TCanvas.Unlock
+ 0001:0000D408       TCollection.Add
+ 0001:0000D418       TCollection.BeginUpdate
+ 0001:0000D41C       TCollection.Changed
+ 0001:0000D430       TCollection.Clear
+ 0001:0000D498       TCollection.EndUpdate
+ 0001:0002EC78       TCommonDialog.Create
+ 0001:0002ED20       TCommonDialog.DefaultHandler
+ 0001:0002ECC0       TCommonDialog.Destroy
+ 0001:0002EE78       TCommonDialog.DoClose
+ 0001:0002EE90       TCommonDialog.DoShow
+ 0001:0002ECF4       TCommonDialog.MessageHook
+ 0001:0002EDBC       TCommonDialog.TaskModalDialog
+ 0001:0002ED68       TCommonDialog.WMDestroy
+ 0001:0002ED88       TCommonDialog.WMInitDialog
+ 0001:0002EDA4       TCommonDialog.WMNCDestroy
+ 0001:0002ED5C       TCommonDialog.WndProc
+ 0001:0001178C       TComponent.ChangeName
+ 0001:00011140       TComponent.Create
+ 0001:0001148C       TComponent.DefineProperties
+ 0001:00011188       TComponent.Destroy
+ 0001:000113AC       TComponent.DestroyComponents
+ 0001:000113DC       TComponent.Destroying
+ 0001:00011664       TComponent.FindComponent
+ 0001:00011214       TComponent.FreeNotification
+ 0001:0001151C       TComponent.GetChildOwner
+ 0001:00011520       TComponent.GetChildParent
+ 0001:00011514       TComponent.GetChildren
+ 0001:000117A4       TComponent.GetComponent
+ 0001:00011810       TComponent.GetComponentCount
+ 0001:00011524       TComponent.GetNamePath
+ 0001:0001153C       TComponent.GetOwner
+ 0001:00011544       TComponent.GetParentComponent
+ 0001:00011510       TComponent.HasParent
+ 0001:00011310       TComponent.InsertComponent
+ 0001:0001156C       TComponent.Loaded
+ 0001:00011418       TComponent.Notification
+ 0001:0001157C       TComponent.ReadState
+ 0001:00011368       TComponent.RemoveComponent
+ 0001:00011910       TComponent.SafeCallException
+ 0001:00011540       TComponent.SetChildOrder
+ 0001:00011820       TComponent.SetComponentIndex
+ 0001:00011878       TComponent.SetDesigning
+ 0001:000116C0       TComponent.SetName
+ 0001:00011548       TComponent.SetParentComponent
+ 0001:0001155C       TComponent.Updated
+ 0001:00011930       TComponent.UpdateRegistry
+ 0001:0001154C       TComponent.Updating
+ 0001:00011648       TComponent.ValidateContainer
+ 0001:00011660       TComponent.ValidateInsert
+ 0001:00011594       TComponent.ValidateRename
+ 0001:00011588       TComponent.WriteState
+ 0001:0001C528       TControl.BeginDrag
+ 0001:0001C19C       TControl.BringToFront
+ 0001:0001BC40       TControl.Changed
+ 0001:0001BC50       TControl.ChangeScale
+ 0001:0001C988       TControl.Click
+ 0001:0001BBD0       TControl.ClientToScreen
+ 0001:0001CE14       TControl.CMColorChanged
+ 0001:0001CEF0       TControl.CMDesignHitTest
+ 0001:0001CE04       TControl.CMEnabledChanged
+ 0001:0001CE0C       TControl.CMFontChanged
+ 0001:0001CEB8       TControl.CMHitTest
+ 0001:0001CEC0       TControl.CMMouseEnter
+ 0001:0001CED8       TControl.CMMouseLeave
+ 0001:0001CE1C       TControl.CMParentColorChanged
+ 0001:0001CE68       TControl.CMParentFontChanged
+ 0001:0001CE4C       TControl.CMParentShowHintChanged
+ 0001:0001CE98       TControl.CMSysFontChanged
+ 0001:0001CDDC       TControl.CMVisibleChanged
+ 0001:0001B6BC       TControl.Create
+ 0001:0001C9A8       TControl.DblClick
+ 0001:0001C870       TControl.DefaultHandler
+ 0001:0001C938       TControl.DefineProperties
+ 0001:0001B74C       TControl.Destroy
+ 0001:0001C694       TControl.DoEndDrag
+ 0001:0001C674       TControl.DoStartDrag
+ 0001:0001C5FC       TControl.DragCanceled
+ 0001:0001C648       TControl.DragDrop
+ 0001:0001C600       TControl.Dragging
+ 0001:0001C60C       TControl.DragOver
+ 0001:0001BA5C       TControl.GetBoundsRect
+ 0001:0001BB00       TControl.GetClientHeight
+ 0001:0001BB40       TControl.GetClientOrigin
+ 0001:0001BAA4       TControl.GetClientRect
+ 0001:0001BABC       TControl.GetClientWidth
+ 0001:0001C250       TControl.GetDeviceContext
+ 0001:0001B798       TControl.GetDragImages
+ 0001:0001C164       TControl.GetMouseCapture
+ 0001:0001B79C       TControl.GetPalette
+ 0001:0001B7A8       TControl.GetParentComponent
+ 0001:0001CAF8       TControl.GetPopupMenu
+ 0001:0001BFB0       TControl.GetText
+ 0001:0001BF70       TControl.GetTextBuf
+ 0001:0001BF60       TControl.GetTextLen
+ 0001:0001B7A0       TControl.HasParent
+ 0001:0001C410       TControl.Invalidate
+ 0001:0001C120       TControl.IsColorStored
+ 0001:0001C08C       TControl.IsFontStored
+ 0001:0001C0A0       TControl.IsShowHintStored
+ 0001:0001C9C8       TControl.MouseDown
+ 0001:0001CC10       TControl.MouseMove
+ 0001:0001CC74       TControl.MouseUp
+ 0001:0001B8E0       TControl.Notification
+ 0001:0001B7D0       TControl.PaletteChanged
+ 0001:0001C758       TControl.Perform
+ 0001:0001B860       TControl.ReadState
+ 0001:0001C430       TControl.Repaint
+ 0001:0001B850       TControl.RequestAlign
+ 0001:0001BBFC       TControl.ScreenToClient
+ 0001:0001BC28       TControl.SendCancelMode
+ 0001:0001B90C       TControl.SetAlign
+ 0001:0001B970       TControl.SetBounds
+ 0001:0001BA7C       TControl.SetBoundsRect
+ 0001:0001BB18       TControl.SetClientHeight
+ 0001:0001BAD4       TControl.SetClientWidth
+ 0001:0001C104       TControl.SetColor
+ 0001:0001C148       TControl.SetCursor
+ 0001:0001B84C       TControl.SetDragMode
+ 0001:0001BF48       TControl.SetEnabled
+ 0001:0001C080       TControl.SetFont
+ 0001:0001BA3C       TControl.SetHeight
+ 0001:0001B9DC       TControl.SetLeft
+ 0001:0001C174       TControl.SetMouseCapture
+ 0001:0001BDA0       TControl.SetName
+ 0001:0001BE88       TControl.SetParent
+ 0001:0001C128       TControl.SetParentColor
+ 0001:0001B7AC       TControl.SetParentComponent
+ 0001:0001C0A8       TControl.SetParentFont
+ 0001:0001C0E4       TControl.SetParentShowHint
+ 0001:0001BF7C       TControl.SetPopupMenu
+ 0001:0001C0C8       TControl.SetShowHint
+ 0001:0001BFE0       TControl.SetText
+ 0001:0001BF8C       TControl.SetTextBuf
+ 0001:0001B9FC       TControl.SetTop
+ 0001:0001BF0C       TControl.SetVisible
+ 0001:0001BA1C       TControl.SetWidth
+ 0001:0001C22C       TControl.SetZOrder
+ 0001:0001C420       TControl.Update
+ 0001:0001C78C       TControl.VisibleChanging
+ 0001:0001CDA4       TControl.WMCancelMode
+ 0001:0001CAA4       TControl.WMLButtonDblClk
+ 0001:0001CA3C       TControl.WMLButtonDown
+ 0001:0001CCE0       TControl.WMLButtonUp
+ 0001:0001CBE8       TControl.WMMButtonDblClk
+ 0001:0001CBC0       TControl.WMMButtonDown
+ 0001:0001CD84       TControl.WMMButtonUp
+ 0001:0001CC38       TControl.WMMouseMove
+ 0001:0001CA88       TControl.WMNCLButtonDown
+ 0001:0001CB98       TControl.WMRButtonDblClk
+ 0001:0001CB70       TControl.WMRButtonDown
+ 0001:0001CD54       TControl.WMRButtonUp
+ 0001:0001C790       TControl.WndProc
+ 0001:0001B5D4       TControlCanvas.CreateHandle
+ 0001:0001B5A8       TControlCanvas.Destroy
+ 0001:0001B670       TControlCanvas.FreeHandle
+ 0001:0001B6A4       TControlCanvas.SetControl
+ 0001:00024DA4       TControlScrollBar.Assign
+ 0001:00025204       TControlScrollBar.IsRangeStored
+ 0001:0002511C       TControlScrollBar.SetPosition
+ 0001:000251F0       TControlScrollBar.SetRange
+ 0001:00025210       TControlScrollBar.SetVisible
+ 0001:000205E4       TCustomControl.Create
+ 0001:00020638       TCustomControl.Destroy
+ 0001:00020708       TCustomControl.Paint
+ 0001:00020670       TCustomControl.PaintWindow
+ 0001:00020668       TCustomControl.WMPaint
+ 0001:0002D7B4       TCustomEdit.Change
+ 0001:0002D3B8       TCustomEdit.Clear
+ 0001:0002D870       TCustomEdit.CMCtl3DChanged
+ 0001:0002D8F8       TCustomEdit.CMEnter
+ 0001:0002D8A8       TCustomEdit.CMFontChanged
+ 0001:0002D938       TCustomEdit.CMTextChanged
+ 0001:0002D8D4       TCustomEdit.CNCommand
+ 0001:0002D014       TCustomEdit.Create
+ 0001:0002D530       TCustomEdit.CreateParams
+ 0001:0002D5F0       TCustomEdit.CreateWnd
+ 0001:0002D7DC       TCustomEdit.DefaultHandler
+ 0001:0002D6A0       TCustomEdit.DestroyWnd
+ 0001:0002D0BC       TCustomEdit.DoSetMaxLength
+ 0001:0002D198       TCustomEdit.GetModified
+ 0001:0002D324       TCustomEdit.GetSelLength
+ 0001:0002D2D8       TCustomEdit.GetSelStart
+ 0001:0002D494       TCustomEdit.GetSelText
+ 0001:0002D3F8       TCustomEdit.GetSelTextBuf
+ 0001:0002D3D8       TCustomEdit.SelectAll
+ 0001:0002D0E0       TCustomEdit.SetAutoSize
+ 0001:0002D0F8       TCustomEdit.SetBorderStyle
+ 0001:0002D120       TCustomEdit.SetCharCase
+ 0001:0002D138       TCustomEdit.SetHideSelection
+ 0001:0002D150       TCustomEdit.SetMaxLength
+ 0001:0002D1D4       TCustomEdit.SetModified
+ 0001:0002D180       TCustomEdit.SetOEMConvert
+ 0001:0002D210       TCustomEdit.SetPasswordChar
+ 0001:0002D298       TCustomEdit.SetReadOnly
+ 0001:0002D354       TCustomEdit.SetSelLength
+ 0001:0002D300       TCustomEdit.SetSelStart
+ 0001:0002D82C       TCustomEdit.WMSetFont
+ 0001:00027824       TCustomForm.Activate
+ 0001:00027610       TCustomForm.ActiveChanged
+ 0001:00026724       TCustomForm.AlignControls
+ 0001:00025FC4       TCustomForm.ChangeScale
+ 0001:000286D0       TCustomForm.Close
+ 0001:00028778       TCustomForm.CloseQuery
+ 0001:00028170       TCustomForm.CMActivate
+ 0001:00027E6C       TCustomForm.CMAppSysCommand
+ 0001:00026CA4       TCustomForm.CMColorChanged
+ 0001:00026CE0       TCustomForm.CMCtl3DChanged
+ 0001:0002817C       TCustomForm.CMDeactivate
+ 0001:00028190       TCustomForm.CMDialogKey
+ 0001:00026D28       TCustomForm.CMFontChanged
+ 0001:000285E4       TCustomForm.CMIconChanged
+ 0001:00026D48       TCustomForm.CMMenuChanged
+ 0001:00028664       TCustomForm.CMParentFontChanged
+ 0001:00028604       TCustomForm.CMRelease
+ 0001:0002822C       TCustomForm.CMShowingChanged
+ 0001:0002860C       TCustomForm.CMTextChanged
+ 0001:0002865C       TCustomForm.CMUIActivate
+ 0001:00025870       TCustomForm.Create
+ 0001:00025A00       TCustomForm.CreateNew
+ 0001:00026DA4       TCustomForm.CreateParams
+ 0001:000270D0       TCustomForm.CreateWindowHandle
+ 0001:00026F90       TCustomForm.CreateWnd
+ 0001:00027844       TCustomForm.Deactivate
+ 0001:00027214       TCustomForm.DefaultHandler
+ 0001:00025ED8       TCustomForm.DefineProperties
+ 0001:00027328       TCustomForm.DefocusControl
+ 0001:00025B0C       TCustomForm.Destroy
+ 0001:000271D0       TCustomForm.DestroyWindowHandle
+ 0001:0002610C       TCustomForm.DoHide
+ 0001:0002612C       TCustomForm.DoShow
+ 0001:00027370       TCustomForm.FocusControl
+ 0001:000267C8       TCustomForm.GetActiveMDIChild
+ 0001:00026898       TCustomForm.GetCanvas
+ 0001:000261D4       TCustomForm.GetChildren
+ 0001:0002614C       TCustomForm.GetClientRect
+ 0001:000267FC       TCustomForm.GetMDIChildCount
+ 0001:00026848       TCustomForm.GetMDIChildren
+ 0001:00026C04       TCustomForm.GetPixelsPerInch
+ 0001:00026C68       TCustomForm.GetScaled
+ 0001:00028880       TCustomForm.Hide
+ 0001:000260D8       TCustomForm.IsAutoScrollStored
+ 0001:000260A0       TCustomForm.IsClientSizeStored
+ 0001:000268AC       TCustomForm.IsColorStored
+ 0001:000268D8       TCustomForm.IsForm
+ 0001:000260B0       TCustomForm.IsFormSizeStored
+ 0001:000268E0       TCustomForm.IsIconStored
+ 0001:00025C34       TCustomForm.Loaded
+ 0001:00025C6C       TCustomForm.Notification
+ 0001:00027864       TCustomForm.Paint
+ 0001:000278C0       TCustomForm.PaintWindow
+ 0001:00027970       TCustomForm.PaletteChanged
+ 0001:00025CF4       TCustomForm.ReadState
+ 0001:00028910       TCustomForm.Release
+ 0001:00027884       TCustomForm.Resize
+ 0001:000276C8       TCustomForm.SendCancelMode
+ 0001:00027278       TCustomForm.SetActiveControl
+ 0001:00026764       TCustomForm.SetBorderIcons
+ 0001:00026790       TCustomForm.SetBorderStyle
+ 0001:00026240       TCustomForm.SetChildOrder
+ 0001:00026300       TCustomForm.SetClientHeight
+ 0001:000262D4       TCustomForm.SetClientWidth
+ 0001:000288A0       TCustomForm.SetFocus
+ 0001:00027390       TCustomForm.SetFocusedControl
+ 0001:00026908       TCustomForm.SetFormStyle
+ 0001:000268A0       TCustomForm.SetIcon
+ 0001:00026A40       TCustomForm.SetMenu
+ 0001:00026A04       TCustomForm.SetObjectMenuItem
+ 0001:000263C0       TCustomForm.SetParent
+ 0001:00026C18       TCustomForm.SetPixelsPerInch
+ 0001:00026C4C       TCustomForm.SetPosition
+ 0001:00026C74       TCustomForm.SetScaled
+ 0001:0002632C       TCustomForm.SetVisible
+ 0001:00026A18       TCustomForm.SetWindowMenu
+ 0001:00026D64       TCustomForm.SetWindowState
+ 0001:00028888       TCustomForm.Show
+ 0001:0002892C       TCustomForm.ShowModal
+ 0001:000263F8       TCustomForm.ValidateRename
+ 0001:00026358       TCustomForm.VisibleChanging
+ 0001:000263BC       TCustomForm.WantChildKey
+ 0001:00027DAC       TCustomForm.WMActivate
+ 0001:00027E38       TCustomForm.WMClose
+ 0001:00027CB4       TCustomForm.WMCommand
+ 0001:00027C54       TCustomForm.WMDestroy
+ 0001:00028010       TCustomForm.WMEnterMenuLoop
+ 0001:00027AD8       TCustomForm.WMEraseBkgnd
+ 0001:0002806C       TCustomForm.WMHelp
+ 0001:00027A78       TCustomForm.WMIconEraseBkgnd
+ 0001:00027CE8       TCustomForm.WMInitMenuPopup
+ 0001:00027F8C       TCustomForm.WMMDIActivate
+ 0001:00027D00       TCustomForm.WMMenuSelect
+ 0001:00027C20       TCustomForm.WMNCCreate
+ 0001:00027FE4       TCustomForm.WMNextDlgCtl
+ 0001:00027A1C       TCustomForm.WMPaint
+ 0001:00027B10       TCustomForm.WMQueryDragIcon
+ 0001:00027E40       TCustomForm.WMQueryEndSession
+ 0001:00027EF4       TCustomForm.WMShowWindow
+ 0001:00027DCC       TCustomForm.WMSize
+ 0001:00027EC4       TCustomForm.WMSysCommand
+ 0001:00026434       TCustomForm.WndProc
+ 0001:0002098C       TCustomImageList.BeginDrag
+ 0001:000209EC       TCustomImageList.DragLock
+ 0001:00020A74       TCustomImageList.DragMove
+ 0001:00020A50       TCustomImageList.DragUnlock
+ 0001:00020AE8       TCustomImageList.EndDrag
+ 0001:00020780       TCustomImageList.GetHandle
+ 0001:0002076C       TCustomImageList.HandleAllocated
+ 0001:00020774       TCustomImageList.HandleNeeded
+ 0001:00020AD0       TCustomImageList.HideDragImage
+ 0001:0002082C       TCustomImageList.SetBkColor
+ 0001:0002092C       TCustomImageList.SetDragCursor
+ 0001:00020944       TCustomImageList.SetDragImage
+ 0001:00020AB8       TCustomImageList.ShowDragImage
+ 0001:0002CF88       TCustomLabel.CMDialogChar
+ 0001:0002CF70       TCustomLabel.CMFontChanged
+ 0001:0002CF58       TCustomLabel.CMTextChanged
+ 0001:0002CA84       TCustomLabel.Create
+ 0001:0002CAF0       TCustomLabel.GetLabelText
+ 0001:0002CE50       TCustomLabel.GetTransparent
+ 0001:0002CD60       TCustomLabel.Loaded
+ 0001:0002CF24       TCustomLabel.Notification
+ 0001:0002CC6C       TCustomLabel.Paint
+ 0001:0002CE18       TCustomLabel.SetAlignment
+ 0001:0002CE38       TCustomLabel.SetAutoSize
+ 0001:0002CE5C       TCustomLabel.SetFocusControl
+ 0001:0002CEDC       TCustomLabel.SetLayout
+ 0001:0002CE74       TCustomLabel.SetShowAccelChar
+ 0001:0002CE94       TCustomLabel.SetTransparent
+ 0001:0002CEFC       TCustomLabel.SetWordWrap
+ 0001:0000EB3C       TCustomMemoryStream.Read
+ 0001:0000EB80       TCustomMemoryStream.Seek
+ 0001:0000EB34       TCustomMemoryStream.SetPointer
+ 0001:0001AD9C       TDragControlObject.Create
+ 0001:0001AE20       TDragControlObject.Finished
+ 0001:0001AE08       TDragControlObject.GetDragCursor
+ 0001:0001ADBC       TDragControlObject.GetDragImages
+ 0001:0001ADC8       TDragControlObject.HideDragImage
+ 0001:0001ADE8       TDragControlObject.ShowDragImage
+ 0001:0001AD0C       TDragObject.Finished
+ 0001:0001ACF4       TDragObject.GetDragCursor
+ 0001:0001ACC4       TDragObject.GetDragImages
+ 0001:0001AC9C       TDragObject.GetName
+ 0001:0001AD14       TDragObject.HideDragImage
+ 0001:0001AC94       TDragObject.Instance
+ 0001:0001AD18       TDragObject.ShowDragImage
+ 0002:000002C4       TerminateProcList
+ 0002:00001043       Test8086
+ 0002:00001044       Test8087
+ 0001:0000AB3F       TextToFloat
+ 0001:000219D0       TextToShortCut
+ 0001:0000EF34       TFiler.Create
+ 0001:0000EF74       TFiler.Destroy
+ 0001:0000EA14       TFileStream.Create
+ 0001:0000EB0C       TFileStream.Destroy
+ 0001:00013360       TFont.Assign
+ 0001:00013344       TFont.Changed
+ 0001:000132D0       TFont.Create
+ 0001:00013320       TFont.Destroy
+ 0001:000137B8       TFont.GetCharset
+ 0001:000134B0       TFont.GetHandle
+ 0001:00013670       TFont.GetHeight
+ 0001:000136A0       TFont.GetName
+ 0001:00013788       TFont.GetPitch
+ 0001:00013714       TFont.GetSize
+ 0001:00013750       TFont.GetStyle
+ 0001:000137C0       TFont.SetCharset
+ 0001:0001349C       TFont.SetColor
+ 0001:0001364C       TFont.SetHandle
+ 0001:00013678       TFont.SetHeight
+ 0001:000136B8       TFont.SetName
+ 0001:00013790       TFont.SetPitch
+ 0001:00013730       TFont.SetSize
+ 0001:0001375C       TFont.SetStyle
+ 0001:00030254       TForm1.leggiClick
+ 0001:00030484       TForm1.scriviClick
+ 0001:000156F8       TGraphic.Changed
+ 0001:000156C8       TGraphic.Create
+ 0001:00015768       TGraphic.DefineProperties
+ 0001:000157B4       TGraphic.Equals
+ 0001:000158F8       TGraphic.GetPalette
+ 0001:000158FC       TGraphic.GetTransparent
+ 0001:00015900       TGraphic.LoadFromFile
+ 0001:00015954       TGraphic.Progress
+ 0001:0001597C       TGraphic.ReadData
+ 0001:00015988       TGraphic.SaveToFile
+ 0001:000159E0       TGraphic.SetPalette
+ 0001:000159E4       TGraphic.SetTransparent
+ 0001:000159F4       TGraphic.WriteData
+ 0001:00020080       TGraphicControl.Create
+ 0001:000200D4       TGraphicControl.Destroy
+ 0001:000201A8       TGraphicControl.Paint
+ 0001:00020104       TGraphicControl.WMPaint
+ 0001:00013014       TGraphicsObject.Changed
+ 0001:00013028       TGraphicsObject.Lock
+ 0001:00013038       TGraphicsObject.Unlock
+ 0001:0000E9B8       THandleStream.Read
+ 0001:0000E9E0       THandleStream.Seek
+ 0001:0000E9F0       THandleStream.SetSize
+ 0001:0000E9CC       THandleStream.Write
+ 0001:000204A4       THintWindow.ActivateHint
+ 0001:00020564       THintWindow.ActivateHintData
+ 0001:00020590       THintWindow.CalcHintRect
+ 0001:0002041C       THintWindow.CMTextChanged
+ 0001:000201AC       THintWindow.Create
+ 0001:00020250       THintWindow.CreateParams
+ 0001:000203B0       THintWindow.IsHintMsg
+ 0001:0002031C       THintWindow.Paint
+ 0001:00020414       THintWindow.ReleaseHandle
+ 0001:0002027C       THintWindow.WMNCHitTest
+ 0001:00020284       THintWindow.WMNCPaint
+ 0002:000014D2       ThousandSeparator
+ 0001:00019280       TIcon.Assign
+ 0001:00019200       TIcon.Create
+ 0001:00019254       TIcon.Destroy
+ 0001:000192E0       TIcon.Draw
+ 0001:00019318       TIcon.GetEmpty
+ 0001:00019330       TIcon.GetHandle
+ 0001:00019344       TIcon.GetHeight
+ 0001:0001934C       TIcon.GetWidth
+ 0001:0001966C       TIcon.LoadFromClipboardFormat
+ 0001:00019470       TIcon.LoadFromStream
+ 0001:000196B8       TIcon.SaveToClipboardFormat
+ 0001:00019640       TIcon.SaveToStream
+ 0001:00019598       TIcon.SetHandle
+ 0001:000195B0       TIcon.SetHeight
+ 0001:000195F8       TIcon.SetWidth
+ 0001:000191BC       TIconImage.Destroy
+ 0001:000191E8       TIconImage.FreeHandle
+ 0001:0002E140       TImage.Create
+ 0001:0002E21C       TImage.DestRect
+ 0001:0002E1D0       TImage.Destroy
+ 0001:0002E37C       TImage.DoPaletteChange
+ 0001:0002E200       TImage.GetPalette
+ 0001:0002E2BC       TImage.Paint
+ 0001:0002E414       TImage.Progress
+ 0001:0002E478       TImage.SetAutoSize
+ 0001:0002E488       TImage.SetCenter
+ 0001:0002E4A0       TImage.SetPicture
+ 0001:0002E4B0       TImage.SetStretch
+ 0001:0002E4C8       TImage.SetTransparent
+ 0002:000014E4       TimeAMString
+ 0002:000014E8       TimePMString
+ 0002:000014E0       TimeSeparator
+ 0001:0000CA5C       TList.Add
+ 0001:0000CA84       TList.Clear
+ 0001:0000CAA0       TList.Delete
+ 0001:0000CA38       TList.Destroy
+ 0001:0000CB24       TList.Error
+ 0001:0000CB5C       TList.Expand
+ 0001:0000CB78       TList.First
+ 0001:0000CB84       TList.Get
+ 0001:0000CBE8       TList.Grow
+ 0001:0000CC20       TList.IndexOf
+ 0001:0000CC40       TList.Insert
+ 0001:0000CCE0       TList.Last
+ 0001:0000CCF0       TList.Put
+ 0001:0000CD58       TList.Remove
+ 0001:0000CD7C       TList.SetCapacity
+ 0001:0000CDF0       TList.SetCount
+ 0002:000014B0       TlsIndex
+ 0002:FFBCE008       TlsLast
+ 0001:00022D64       TMainMenu.GetHandle
+ 0001:00022CE4       TMainMenu.MenuChanged
+ 0001:00022D04       TMainMenu.Merge
+ 0001:00022CC4       TMainMenu.SetAutoMerge
+ 0001:00022D20       TMainMenu.Unmerge
+ 0001:0000EBD4       TMemoryStream.Clear
+ 0001:0000EBA4       TMemoryStream.Destroy
+ 0001:0000EC4C       TMemoryStream.Realloc
+ 0001:0000EBF0       TMemoryStream.SetCapacity
+ 0001:0000EC1C       TMemoryStream.SetSize
+ 0001:0000ED0C       TMemoryStream.Write
+ 0001:00022818       TMenu.Create
+ 0001:00022878       TMenu.Destroy
+ 0001:00022A20       TMenu.DispatchCommand
+ 0001:00022A44       TMenu.DispatchPopup
+ 0001:00022980       TMenu.FindItem
+ 0001:000228A4       TMenu.GetChildren
+ 0001:000228C0       TMenu.GetHandle
+ 0001:000229B0       TMenu.GetHelpContext
+ 0001:00022AF4       TMenu.IsShortCut
+ 0001:00022CC0       TMenu.MenuChanged
+ 0001:000228CC       TMenu.SetChildOrder
+ 0001:00022CB4       TMenu.SetWindowHandle
+ 0001:00022694       TMenuItem.Add
+ 0001:00022660       TMenuItem.Click
+ 0001:00021C50       TMenuItem.Create
+ 0001:000221D4       TMenuItem.DefineProperties
+ 0001:000225F8       TMenuItem.Delete
+ 0001:00021C90       TMenuItem.Destroy
+ 0001:00022448       TMenuItem.GetChildren
+ 0001:000223A0       TMenuItem.GetCount
+ 0001:00022140       TMenuItem.GetHandle
+ 0001:000223B0       TMenuItem.GetItem
+ 0001:000223E8       TMenuItem.GetMenuIndex
+ 0001:00022784       TMenuItem.GetParentComponent
+ 0001:00022218       TMenuItem.HasParent
+ 0001:0002267C       TMenuItem.IndexOf
+ 0001:000224FC       TMenuItem.Insert
+ 0001:00022720       TMenuItem.MenuChanged
+ 0001:000226B0       TMenuItem.Remove
+ 0001:0002221C       TMenuItem.SetBreak
+ 0001:0002222C       TMenuItem.SetCaption
+ 0001:0002229C       TMenuItem.SetChecked
+ 0001:00022480       TMenuItem.SetChildOrder
+ 0001:000224A0       TMenuItem.SetDefault
+ 0001:000222E8       TMenuItem.SetEnabled
+ 0001:0002235C       TMenuItem.SetGroupIndex
+ 0001:00022400       TMenuItem.SetMenuIndex
+ 0001:00022798       TMenuItem.SetParentComponent
+ 0001:000227EC       TMenuItem.SetRadioItem
+ 0001:000223D0       TMenuItem.SetShortCut
+ 0001:000223DC       TMenuItem.SetVisible
+ 0001:00016400       TMetafile.Assign
+ 0001:00016394       TMetafile.Create
+ 0001:000163D4       TMetafile.Destroy
+ 0001:00016494       TMetafile.Draw
+ 0001:00016528       TMetafile.GetEmpty
+ 0001:00016530       TMetafile.GetHeight
+ 0001:00016594       TMetafile.GetPalette
+ 0001:00016620       TMetafile.GetWidth
+ 0001:00016E90       TMetafile.LoadFromClipboardFormat
+ 0001:00016684       TMetafile.LoadFromStream
+ 0001:00016700       TMetafile.ReadData
+ 0001:0001675C       TMetafile.ReadEMFStream
+ 0001:0001682C       TMetafile.ReadWMFStream
+ 0001:00016F50       TMetafile.SaveToClipboardFormat
+ 0001:00016954       TMetafile.SaveToFile
+ 0001:000169E0       TMetafile.SaveToStream
+ 0001:000169FC       TMetafile.SetHeight
+ 0001:00016A70       TMetafile.SetMMHeight
+ 0001:00016AAC       TMetafile.SetMMWidth
+ 0001:00016AE8       TMetafile.SetWidth
+ 0001:00016B5C       TMetafile.TestEMF
+ 0001:00016C40       TMetafile.WriteData
+ 0001:00016CC4       TMetafile.WriteEMFStream
+ 0001:00016D48       TMetafile.WriteWMFStream
+ 0001:00016358       TMetafileImage.Destroy
+ 0001:00016390       TMetafileImage.FreeHandle
+ 0001:00001C50       TObject.ClassInfo
+ 0001:00001AB0       TObject.ClassName
+ 0001:00001AC4       TObject.ClassNameIs
+ 0001:00001AEC       TObject.ClassParent
+ 0001:00001AAC       TObject.ClassType
+ 0001:00001B34       TObject.Create
+ 0001:00001C5C       TObject.DefaultHandler
+ 0001:00001B50       TObject.Destroy
+ 0001:00001C60       TObject.Dispatch
+ 0001:00001CD8       TObject.FieldAddress
+ 0001:00001B5C       TObject.Free
+ 0001:00001B0C       TObject.FreeInstance
+ 0001:00001B68       TObject.InitInstance
+ 0001:00001C88       TObject.MethodAddress
+ 0001:00001AF8       TObject.NewInstance
+ 0001:00001C54       TObject.SafeCallException
+ 0001:0002EF2C       TOpenDialog.Create
+ 0001:0002F0F4       TOpenDialog.DefineProperties
+ 0001:0002EF94       TOpenDialog.Destroy
+ 0001:0002F2D8       TOpenDialog.DoExecute
+ 0001:0002F070       TOpenDialog.DoFolderChange
+ 0001:0002F058       TOpenDialog.DoSelectionChange
+ 0001:0002F094       TOpenDialog.DoTypeChange
+ 0001:0002F6CC       TOpenDialog.Execute
+ 0001:0002F600       TOpenDialog.GetFileName
+ 0001:0002F660       TOpenDialog.GetFilterIndex
+ 0001:0002F5A8       TOpenDialog.GetStaticRect
+ 0001:0002F670       TOpenDialog.SetInitialDir
+ 0001:0002EFCC       TOpenDialog.WndProc
+ 0001:00013848       TPen.Assign
+ 0001:000137E8       TPen.Create
+ 0001:00013824       TPen.Destroy
+ 0001:00013968       TPen.GetColor
+ 0001:00013998       TPen.GetHandle
+ 0001:00013A44       TPen.GetStyle
+ 0001:00013A74       TPen.GetWidth
+ 0001:00013970       TPen.SetColor
+ 0001:00013A30       TPen.SetMode
+ 0001:00013A4C       TPen.SetStyle
+ 0001:00013A7C       TPen.SetWidth
+ 0001:0000D23C       TPersistent.Assign
+ 0001:0000D344       TPersistent.AssignTo
+ 0001:0000D350       TPersistent.DefineProperties
+ 0001:0000D20C       TPersistent.Destroy
+ 0001:0000D354       TPersistent.GetNamePath
+ 0001:0000D404       TPersistent.GetOwner
+ 0001:00016070       TPicture.Assign
+ 0001:00015F14       TPicture.AssignTo
+ 0001:000160CC       TPicture.Changed
+ 0001:00015EB0       TPicture.Create
+ 0001:000162DC       TPicture.DefineProperties
+ 0001:00015EE8       TPicture.Destroy
+ 0001:00016340       TPicture.GetHeight
+ 0001:00015FAC       TPicture.GetIcon
+ 0001:00016328       TPicture.GetWidth
+ 0001:000160F0       TPicture.Progress
+ 0001:00015FC4       TPicture.SetGraphic
+ 0001:00023040       TPopupMenu.Create
+ 0001:00023098       TPopupMenu.Destroy
+ 0001:000230DC       TPopupMenu.GetHelpContext
+ 0001:000230EC       TPopupMenu.Popup
+ 0001:000230E4       TPopupMenu.SetHelpContext
+ 0001:00004854       TrackPopupMenu
+ 0001:0000852C       TranslateDateFormat
+ 0001:0000485C       TranslateMDISysAccel
+ 0001:00004864       TranslateMessage
+ 0001:000147DC       TransparentStretchBlt
+ 0001:0000F470       TReader.DefineBinaryProperty
+ 0001:0000F43C       TReader.DefineProperty
+ 0001:0000F3D8       TReader.Destroy
+ 0001:0000F54C       TReader.EndOfList
+ 0001:0000F564       TReader.Error
+ 0001:00010EA4       TReader.FindAncestorComponent
+ 0001:0000F58C       TReader.FindMethod
+ 0001:0000F6F8       TReader.FlushBuffer
+ 0001:0000F75C       TReader.GetPosition
+ 0001:0000F778       TReader.NextValue
+ 0001:0000F79C       TReader.Read
+ 0001:0000F860       TReader.ReadBoolean
+ 0001:0000F878       TReader.ReadChar
+ 0001:0000F8FC       TReader.ReadCollection
+ 0001:0000FBA4       TReader.ReadComponent
+ 0001:0000FE60       TReader.ReadFloat
+ 0001:0000FEA4       TReader.ReadIdent
+ 0001:0000FF5C       TReader.ReadInteger
+ 0001:0000FFC8       TReader.ReadListBegin
+ 0001:0000FFD4       TReader.ReadListEnd
+ 0001:0000FFE0       TReader.ReadPrefix
+ 0001:00010770       TReader.ReadRootComponent
+ 0001:00010A4C       TReader.ReadSignature
+ 0001:00010AB4       TReader.ReadStr
+ 0001:00010AF8       TReader.ReadString
+ 0001:00010B5C       TReader.ReadValue
+ 0001:00010F64       TReader.ReferenceName
+ 0001:00010F80       TReader.SetName
+ 0001:0000ED64       TResourceStream.Create
+ 0001:0000EEA4       TResourceStream.Destroy
+ 0001:0000EEDC       TResourceStream.Write
+ 0001:000056D4       Trim
+ 0001:00028C60       TScreen.Create
+ 0001:00028DFC       TScreen.Destroy
+ 0001:00029234       TScreen.GetCursors
+ 0001:00029220       TScreen.GetDataModule
+ 0001:0002922C       TScreen.GetDataModuleCount
+ 0001:00028E70       TScreen.GetForm
+ 0001:00028E7C       TScreen.GetFormCount
+ 0001:00028E60       TScreen.GetHeight
+ 0001:00028E68       TScreen.GetWidth
+ 0001:0002925C       TScreen.SetCursor
+ 0001:00025390       TScrollingWinControl.AlignControls
+ 0001:00025584       TScrollingWinControl.AutoScrollInView
+ 0001:00025794       TScrollingWinControl.ChangeScale
+ 0001:000252D0       TScrollingWinControl.Create
+ 0001:0002536C       TScrollingWinControl.CreateParams
+ 0001:0002537C       TScrollingWinControl.CreateWnd
+ 0001:00025334       TScrollingWinControl.Destroy
+ 0001:0002559C       TScrollingWinControl.ScrollInView
+ 0001:00025438       TScrollingWinControl.SetAutoScroll
+ 0001:00025474       TScrollingWinControl.SetHorzScrollBar
+ 0001:00025480       TScrollingWinControl.SetVertScrollBar
+ 0001:00025828       TScrollingWinControl.WMHScroll
+ 0001:000257B8       TScrollingWinControl.WMSize
+ 0001:0002584C       TScrollingWinControl.WMVScroll
+ 0001:0001732C       TSharedImage.Reference
+ 0001:00017330       TSharedImage.Release
+ 0001:0000E7FC       TStream.GetPosition
+ 0001:0000E820       TStream.GetSize
+ 0001:0000E860       TStream.ReadBuffer
+ 0001:0000E958       TStream.ReadComponent
+ 0001:0000E810       TStream.SetPosition
+ 0001:0000E85C       TStream.SetSize
+ 0001:0000E8DC       TStream.WriteBuffer
+ 0001:0000E070       TStringList.Add
+ 0001:0000E108       TStringList.Changed
+ 0001:0000E128       TStringList.Changing
+ 0001:0000E148       TStringList.Clear
+ 0001:0000E184       TStringList.Delete
+ 0001:0000E014       TStringList.Destroy
+ 0001:0000E224       TStringList.Exchange
+ 0001:0000E2E4       TStringList.Find
+ 0001:0000E350       TStringList.Get
+ 0001:0000E3C0       TStringList.GetCapacity
+ 0001:0000E3C4       TStringList.GetCount
+ 0001:0000E3C8       TStringList.GetObject
+ 0001:0000E468       TStringList.IndexOf
+ 0001:0000E4A8       TStringList.Insert
+ 0001:0000E5A4       TStringList.Put
+ 0001:0000E640       TStringList.PutObject
+ 0001:0000E774       TStringList.SetCapacity
+ 0001:0000E794       TStringList.SetSorted
+ 0001:0000E7B4       TStringList.SetUpdateState
+ 0001:0000E7CC       TStringList.Sort
+ 0001:0000D4D8       TStrings.Add
+ 0001:0000D500       TStrings.AddObject
+ 0001:0000D528       TStrings.AddStrings
+ 0001:0000D5E0       TStrings.Assign
+ 0001:0000D650       TStrings.BeginUpdate
+ 0001:0000D6C4       TStrings.DefineProperties
+ 0001:0000D4A8       TStrings.Destroy
+ 0001:0000D710       TStrings.EndUpdate
+ 0001:0000D728       TStrings.Equals
+ 0001:0000D7D4       TStrings.Error
+ 0001:0000D80C       TStrings.Exchange
+ 0001:0000D8F4       TStrings.GetCapacity
+ 0001:0000D900       TStrings.GetObject
+ 0001:0000D904       TStrings.GetText
+ 0001:0000D958       TStrings.GetTextStr
+ 0001:0000DA40       TStrings.IndexOf
+ 0001:0000DAC0       TStrings.InsertObject
+ 0001:0000DAF0       TStrings.LoadFromFile
+ 0001:0000DB44       TStrings.LoadFromStream
+ 0001:0000DBF0       TStrings.Move
+ 0001:0000DCA0       TStrings.Put
+ 0001:0000DCD8       TStrings.PutObject
+ 0001:0000DD8C       TStrings.SaveToFile
+ 0001:0000DDE4       TStrings.SaveToStream
+ 0001:0000DE40       TStrings.SetCapacity
+ 0001:0000DE44       TStrings.SetStringsAdapter
+ 0001:0000DE7C       TStrings.SetText
+ 0001:0000DECC       TStrings.SetTextStr
+ 0001:0000DF8C       TStrings.SetUpdateState
+ 0001:0000CF48       TThreadList.Add
+ 0001:0000CE80       TThreadList.Create
+ 0001:0000CECC       TThreadList.Destroy
+ 0001:0000CFA8       TThreadList.LockList
+ 0001:0000CFC0       TThreadList.Remove
+ 0001:0000D010       TThreadList.UnlockList
+ 0001:0001D4DC       TWinControl.AlignControls
+ 0001:0001D870       TWinControl.Broadcast
+ 0001:0001FB68       TWinControl.CanFocus
+ 0001:0001F784       TWinControl.ChangeScale
+ 0001:0001F138       TWinControl.CMChanged
+ 0001:0001F14C       TWinControl.CMChildKey
+ 0001:0001F210       TWinControl.CMColorChanged
+ 0001:0001F3AC       TWinControl.CMControlListChange
+ 0001:0001F2B4       TWinControl.CMCtl3DChanged
+ 0001:0001F274       TWinControl.CMCursorChanged
+ 0001:0001F118       TWinControl.CMDesignHitTest
+ 0001:0001F168       TWinControl.CMDialogChar
+ 0001:0001F160       TWinControl.CMDialogKey
+ 0001:0001F354       TWinControl.CMDrag
+ 0001:0001F1D0       TWinControl.CMEnabledChanged
+ 0001:0001F0F0       TWinControl.CMEnter
+ 0001:0001F104       TWinControl.CMExit
+ 0001:0001F170       TWinControl.CMFocusChanged
+ 0001:0001F344       TWinControl.CMFontChange
+ 0001:0001F238       TWinControl.CMFontChanged
+ 0001:0001FAB0       TWinControl.CMInvalidate
+ 0001:0001F2F4       TWinControl.CMParentCtl3DChanged
+ 0001:0001DD7C       TWinControl.CMRecreateWnd
+ 0001:0001F0D8       TWinControl.CMShowHintChanged
+ 0001:0001F1A8       TWinControl.CMShowingChanged
+ 0001:0001F334       TWinControl.CMSysColorChange
+ 0001:0001F3C0       TWinControl.CMSysFontChanged
+ 0001:0001F34C       TWinControl.CMTimeChange
+ 0001:0001F178       TWinControl.CMVisibleChanged
+ 0001:0001F33C       TWinControl.CMWinIniChange
+ 0001:0001F590       TWinControl.CNChar
+ 0001:0001F464       TWinControl.CNKeyDown
+ 0001:0001F53C       TWinControl.CNKeyUp
+ 0001:0001F638       TWinControl.CNSysChar
+ 0001:0001F5DC       TWinControl.CNSysKeyDown
+ 0001:0001D61C       TWinControl.ContainsControl
+ 0001:0001DF64       TWinControl.ControlAtPos
+ 0001:0001CEF8       TWinControl.Create
+ 0001:0001DCB4       TWinControl.CreateHandle
+ 0001:0001D948       TWinControl.CreateParams
+ 0001:0001D8D8       TWinControl.CreateSubClass
+ 0001:0001DBC0       TWinControl.CreateWindowHandle
+ 0001:0001DA68       TWinControl.CreateWnd
+ 0001:0001E1D8       TWinControl.DefaultHandler
+ 0001:0001CF8C       TWinControl.Destroy
+ 0001:0001DD20       TWinControl.DestroyHandle
+ 0001:0001DC5C       TWinControl.DestroyWindowHandle
+ 0001:0001DC04       TWinControl.DestroyWnd
+ 0001:0001D5EC       TWinControl.DisableAlign
+ 0001:0001EC1C       TWinControl.DoEnter
+ 0001:0001EC3C       TWinControl.DoExit
+ 0001:0001EC84       TWinControl.DoKeyDown
+ 0001:0001EE44       TWinControl.DoKeyPress
+ 0001:0001ED80       TWinControl.DoKeyUp
+ 0001:0001D5F4       TWinControl.EnableAlign
+ 0001:0001FEC8       TWinControl.FindNextControl
+ 0001:0001D028       TWinControl.FixupTabList
+ 0001:0001FBD4       TWinControl.Focused
+ 0001:0001FFF8       TWinControl.GetChildren
+ 0001:0001FC30       TWinControl.GetClientOrigin
+ 0001:0001FC50       TWinControl.GetClientRect
+ 0001:0001D820       TWinControl.GetControl
+ 0001:0001D850       TWinControl.GetControlCount
+ 0001:0001FA08       TWinControl.GetDeviceContext
+ 0001:0001FC1C       TWinControl.GetHandle
+ 0001:0001FCBC       TWinControl.GetTabOrder
+ 0001:0001FE70       TWinControl.GetTabOrderList
+ 0001:0001FDB4       TWinControl.HandleAllocated
+ 0001:0001FBF8       TWinControl.HandleNeeded
+ 0001:0001D6E4       TWinControl.InsertControl
+ 0001:0001FAA0       TWinControl.Invalidate
+ 0001:0001E024       TWinControl.IsControlMouseMsg
+ 0001:0001FC8C       TWinControl.IsCtl3DStored
+ 0001:0001EC5C       TWinControl.KeyDown
+ 0001:0001EE24       TWinControl.KeyPress
+ 0001:0001ED58       TWinControl.KeyUp
+ 0001:0001DEEC       TWinControl.MainWndProc
+ 0001:0001D8B0       TWinControl.NotifyControls
+ 0001:0001E414       TWinControl.PaintControls
+ 0001:0001E2C0       TWinControl.PaintHandler
+ 0001:0001E3E8       TWinControl.PaintWindow
+ 0001:0001F030       TWinControl.PaletteChanged
+ 0001:0001D0FC       TWinControl.ReadState
+ 0001:0001D614       TWinControl.Realign
+ 0001:0001DD64       TWinControl.RecreateWnd
+ 0001:0001D7A4       TWinControl.RemoveControl
+ 0001:0001FB1C       TWinControl.Repaint
+ 0001:0001EBC0       TWinControl.ResetIme
+ 0001:0001F73C       TWinControl.ScaleControls
+ 0001:0001F7E4       TWinControl.ScrollBy
+ 0001:0001FFCC       TWinControl.SelectNext
+ 0001:0001F66C       TWinControl.SetBounds
+ 0001:00020040       TWinControl.SetChildOrder
+ 0001:0001FC68       TWinControl.SetCtl3D
+ 0001:0001FB9C       TWinControl.SetFocus
+ 0001:0001EB18       TWinControl.SetIme
+ 0001:0001FC98       TWinControl.SetParentCtl3D
+ 0001:0001FD3C       TWinControl.SetTabOrder
+ 0001:0001FD54       TWinControl.SetTabStop
+ 0001:0001F9A8       TWinControl.SetZOrder
+ 0001:0001F8BC       TWinControl.ShowControl
+ 0001:0001FB00       TWinControl.Update
+ 0001:0001DEAC       TWinControl.UpdateControlState
+ 0001:0001EEB0       TWinControl.WMChar
+ 0001:0001EF48       TWinControl.WMCharToItem
+ 0001:0001E778       TWinControl.WMCommand
+ 0001:0001E84C       TWinControl.WMCompareItem
+ 0001:0001E870       TWinControl.WMDeleteItem
+ 0001:0001EFBC       TWinControl.WMDestroy
+ 0001:0001E894       TWinControl.WMDrawItem
+ 0001:0001E8DC       TWinControl.WMEraseBkgnd
+ 0001:0001E7EC       TWinControl.WMFontChange
+ 0001:0001E80C       TWinControl.WMHScroll
+ 0001:0001EB04       TWinControl.WMIMEEndComp
+ 0001:0001EAF0       TWinControl.WMIMEStartComp
+ 0001:0001ED18       TWinControl.WMKeyDown
+ 0001:0001EDE4       TWinControl.WMKeyUp
+ 0001:0001EADC       TWinControl.WMKillFocus
+ 0001:0001E8B8       TWinControl.WMMeasureItem
+ 0001:0001E9C8       TWinControl.WMMove
+ 0001:0001EFF0       TWinControl.WMNCDestroy
+ 0001:0001F00C       TWinControl.WMNCHitTest
+ 0001:0001E798       TWinControl.WMNotify
+ 0001:0001E61C       TWinControl.WMPaint
+ 0001:0001F0B8       TWinControl.WMPaletteChanged
+ 0001:0001EF68       TWinControl.WMParentNotify
+ 0001:0001F094       TWinControl.WMQueryNewPalette
+ 0001:0001E9DC       TWinControl.WMSetCursor
+ 0001:0001EAC8       TWinControl.WMSetFocus
+ 0001:0001E9A8       TWinControl.WMSize
+ 0001:0001E7BC       TWinControl.WMSysColorChange
+ 0001:0001EED0       TWinControl.WMSysCommand
+ 0001:0001ED38       TWinControl.WMSysKeyDown
+ 0001:0001EE04       TWinControl.WMSysKeyUp
+ 0001:0001E7FC       TWinControl.WMTimeChange
+ 0001:0001EF9C       TWinControl.WMVKeyToItem
+ 0001:0001E82C       TWinControl.WMVScroll
+ 0001:0001E918       TWinControl.WMWindowPosChanged
+ 0001:0001E7D8       TWinControl.WMWinIniChange
+ 0001:0001E0B0       TWinControl.WndProc
+ 0001:00010FB4       TWriter.Write
+ 0001:0001101C       TWriter.WriteBoolean
+ 0001:00011038       TWriter.WriteInteger
+ 0001:000110B0       TWriter.WriteListBegin
+ 0001:000110BC       TWriter.WriteListEnd
+ 0001:000110C8       TWriter.WriteString
+ 0001:00011128       TWriter.WriteValue
+ 0001:0000B5AC       TypInfo
+ 0002:000013E0       Unassigned
+ 0001:0000486C       UnhookWindowsHookEx
+ 0001:00002A1C       UniqueString
+ 0001:000048B0       UnlockResource
+ 0001:00004454       UnrealizeObject
+ 0001:00004874       UnregisterClass
+ 0001:00003590       UnregisterModule
+ 0001:0000C65C       UnRegisterModuleClasses
+ 0001:0000487C       UpdateWindow
+ 0001:00024CD8       ValidParentForm
+ 0001:00004244       VirtualAlloc
+ 0001:0000424C       VirtualQuery
+ 0001:00004254       WaitForSingleObject
+ 0001:00004884       WaitMessage
+ 0001:00002E90       WideCharLenToStrVar
+ 0002:000000BC       Win32BuildNumber
+ 0001:0000A010       Win32Check
+ 0002:000000C0       Win32CSDVersion
+ 0002:000000B4       Win32MajorVersion
+ 0002:000000B8       Win32MinorVersion
+ 0001:00020DB0       Win32NLSEnableIME
+ 0002:000000B0       Win32Platform
+ 0001:00004894       WindowFromPoint
+ 0001:00004990       Windows
+ 0001:0000488C       WinHelp
+ 0001:00019AF8       WinSpool
+ 0001:0000425C       WriteFile
+
+
+  Address         Publics by Value
+
+ 0002:FFBCE008       TlsLast
+ 0001:00001054       SysGetMem
+ 0001:000011DC       SysFreeMem
+ 0001:0000155C       SysReallocMem
+ 0001:00001620       @GetMem
+ 0001:00001638       @FreeMem
+ 0001:00001650       @ReallocMem
+ 0001:000016E4       @_IOTest
+ 0001:00001714       Move
+ 0001:00001754       @AbstractError
+ 0001:00001770       @PStrNCpy
+ 0001:000017A0       @PStrCmp
+ 0001:00001824       @AStrCmp
+ 0001:00001894       @FillChar
+ 0001:000018B4       @ValLong
+ 0001:0000195C       @_CToPasStr
+ 0001:00001974       @_CLenToPasStr
+ 0001:00001AA4       @IntOver
+ 0001:00001AAC       TObject.ClassType
+ 0001:00001AB0       TObject.ClassName
+ 0001:00001AC4       TObject.ClassNameIs
+ 0001:00001AEC       TObject.ClassParent
+ 0001:00001AF8       TObject.NewInstance
+ 0001:00001B0C       TObject.FreeInstance
+ 0001:00001B34       TObject.Create
+ 0001:00001B50       TObject.Destroy
+ 0001:00001B5C       TObject.Free
+ 0001:00001B68       TObject.InitInstance
+ 0001:00001BBC       @IsClass
+ 0001:00001BD4       @AsClass
+ 0001:00001C20       @CallDynaInst
+ 0001:00001C38       @FindDynaInst
+ 0001:00001C50       TObject.ClassInfo
+ 0001:00001C54       TObject.SafeCallException
+ 0001:00001C5C       TObject.DefaultHandler
+ 0001:00001C60       TObject.Dispatch
+ 0001:00001C88       TObject.MethodAddress
+ 0001:00001CD8       TObject.FieldAddress
+ 0001:00001D28       @ClassCreate
+ 0001:00001D64       @ClassDestroy
+ 0001:00001E68       @HandleAnyException
+ 0001:00001F2C       @HandleOnException
+ 0001:00002064       @HandleFinally
+ 0001:0000209C       @RaiseExcept
+ 0001:000020B8       @RaiseAgain
+ 0001:0000210C       @DoneExcept
+ 0001:0000213C       @TryFinallyExit
+ 0001:00002384       @StartExe
+ 0001:000023B4       @InitResStrings
+ 0001:000023D0       @InitResStringImports
+ 0001:000023EC       @InitImports
+ 0001:00002490       @Halt0
+ 0001:000025A8       @Halt
+ 0001:000025B4       @RunError
+ 0001:000025C0       @LStrClr
+ 0001:000025E4       @LStrArrayClr
+ 0001:00002614       @LStrAsg
+ 0001:00002658       @LStrLAsg
+ 0001:00002680       @NewAnsiString
+ 0001:000026A4       @LStrFromPCharLen
+ 0001:000026D4       @LStrFromPWCharLen
+ 0001:00002774       @LStrFromChar
+ 0001:00002784       @LStrFromPChar
+ 0001:000027B4       @LStrFromPWChar
+ 0001:000027F0       @LStrFromString
+ 0001:000027FC       @LStrFromArray
+ 0001:00002814       @LStrFromWStr
+ 0001:00002828       @LStrToString
+ 0001:0000284C       @LStrLen
+ 0001:00002854       @LStrCat
+ 0001:00002898       @LStrCat3
+ 0001:0000290C       @LStrCatN
+ 0001:0000295C       @LStrCmp
+ 0001:00002A00       @LStrAddRef
+ 0001:00002A10       @LStrToPChar
+ 0001:00002A1C       UniqueString
+ 0001:00002A50       @LStrCopy
+ 0001:00002A90       @LStrDelete
+ 0001:00002AD8       @LStrPos
+ 0001:00002B20       @LStrSetLength
+ 0001:00002B8C       @WStrClr
+ 0001:00002BA4       @WStrArrayClr
+ 0001:00002BC8       @WStrAsg
+ 0001:00002BEC       @WStrFromPCharLen
+ 0001:00002C80       @WStrFromPWCharLen
+ 0001:00002C9C       @WStrFromLStr
+ 0001:00002CAC       @InitializeRecord
+ 0001:00002CD8       @InitializeArray
+ 0001:00002D68       @Initialize
+ 0001:00002D74       @FinalizeRecord
+ 0001:00002DA0       @FinalizeArray
+ 0001:00002E60       @Finalize
+ 0001:00002E6C       @New
+ 0001:00002E80       @Dispose
+ 0001:00002E90       WideCharLenToStrVar
+ 0001:00002F24       OleStrToStrVar
+ 0001:00002F4C       StringToOleStr
+ 0001:00002FE8       @VarClear
+ 0001:0000301C       @VarCopy
+ 0001:00003154       @VarCast
+ 0001:00003248       @VarToLStr
+ 0001:00003284       @VarClr
+ 0001:0000328C       FindHInstance
+ 0001:000032B4       FindClassHInstance
+ 0001:000032C0       FindResourceHInstance
+ 0001:000032DC       LoadResourceModule
+ 0001:0000349C       AddModuleUnloadProc
+ 0001:000034C0       RemoveModuleUnloadProc
+ 0001:00003580       RegisterModule
+ 0001:00003590       UnregisterModule
+ 0001:00003600       LoadResString
+ 0001:00003648       @IntfClear
+ 0001:00003660       @IntfCopy
+ 0001:0000387E       @Assign
+ 0001:000038D4       @_Flush
+ 0001:000038F9       @Flush
+ 0001:00003920       @Close
+ 0001:00003997       @ResetText
+ 0001:0000399E       @RewritText
+ 0001:000039A5       @Append
+ 0001:00003A50       @Write0String
+ 0001:00003A5A       @WriteString
+ 0001:00003A77       @WriteLn
+ 0001:00003A8B       @Write0Char
+ 0001:00003ADD       @WriteChar
+ 0001:00003AF4       @Write0CString
+ 0001:00003AF8       @WriteCString
+ 0001:00003B24       @Pow10
+ 0001:00003B24       FPower10
+ 0001:00003DF8       Finalization
+ 0001:00003E58       System
+ 0001:00003F90       @GetTls
+ 0001:00004028       @InitExe
+ 0001:0000404C       Finalization
+ 0001:0000407C       SysInit
+ 0001:00004084       RegCloseKey
+ 0001:0000408C       RegOpenKeyEx
+ 0001:00004094       RegQueryValueEx
+ 0001:0000409C       CloseHandle
+ 0001:000040A4       CompareString
+ 0001:000040AC       CreateEvent
+ 0001:000040B4       CreateFile
+ 0001:000040BC       CreateThread
+ 0001:000040C4       DeleteCriticalSection
+ 0001:000040CC       DosDateTimeToFileTime
+ 0001:000040D4       EnterCriticalSection
+ 0001:000040DC       EnumCalendarInfoA
+ 0001:000040E4       FileTimeToDosDateTime
+ 0001:000040EC       FileTimeToLocalFileTime
+ 0001:000040F4       FindResource
+ 0001:000040FC       FormatMessage
+ 0001:00004104       FreeLibrary
+ 0001:0000410C       FreeResource
+ 0001:00004114       GetCPInfo
+ 0001:0000411C       GetCurrentProcessId
+ 0001:00004124       GetCurrentThreadId
+ 0001:0000412C       GetDateFormat
+ 0001:00004134       GetFileTime
+ 0001:0000413C       GetLastError
+ 0001:00004144       GetLocalTime
+ 0001:0000414C       GetLocaleInfo
+ 0001:00004154       GetModuleFileName
+ 0001:0000415C       GetModuleHandle
+ 0001:00004164       GetProcAddress
+ 0001:0000416C       GetSystemInfo
+ 0001:00004174       GetThreadLocale
+ 0001:0000417C       GetVersion
+ 0001:00004184       GetVersionEx
+ 0001:0000418C       GlobalAddAtom
+ 0001:00004194       GlobalAlloc
+ 0001:0000419C       GlobalDeleteAtom
+ 0001:000041A4       GlobalFree
+ 0001:000041AC       GlobalLock
+ 0001:000041B4       GlobalHandle
+ 0001:000041BC       GlobalReAlloc
+ 0001:000041C4       GlobalUnlock
+ 0001:000041CC       InitializeCriticalSection
+ 0001:000041D4       LeaveCriticalSection
+ 0001:000041DC       LoadLibrary
+ 0001:000041E4       LoadResource
+ 0001:000041EC       LocalFileTimeToFileTime
+ 0001:000041F4       LockResource
+ 0001:000041FC       MulDiv
+ 0001:00004204       ReadFile
+ 0001:0000420C       SetEndOfFile
+ 0001:00004214       SetErrorMode
+ 0001:0000421C       SetEvent
+ 0001:00004224       SetFilePointer
+ 0001:0000422C       SetFileTime
+ 0001:00004234       SetThreadLocale
+ 0001:0000423C       SizeofResource
+ 0001:00004244       VirtualAlloc
+ 0001:0000424C       VirtualQuery
+ 0001:00004254       WaitForSingleObject
+ 0001:0000425C       WriteFile
+ 0001:00004264       BitBlt
+ 0001:0000426C       CopyEnhMetaFile
+ 0001:00004274       CreateBitmap
+ 0001:0000427C       CreateBrushIndirect
+ 0001:00004284       CreateCompatibleBitmap
+ 0001:0000428C       CreateCompatibleDC
+ 0001:00004294       CreateDIBSection
+ 0001:0000429C       CreateDIBitmap
+ 0001:000042A4       CreateFontIndirect
+ 0001:000042AC       CreateHalftonePalette
+ 0001:000042B4       CreatePalette
+ 0001:000042BC       CreatePenIndirect
+ 0001:000042C4       CreateRectRgn
+ 0001:000042CC       CreateSolidBrush
+ 0001:000042D4       DeleteDC
+ 0001:000042DC       DeleteEnhMetaFile
+ 0001:000042E4       DeleteObject
+ 0001:000042EC       EnumFontFamiliesEx
+ 0001:000042F4       EnumFonts
+ 0001:000042FC       ExcludeClipRect
+ 0001:00004304       GetBitmapBits
+ 0001:0000430C       GetBrushOrgEx
+ 0001:00004314       GetCurrentPositionEx
+ 0001:0000431C       GetDIBColorTable
+ 0001:00004324       GetDIBits
+ 0001:0000432C       GetDeviceCaps
+ 0001:00004334       GetEnhMetaFileBits
+ 0001:0000433C       GetEnhMetaFileHeader
+ 0001:00004344       GetEnhMetaFilePaletteEntries
+ 0001:0000434C       GetObject
+ 0001:00004354       GetPaletteEntries
+ 0001:0000435C       GetPixel
+ 0001:00004364       GetStockObject
+ 0001:0000436C       GetSystemPaletteEntries
+ 0001:00004374       GetTextExtentPoint
+ 0001:0000437C       GetTextMetrics
+ 0001:00004384       GetWinMetaFileBits
+ 0001:0000438C       GetWindowOrgEx
+ 0001:00004394       IntersectClipRect
+ 0001:0000439C       MaskBlt
+ 0001:000043A4       MoveToEx
+ 0001:000043AC       PatBlt
+ 0001:000043B4       PlayEnhMetaFile
+ 0001:000043BC       RealizePalette
+ 0001:000043C4       RectVisible
+ 0001:000043CC       Rectangle
+ 0001:000043D4       RestoreDC
+ 0001:000043DC       SaveDC
+ 0001:000043E4       SelectObject
+ 0001:000043EC       SelectPalette
+ 0001:000043F4       SetBkColor
+ 0001:000043FC       SetBkMode
+ 0001:00004404       SetBrushOrgEx
+ 0001:0000440C       SetDIBColorTable
+ 0001:00004414       SetEnhMetaFileBits
+ 0001:0000441C       SetROP2
+ 0001:00004424       SetStretchBltMode
+ 0001:0000442C       SetTextColor
+ 0001:00004434       SetViewportOrgEx
+ 0001:0000443C       SetWinMetaFileBits
+ 0001:00004444       SetWindowOrgEx
+ 0001:0000444C       StretchBlt
+ 0001:00004454       UnrealizeObject
+ 0001:0000445C       ActivateKeyboardLayout
+ 0001:00004464       AdjustWindowRectEx
+ 0001:0000446C       AnsiLower
+ 0001:00004474       BeginPaint
+ 0001:0000447C       CallNextHookEx
+ 0001:00004484       CallWindowProc
+ 0001:0000448C       CharLowerBuff
+ 0001:00004494       CheckMenuItem
+ 0001:0000449C       ClientToScreen
+ 0001:000044A4       CreateIcon
+ 0001:000044AC       CreateMenu
+ 0001:000044B4       CreatePopupMenu
+ 0001:000044BC       CreateWindowEx
+ 0001:000044C4       DefFrameProc
+ 0001:000044CC       DefMDIChildProc
+ 0001:000044D4       DefWindowProc
+ 0001:000044DC       DeleteMenu
+ 0001:000044E4       DestroyCursor
+ 0001:000044EC       DestroyIcon
+ 0001:000044F4       DestroyMenu
+ 0001:000044FC       DestroyWindow
+ 0001:00004504       DispatchMessage
+ 0001:0000450C       DrawEdge
+ 0001:00004514       DrawIcon
+ 0001:0000451C       DrawMenuBar
+ 0001:00004524       DrawText
+ 0001:0000452C       EnableMenuItem
+ 0001:00004534       EnableWindow
+ 0001:0000453C       EndPaint
+ 0001:00004544       EnumThreadWindows
+ 0001:0000454C       EnumWindows
+ 0001:00004554       EqualRect
+ 0001:0000455C       FillRect
+ 0001:00004564       FrameRect
+ 0001:0000456C       GetActiveWindow
+ 0001:00004574       GetCapture
+ 0001:0000457C       GetClassInfo
+ 0001:00004584       GetClientRect
+ 0001:0000458C       GetClipboardData
+ 0001:00004594       GetCursor
+ 0001:0000459C       GetCursorPos
+ 0001:000045A4       GetDC
+ 0001:000045AC       GetDCEx
+ 0001:000045B4       GetDesktopWindow
+ 0001:000045BC       GetDlgItem
+ 0001:000045C4       GetFocus
+ 0001:000045CC       GetForegroundWindow
+ 0001:000045D4       GetIconInfo
+ 0001:000045DC       GetKeyNameText
+ 0001:000045E4       GetKeyState
+ 0001:000045EC       GetKeyboardLayout
+ 0001:000045F4       GetKeyboardLayoutList
+ 0001:000045FC       GetLastActivePopup
+ 0001:00004604       GetMenu
+ 0001:0000460C       GetMenuItemCount
+ 0001:00004614       GetMenuState
+ 0001:0000461C       GetMenuString
+ 0001:00004624       GetParent
+ 0001:0000462C       GetProp
+ 0001:00004634       GetScrollPos
+ 0001:0000463C       GetSubMenu
+ 0001:00004644       GetSysColor
+ 0001:0000464C       GetSystemMenu
+ 0001:00004654       GetSystemMetrics
+ 0001:0000465C       GetWindow
+ 0001:00004664       GetWindowDC
+ 0001:0000466C       GetWindowLong
+ 0001:00004674       GetWindowPlacement
+ 0001:0000467C       GetWindowRect
+ 0001:00004684       GetWindowRgn
+ 0001:0000468C       GetWindowText
+ 0001:00004694       GetWindowThreadProcessId
+ 0001:0000469C       InflateRect
+ 0001:000046A4       InsertMenu
+ 0001:000046AC       InsertMenuItem
+ 0001:000046B4       IntersectRect
+ 0001:000046BC       InvalidateRect
+ 0001:000046C4       IsDialogMessage
+ 0001:000046CC       IsIconic
+ 0001:000046D4       IsRectEmpty
+ 0001:000046DC       IsWindow
+ 0001:000046E4       IsWindowEnabled
+ 0001:000046EC       IsWindowVisible
+ 0001:000046F4       IsZoomed
+ 0001:000046FC       KillTimer
+ 0001:00004704       LoadCursor
+ 0001:0000470C       LoadIcon
+ 0001:00004714       LoadString
+ 0001:0000471C       MapVirtualKey
+ 0001:00004724       MapWindowPoints
+ 0001:0000472C       MessageBox
+ 0001:00004734       OemToAnsi
+ 0001:0000473C       OffsetRect
+ 0001:00004744       PeekMessage
+ 0001:0000474C       PostMessage
+ 0001:00004754       PostQuitMessage
+ 0001:0000475C       PtInRect
+ 0001:00004764       RegisterClass
+ 0001:0000476C       RegisterWindowMessage
+ 0001:00004774       ReleaseCapture
+ 0001:0000477C       ReleaseDC
+ 0001:00004784       RemoveMenu
+ 0001:0000478C       RemoveProp
+ 0001:00004794       ScreenToClient
+ 0001:0000479C       ScrollWindow
+ 0001:000047A4       SendMessage
+ 0001:000047AC       SetActiveWindow
+ 0001:000047B4       SetCapture
+ 0001:000047BC       SetCursor
+ 0001:000047C4       SetFocus
+ 0001:000047CC       SetForegroundWindow
+ 0001:000047D4       SetMenu
+ 0001:000047DC       SetProp
+ 0001:000047E4       SetRect
+ 0001:000047EC       SetScrollInfo
+ 0001:000047F4       SetScrollPos
+ 0001:000047FC       SetTimer
+ 0001:00004804       SetWindowLong
+ 0001:0000480C       SetWindowPlacement
+ 0001:00004814       SetWindowPos
+ 0001:0000481C       SetWindowText
+ 0001:00004824       SetWindowsHookEx
+ 0001:0000482C       SetWindowRgn
+ 0001:00004834       ShowCursor
+ 0001:0000483C       ShowOwnedPopups
+ 0001:00004844       ShowWindow
+ 0001:0000484C       SystemParametersInfo
+ 0001:00004854       TrackPopupMenu
+ 0001:0000485C       TranslateMDISysAccel
+ 0001:00004864       TranslateMessage
+ 0001:0000486C       UnhookWindowsHookEx
+ 0001:00004874       UnregisterClass
+ 0001:0000487C       UpdateWindow
+ 0001:00004884       WaitMessage
+ 0001:0000488C       WinHelp
+ 0001:00004894       WindowFromPoint
+ 0001:0000489C       MakeLong
+ 0001:000048A8       HiByte
+ 0001:000048B0       UnlockResource
+ 0001:000048B4       GlobalAllocPtr
+ 0001:000048C4       GlobalReAllocPtr
+ 0001:000048E0       GlobalFreePtr
+ 0001:000048F4       MakeROP4
+ 0001:00004900       SmallPointToPoint
+ 0001:00004914       PointToSmallPoint
+ 0001:0000492C       CreateWindow
+ 0001:00004960       Finalization
+ 0001:00004990       Windows
+ 0001:00004998       Finalization
+ 0001:000049C8       Messages
+ 0001:00005468       DivMod
+ 0001:00005484       ConvertError
+ 0001:000054A4       ConvertErrorFmt
+ 0001:000054D4       AllocMem
+ 0001:000054FC       DoExitProc
+ 0001:00005540       AddExitProc
+ 0001:00005590       CompareMem
+ 0001:000055B0       CompareText
+ 0001:00005604       AnsiLowerCase
+ 0001:00005644       AnsiCompareText
+ 0001:00005694       AnsiStrLIComp
+ 0001:000056D4       Trim
+ 0001:00005768       IsValidIdent
+ 0001:000057E4       IntToStr
+ 0001:0000581C       StrToIntDef
+ 0001:0000584C       FileOpen
+ 0001:0000589C       FileCreate
+ 0001:000058D0       FileRead
+ 0001:00005908       FileWrite
+ 0001:00005940       FileSeek
+ 0001:0000596C       FileClose
+ 0001:00005980       AnsiLastChar
+ 0001:000059C8       LastDelimiter
+ 0001:00005A48       ExtractFileName
+ 0001:00005A94       ExtractFileExt
+ 0001:00005AF4       FileDateToDateTime
+ 0001:00005B60       DateTimeToFileDate
+ 0001:00005BF8       StrLen
+ 0001:00005C10       StrEnd
+ 0001:00005C24       StrMove
+ 0001:00005C60       StrCopy
+ 0001:00005C88       StrECopy
+ 0001:00005CB4       StrLCopy
+ 0001:00005CE8       StrPCopy
+ 0001:00005D18       StrComp
+ 0001:00005D3C       StrLIComp
+ 0001:00005D84       StrScan
+ 0001:00005DA4       StrPos
+ 0001:00005DF8       StrPas
+ 0001:00005E14       StrAlloc
+ 0001:00005E48       StrBufSize
+ 0001:00005E70       StrNew
+ 0001:00005EB8       StrDispose
+ 0001:00005EDC       FormatError
+ 0001:00005F54       FormatVarToStr
+ 0001:00005F70       FormatClearStr
+ 0001:00005F84       FormatBuf
+ 0001:000062D4       StrFmt
+ 0001:0000631C       StrLFmt
+ 0001:00006360       Format
+ 0001:00006388       FmtStr
+ 0001:000064A4       DateTimeToTimeStamp
+ 0001:000064E4       DoEncodeTime
+ 0001:0000659C       EncodeTime
+ 0001:0000661C       DecodeTime
+ 0001:0000667C       IsLeapYear
+ 0001:000066C8       DoEncodeDate
+ 0001:00006818       EncodeDate
+ 0001:00006894       DecodeDate
+ 0001:00006A60       DayOfWeek
+ 0001:00006A98       CurrentYear
+ 0001:00006AB8       AppendChars
+ 0001:00006B28       AppendString
+ 0001:00006B4C       AppendNumber
+ 0001:00006B9C       GetCount
+ 0001:00006BE8       GetDate
+ 0001:00006C20       GetTime
+ 0001:00006C60       ConvertEraString
+ 0001:00006DEC       ConvertYearString
+ 0001:00006F0C       AppendFormat
+ 0001:000076C8       DateTimeToString
+ 0001:00007734       ScanBlanks
+ 0001:0000777C       ScanNumber
+ 0001:00007834       ScanString
+ 0001:000078D4       ScanChar
+ 0001:0000792C       GetDateOrder
+ 0001:0000799C       ScanToNumber
+ 0001:00007A04       GetEraYearOffset
+ 0001:00007A68       EraToYear
+ 0001:00007AFC       ScanDate
+ 0001:00007E58       ScanTime
+ 0001:00008034       StrToDateTime
+ 0001:00008104       SysErrorMessage
+ 0001:00008170       GetLocaleStr
+ 0001:000081D4       GetLocaleChar
+ 0001:00008210       LocalGetLocaleStr
+ 0001:00008254       GetMonthDayNames
+ 0001:000083BC       EnumEraNames
+ 0001:00008418       EnumEraYearOffsets
+ 0001:00008484       GetEraNamesAndYearOffsets
+ 0001:0000852C       TranslateDateFormat
+ 0001:000087E4       GetFormatSettings
+ 0001:00008B48       ExceptObject
+ 0001:00008B78       ExceptAddr
+ 0001:00008BA8       ConvertAddr
+ 0001:00008BB4       ExceptionErrorMessage
+ 0001:00008D74       ShowException
+ 0001:00008E44       Exception.Create
+ 0001:00008E84       Exception.CreateFmt
+ 0001:00008F0C       EOutOfMemory.Destroy
+ 0001:00008F30       EOutOfMemory.FreeInstance
+ 0001:00008F6C       CreateInOutError
+ 0001:00009070       ErrorHandler
+ 0001:000090DC       AssertErrorHandler
+ 0001:00009198       AbstractErrorHandler
+ 0001:00009204       MapException
+ 0001:000092B8       GetExceptionClass
+ 0001:000092E4       CreateAVObject
+ 0001:000094B4       GetExceptionObject
+ 0001:00009584       ExceptHandler
+ 0001:000095AC       InitExceptions
+ 0001:00009670       DoneExceptions
+ 0001:000096D8       InitPlatformId
+ 0001:00009740       ByteTypeTest
+ 0001:000097CC       ByteType
+ 0001:0000980C       StrByteType
+ 0001:0000983C       ByteToCharLen
+ 0001:00009878       ByteToCharIndex
+ 0001:00009908       CountChars
+ 0001:000099C4       CharToByteIndex
+ 0001:00009A54       CharToByteLen
+ 0001:00009AC8       IsPathDelimiter
+ 0001:00009B14       IsDelimiter
+ 0001:00009B70       AnsiPos
+ 0001:00009BCC       AnsiLowerCaseFileName
+ 0001:00009CB8       AnsiStrPos
+ 0001:00009DA8       AnsiStrRScan
+ 0001:00009DFC       AnsiStrScan
+ 0001:00009E5C       InitSysLocale
+ 0001:00009F48       RaiseLastWin32Error
+ 0001:0000A010       Win32Check
+ 0001:0000A034       CallTerminateProcs
+ 0001:0000A070       FreeTerminateProcs
+ 0001:0000A198       .
+ 0001:0000A1BA       FloatToText
+ 0001:0000A523       FloatToTextFmt
+ 0001:0000A8F8       FloatToDecimal
+ 0001:0000AB3F       TextToFloat
+ 0001:0000AC88       Finalization
+ 0001:0000ADC8       SysUtils
+ 0001:0000AE2C       Finalization
+ 0001:0000AE5C       ActiveX
+ 0001:0000B114       Finalization
+ 0001:0000B144       Consts
+ 0001:0000B14C       GetTypeData
+ 0001:0000B158       GetEnumValue
+ 0001:0000B1A4       GetPropInfo
+ 0001:0000B210       GetOrdProp
+ 0001:0000B284       SetOrdProp
+ 0001:0000B478       SetStrProp
+ 0001:0000B4AC       SetFloatProp
+ 0001:0000B544       SetMethodProp
+ 0001:0000B57C       Finalization
+ 0001:0000B5AC       TypInfo
+ 0001:0000C304       Point
+ 0001:0000C30C       SmallPoint
+ 0001:0000C31C       Rect
+ 0001:0000C338       Bounds
+ 0001:0000C3E4       GetClass
+ 0001:0000C44C       FindClass
+ 0001:0000C53C       RegisterClass
+ 0001:0000C62C       RegisterClasses
+ 0001:0000C65C       UnRegisterModuleClasses
+ 0001:0000C770       RegisterIntegerConsts
+ 0001:0000C7A0       IdentToInt
+ 0001:0000C7E0       IntToIdent
+ 0001:0000C8AC       BeginGlobalLoading
+ 0001:0000C8D4       NotifyGlobalLoading
+ 0001:0000C904       EndGlobalLoading
+ 0001:0000C9E0       InitInheritedComponent
+ 0001:0000CA38       TList.Destroy
+ 0001:0000CA5C       TList.Add
+ 0001:0000CA84       TList.Clear
+ 0001:0000CAA0       TList.Delete
+ 0001:0000CB24       TList.Error
+ 0001:0000CB5C       TList.Expand
+ 0001:0000CB78       TList.First
+ 0001:0000CB84       TList.Get
+ 0001:0000CBE8       TList.Grow
+ 0001:0000CC20       TList.IndexOf
+ 0001:0000CC40       TList.Insert
+ 0001:0000CCE0       TList.Last
+ 0001:0000CCF0       TList.Put
+ 0001:0000CD58       TList.Remove
+ 0001:0000CD7C       TList.SetCapacity
+ 0001:0000CDF0       TList.SetCount
+ 0001:0000CE80       TThreadList.Create
+ 0001:0000CECC       TThreadList.Destroy
+ 0001:0000CF48       TThreadList.Add
+ 0001:0000CFA8       TThreadList.LockList
+ 0001:0000CFC0       TThreadList.Remove
+ 0001:0000D010       TThreadList.UnlockList
+ 0001:0000D020       TBits.Destroy
+ 0001:0000D0B0       TBits.SetSize
+ 0001:0000D160       TBits.SetBit
+ 0001:0000D18C       TBits.OpenBit
+ 0001:0000D20C       TPersistent.Destroy
+ 0001:0000D23C       TPersistent.Assign
+ 0001:0000D344       TPersistent.AssignTo
+ 0001:0000D350       TPersistent.DefineProperties
+ 0001:0000D354       TPersistent.GetNamePath
+ 0001:0000D404       TPersistent.GetOwner
+ 0001:0000D408       TCollection.Add
+ 0001:0000D418       TCollection.BeginUpdate
+ 0001:0000D41C       TCollection.Changed
+ 0001:0000D430       TCollection.Clear
+ 0001:0000D498       TCollection.EndUpdate
+ 0001:0000D4A8       TStrings.Destroy
+ 0001:0000D4D8       TStrings.Add
+ 0001:0000D500       TStrings.AddObject
+ 0001:0000D528       TStrings.AddStrings
+ 0001:0000D5E0       TStrings.Assign
+ 0001:0000D650       TStrings.BeginUpdate
+ 0001:0000D6C4       TStrings.DefineProperties
+ 0001:0000D710       TStrings.EndUpdate
+ 0001:0000D728       TStrings.Equals
+ 0001:0000D7D4       TStrings.Error
+ 0001:0000D80C       TStrings.Exchange
+ 0001:0000D8F4       TStrings.GetCapacity
+ 0001:0000D900       TStrings.GetObject
+ 0001:0000D904       TStrings.GetText
+ 0001:0000D958       TStrings.GetTextStr
+ 0001:0000DA40       TStrings.IndexOf
+ 0001:0000DAC0       TStrings.InsertObject
+ 0001:0000DAF0       TStrings.LoadFromFile
+ 0001:0000DB44       TStrings.LoadFromStream
+ 0001:0000DBF0       TStrings.Move
+ 0001:0000DCA0       TStrings.Put
+ 0001:0000DCD8       TStrings.PutObject
+ 0001:0000DD8C       TStrings.SaveToFile
+ 0001:0000DDE4       TStrings.SaveToStream
+ 0001:0000DE40       TStrings.SetCapacity
+ 0001:0000DE44       TStrings.SetStringsAdapter
+ 0001:0000DE7C       TStrings.SetText
+ 0001:0000DECC       TStrings.SetTextStr
+ 0001:0000DF8C       TStrings.SetUpdateState
+ 0001:0000E014       TStringList.Destroy
+ 0001:0000E070       TStringList.Add
+ 0001:0000E108       TStringList.Changed
+ 0001:0000E128       TStringList.Changing
+ 0001:0000E148       TStringList.Clear
+ 0001:0000E184       TStringList.Delete
+ 0001:0000E224       TStringList.Exchange
+ 0001:0000E2E4       TStringList.Find
+ 0001:0000E350       TStringList.Get
+ 0001:0000E3C0       TStringList.GetCapacity
+ 0001:0000E3C4       TStringList.GetCount
+ 0001:0000E3C8       TStringList.GetObject
+ 0001:0000E468       TStringList.IndexOf
+ 0001:0000E4A8       TStringList.Insert
+ 0001:0000E5A4       TStringList.Put
+ 0001:0000E640       TStringList.PutObject
+ 0001:0000E774       TStringList.SetCapacity
+ 0001:0000E794       TStringList.SetSorted
+ 0001:0000E7B4       TStringList.SetUpdateState
+ 0001:0000E7CC       TStringList.Sort
+ 0001:0000E7FC       TStream.GetPosition
+ 0001:0000E810       TStream.SetPosition
+ 0001:0000E820       TStream.GetSize
+ 0001:0000E85C       TStream.SetSize
+ 0001:0000E860       TStream.ReadBuffer
+ 0001:0000E8DC       TStream.WriteBuffer
+ 0001:0000E958       TStream.ReadComponent
+ 0001:0000E9B8       THandleStream.Read
+ 0001:0000E9CC       THandleStream.Write
+ 0001:0000E9E0       THandleStream.Seek
+ 0001:0000E9F0       THandleStream.SetSize
+ 0001:0000EA14       TFileStream.Create
+ 0001:0000EB0C       TFileStream.Destroy
+ 0001:0000EB34       TCustomMemoryStream.SetPointer
+ 0001:0000EB3C       TCustomMemoryStream.Read
+ 0001:0000EB80       TCustomMemoryStream.Seek
+ 0001:0000EBA4       TMemoryStream.Destroy
+ 0001:0000EBD4       TMemoryStream.Clear
+ 0001:0000EBF0       TMemoryStream.SetCapacity
+ 0001:0000EC1C       TMemoryStream.SetSize
+ 0001:0000EC4C       TMemoryStream.Realloc
+ 0001:0000ED0C       TMemoryStream.Write
+ 0001:0000ED64       TResourceStream.Create
+ 0001:0000EEA4       TResourceStream.Destroy
+ 0001:0000EEDC       TResourceStream.Write
+ 0001:0000EF34       TFiler.Create
+ 0001:0000EF74       TFiler.Destroy
+ 0001:0000F0D8       GlobalFixupReferences
+ 0001:0000F260       RemoveFixupReferences
+ 0001:0000F2C8       RemoveFixups
+ 0001:0000F3D8       TReader.Destroy
+ 0001:0000F43C       TReader.DefineProperty
+ 0001:0000F470       TReader.DefineBinaryProperty
+ 0001:0000F54C       TReader.EndOfList
+ 0001:0000F564       TReader.Error
+ 0001:0000F58C       TReader.FindMethod
+ 0001:0000F6F8       TReader.FlushBuffer
+ 0001:0000F75C       TReader.GetPosition
+ 0001:0000F778       TReader.NextValue
+ 0001:0000F79C       TReader.Read
+ 0001:0000F860       TReader.ReadBoolean
+ 0001:0000F878       TReader.ReadChar
+ 0001:0000F8FC       TReader.ReadCollection
+ 0001:0000FBA4       TReader.ReadComponent
+ 0001:0000FE60       TReader.ReadFloat
+ 0001:0000FEA4       TReader.ReadIdent
+ 0001:0000FF5C       TReader.ReadInteger
+ 0001:0000FFC8       TReader.ReadListBegin
+ 0001:0000FFD4       TReader.ReadListEnd
+ 0001:0000FFE0       TReader.ReadPrefix
+ 0001:00010770       TReader.ReadRootComponent
+ 0001:00010A4C       TReader.ReadSignature
+ 0001:00010AB4       TReader.ReadStr
+ 0001:00010AF8       TReader.ReadString
+ 0001:00010B5C       TReader.ReadValue
+ 0001:00010EA4       TReader.FindAncestorComponent
+ 0001:00010F64       TReader.ReferenceName
+ 0001:00010F80       TReader.SetName
+ 0001:00010FB4       TWriter.Write
+ 0001:0001101C       TWriter.WriteBoolean
+ 0001:00011038       TWriter.WriteInteger
+ 0001:000110B0       TWriter.WriteListBegin
+ 0001:000110BC       TWriter.WriteListEnd
+ 0001:000110C8       TWriter.WriteString
+ 0001:00011128       TWriter.WriteValue
+ 0001:00011140       TComponent.Create
+ 0001:00011188       TComponent.Destroy
+ 0001:00011214       TComponent.FreeNotification
+ 0001:00011310       TComponent.InsertComponent
+ 0001:00011368       TComponent.RemoveComponent
+ 0001:000113AC       TComponent.DestroyComponents
+ 0001:000113DC       TComponent.Destroying
+ 0001:00011418       TComponent.Notification
+ 0001:0001148C       TComponent.DefineProperties
+ 0001:00011510       TComponent.HasParent
+ 0001:00011514       TComponent.GetChildren
+ 0001:0001151C       TComponent.GetChildOwner
+ 0001:00011520       TComponent.GetChildParent
+ 0001:00011524       TComponent.GetNamePath
+ 0001:0001153C       TComponent.GetOwner
+ 0001:00011540       TComponent.SetChildOrder
+ 0001:00011544       TComponent.GetParentComponent
+ 0001:00011548       TComponent.SetParentComponent
+ 0001:0001154C       TComponent.Updating
+ 0001:0001155C       TComponent.Updated
+ 0001:0001156C       TComponent.Loaded
+ 0001:0001157C       TComponent.ReadState
+ 0001:00011588       TComponent.WriteState
+ 0001:00011594       TComponent.ValidateRename
+ 0001:00011648       TComponent.ValidateContainer
+ 0001:00011660       TComponent.ValidateInsert
+ 0001:00011664       TComponent.FindComponent
+ 0001:000116C0       TComponent.SetName
+ 0001:0001178C       TComponent.ChangeName
+ 0001:000117A4       TComponent.GetComponent
+ 0001:00011810       TComponent.GetComponentCount
+ 0001:00011820       TComponent.SetComponentIndex
+ 0001:00011878       TComponent.SetDesigning
+ 0001:00011910       TComponent.SafeCallException
+ 0001:00011930       TComponent.UpdateRegistry
+ 0001:0001197C       Finalization
+ 0001:000119F8       Classes
+ 0001:00012BE0       PaletteChanged
+ 0001:00012FE4       ColorToRGB
+ 0001:00012FF4       ColorToIdent
+ 0001:00013004       IdentToColor
+ 0001:00013014       TGraphicsObject.Changed
+ 0001:00013028       TGraphicsObject.Lock
+ 0001:00013038       TGraphicsObject.Unlock
+ 0001:000131FC       CharsetToIdent
+ 0001:0001320C       IdentToCharset
+ 0001:000132D0       TFont.Create
+ 0001:00013320       TFont.Destroy
+ 0001:00013344       TFont.Changed
+ 0001:00013360       TFont.Assign
+ 0001:0001349C       TFont.SetColor
+ 0001:000134B0       TFont.GetHandle
+ 0001:0001364C       TFont.SetHandle
+ 0001:00013670       TFont.GetHeight
+ 0001:00013678       TFont.SetHeight
+ 0001:000136A0       TFont.GetName
+ 0001:000136B8       TFont.SetName
+ 0001:00013714       TFont.GetSize
+ 0001:00013730       TFont.SetSize
+ 0001:00013750       TFont.GetStyle
+ 0001:0001375C       TFont.SetStyle
+ 0001:00013788       TFont.GetPitch
+ 0001:00013790       TFont.SetPitch
+ 0001:000137B8       TFont.GetCharset
+ 0001:000137C0       TFont.SetCharset
+ 0001:000137E8       TPen.Create
+ 0001:00013824       TPen.Destroy
+ 0001:00013848       TPen.Assign
+ 0001:00013968       TPen.GetColor
+ 0001:00013970       TPen.SetColor
+ 0001:00013998       TPen.GetHandle
+ 0001:00013A30       TPen.SetMode
+ 0001:00013A44       TPen.GetStyle
+ 0001:00013A4C       TPen.SetStyle
+ 0001:00013A74       TPen.GetWidth
+ 0001:00013A7C       TPen.SetWidth
+ 0001:00013AA8       TBrush.Create
+ 0001:00013AE0       TBrush.Destroy
+ 0001:00013B04       TBrush.Assign
+ 0001:00013C1C       TBrush.GetColor
+ 0001:00013C24       TBrush.SetColor
+ 0001:00013C58       TBrush.GetHandle
+ 0001:00013D38       TBrush.GetStyle
+ 0001:00013D40       TBrush.SetStyle
+ 0001:00013D74       TCanvas.Create
+ 0001:00013E30       TCanvas.Destroy
+ 0001:00013E88       TCanvas.FillRect
+ 0001:00013EC4       TCanvas.Lock
+ 0001:00013EEC       TCanvas.MoveTo
+ 0001:00013F18       TCanvas.Rectangle
+ 0001:00013F60       TCanvas.StretchDraw
+ 0001:00013F9C       TCanvas.TextExtent
+ 0001:00013FE0       TCanvas.TextWidth
+ 0001:00013FFC       TCanvas.TextHeight
+ 0001:0001401C       TCanvas.TryLock
+ 0001:00014078       TCanvas.Unlock
+ 0001:000140A0       TCanvas.SetFont
+ 0001:000140B0       TCanvas.SetPen
+ 0001:000140BC       TCanvas.SetBrush
+ 0001:000140C8       TCanvas.GetPenPos
+ 0001:000140EC       TCanvas.SetPenPos
+ 0001:0001410C       TCanvas.GetPixel
+ 0001:00014138       TCanvas.GetHandle
+ 0001:000141B4       TCanvas.CreateHandle
+ 0001:000141B8       TCanvas.SetHandle
+ 0001:00014260       TCanvas.RequiredState
+ 0001:000142D4       TCanvas.Changing
+ 0001:000142E8       TCanvas.Changed
+ 0001:000147DC       TransparentStretchBlt
+ 0001:000153F0       GetDIBSizes
+ 0001:000154A8       GetDIB
+ 0001:000156C8       TGraphic.Create
+ 0001:000156F8       TGraphic.Changed
+ 0001:00015768       TGraphic.DefineProperties
+ 0001:000157B4       TGraphic.Equals
+ 0001:000158F8       TGraphic.GetPalette
+ 0001:000158FC       TGraphic.GetTransparent
+ 0001:00015900       TGraphic.LoadFromFile
+ 0001:00015954       TGraphic.Progress
+ 0001:0001597C       TGraphic.ReadData
+ 0001:00015988       TGraphic.SaveToFile
+ 0001:000159E0       TGraphic.SetPalette
+ 0001:000159E4       TGraphic.SetTransparent
+ 0001:000159F4       TGraphic.WriteData
+ 0001:00015EB0       TPicture.Create
+ 0001:00015EE8       TPicture.Destroy
+ 0001:00015F14       TPicture.AssignTo
+ 0001:00015FAC       TPicture.GetIcon
+ 0001:00015FC4       TPicture.SetGraphic
+ 0001:00016070       TPicture.Assign
+ 0001:000160CC       TPicture.Changed
+ 0001:000160F0       TPicture.Progress
+ 0001:000162DC       TPicture.DefineProperties
+ 0001:00016328       TPicture.GetWidth
+ 0001:00016340       TPicture.GetHeight
+ 0001:00016358       TMetafileImage.Destroy
+ 0001:00016390       TMetafileImage.FreeHandle
+ 0001:00016394       TMetafile.Create
+ 0001:000163D4       TMetafile.Destroy
+ 0001:00016400       TMetafile.Assign
+ 0001:00016494       TMetafile.Draw
+ 0001:00016528       TMetafile.GetEmpty
+ 0001:00016530       TMetafile.GetHeight
+ 0001:00016594       TMetafile.GetPalette
+ 0001:00016620       TMetafile.GetWidth
+ 0001:00016684       TMetafile.LoadFromStream
+ 0001:00016700       TMetafile.ReadData
+ 0001:0001675C       TMetafile.ReadEMFStream
+ 0001:0001682C       TMetafile.ReadWMFStream
+ 0001:00016954       TMetafile.SaveToFile
+ 0001:000169E0       TMetafile.SaveToStream
+ 0001:000169FC       TMetafile.SetHeight
+ 0001:00016A70       TMetafile.SetMMHeight
+ 0001:00016AAC       TMetafile.SetMMWidth
+ 0001:00016AE8       TMetafile.SetWidth
+ 0001:00016B5C       TMetafile.TestEMF
+ 0001:00016C40       TMetafile.WriteData
+ 0001:00016CC4       TMetafile.WriteEMFStream
+ 0001:00016D48       TMetafile.WriteWMFStream
+ 0001:00016E90       TMetafile.LoadFromClipboardFormat
+ 0001:00016F50       TMetafile.SaveToClipboardFormat
+ 0001:00017014       FreeMemoryContexts
+ 0001:0001732C       TSharedImage.Reference
+ 0001:00017330       TSharedImage.Release
+ 0001:00017350       TBitmapImage.Destroy
+ 0001:000173A0       TBitmapImage.FreeHandle
+ 0001:00017B28       CopyPalette
+ 0001:00017D98       TBitmap.Create
+ 0001:00017DFC       TBitmap.Destroy
+ 0001:00017E38       TBitmap.Assign
+ 0001:00017FEC       TBitmap.Changed
+ 0001:00017FF8       TBitmap.Draw
+ 0001:00018248       TBitmap.FreeImage
+ 0001:00018298       TBitmap.GetEmpty
+ 0001:000182B0       TBitmap.GetCanvas
+ 0001:000182F0       TBitmap.GetHandle
+ 0001:00018314       TBitmap.GetHandleType
+ 0001:00018340       TBitmap.GetHeight
+ 0001:00018350       TBitmap.GetMaskHandle
+ 0001:00018364       TBitmap.GetMonochrome
+ 0001:00018380       TBitmap.GetPalette
+ 0001:00018394       TBitmap.GetTransparentColor
+ 0001:000183DC       TBitmap.GetWidth
+ 0001:00018468       TBitmap.HandleNeeded
+ 0001:00018478       TBitmap.MaskHandleNeeded
+ 0001:000184D8       TBitmap.PaletteNeeded
+ 0001:00018590       TBitmap.LoadFromClipboardFormat
+ 0001:00018650       TBitmap.LoadFromStream
+ 0001:00018760       TBitmap.ReadData
+ 0001:00018C34       TBitmap.SetHandleType
+ 0001:00018D68       TBitmap.SetHeight
+ 0001:00018DBC       TBitmap.SetPalette
+ 0001:00018E90       TBitmap.SetWidth
+ 0001:00018EE4       TBitmap.WriteData
+ 0001:00019114       TBitmap.SaveToStream
+ 0001:0001911C       TBitmap.SaveToClipboardFormat
+ 0001:000191BC       TIconImage.Destroy
+ 0001:000191E8       TIconImage.FreeHandle
+ 0001:00019200       TIcon.Create
+ 0001:00019254       TIcon.Destroy
+ 0001:00019280       TIcon.Assign
+ 0001:000192E0       TIcon.Draw
+ 0001:00019318       TIcon.GetEmpty
+ 0001:00019330       TIcon.GetHandle
+ 0001:00019344       TIcon.GetHeight
+ 0001:0001934C       TIcon.GetWidth
+ 0001:00019470       TIcon.LoadFromStream
+ 0001:00019598       TIcon.SetHandle
+ 0001:000195B0       TIcon.SetHeight
+ 0001:000195F8       TIcon.SetWidth
+ 0001:00019640       TIcon.SaveToStream
+ 0001:0001966C       TIcon.LoadFromClipboardFormat
+ 0001:000196B8       TIcon.SaveToClipboardFormat
+ 0001:0001973C       GetDefFontCharSet
+ 0001:00019838       Finalization
+ 0001:00019900       Graphics
+ 0001:000199EC       ImageList_Create
+ 0001:000199F4       ImageList_Destroy
+ 0001:000199FC       ImageList_ReplaceIcon
+ 0001:00019A04       ImageList_SetBkColor
+ 0001:00019A0C       ImageList_AddIcon
+ 0001:00019A18       ImageList_BeginDrag
+ 0001:00019A20       ImageList_EndDrag
+ 0001:00019A28       ImageList_DragEnter
+ 0001:00019A30       ImageList_DragLeave
+ 0001:00019A38       ImageList_DragMove
+ 0001:00019A40       ImageList_SetDragCursorImage
+ 0001:00019A48       ImageList_DragShowNolock
+ 0001:00019A50       ImageList_GetDragImage
+ 0001:00019A58       Finalization
+ 0001:00019A88       Commctrl
+ 0001:00019A90       Finalization
+ 0001:00019AC0       Imm
+ 0001:00019AC8       Finalization
+ 0001:00019AF8       WinSpool
+ 0001:00019B00       Finalization
+ 0001:00019B3C       Printers
+ 0001:0001A8FC       InitWndProc
+ 0001:0001A9B4       FindControl
+ 0001:0001A9D0       SendAppMessage
+ 0001:0001AB80       CursorToIdent
+ 0001:0001AB90       IdentToCursor
+ 0001:0001ABA0       GetShortHint
+ 0001:0001ABE4       GetLongHint
+ 0001:0001AC28       GetCaptureControl
+ 0001:0001AC50       SetCaptureControl
+ 0001:0001AC94       TDragObject.Instance
+ 0001:0001AC9C       TDragObject.GetName
+ 0001:0001ACC4       TDragObject.GetDragImages
+ 0001:0001ACF4       TDragObject.GetDragCursor
+ 0001:0001AD0C       TDragObject.Finished
+ 0001:0001AD14       TDragObject.HideDragImage
+ 0001:0001AD18       TDragObject.ShowDragImage
+ 0001:0001AD9C       TDragControlObject.Create
+ 0001:0001ADBC       TDragControlObject.GetDragImages
+ 0001:0001ADC8       TDragControlObject.HideDragImage
+ 0001:0001ADE8       TDragControlObject.ShowDragImage
+ 0001:0001AE08       TDragControlObject.GetDragCursor
+ 0001:0001AE20       TDragControlObject.Finished
+ 0001:0001B338       CancelDrag
+ 0001:0001B350       FindVCLWindow
+ 0001:0001B384       FindDragTarget
+ 0001:0001B410       MoveWindowOrg
+ 0001:0001B5A8       TControlCanvas.Destroy
+ 0001:0001B5D4       TControlCanvas.CreateHandle
+ 0001:0001B670       TControlCanvas.FreeHandle
+ 0001:0001B6A4       TControlCanvas.SetControl
+ 0001:0001B6BC       TControl.Create
+ 0001:0001B74C       TControl.Destroy
+ 0001:0001B798       TControl.GetDragImages
+ 0001:0001B79C       TControl.GetPalette
+ 0001:0001B7A0       TControl.HasParent
+ 0001:0001B7A8       TControl.GetParentComponent
+ 0001:0001B7AC       TControl.SetParentComponent
+ 0001:0001B7D0       TControl.PaletteChanged
+ 0001:0001B84C       TControl.SetDragMode
+ 0001:0001B850       TControl.RequestAlign
+ 0001:0001B860       TControl.ReadState
+ 0001:0001B8E0       TControl.Notification
+ 0001:0001B90C       TControl.SetAlign
+ 0001:0001B970       TControl.SetBounds
+ 0001:0001B9DC       TControl.SetLeft
+ 0001:0001B9FC       TControl.SetTop
+ 0001:0001BA1C       TControl.SetWidth
+ 0001:0001BA3C       TControl.SetHeight
+ 0001:0001BA5C       TControl.GetBoundsRect
+ 0001:0001BA7C       TControl.SetBoundsRect
+ 0001:0001BAA4       TControl.GetClientRect
+ 0001:0001BABC       TControl.GetClientWidth
+ 0001:0001BAD4       TControl.SetClientWidth
+ 0001:0001BB00       TControl.GetClientHeight
+ 0001:0001BB18       TControl.SetClientHeight
+ 0001:0001BB40       TControl.GetClientOrigin
+ 0001:0001BBD0       TControl.ClientToScreen
+ 0001:0001BBFC       TControl.ScreenToClient
+ 0001:0001BC28       TControl.SendCancelMode
+ 0001:0001BC40       TControl.Changed
+ 0001:0001BC50       TControl.ChangeScale
+ 0001:0001BDA0       TControl.SetName
+ 0001:0001BE88       TControl.SetParent
+ 0001:0001BF0C       TControl.SetVisible
+ 0001:0001BF48       TControl.SetEnabled
+ 0001:0001BF60       TControl.GetTextLen
+ 0001:0001BF70       TControl.GetTextBuf
+ 0001:0001BF7C       TControl.SetPopupMenu
+ 0001:0001BF8C       TControl.SetTextBuf
+ 0001:0001BFB0       TControl.GetText
+ 0001:0001BFE0       TControl.SetText
+ 0001:0001C080       TControl.SetFont
+ 0001:0001C08C       TControl.IsFontStored
+ 0001:0001C0A0       TControl.IsShowHintStored
+ 0001:0001C0A8       TControl.SetParentFont
+ 0001:0001C0C8       TControl.SetShowHint
+ 0001:0001C0E4       TControl.SetParentShowHint
+ 0001:0001C104       TControl.SetColor
+ 0001:0001C120       TControl.IsColorStored
+ 0001:0001C128       TControl.SetParentColor
+ 0001:0001C148       TControl.SetCursor
+ 0001:0001C164       TControl.GetMouseCapture
+ 0001:0001C174       TControl.SetMouseCapture
+ 0001:0001C19C       TControl.BringToFront
+ 0001:0001C22C       TControl.SetZOrder
+ 0001:0001C250       TControl.GetDeviceContext
+ 0001:0001C410       TControl.Invalidate
+ 0001:0001C420       TControl.Update
+ 0001:0001C430       TControl.Repaint
+ 0001:0001C528       TControl.BeginDrag
+ 0001:0001C5FC       TControl.DragCanceled
+ 0001:0001C600       TControl.Dragging
+ 0001:0001C60C       TControl.DragOver
+ 0001:0001C648       TControl.DragDrop
+ 0001:0001C674       TControl.DoStartDrag
+ 0001:0001C694       TControl.DoEndDrag
+ 0001:0001C758       TControl.Perform
+ 0001:0001C78C       TControl.VisibleChanging
+ 0001:0001C790       TControl.WndProc
+ 0001:0001C870       TControl.DefaultHandler
+ 0001:0001C938       TControl.DefineProperties
+ 0001:0001C988       TControl.Click
+ 0001:0001C9A8       TControl.DblClick
+ 0001:0001C9C8       TControl.MouseDown
+ 0001:0001CA3C       TControl.WMLButtonDown
+ 0001:0001CA88       TControl.WMNCLButtonDown
+ 0001:0001CAA4       TControl.WMLButtonDblClk
+ 0001:0001CAF8       TControl.GetPopupMenu
+ 0001:0001CB70       TControl.WMRButtonDown
+ 0001:0001CB98       TControl.WMRButtonDblClk
+ 0001:0001CBC0       TControl.WMMButtonDown
+ 0001:0001CBE8       TControl.WMMButtonDblClk
+ 0001:0001CC10       TControl.MouseMove
+ 0001:0001CC38       TControl.WMMouseMove
+ 0001:0001CC74       TControl.MouseUp
+ 0001:0001CCE0       TControl.WMLButtonUp
+ 0001:0001CD54       TControl.WMRButtonUp
+ 0001:0001CD84       TControl.WMMButtonUp
+ 0001:0001CDA4       TControl.WMCancelMode
+ 0001:0001CDDC       TControl.CMVisibleChanged
+ 0001:0001CE04       TControl.CMEnabledChanged
+ 0001:0001CE0C       TControl.CMFontChanged
+ 0001:0001CE14       TControl.CMColorChanged
+ 0001:0001CE1C       TControl.CMParentColorChanged
+ 0001:0001CE4C       TControl.CMParentShowHintChanged
+ 0001:0001CE68       TControl.CMParentFontChanged
+ 0001:0001CE98       TControl.CMSysFontChanged
+ 0001:0001CEB8       TControl.CMHitTest
+ 0001:0001CEC0       TControl.CMMouseEnter
+ 0001:0001CED8       TControl.CMMouseLeave
+ 0001:0001CEF0       TControl.CMDesignHitTest
+ 0001:0001CEF8       TWinControl.Create
+ 0001:0001CF8C       TWinControl.Destroy
+ 0001:0001D028       TWinControl.FixupTabList
+ 0001:0001D0FC       TWinControl.ReadState
+ 0001:0001D4DC       TWinControl.AlignControls
+ 0001:0001D5EC       TWinControl.DisableAlign
+ 0001:0001D5F4       TWinControl.EnableAlign
+ 0001:0001D614       TWinControl.Realign
+ 0001:0001D61C       TWinControl.ContainsControl
+ 0001:0001D6E4       TWinControl.InsertControl
+ 0001:0001D7A4       TWinControl.RemoveControl
+ 0001:0001D820       TWinControl.GetControl
+ 0001:0001D850       TWinControl.GetControlCount
+ 0001:0001D870       TWinControl.Broadcast
+ 0001:0001D8B0       TWinControl.NotifyControls
+ 0001:0001D8D8       TWinControl.CreateSubClass
+ 0001:0001D948       TWinControl.CreateParams
+ 0001:0001DA68       TWinControl.CreateWnd
+ 0001:0001DBC0       TWinControl.CreateWindowHandle
+ 0001:0001DC04       TWinControl.DestroyWnd
+ 0001:0001DC5C       TWinControl.DestroyWindowHandle
+ 0001:0001DCB4       TWinControl.CreateHandle
+ 0001:0001DD20       TWinControl.DestroyHandle
+ 0001:0001DD64       TWinControl.RecreateWnd
+ 0001:0001DD7C       TWinControl.CMRecreateWnd
+ 0001:0001DEAC       TWinControl.UpdateControlState
+ 0001:0001DEEC       TWinControl.MainWndProc
+ 0001:0001DF64       TWinControl.ControlAtPos
+ 0001:0001E024       TWinControl.IsControlMouseMsg
+ 0001:0001E0B0       TWinControl.WndProc
+ 0001:0001E1D8       TWinControl.DefaultHandler
+ 0001:0001E2C0       TWinControl.PaintHandler
+ 0001:0001E3E8       TWinControl.PaintWindow
+ 0001:0001E414       TWinControl.PaintControls
+ 0001:0001E61C       TWinControl.WMPaint
+ 0001:0001E778       TWinControl.WMCommand
+ 0001:0001E798       TWinControl.WMNotify
+ 0001:0001E7BC       TWinControl.WMSysColorChange
+ 0001:0001E7D8       TWinControl.WMWinIniChange
+ 0001:0001E7EC       TWinControl.WMFontChange
+ 0001:0001E7FC       TWinControl.WMTimeChange
+ 0001:0001E80C       TWinControl.WMHScroll
+ 0001:0001E82C       TWinControl.WMVScroll
+ 0001:0001E84C       TWinControl.WMCompareItem
+ 0001:0001E870       TWinControl.WMDeleteItem
+ 0001:0001E894       TWinControl.WMDrawItem
+ 0001:0001E8B8       TWinControl.WMMeasureItem
+ 0001:0001E8DC       TWinControl.WMEraseBkgnd
+ 0001:0001E918       TWinControl.WMWindowPosChanged
+ 0001:0001E9A8       TWinControl.WMSize
+ 0001:0001E9C8       TWinControl.WMMove
+ 0001:0001E9DC       TWinControl.WMSetCursor
+ 0001:0001EAC8       TWinControl.WMSetFocus
+ 0001:0001EADC       TWinControl.WMKillFocus
+ 0001:0001EAF0       TWinControl.WMIMEStartComp
+ 0001:0001EB04       TWinControl.WMIMEEndComp
+ 0001:0001EB18       TWinControl.SetIme
+ 0001:0001EBC0       TWinControl.ResetIme
+ 0001:0001EC1C       TWinControl.DoEnter
+ 0001:0001EC3C       TWinControl.DoExit
+ 0001:0001EC5C       TWinControl.KeyDown
+ 0001:0001EC84       TWinControl.DoKeyDown
+ 0001:0001ED18       TWinControl.WMKeyDown
+ 0001:0001ED38       TWinControl.WMSysKeyDown
+ 0001:0001ED58       TWinControl.KeyUp
+ 0001:0001ED80       TWinControl.DoKeyUp
+ 0001:0001EDE4       TWinControl.WMKeyUp
+ 0001:0001EE04       TWinControl.WMSysKeyUp
+ 0001:0001EE24       TWinControl.KeyPress
+ 0001:0001EE44       TWinControl.DoKeyPress
+ 0001:0001EEB0       TWinControl.WMChar
+ 0001:0001EED0       TWinControl.WMSysCommand
+ 0001:0001EF48       TWinControl.WMCharToItem
+ 0001:0001EF68       TWinControl.WMParentNotify
+ 0001:0001EF9C       TWinControl.WMVKeyToItem
+ 0001:0001EFBC       TWinControl.WMDestroy
+ 0001:0001EFF0       TWinControl.WMNCDestroy
+ 0001:0001F00C       TWinControl.WMNCHitTest
+ 0001:0001F030       TWinControl.PaletteChanged
+ 0001:0001F094       TWinControl.WMQueryNewPalette
+ 0001:0001F0B8       TWinControl.WMPaletteChanged
+ 0001:0001F0D8       TWinControl.CMShowHintChanged
+ 0001:0001F0F0       TWinControl.CMEnter
+ 0001:0001F104       TWinControl.CMExit
+ 0001:0001F118       TWinControl.CMDesignHitTest
+ 0001:0001F138       TWinControl.CMChanged
+ 0001:0001F14C       TWinControl.CMChildKey
+ 0001:0001F160       TWinControl.CMDialogKey
+ 0001:0001F168       TWinControl.CMDialogChar
+ 0001:0001F170       TWinControl.CMFocusChanged
+ 0001:0001F178       TWinControl.CMVisibleChanged
+ 0001:0001F1A8       TWinControl.CMShowingChanged
+ 0001:0001F1D0       TWinControl.CMEnabledChanged
+ 0001:0001F210       TWinControl.CMColorChanged
+ 0001:0001F238       TWinControl.CMFontChanged
+ 0001:0001F274       TWinControl.CMCursorChanged
+ 0001:0001F2B4       TWinControl.CMCtl3DChanged
+ 0001:0001F2F4       TWinControl.CMParentCtl3DChanged
+ 0001:0001F334       TWinControl.CMSysColorChange
+ 0001:0001F33C       TWinControl.CMWinIniChange
+ 0001:0001F344       TWinControl.CMFontChange
+ 0001:0001F34C       TWinControl.CMTimeChange
+ 0001:0001F354       TWinControl.CMDrag
+ 0001:0001F3AC       TWinControl.CMControlListChange
+ 0001:0001F3C0       TWinControl.CMSysFontChanged
+ 0001:0001F464       TWinControl.CNKeyDown
+ 0001:0001F53C       TWinControl.CNKeyUp
+ 0001:0001F590       TWinControl.CNChar
+ 0001:0001F5DC       TWinControl.CNSysKeyDown
+ 0001:0001F638       TWinControl.CNSysChar
+ 0001:0001F66C       TWinControl.SetBounds
+ 0001:0001F73C       TWinControl.ScaleControls
+ 0001:0001F784       TWinControl.ChangeScale
+ 0001:0001F7E4       TWinControl.ScrollBy
+ 0001:0001F8BC       TWinControl.ShowControl
+ 0001:0001F9A8       TWinControl.SetZOrder
+ 0001:0001FA08       TWinControl.GetDeviceContext
+ 0001:0001FAA0       TWinControl.Invalidate
+ 0001:0001FAB0       TWinControl.CMInvalidate
+ 0001:0001FB00       TWinControl.Update
+ 0001:0001FB1C       TWinControl.Repaint
+ 0001:0001FB68       TWinControl.CanFocus
+ 0001:0001FB9C       TWinControl.SetFocus
+ 0001:0001FBD4       TWinControl.Focused
+ 0001:0001FBF8       TWinControl.HandleNeeded
+ 0001:0001FC1C       TWinControl.GetHandle
+ 0001:0001FC30       TWinControl.GetClientOrigin
+ 0001:0001FC50       TWinControl.GetClientRect
+ 0001:0001FC68       TWinControl.SetCtl3D
+ 0001:0001FC8C       TWinControl.IsCtl3DStored
+ 0001:0001FC98       TWinControl.SetParentCtl3D
+ 0001:0001FCBC       TWinControl.GetTabOrder
+ 0001:0001FD3C       TWinControl.SetTabOrder
+ 0001:0001FD54       TWinControl.SetTabStop
+ 0001:0001FDB4       TWinControl.HandleAllocated
+ 0001:0001FE70       TWinControl.GetTabOrderList
+ 0001:0001FEC8       TWinControl.FindNextControl
+ 0001:0001FFCC       TWinControl.SelectNext
+ 0001:0001FFF8       TWinControl.GetChildren
+ 0001:00020040       TWinControl.SetChildOrder
+ 0001:00020080       TGraphicControl.Create
+ 0001:000200D4       TGraphicControl.Destroy
+ 0001:00020104       TGraphicControl.WMPaint
+ 0001:000201A8       TGraphicControl.Paint
+ 0001:000201AC       THintWindow.Create
+ 0001:00020250       THintWindow.CreateParams
+ 0001:0002027C       THintWindow.WMNCHitTest
+ 0001:00020284       THintWindow.WMNCPaint
+ 0001:0002031C       THintWindow.Paint
+ 0001:000203B0       THintWindow.IsHintMsg
+ 0001:00020414       THintWindow.ReleaseHandle
+ 0001:0002041C       THintWindow.CMTextChanged
+ 0001:000204A4       THintWindow.ActivateHint
+ 0001:00020564       THintWindow.ActivateHintData
+ 0001:00020590       THintWindow.CalcHintRect
+ 0001:000205E4       TCustomControl.Create
+ 0001:00020638       TCustomControl.Destroy
+ 0001:00020668       TCustomControl.WMPaint
+ 0001:00020670       TCustomControl.PaintWindow
+ 0001:00020708       TCustomControl.Paint
+ 0001:0002076C       TCustomImageList.HandleAllocated
+ 0001:00020774       TCustomImageList.HandleNeeded
+ 0001:00020780       TCustomImageList.GetHandle
+ 0001:0002082C       TCustomImageList.SetBkColor
+ 0001:0002092C       TCustomImageList.SetDragCursor
+ 0001:00020944       TCustomImageList.SetDragImage
+ 0001:0002098C       TCustomImageList.BeginDrag
+ 0001:000209EC       TCustomImageList.DragLock
+ 0001:00020A50       TCustomImageList.DragUnlock
+ 0001:00020A74       TCustomImageList.DragMove
+ 0001:00020AB8       TCustomImageList.ShowDragImage
+ 0001:00020AD0       TCustomImageList.HideDragImage
+ 0001:00020AE8       TCustomImageList.EndDrag
+ 0001:00020DB0       Win32NLSEnableIME
+ 0001:00020DC8       SetImeMode
+ 0001:00020EA4       Imm32IsIME
+ 0001:00021018       Finalization
+ 0001:00021064       Controls
+ 0001:0002176C       ShortCutToText
+ 0001:000219D0       TextToShortCut
+ 0001:00021C50       TMenuItem.Create
+ 0001:00021C90       TMenuItem.Destroy
+ 0001:00022140       TMenuItem.GetHandle
+ 0001:000221D4       TMenuItem.DefineProperties
+ 0001:00022218       TMenuItem.HasParent
+ 0001:0002221C       TMenuItem.SetBreak
+ 0001:0002222C       TMenuItem.SetCaption
+ 0001:0002229C       TMenuItem.SetChecked
+ 0001:000222E8       TMenuItem.SetEnabled
+ 0001:0002235C       TMenuItem.SetGroupIndex
+ 0001:000223A0       TMenuItem.GetCount
+ 0001:000223B0       TMenuItem.GetItem
+ 0001:000223D0       TMenuItem.SetShortCut
+ 0001:000223DC       TMenuItem.SetVisible
+ 0001:000223E8       TMenuItem.GetMenuIndex
+ 0001:00022400       TMenuItem.SetMenuIndex
+ 0001:00022448       TMenuItem.GetChildren
+ 0001:00022480       TMenuItem.SetChildOrder
+ 0001:000224A0       TMenuItem.SetDefault
+ 0001:000224FC       TMenuItem.Insert
+ 0001:000225F8       TMenuItem.Delete
+ 0001:00022660       TMenuItem.Click
+ 0001:0002267C       TMenuItem.IndexOf
+ 0001:00022694       TMenuItem.Add
+ 0001:000226B0       TMenuItem.Remove
+ 0001:00022720       TMenuItem.MenuChanged
+ 0001:00022784       TMenuItem.GetParentComponent
+ 0001:00022798       TMenuItem.SetParentComponent
+ 0001:000227EC       TMenuItem.SetRadioItem
+ 0001:00022818       TMenu.Create
+ 0001:00022878       TMenu.Destroy
+ 0001:000228A4       TMenu.GetChildren
+ 0001:000228C0       TMenu.GetHandle
+ 0001:000228CC       TMenu.SetChildOrder
+ 0001:00022980       TMenu.FindItem
+ 0001:000229B0       TMenu.GetHelpContext
+ 0001:00022A20       TMenu.DispatchCommand
+ 0001:00022A44       TMenu.DispatchPopup
+ 0001:00022AF4       TMenu.IsShortCut
+ 0001:00022CB4       TMenu.SetWindowHandle
+ 0001:00022CC0       TMenu.MenuChanged
+ 0001:00022CC4       TMainMenu.SetAutoMerge
+ 0001:00022CE4       TMainMenu.MenuChanged
+ 0001:00022D04       TMainMenu.Merge
+ 0001:00022D20       TMainMenu.Unmerge
+ 0001:00022D64       TMainMenu.GetHandle
+ 0001:00023040       TPopupMenu.Create
+ 0001:00023098       TPopupMenu.Destroy
+ 0001:000230DC       TPopupMenu.GetHelpContext
+ 0001:000230E4       TPopupMenu.SetHelpContext
+ 0001:000230EC       TPopupMenu.Popup
+ 0001:000231C8       Finalization
+ 0001:00023224       Menus
+ 0001:0002447C       DisableTaskWindows
+ 0001:0002452C       EnableTaskWindows
+ 0001:00024644       ForegroundTask
+ 0001:000246E8       InitCtl3D
+ 0001:00024920       DoneCtl3D
+ 0001:00024944       Subclass3DDlg
+ 0001:0002496C       SetAutoSubClass
+ 0001:000249DC       MakeObjectInstance
+ 0001:00024A74       FreeObjectInstance
+ 0001:00024A98       AllocateHWnd
+ 0001:00024B54       DeallocateHWnd
+ 0001:00024B7C       KeysToShiftState
+ 0001:00024BD0       KeyDataToShiftState
+ 0001:00024C0C       IsAccel
+ 0001:00024CAC       GetParentForm
+ 0001:00024CD8       ValidParentForm
+ 0001:00024DA4       TControlScrollBar.Assign
+ 0001:0002511C       TControlScrollBar.SetPosition
+ 0001:000251F0       TControlScrollBar.SetRange
+ 0001:00025204       TControlScrollBar.IsRangeStored
+ 0001:00025210       TControlScrollBar.SetVisible
+ 0001:000252D0       TScrollingWinControl.Create
+ 0001:00025334       TScrollingWinControl.Destroy
+ 0001:0002536C       TScrollingWinControl.CreateParams
+ 0001:0002537C       TScrollingWinControl.CreateWnd
+ 0001:00025390       TScrollingWinControl.AlignControls
+ 0001:00025438       TScrollingWinControl.SetAutoScroll
+ 0001:00025474       TScrollingWinControl.SetHorzScrollBar
+ 0001:00025480       TScrollingWinControl.SetVertScrollBar
+ 0001:00025584       TScrollingWinControl.AutoScrollInView
+ 0001:0002559C       TScrollingWinControl.ScrollInView
+ 0001:00025794       TScrollingWinControl.ChangeScale
+ 0001:000257B8       TScrollingWinControl.WMSize
+ 0001:00025828       TScrollingWinControl.WMHScroll
+ 0001:0002584C       TScrollingWinControl.WMVScroll
+ 0001:00025870       TCustomForm.Create
+ 0001:00025A00       TCustomForm.CreateNew
+ 0001:00025B0C       TCustomForm.Destroy
+ 0001:00025C34       TCustomForm.Loaded
+ 0001:00025C6C       TCustomForm.Notification
+ 0001:00025CF4       TCustomForm.ReadState
+ 0001:00025ED8       TCustomForm.DefineProperties
+ 0001:00025FC4       TCustomForm.ChangeScale
+ 0001:000260A0       TCustomForm.IsClientSizeStored
+ 0001:000260B0       TCustomForm.IsFormSizeStored
+ 0001:000260D8       TCustomForm.IsAutoScrollStored
+ 0001:0002610C       TCustomForm.DoHide
+ 0001:0002612C       TCustomForm.DoShow
+ 0001:0002614C       TCustomForm.GetClientRect
+ 0001:000261D4       TCustomForm.GetChildren
+ 0001:00026240       TCustomForm.SetChildOrder
+ 0001:000262D4       TCustomForm.SetClientWidth
+ 0001:00026300       TCustomForm.SetClientHeight
+ 0001:0002632C       TCustomForm.SetVisible
+ 0001:00026358       TCustomForm.VisibleChanging
+ 0001:000263BC       TCustomForm.WantChildKey
+ 0001:000263C0       TCustomForm.SetParent
+ 0001:000263F8       TCustomForm.ValidateRename
+ 0001:00026434       TCustomForm.WndProc
+ 0001:00026724       TCustomForm.AlignControls
+ 0001:00026764       TCustomForm.SetBorderIcons
+ 0001:00026790       TCustomForm.SetBorderStyle
+ 0001:000267C8       TCustomForm.GetActiveMDIChild
+ 0001:000267FC       TCustomForm.GetMDIChildCount
+ 0001:00026848       TCustomForm.GetMDIChildren
+ 0001:00026898       TCustomForm.GetCanvas
+ 0001:000268A0       TCustomForm.SetIcon
+ 0001:000268AC       TCustomForm.IsColorStored
+ 0001:000268D8       TCustomForm.IsForm
+ 0001:000268E0       TCustomForm.IsIconStored
+ 0001:00026908       TCustomForm.SetFormStyle
+ 0001:00026A04       TCustomForm.SetObjectMenuItem
+ 0001:00026A18       TCustomForm.SetWindowMenu
+ 0001:00026A40       TCustomForm.SetMenu
+ 0001:00026C04       TCustomForm.GetPixelsPerInch
+ 0001:00026C18       TCustomForm.SetPixelsPerInch
+ 0001:00026C4C       TCustomForm.SetPosition
+ 0001:00026C68       TCustomForm.GetScaled
+ 0001:00026C74       TCustomForm.SetScaled
+ 0001:00026CA4       TCustomForm.CMColorChanged
+ 0001:00026CE0       TCustomForm.CMCtl3DChanged
+ 0001:00026D28       TCustomForm.CMFontChanged
+ 0001:00026D48       TCustomForm.CMMenuChanged
+ 0001:00026D64       TCustomForm.SetWindowState
+ 0001:00026DA4       TCustomForm.CreateParams
+ 0001:00026F90       TCustomForm.CreateWnd
+ 0001:000270D0       TCustomForm.CreateWindowHandle
+ 0001:000271D0       TCustomForm.DestroyWindowHandle
+ 0001:00027214       TCustomForm.DefaultHandler
+ 0001:00027278       TCustomForm.SetActiveControl
+ 0001:00027328       TCustomForm.DefocusControl
+ 0001:00027370       TCustomForm.FocusControl
+ 0001:00027390       TCustomForm.SetFocusedControl
+ 0001:00027610       TCustomForm.ActiveChanged
+ 0001:000276C8       TCustomForm.SendCancelMode
+ 0001:00027824       TCustomForm.Activate
+ 0001:00027844       TCustomForm.Deactivate
+ 0001:00027864       TCustomForm.Paint
+ 0001:00027884       TCustomForm.Resize
+ 0001:000278C0       TCustomForm.PaintWindow
+ 0001:00027970       TCustomForm.PaletteChanged
+ 0001:00027A1C       TCustomForm.WMPaint
+ 0001:00027A78       TCustomForm.WMIconEraseBkgnd
+ 0001:00027AD8       TCustomForm.WMEraseBkgnd
+ 0001:00027B10       TCustomForm.WMQueryDragIcon
+ 0001:00027C20       TCustomForm.WMNCCreate
+ 0001:00027C54       TCustomForm.WMDestroy
+ 0001:00027CB4       TCustomForm.WMCommand
+ 0001:00027CE8       TCustomForm.WMInitMenuPopup
+ 0001:00027D00       TCustomForm.WMMenuSelect
+ 0001:00027DAC       TCustomForm.WMActivate
+ 0001:00027DCC       TCustomForm.WMSize
+ 0001:00027E38       TCustomForm.WMClose
+ 0001:00027E40       TCustomForm.WMQueryEndSession
+ 0001:00027E6C       TCustomForm.CMAppSysCommand
+ 0001:00027EC4       TCustomForm.WMSysCommand
+ 0001:00027EF4       TCustomForm.WMShowWindow
+ 0001:00027F8C       TCustomForm.WMMDIActivate
+ 0001:00027FE4       TCustomForm.WMNextDlgCtl
+ 0001:00028010       TCustomForm.WMEnterMenuLoop
+ 0001:0002806C       TCustomForm.WMHelp
+ 0001:00028170       TCustomForm.CMActivate
+ 0001:0002817C       TCustomForm.CMDeactivate
+ 0001:00028190       TCustomForm.CMDialogKey
+ 0001:0002822C       TCustomForm.CMShowingChanged
+ 0001:000285E4       TCustomForm.CMIconChanged
+ 0001:00028604       TCustomForm.CMRelease
+ 0001:0002860C       TCustomForm.CMTextChanged
+ 0001:0002865C       TCustomForm.CMUIActivate
+ 0001:00028664       TCustomForm.CMParentFontChanged
+ 0001:000286D0       TCustomForm.Close
+ 0001:00028778       TCustomForm.CloseQuery
+ 0001:00028880       TCustomForm.Hide
+ 0001:00028888       TCustomForm.Show
+ 0001:000288A0       TCustomForm.SetFocus
+ 0001:00028910       TCustomForm.Release
+ 0001:0002892C       TCustomForm.ShowModal
+ 0001:00028C60       TScreen.Create
+ 0001:00028DFC       TScreen.Destroy
+ 0001:00028E60       TScreen.GetHeight
+ 0001:00028E68       TScreen.GetWidth
+ 0001:00028E70       TScreen.GetForm
+ 0001:00028E7C       TScreen.GetFormCount
+ 0001:00029220       TScreen.GetDataModule
+ 0001:0002922C       TScreen.GetDataModuleCount
+ 0001:00029234       TScreen.GetCursors
+ 0001:0002925C       TScreen.SetCursor
+ 0001:00029598       TApplication.Create
+ 0001:00029714       TApplication.Destroy
+ 0001:000297EC       TApplication.CreateHandle
+ 0001:00029974       TApplication.ControlDestroyed
+ 0001:00029AD8       TApplication.NormalizeTopMosts
+ 0001:00029AE0       TApplication.NormalizeAllTopMosts
+ 0001:00029AE8       TApplication.RestoreTopMosts
+ 0001:0002A2AC       TApplication.Minimize
+ 0001:0002A2F4       TApplication.Restore
+ 0001:0002A37C       TApplication.BringToFront
+ 0001:0002A3B8       TApplication.GetTitle
+ 0001:0002A400       TApplication.SetTitle
+ 0001:0002A5E8       TApplication.HandleMessage
+ 0001:0002A600       TApplication.HookMainWindow
+ 0001:0002A65C       TApplication.UnhookMainWindow
+ 0001:0002A6D8       TApplication.Initialize
+ 0001:0002A6F0       TApplication.CreateForm
+ 0001:0002A77C       TApplication.Run
+ 0001:0002A830       TApplication.Terminate
+ 0001:0002A844       TApplication.HandleException
+ 0001:0002A8D4       TApplication.MessageBox
+ 0001:0002A948       TApplication.ShowException
+ 0001:0002AB4C       TApplication.HelpContext
+ 0001:0002AB58       TApplication.HelpCommand
+ 0001:0002AB60       TApplication.SetShowHint
+ 0001:0002ADAC       TApplication.SetHint
+ 0001:0002AEF0       TApplication.HintMouseMessage
+ 0001:0002AFE0       TApplication.HideHint
+ 0001:0002B01C       TApplication.CancelHint
+ 0001:0002B548       Finalization
+ 0001:0002B59C       Forms
+ 0001:0002B5BC       GetOpenFileName
+ 0001:0002B5C4       Finalization
+ 0001:0002B5F4       CommDlg
+ 0001:0002CA84       TCustomLabel.Create
+ 0001:0002CAF0       TCustomLabel.GetLabelText
+ 0001:0002CC6C       TCustomLabel.Paint
+ 0001:0002CD60       TCustomLabel.Loaded
+ 0001:0002CE18       TCustomLabel.SetAlignment
+ 0001:0002CE38       TCustomLabel.SetAutoSize
+ 0001:0002CE50       TCustomLabel.GetTransparent
+ 0001:0002CE5C       TCustomLabel.SetFocusControl
+ 0001:0002CE74       TCustomLabel.SetShowAccelChar
+ 0001:0002CE94       TCustomLabel.SetTransparent
+ 0001:0002CEDC       TCustomLabel.SetLayout
+ 0001:0002CEFC       TCustomLabel.SetWordWrap
+ 0001:0002CF24       TCustomLabel.Notification
+ 0001:0002CF58       TCustomLabel.CMTextChanged
+ 0001:0002CF70       TCustomLabel.CMFontChanged
+ 0001:0002CF88       TCustomLabel.CMDialogChar
+ 0001:0002D014       TCustomEdit.Create
+ 0001:0002D0BC       TCustomEdit.DoSetMaxLength
+ 0001:0002D0E0       TCustomEdit.SetAutoSize
+ 0001:0002D0F8       TCustomEdit.SetBorderStyle
+ 0001:0002D120       TCustomEdit.SetCharCase
+ 0001:0002D138       TCustomEdit.SetHideSelection
+ 0001:0002D150       TCustomEdit.SetMaxLength
+ 0001:0002D180       TCustomEdit.SetOEMConvert
+ 0001:0002D198       TCustomEdit.GetModified
+ 0001:0002D1D4       TCustomEdit.SetModified
+ 0001:0002D210       TCustomEdit.SetPasswordChar
+ 0001:0002D298       TCustomEdit.SetReadOnly
+ 0001:0002D2D8       TCustomEdit.GetSelStart
+ 0001:0002D300       TCustomEdit.SetSelStart
+ 0001:0002D324       TCustomEdit.GetSelLength
+ 0001:0002D354       TCustomEdit.SetSelLength
+ 0001:0002D3B8       TCustomEdit.Clear
+ 0001:0002D3D8       TCustomEdit.SelectAll
+ 0001:0002D3F8       TCustomEdit.GetSelTextBuf
+ 0001:0002D494       TCustomEdit.GetSelText
+ 0001:0002D530       TCustomEdit.CreateParams
+ 0001:0002D5F0       TCustomEdit.CreateWnd
+ 0001:0002D6A0       TCustomEdit.DestroyWnd
+ 0001:0002D7B4       TCustomEdit.Change
+ 0001:0002D7DC       TCustomEdit.DefaultHandler
+ 0001:0002D82C       TCustomEdit.WMSetFont
+ 0001:0002D870       TCustomEdit.CMCtl3DChanged
+ 0001:0002D8A8       TCustomEdit.CMFontChanged
+ 0001:0002D8D4       TCustomEdit.CNCommand
+ 0001:0002D8F8       TCustomEdit.CMEnter
+ 0001:0002D938       TCustomEdit.CMTextChanged
+ 0001:0002D974       TButtonControl.WndProc
+ 0001:0002D9E4       TButton.Create
+ 0001:0002DA48       TButton.Click
+ 0001:0002DA70       TButton.SetButtonStyle
+ 0001:0002DACC       TButton.SetDefault
+ 0001:0002DB04       TButton.CreateParams
+ 0001:0002DB44       TButton.CreateWnd
+ 0001:0002DB60       TButton.CNCommand
+ 0001:0002DB78       TButton.CMDialogKey
+ 0001:0002DBE4       TButton.CMDialogChar
+ 0001:0002DC64       TButton.CMFocusChanged
+ 0001:0002DCB8       TButton.WMEraseBkgnd
+ 0001:0002DCD0       Finalization
+ 0001:0002DD00       StdCtrls
+ 0001:0002E140       TImage.Create
+ 0001:0002E1D0       TImage.Destroy
+ 0001:0002E200       TImage.GetPalette
+ 0001:0002E21C       TImage.DestRect
+ 0001:0002E2BC       TImage.Paint
+ 0001:0002E37C       TImage.DoPaletteChange
+ 0001:0002E414       TImage.Progress
+ 0001:0002E478       TImage.SetAutoSize
+ 0001:0002E488       TImage.SetCenter
+ 0001:0002E4A0       TImage.SetPicture
+ 0001:0002E4B0       TImage.SetStretch
+ 0001:0002E4C8       TImage.SetTransparent
+ 0001:0002E600       Finalization
+ 0001:0002E630       ExtCtrls
+ 0001:0002E638       Finalization
+ 0001:0002E668       Dlgs
+ 0001:0002EC78       TCommonDialog.Create
+ 0001:0002ECC0       TCommonDialog.Destroy
+ 0001:0002ECF4       TCommonDialog.MessageHook
+ 0001:0002ED20       TCommonDialog.DefaultHandler
+ 0001:0002ED5C       TCommonDialog.WndProc
+ 0001:0002ED68       TCommonDialog.WMDestroy
+ 0001:0002ED88       TCommonDialog.WMInitDialog
+ 0001:0002EDA4       TCommonDialog.WMNCDestroy
+ 0001:0002EDBC       TCommonDialog.TaskModalDialog
+ 0001:0002EE78       TCommonDialog.DoClose
+ 0001:0002EE90       TCommonDialog.DoShow
+ 0001:0002EF2C       TOpenDialog.Create
+ 0001:0002EF94       TOpenDialog.Destroy
+ 0001:0002EFCC       TOpenDialog.WndProc
+ 0001:0002F058       TOpenDialog.DoSelectionChange
+ 0001:0002F070       TOpenDialog.DoFolderChange
+ 0001:0002F094       TOpenDialog.DoTypeChange
+ 0001:0002F0F4       TOpenDialog.DefineProperties
+ 0001:0002F2D8       TOpenDialog.DoExecute
+ 0001:0002F5A8       TOpenDialog.GetStaticRect
+ 0001:0002F600       TOpenDialog.GetFileName
+ 0001:0002F660       TOpenDialog.GetFilterIndex
+ 0001:0002F670       TOpenDialog.SetInitialDir
+ 0001:0002F6CC       TOpenDialog.Execute
+ 0001:0002F96C       CreateMessageDialog
+ 0001:0002FDD4       MessageDlg
+ 0001:0002FDF4       MessageDlgPosHelp
+ 0001:0002FFE4       Finalization
+ 0001:00030040       Dialogs
+ 0001:000301E4       FileTimeToStr
+ 0001:00030254       TForm1.leggiClick
+ 0001:00030408       StrToFileTime
+ 0001:00030484       TForm1.scriviClick
+ 0001:00030644       Finalization
+ 0001:00030674       ml990403
+ 0001:0003067C       Finalization
+ 0001:0003076C       datafile
+ 0002:00000000       Default8087CW
+ 0002:00000004       HeapAllocFlags
+ 0002:00000008       DebugHook
+ 0002:0000000C       LibModuleList
+ 0002:00000010       ModuleUnloadList
+ 0002:000000AC       EmptyStr
+ 0002:000000B0       Win32Platform
+ 0002:000000B4       Win32MajorVersion
+ 0002:000000B8       Win32MinorVersion
+ 0002:000000BC       Win32BuildNumber
+ 0002:000000C0       Win32CSDVersion
+ 0002:000000C4       MonthDays
+ 0002:000000F4       LeadBytes
+ 0002:00000114       ExitProcList
+ 0002:00000118       AccessMode
+ 0002:00000124       ShareMode
+ 0002:00000138       FormatErrorStrs
+ 0002:00000140       FMSecsPerDay
+ 0002:00000144       IMSecsPerDay
+ 0002:00000148       Format
+ 0002:0000014C       DefShortMonthNames
+ 0002:0000017C       DefLongMonthNames
+ 0002:000001AC       DefShortDayNames
+ 0002:000001C8       DefLongDayNames
+ 0002:000001E4       ErrorMap
+ 0002:0000021C       ExceptMap
+ 0002:000002C4       TerminateProcList
+ 0002:000002E4       DefFontData
+ 0002:00000310       DDBsOnly
+ 0002:0000059C       CreationControl
+ 0002:00000710       Ctl3DBtnWndProc
+ 0002:00000714       Ctl3DDlgFramePaint
+ 0002:00000718       Ctl3DCtlColorEx
+ 0002:0000071C       HintWindowClass
+ 0002:00001000       ExceptProc
+ 0002:00001004       ErrorProc
+ 0002:00001008       ExceptClsProc
+ 0002:0000100C       ExceptObjProc
+ 0002:00001010       ExceptionClass
+ 0002:00001014       AssertErrorProc
+ 0002:00001018       AbstractErrorProc
+ 0002:0000101C       MainInstance
+ 0002:00001020       IsLibrary
+ 0002:00001024       CmdShow
+ 0002:00001028       CmdLine
+ 0002:0000102C       InitProc
+ 0002:00001030       ExitCode
+ 0002:00001034       ExitProc
+ 0002:00001038       ErrorAddr
+ 0002:0000103C       RandSeed
+ 0002:00001040       IsConsole
+ 0002:00001041       IsMultiThread
+ 0002:00001042       FileMode
+ 0002:00001043       Test8086
+ 0002:00001044       Test8087
+ 0002:00001048       Input
+ 0002:00001214       Output
+ 0002:000013E0       Unassigned
+ 0002:000013F0       Null
+ 0002:00001400       AllocMemCount
+ 0002:00001404       AllocMemSize
+ 0002:000014AC       ModuleIsLib
+ 0002:000014B0       TlsIndex
+ 0002:000014B8       HInstance
+ 0002:000014CC       CurrencyString
+ 0002:000014D0       CurrencyFormat
+ 0002:000014D1       NegCurrFormat
+ 0002:000014D2       ThousandSeparator
+ 0002:000014D3       DecimalSeparator
+ 0002:000014D4       CurrencyDecimals
+ 0002:000014D5       DateSeparator
+ 0002:000014D8       ShortDateFormat
+ 0002:000014DC       LongDateFormat
+ 0002:000014E0       TimeSeparator
+ 0002:000014E4       TimeAMString
+ 0002:000014E8       TimePMString
+ 0002:000014EC       ShortTimeFormat
+ 0002:000014F0       LongTimeFormat
+ 0002:000014F4       ShortMonthNames
+ 0002:00001524       LongMonthNames
+ 0002:00001554       ShortDayNames
+ 0002:00001570       LongDayNames
+ 0002:0000158C       SysLocale
+ 0002:00001598       EraNames
+ 0002:000015B4       EraYearOffsets
+ 0002:000015D0       .1
+ 0002:000015D4       OutOfMemory
+ 0002:000015D8       InvalidPointer
+ 0002:000015E0       .1
+ 0002:000015E8       MainThreadID
+ 0002:000015EC       FindGlobalComponent
+ 0002:00001600       SystemPalette16
+ 0002:0000166C       NewStyleControls
+ 0002:000016E8       Application
+ 0002:000016EC       Screen
+ 0002:00001748       Form1
+ 0002:0000174C       .1
+
+
+Line numbers for SysUtils(SysUtils.pas) segment .text
+
+  1942 0001:00005468  1943 0001:0000546B  1944 0001:0000546C  1945 0001:0000546E
+  1946 0001:00005470  1947 0001:00005473  1948 0001:00005476  1949 0001:00005479
+  1950 0001:0000547C  1951 0001:0000547F  1952 0001:00005480  1955 0001:00005484
+  1956 0001:0000548B  1957 0001:0000549F  1960 0001:000054A4  1961 0001:000054B3
+  1962 0001:000054CF  1967 0001:000054D4  1968 0001:000054DD  1969 0001:000054E8
+  1970 0001:000054F8  1989 0001:000054FC  1990 0001:00005502  1991 0001:0000550A
+  1992 0001:00005514  1993 0001:00005521  1994 0001:0000552A  1995 0001:00005537
+  1996 0001:0000553A  2001 0001:00005540  2002 0001:00005549  2003 0001:00005556
+  2004 0001:00005560  2005 0001:0000556D  2006 0001:00005576  2007 0001:0000557E
+  2008 0001:00005589  2110 0001:00005590  2111 0001:00005591  2112 0001:00005592
+  2113 0001:00005594  2114 0001:00005596  2115 0001:00005598  2116 0001:0000559A
+  2117 0001:0000559D  2118 0001:0000559F  2119 0001:000055A1  2120 0001:000055A3
+  2121 0001:000055A5  2122 0001:000055A7  2123 0001:000055A9  2124 0001:000055AB
+  2125 0001:000055AC  2126 0001:000055AD  2127 0001:000055AE  2131 0001:000055B0
+  2132 0001:000055B1  2133 0001:000055B2  2134 0001:000055B3  2135 0001:000055B5
+  2136 0001:000055B7  2137 0001:000055B9  2138 0001:000055BB  2139 0001:000055BE
+  2140 0001:000055C0  2141 0001:000055C2  2142 0001:000055C5  2143 0001:000055C7
+  2144 0001:000055C9  2145 0001:000055CB  2146 0001:000055CD  2147 0001:000055CF
+  2148 0001:000055D1  2149 0001:000055D3  2150 0001:000055D6  2151 0001:000055D9
+  2152 0001:000055DB  2153 0001:000055DE  2154 0001:000055E0  2155 0001:000055E3
+  2156 0001:000055E6  2157 0001:000055E9  2158 0001:000055EB  2159 0001:000055EE
+  2160 0001:000055F0  2161 0001:000055F3  2162 0001:000055F5  2163 0001:000055F7
+  2164 0001:000055FA  2165 0001:000055FD  2166 0001:000055FF  2167 0001:00005600
+  2168 0001:00005601  2169 0001:00005602  2183 0001:00005604  2184 0001:00005610
+  2185 0001:0000561B  2186 0001:00005630  2187 0001:0000563F  2196 0001:00005644
+  2197 0001:00005650  2199 0001:00005690  2219 0001:00005694  2220 0001:000056A3
+  2222 0001:000056CF  2239 0001:000056D4  2240 0001:000056E0  2241 0001:000056EB
+  2242 0001:000056F4  2243 0001:00005714  2245 0001:00005726  2246 0001:0000573E
+  2248 0001:00005764  2426 0001:00005768  2427 0001:00005771  2428 0001:00005775
+  2429 0001:00005796  2430 0001:000057D6  2431 0001:000057DD  2434 0001:000057E4
+  2435 0001:000057F0  2436 0001:0000580C  2454 0001:0000581C  2455 0001:00005828
+  2456 0001:00005836  2457 0001:00005845  2515 0001:0000584C  2516 0001:00005858
+  2519 0001:00005898  2522 0001:0000589C  2523 0001:000058A5  2525 0001:000058CB
+  2528 0001:000058D0  2529 0001:000058DF  2530 0001:00005904  2533 0001:00005908
+  2534 0001:00005917  2535 0001:0000593C  2538 0001:00005940  2539 0001:0000594F
+  2540 0001:00005968  2543 0001:0000596C  2544 0001:00005973  2545 0001:0000597C
+  2678 0001:00005980  2679 0001:00005989  2680 0001:00005994  2682 0001:0000599A
+  2683 0001:000059A7  2686 0001:000059BC  2687 0001:000059C4  2692 0001:000059C8
+  2693 0001:000059D4  2694 0001:000059DF  2695 0001:000059EA  2697 0001:000059F0
+  2698 0001:00005A13  2699 0001:00005A22  2702 0001:00005A2D  2695 0001:00005A38
+  2704 0001:00005A41  2758 0001:00005A48  2759 0001:00005A54  2760 0001:00005A64
+  2761 0001:00005A82  2766 0001:00005A94  2767 0001:00005AA0  2768 0001:00005AB0
+  2769 0001:00005AC3  2770 0001:00005AD9  2771 0001:00005AE1  2978 0001:00005AF4
+  2979 0001:00005AFD  2988 0001:00005B5A  2993 0001:00005B60  2994 0001:00005B66
+  2995 0001:00005B7A  2997 0001:00005B91  2998 0001:00005BA9  2999 0001:00005BC5
+  3001 0001:00005BEF  3029 0001:00005BF8  3030 0001:00005BFA  3031 0001:00005BFC
+  3032 0001:00005C01  3033 0001:00005C03  3034 0001:00005C05  3035 0001:00005C0A
+  3036 0001:00005C0C  3037 0001:00005C0E  3041 0001:00005C10  3042 0001:00005C12
+  3043 0001:00005C14  3044 0001:00005C19  3045 0001:00005C1B  3046 0001:00005C1D
+  3047 0001:00005C20  3048 0001:00005C22  3052 0001:00005C24  3053 0001:00005C25
+  3054 0001:00005C26  3055 0001:00005C28  3056 0001:00005C2A  3057 0001:00005C2C
+  3058 0001:00005C2E  3059 0001:00005C30  3060 0001:00005C32  3061 0001:00005C35
+  3062 0001:00005C37  3063 0001:00005C39  3064 0001:00005C3C  3065 0001:00005C3E
+  3066 0001:00005C41  3067 0001:00005C45  3068 0001:00005C49  3069 0001:00005C4C
+  3070 0001:00005C4D  3071 0001:00005C4F  3072 0001:00005C52  3073 0001:00005C55
+  3074 0001:00005C57  3075 0001:00005C5A  3076 0001:00005C5C  3077 0001:00005C5D
+  3078 0001:00005C5E  3079 0001:00005C5F  3083 0001:00005C60  3084 0001:00005C61
+  3085 0001:00005C62  3086 0001:00005C64  3087 0001:00005C66  3088 0001:00005C6B
+  3089 0001:00005C6D  3090 0001:00005C6F  3091 0001:00005C71  3092 0001:00005C73
+  3093 0001:00005C75  3094 0001:00005C77  3095 0001:00005C79  3096 0001:00005C7C
+  3097 0001:00005C7E  3098 0001:00005C80  3099 0001:00005C83  3100 0001:00005C85
+  3101 0001:00005C86  3102 0001:00005C87  3106 0001:00005C88  3107 0001:00005C89
+  3108 0001:00005C8A  3109 0001:00005C8C  3110 0001:00005C8E  3111 0001:00005C93
+  3112 0001:00005C95  3113 0001:00005C97  3114 0001:00005C99  3115 0001:00005C9B
+  3116 0001:00005C9D  3117 0001:00005C9F  3118 0001:00005CA2  3119 0001:00005CA4
+  3120 0001:00005CA6  3121 0001:00005CA9  3122 0001:00005CAB  3123 0001:00005CAE
+  3124 0001:00005CAF  3125 0001:00005CB0  3129 0001:00005CB4  3130 0001:00005CB5
+  3131 0001:00005CB6  3132 0001:00005CB7  3133 0001:00005CB9  3134 0001:00005CBB
+  3135 0001:00005CBD  3136 0001:00005CBF  3137 0001:00005CC1  3138 0001:00005CC3
+  3139 0001:00005CC5  3140 0001:00005CC7  3141 0001:00005CC8  3142 0001:00005CCA
+  3143 0001:00005CCC  3144 0001:00005CCE  3145 0001:00005CD0  3146 0001:00005CD2
+  3147 0001:00005CD5  3148 0001:00005CD7  3149 0001:00005CD9  3150 0001:00005CDC
+  3151 0001:00005CDE  3152 0001:00005CDF  3153 0001:00005CE1  3154 0001:00005CE2
+  3155 0001:00005CE3  3156 0001:00005CE4  3159 0001:00005CE8  3160 0001:00005CF4
+  3161 0001:00005D11  3198 0001:00005D18  3199 0001:00005D19  3200 0001:00005D1A
+  3201 0001:00005D1C  3202 0001:00005D1E  3203 0001:00005D23  3204 0001:00005D25
+  3205 0001:00005D27  3206 0001:00005D29  3207 0001:00005D2B  3208 0001:00005D2D
+  3209 0001:00005D2F  3210 0001:00005D32  3211 0001:00005D35  3212 0001:00005D37
+  3213 0001:00005D38  3214 0001:00005D39  3275 0001:00005D3C  3276 0001:00005D3D
+  3277 0001:00005D3E  3278 0001:00005D3F  3279 0001:00005D41  3280 0001:00005D43
+  3281 0001:00005D45  3282 0001:00005D47  3283 0001:00005D49  3284 0001:00005D4B
+  3285 0001:00005D4D  3286 0001:00005D4F  3287 0001:00005D51  3288 0001:00005D53
+  3289 0001:00005D55  3290 0001:00005D57  3291 0001:00005D59  3292 0001:00005D5C
+  3293 0001:00005D5F  3294 0001:00005D61  3295 0001:00005D64  3296 0001:00005D66
+  3297 0001:00005D69  3298 0001:00005D6C  3299 0001:00005D6F  3300 0001:00005D71
+  3301 0001:00005D74  3302 0001:00005D76  3303 0001:00005D79  3304 0001:00005D7B
+  3305 0001:00005D7D  3306 0001:00005D7E  3307 0001:00005D7F  3308 0001:00005D80
+  3312 0001:00005D84  3313 0001:00005D85  3314 0001:00005D86  3315 0001:00005D88
+  3316 0001:00005D8D  3317 0001:00005D8F  3318 0001:00005D91  3319 0001:00005D93
+  3320 0001:00005D94  3321 0001:00005D96  3322 0001:00005D98  3323 0001:00005D9D
+  3324 0001:00005D9F  3325 0001:00005DA1  3326 0001:00005DA2  3327 0001:00005DA3
+  3351 0001:00005DA4  3352 0001:00005DA5  3353 0001:00005DA6  3354 0001:00005DA7
+  3355 0001:00005DA9  3356 0001:00005DAB  3357 0001:00005DAD  3358 0001:00005DAF
+  3359 0001:00005DB1  3360 0001:00005DB3  3361 0001:00005DB5  3362 0001:00005DBA
+  3363 0001:00005DBC  3364 0001:00005DBE  3365 0001:00005DBF  3366 0001:00005DC1
+  3367 0001:00005DC3  3368 0001:00005DC5  3369 0001:00005DCA  3370 0001:00005DCC
+  3371 0001:00005DCE  3372 0001:00005DD0  3373 0001:00005DD2  3374 0001:00005DD4
+  3375 0001:00005DD7  3376 0001:00005DD9  3377 0001:00005DDA  3378 0001:00005DDC
+  3379 0001:00005DDE  3380 0001:00005DE0  3381 0001:00005DE1  3382 0001:00005DE3
+  3383 0001:00005DE5  3384 0001:00005DE6  3385 0001:00005DE8  3386 0001:00005DEA
+  3387 0001:00005DED  3388 0001:00005DEF  3389 0001:00005DF1  3390 0001:00005DF2
+  3391 0001:00005DF3  3392 0001:00005DF4  3433 0001:00005DF8  3434 0001:00005E04
+  3435 0001:00005E0F  3438 0001:00005E14  3439 0001:00005E1D  3440 0001:00005E28
+  3441 0001:00005E33  3442 0001:00005E3B  3443 0001:00005E42  3446 0001:00005E48
+  3447 0001:00005E51  3448 0001:00005E55  3449 0001:00005E6A  3454 0001:00005E70
+  3455 0001:00005E79  3457 0001:00005E86  3458 0001:00005E9B  3460 0001:00005EB4
+  3463 0001:00005EB8  3464 0001:00005EBF  3466 0001:00005EC5  3467 0001:00005EC9
+  3469 0001:00005ED6  3480 0001:00005EDC  3481 0001:00005EEB  3482 0001:00005EF8
+  3483 0001:00005F1C  3484 0001:00005F2A  3485 0001:00005F32  3486 0001:00005F50
+  3489 0001:00005F54  3490 0001:00005F60  3491 0001:00005F6B  3494 0001:00005F70
+  3495 0001:00005F77  3496 0001:00005F7F  3508 0001:00005F84  3509 0001:00005F90
+  3510 0001:00005F91  3511 0001:00005F92  3512 0001:00005F93  3513 0001:00005F95
+  3514 0001:00005F97  3515 0001:00005F9A  3516 0001:00005F9D  3517 0001:00005F9F
+  3518 0001:00005FA2  3519 0001:00005FA5  3522 0001:00005FA8  3523 0001:00005FAA
+  3526 0001:00005FAC  3527 0001:00005FAE  3528 0001:00005FB0  3529 0001:00005FB1
+  3530 0001:00005FB4  3533 0001:00005FB6  3534 0001:00005FB7  3535 0001:00005FB8
+  3538 0001:00005FBA  3539 0001:00005FBC  3540 0001:00005FBF  3543 0001:00005FC4
+  3544 0001:00005FC6  3545 0001:00005FC8  3546 0001:00005FC9  3547 0001:00005FCC
+  3548 0001:00005FCE  3549 0001:00005FD1  3550 0001:00005FD4  3551 0001:00005FD7
+  3552 0001:00005FDA  3553 0001:00005FDC  3554 0001:00005FDE  3555 0001:00005FE0
+  3556 0001:00005FE1  3557 0001:00005FE6  3558 0001:00005FE9  3559 0001:00005FEB
+  3560 0001:00005FEE  3561 0001:00005FF0  3562 0001:00005FF2  3563 0001:00005FF3
+  3564 0001:00005FF5  3565 0001:00005FF8  3566 0001:00005FFD  3567 0001:00006000
+  3568 0001:00006002  3569 0001:00006004  3570 0001:00006006  3571 0001:00006007
+  3572 0001:0000600C  3573 0001:0000600F  3574 0001:00006012  3575 0001:00006013
+  3576 0001:00006014  3577 0001:00006019  3578 0001:0000601A  3579 0001:0000601D
+  3580 0001:0000601F  3581 0001:00006021  3582 0001:00006023  3583 0001:00006027
+  3584 0001:00006029  3585 0001:0000602B  3586 0001:0000602D  3587 0001:0000602F
+  3588 0001:00006031  3589 0001:00006033  3590 0001:00006035  3591 0001:00006037
+  3592 0001:00006039  3593 0001:0000603B  3594 0001:0000603D  3595 0001:0000603F
+  3596 0001:00006041  3597 0001:00006043  3598 0001:00006045  3599 0001:00006047
+  3600 0001:00006049  3601 0001:0000604B  3602 0001:0000604D  3603 0001:00006051
+  3604 0001:00006053  3605 0001:00006054  3606 0001:00006057  3607 0001:0000605C
+  3608 0001:0000605D  3609 0001:0000605E  3610 0001:00006061  3613 0001:00006066
+  3614 0001:00006068  3615 0001:0000606B  3616 0001:0000606D  3617 0001:00006070
+  3618 0001:00006072  3619 0001:00006075  3620 0001:00006077  3621 0001:0000607A
+  3622 0001:0000607D  3623 0001:00006080  3624 0001:00006082  3625 0001:00006084
+  3626 0001:00006086  3627 0001:00006087  3628 0001:00006089  3629 0001:0000608A
+  3630 0001:0000608F  3631 0001:00006092  3632 0001:00006095  3633 0001:00006097
+  3634 0001:0000609A  3635 0001:0000609D  3636 0001:000060A2  3637 0001:000060A5
+  3638 0001:000060A7  3639 0001:000060A9  3640 0001:000060AB  3641 0001:000060AD
+  3642 0001:000060AE  3645 0001:000060AF  3646 0001:000060B1  3647 0001:000060B3
+  3648 0001:000060B8  3649 0001:000060BB  3650 0001:000060BE  3651 0001:000060C0
+  3652 0001:000060C3  3653 0001:000060C6  3654 0001:000060C9  3655 0001:000060CB
+  3656 0001:000060CF  3659 0001:000060D6  3660 0001:000060DA  3661 0001:000060DE
+  3662 0001:000060E2  3663 0001:000060E6  3664 0001:000060EA  3665 0001:000060EE
+  3666 0001:000060F2  3667 0001:000060F6  3668 0001:000060FA  3669 0001:000060FE
+  3670 0001:00006102  3671 0001:00006106  3672 0001:0000610A  3673 0001:0000610E
+  3674 0001:00006112  3682 0001:00006116  3685 0001:00006118  3686 0001:0000611D
+  3687 0001:00006120  3688 0001:00006123  3689 0001:00006125  3693 0001:0000612A
+  3694 0001:0000612D  3695 0001:0000612F  3696 0001:00006132  3697 0001:00006134
+  3698 0001:00006137  3699 0001:00006139  3700 0001:0000613E  3701 0001:00006140
+  3702 0001:00006142  3703 0001:00006144  3704 0001:00006146  3705 0001:0000614B
+  3706 0001:0000614D  3707 0001:0000614E  3708 0001:0000614F  3709 0001:00006151
+  3710 0001:00006152  3713 0001:00006157  3714 0001:0000615A  3715 0001:0000615C
+  3716 0001:0000615E  3717 0001:00006161  3718 0001:00006164  3719 0001:00006166
+  3720 0001:00006169  3721 0001:0000616A  3722 0001:0000616C  3723 0001:0000616E
+  3724 0001:00006170  3725 0001:00006173  3726 0001:00006175  3727 0001:00006178
+  3728 0001:0000617B  3729 0001:0000617D  3730 0001:0000617E  3731 0001:00006180
+  3732 0001:00006182  3733 0001:00006184  3734 0001:00006186  3735 0001:00006187
+  3736 0001:00006189  3737 0001:0000618A  3738 0001:0000618C  3741 0001:0000618D
+  3742 0001:00006190  3743 0001:00006192  3744 0001:00006197  3747 0001:00006198
+  3748 0001:0000619B  3749 0001:000061A1  3750 0001:000061A5  3751 0001:000061A7
+  3752 0001:000061A9  3753 0001:000061AC  3754 0001:000061B1  3755 0001:000061B4
+  3758 0001:000061B6  3759 0001:000061B8  3762 0001:000061B9  3763 0001:000061BC
+  3764 0001:000061C2  3765 0001:000061C4  3766 0001:000061C5  3767 0001:000061C8
+  3770 0001:000061CA  3771 0001:000061CF  3774 0001:000061D1  3777 0001:000061D6
+  3778 0001:000061D9  3779 0001:000061DF  3780 0001:000061E1  3781 0001:000061E4
+  3782 0001:000061E6  3783 0001:000061E9  3784 0001:000061EB  3787 0001:000061ED
+  3788 0001:000061F0  3789 0001:000061F6  3792 0001:000061F8  3793 0001:000061FA
+  3794 0001:000061FC  3797 0001:000061FF  3798 0001:00006202  3799 0001:00006204
+  3800 0001:00006205  3801 0001:00006208  3804 0001:00006209  3805 0001:0000620C
+  3806 0001:00006212  3807 0001:00006214  3808 0001:00006215  3809 0001:00006217
+  3810 0001:00006219  3811 0001:0000621C  3812 0001:0000621E  3813 0001:00006220
+  3814 0001:00006222  3815 0001:00006223  3816 0001:00006225  3817 0001:00006227
+  3818 0001:00006228  3821 0001:00006229  3822 0001:0000622C  3823 0001:00006232
+  3824 0001:00006239  3825 0001:0000623E  3828 0001:00006243  3829 0001:00006245
+  3832 0001:00006247  3835 0001:00006249  3836 0001:0000624B  3837 0001:0000624D
+  3838 0001:00006250  3839 0001:00006252  3840 0001:00006254  3841 0001:00006257
+  3842 0001:00006259  3843 0001:0000625B  3844 0001:0000625E  3845 0001:00006260
+  3846 0001:00006262  3847 0001:00006265  3848 0001:00006267  3849 0001:0000626A
+  3850 0001:00006270  3851 0001:00006272  3852 0001:00006277  3853 0001:0000627A
+  3854 0001:0000627C  3855 0001:0000627E  3856 0001:00006283  3857 0001:00006286
+  3858 0001:00006288  3859 0001:0000628F  3860 0001:00006291  3861 0001:00006294
+  3862 0001:00006299  3863 0001:0000629C  3864 0001:0000629E  3865 0001:000062A3
+  3866 0001:000062A4  3867 0001:000062A5  3868 0001:000062A6  3869 0001:000062A9
+  3870 0001:000062AB  3871 0001:000062AE  3872 0001:000062B3  3873 0001:000062B5
+  3874 0001:000062B8  3877 0001:000062B9  3878 0001:000062BA  3879 0001:000062BD
+  3880 0001:000062C2  3881 0001:000062C3  3884 0001:000062C4  3885 0001:000062C9
+  3886 0001:000062CA  3887 0001:000062CB  3888 0001:000062CC  3891 0001:000062D4
+  3892 0001:000062E3  3893 0001:0000630B  3894 0001:00006314  3898 0001:0000631C
+  3899 0001:0000632B  3900 0001:00006351  3901 0001:0000635A  3904 0001:00006360
+  3905 0001:0000636F  3906 0001:00006381  3913 0001:00006388  3914 0001:0000639E
+  3915 0001:000063A5  3916 0001:000063CA  3920 0001:000063FB  3921 0001:00006406
+  3923 0001:0000640C  3927 0001:00006420  3928 0001:0000642D  3929 0001:00006435
+  3930 0001:00006440  3925 0001:0000646E  3933 0001:00006480  3936 0001:0000648D
+  3937 0001:0000649E  4026 0001:000064A4  4027 0001:000064A7  4028 0001:000064A9
+  4029 0001:000064AC  4030 0001:000064B2  4031 0001:000064B5  4032 0001:000064B8
+  4033 0001:000064B9  4034 0001:000064BA  4035 0001:000064BB  4036 0001:000064BD
+  4037 0001:000064BF  4038 0001:000064C1  4039 0001:000064C3  4040 0001:000064C6
+  4041 0001:000064CC  4042 0001:000064CE  4043 0001:000064D0  4044 0001:000064D6
+  4045 0001:000064DB  4046 0001:000064DD  4047 0001:000064E0  4089 0001:000064E4
+  4090 0001:000064F6  4091 0001:000064FA  4093 0001:0000651B  4094 0001:00006581
+  4096 0001:00006588  4099 0001:0000659C  4100 0001:000065C2  4101 0001:000065E0
+  4102 0001:00006615  4107 0001:0000661C  4108 0001:0000662B  4109 0001:0000664C
+  4110 0001:00006660  4111 0001:00006674  4116 0001:0000667C  4117 0001:00006684
+  4118 0001:000066C4  4124 0001:000066C8  4125 0001:000066DB  4126 0001:000066DF
+  4127 0001:000066FF  4130 0001:0000674D  4131 0001:00006787  4132 0001:00006798
+  4133 0001:0000680A  4135 0001:00006811  4138 0001:00006818  4139 0001:0000683E
+  4140 0001:00006857  4141 0001:0000688C  4153 0001:00006894  4154 0001:000068A3
+  4155 0001:000068B7  4157 0001:000068BD  4158 0001:000068C5  4159 0001:000068CD
+  4162 0001:000068DA  4163 0001:000068E5  4164 0001:000068EB  4166 0001:000068F4
+  4167 0001:00006902  4164 0001:0000690F  4169 0001:00006918  4170 0001:0000692B
+  4172 0001:00006932  4173 0001:0000693E  4175 0001:0000694B  4176 0001:00006964
+  4177 0001:00006978  4178 0001:00006991  4179 0001:000069A5  4181 0001:000069AC
+  4182 0001:000069B8  4184 0001:000069C5  4185 0001:000069D4  4186 0001:000069F4
+  4189 0001:000069FA  4190 0001:00006A0A  4191 0001:00006A14  4192 0001:00006A23
+  4187 0001:00006A2F  4194 0001:00006A31  4195 0001:00006A3B  4196 0001:00006A45
+  4198 0001:00006A59  4217 0001:00006A60  4218 0001:00006A66  4219 0001:00006A8F
+  4267 0001:00006A98  4268 0001:00006A9E  4269 0001:00006AA7  4270 0001:00006AB3
+  4283 0001:00006AB8  4284 0001:00006AC4  4285 0001:00006ADC  4286 0001:00006AEA
+  4287 0001:00006B0E  4288 0001:00006B21  4291 0001:00006B28  4292 0001:00006B2F
+  4293 0001:00006B46  4300 0001:00006B4C  4301 0001:00006B58  4303 0001:00006B95
+  4317 0001:00006B9C  4318 0001:00006BA0  4319 0001:00006BAB  4320 0001:00006BC2
+  4321 0001:00006BE2  4324 0001:00006BE8  4325 0001:00006BEB  4327 0001:00006BF4
+  4328 0001:00006C17  4330 0001:00006C1E  4333 0001:00006C20  4334 0001:00006C23
+  4336 0001:00006C2C  4337 0001:00006C56  4339 0001:00006C5D  4347 0001:00006C60
+  4348 0001:00006C88  4351 0001:00006C90  4352 0001:00006C9B  4353 0001:00006CA6
+  4356 0001:00006CB1  4357 0001:00006CBE  4360 0001:00006CEC  4361 0001:00006CFF
+  4363 0001:00006D09  4365 0001:00006D1F  4367 0001:00006D45  4370 0001:00006D6A
+  4371 0001:00006D87  4376 0001:00006DDA  4383 0001:00006DEC  4384 0001:00006E0E
+  4387 0001:00006E16  4388 0001:00006E21  4389 0001:00006E2C  4392 0001:00006E37
+  4393 0001:00006E3D  4395 0001:00006E4C  4397 0001:00006E59  4400 0001:00006E83
+  4401 0001:00006E96  4402 0001:00006EA6  4404 0001:00006EEC  4406 0001:00006F0C
+  4407 0001:00006F28  4409 0001:00006F42  4410 0001:00006F53  4411 0001:00006F57
+  4412 0001:00006F5B  4413 0001:00006F5F  4416 0001:00006F68  4417 0001:00006F70
+  4418 0001:00006F74  4420 0001:00006F85  4421 0001:00006F91  4422 0001:00006F95
+  4423 0001:00006F99  4425 0001:00006F9E  4426 0001:00006FA4  4427 0001:00006FB8
+  4429 0001:00006FC1  4430 0001:00006FD1  4432 0001:00006FD7  4435 0001:00007069
+  4436 0001:00007070  4437 0001:00007077  4438 0001:0000707D  4439 0001:0000709F
+  4443 0001:000070B7  4444 0001:000070BE  4445 0001:000070C5  4449 0001:000070E4
+  4450 0001:000070EB  4451 0001:000070F2  4455 0001:00007111  4456 0001:00007118
+  4457 0001:0000711F  4458 0001:0000712C  4459 0001:00007142  4461 0001:0000715C
+  4466 0001:00007176  4467 0001:0000717D  4470 0001:00007190  4471 0001:00007197
+  4473 0001:000071AD  4474 0001:000071D1  4475 0001:000071F5  4477 0001:00007209
+  4482 0001:0000721D  4483 0001:00007224  4484 0001:0000722B  4485 0001:0000722F
+  4488 0001:0000723A  4490 0001:0000724D  4491 0001:00007251  4492 0001:0000725D
+  4493 0001:00007261  4495 0001:00007266  4497 0001:00007294  4499 0001:0000729A
+  4502 0001:000072DC  4503 0001:000072E0  4507 0001:000072E2  4509 0001:000072EA
+  4486 0001:000072EE  4511 0001:000072FA  4512 0001:00007302  4513 0001:00007308
+  4514 0001:0000732A  4515 0001:00007337  4519 0001:0000734D  4520 0001:00007354
+  4521 0001:0000735B  4522 0001:00007368  4526 0001:0000737E  4527 0001:00007385
+  4528 0001:0000738C  4529 0001:00007399  4533 0001:000073AF  4534 0001:000073B6
+  4535 0001:000073BC  4536 0001:000073D0  4540 0001:000073E4  4541 0001:000073EB
+  4542 0001:000073F4  4544 0001:0000740A  4545 0001:00007415  4546 0001:00007427
+  4547 0001:0000742B  4549 0001:00007434  4551 0001:0000744A  4552 0001:00007455
+  4553 0001:00007467  4554 0001:0000746B  4556 0001:00007474  4558 0001:0000748A
+  4559 0001:00007491  4560 0001:000074A2  4561 0001:000074B1  4562 0001:000074B5
+  4564 0001:000074BE  4566 0001:000074D4  4567 0001:000074DB  4568 0001:000074FA
+  4570 0001:00007503  4572 0001:00007519  4573 0001:00007520  4574 0001:0000753F
+  4576 0001:00007548  4580 0001:0000755F  4581 0001:00007566  4582 0001:00007575
+  4583 0001:0000757C  4585 0001:00007595  4586 0001:000075A9  4590 0001:000075BD
+  4592 0001:000075D6  4595 0001:000075EC  4598 0001:000075F4  4600 0001:00007607
+  4601 0001:0000760B  4603 0001:00007613  4596 0001:00007617  4605 0001:00007629
+  4606 0001:00007643  4609 0001:00007651  4414 0001:00007663  4612 0001:0000766F
+  4614 0001:0000769D  4616 0001:000076C8  4617 0001:000076DD  4618 0001:000076E5
+  4619 0001:000076ED  4620 0001:00007711  4621 0001:00007728  4651 0001:00007734
+  4652 0001:00007740  4653 0001:0000774A  4654 0001:0000776F  4655 0001:00007777
+  4662 0001:0000777C  4663 0001:0000778B  4664 0001:0000778F  4665 0001:0000779A
+  4666 0001:000077A2  4669 0001:000077AA  4670 0001:000077DA  4667 0001:000077E5
+  4672 0001:0000780A  4674 0001:00007814  4675 0001:0000781C  4676 0001:00007826
+  4678 0001:0000782D  4682 0001:00007834  4683 0001:00007857  4684 0001:0000785B
+  4686 0001:00007861  4687 0001:0000786C  4689 0001:00007896  4690 0001:000078AA
+  4693 0001:000078CE  4696 0001:000078D4  4697 0001:000078E3  4698 0001:000078E7
+  4699 0001:000078F2  4701 0001:00007912  4702 0001:0000791F  4704 0001:00007926
+  4709 0001:0000792C  4710 0001:00007935  4711 0001:00007939  4714 0001:00007942
+  4715 0001:00007960  4716 0001:00007966  4717 0001:0000796C  4718 0001:00007972
+  4720 0001:00007978  4712 0001:00007983  4725 0001:00007990  4726 0001:00007997
+  4729 0001:0000799C  4732 0001:000079AA  4733 0001:000079D1  4730 0001:000079DE
+  4735 0001:000079FF  4740 0001:00007A04  4741 0001:00007A0D  4742 0001:00007A12
+  4744 0001:00007A19  4745 0001:00007A26  4747 0001:00007A48  4748 0001:00007A55
+  4750 0001:00007A57  4742 0001:00007A5A  4751 0001:00007A63  4762 0001:00007A68
+  4763 0001:00007A71  4765 0001:00007A7B  4766 0001:00007A81  4767 0001:00007ABB
+  4768 0001:00007AC4  4771 0001:00007AD3  4772 0001:00007AE1  4773 0001:00007AF7
+  4775 0001:00007AFC  4776 0001:00007B22  4777 0001:00007B28  4778 0001:00007B2E
+  4779 0001:00007B34  4780 0001:00007B38  4781 0001:00007B45  4782 0001:00007B4A
+  4784 0001:00007B54  4785 0001:00007B5F  4786 0001:00007B8A  4789 0001:00007B97
+  4790 0001:00007BAB  4791 0001:00007BB3  4793 0001:00007BF8  4795 0001:00007C11
+  4796 0001:00007C27  4797 0001:00007C36  4798 0001:00007C50  4799 0001:00007C6A
+  4801 0001:00007C82  4802 0001:00007C97  4805 0001:00007CC5  4806 0001:00007CCE
+  4808 0001:00007CD4  4811 0001:00007CE6  4814 0001:00007CF6  4815 0001:00007D07
+  4816 0001:00007D12  4818 0001:00007D37  4819 0001:00007D44  4822 0001:00007D56
+  4823 0001:00007D81  4824 0001:00007D8C  4828 0001:00007DFB  4829 0001:00007E38
+  4836 0001:00007E58  4837 0001:00007E67  4838 0001:00007E6B  4839 0001:00007E72
+  4840 0001:00007E9B  4841 0001:00007EA2  4842 0001:00007ECB  4843 0001:00007ED2
+  4844 0001:00007EE3  4845 0001:00007EF9  4846 0001:00007EFF  4847 0001:00007F14
+  4848 0001:00007F2A  4849 0001:00007F30  4850 0001:00007F45  4851 0001:00007F5B
+  4852 0001:00007F61  4853 0001:00007F8A  4855 0001:00007F91  4856 0001:00007FBA
+  4857 0001:00007FC1  4859 0001:00007FC7  4860 0001:00007FD5  4861 0001:00007FE2
+  4863 0001:00007FF0  4864 0001:00007FFB  4865 0001:00008018  4889 0001:00008034
+  4890 0001:00008050  4891 0001:00008057  4892 0001:0000805F  4894 0001:00008090
+  4895 0001:000080B6  4896 0001:000080C4  4897 0001:000080D0  4898 0001:000080FA
+  4906 0001:00008104  4907 0001:00008113  4910 0001:00008138  4911 0001:0000815B
+  4912 0001:0000816C  4920 0001:00008170  4921 0001:00008182  4922 0001:0000819E
+  4923 0001:000081CC  4928 0001:000081D4  4929 0001:000081E3  4930 0001:000081FA
+  4931 0001:00008202  4932 0001:0000820B  4962 0001:00008210  4963 0001:0000821F
+  4964 0001:00008233  4965 0001:0000824C  4967 0001:00008254  4968 0001:0000826D
+  4969 0001:00008275  4971 0001:0000827C  4973 0001:000082BA  4975 0001:000082F8
+  4969 0001:000082FB  4976 0001:00008305  4978 0001:0000830C  4979 0001:00008324
+  4980 0001:00008358  4981 0001:0000838C  4976 0001:0000838F  4982 0001:000083B6
+  4991 0001:000083BC  4992 0001:000083C2  4994 0001:000083C9  4995 0001:000083DB
+  4996 0001:000083F7  4997 0001:00008402  4998 0001:0000840A  4999 0001:00008412
+  5005 0001:00008418  5006 0001:0000841E  5008 0001:00008425  5009 0001:0000843A
+  5010 0001:0000844C  5011 0001:00008461  5012 0001:0000846C  5013 0001:00008474
+  5014 0001:0000847C  5016 0001:00008484  5017 0001:0000849D  5019 0001:000084C5
+  5022 0001:000084D0  5023 0001:000084E6  5026 0001:00008519  5033 0001:0000852C
+  5034 0001:0000854B  5035 0001:00008552  5036 0001:0000855A  5038 0001:00008582
+  5040 0001:00008591  5041 0001:000085AF  5045 0001:000085B7  5046 0001:000085C9
+  5047 0001:000085E9  5043 0001:000085F4  5051 0001:00008606  5052 0001:00008611
+  5057 0001:00008616  5059 0001:0000862E  5060 0001:00008650  5063 0001:00008660
+  5065 0001:0000867D  5066 0001:0000868D  5068 0001:0000869D  5070 0001:000086BA
+  5071 0001:000086CA  5073 0001:000086D7  5075 0001:000086F4  5076 0001:00008704
+  5078 0001:00008711  5079 0001:00008723  5081 0001:00008735  5082 0001:00008755
+  5055 0001:00008760  5085 0001:0000878E  5091 0001:000087E4  5092 0001:000087FD
+  5093 0001:00008805  5094 0001:00008825  5095 0001:0000884A  5096 0001:0000886F
+  5097 0001:00008883  5098 0001:00008897  5099 0001:000088BC  5100 0001:000088D0
+  5101 0001:000088FE  5102 0001:0000892C  5103 0001:00008940  5104 0001:00008963
+  5105 0001:00008986  5106 0001:0000898E  5107 0001:00008996  5108 0001:000089BA
+  5109 0001:000089C9  5110 0001:000089D6  5111 0001:000089FA  5112 0001:00008A1E
+  5114 0001:00008A2D  5115 0001:00008A3A  5116 0001:00008A57  5117 0001:00008AA3
+  5137 0001:00008B48  5138 0001:00008B4C  5139 0001:00008B5A  5140 0001:00008B6D
+  5141 0001:00008B75  5146 0001:00008B78  5147 0001:00008B7C  5148 0001:00008B8A
+  5149 0001:00008B9D  5150 0001:00008BA5  5156 0001:00008BA8  5157 0001:00008BAA
+  5158 0001:00008BAC  5160 0001:00008BB1  5175 0001:00008BB4  5176 0001:00008BC6
+  5177 0001:00008BD8  5180 0001:00008C00  5181 0001:00008C19  5184 0001:00008C26
+  5185 0001:00008C39  5186 0001:00008C5B  5187 0001:00008C63  5188 0001:00008C6B
+  5190 0001:00008C7D  5191 0001:00008C8B  5192 0001:00008C96  5194 0001:00008CB1
+  5196 0001:00008CD8  5198 0001:00008D58  5199 0001:00008D66  5207 0001:00008D74
+  5208 0001:00008D99  5209 0001:00008DAF  5210 0001:00008DB9  5214 0001:00008DD5
+  5215 0001:00008E07  5217 0001:00008E3E  5243 0001:00008E44  5244 0001:00008E5F
+  5245 0001:00008E80  5249 0001:00008E84  5250 0001:00008EB3  5251 0001:00008F03
+  5294 0001:00008F0C  5295 0001:00008F29  5298 0001:00008F30  5299 0001:00008F37
+  5300 0001:00008F40  5301 0001:00008F48  5322 0001:00008F6C  5323 0001:00008F85
+  5324 0001:00008F8C  5325 0001:00008FB4  5326 0001:00008FBA  5327 0001:00008FD5
+  5328 0001:0000900C  5329 0001:0000901D  5330 0001:0000904A  5367 0001:00009070
+  5368 0001:0000907C  5369 0001:0000908D  5370 0001:00009097  5371 0001:000090A1
+  5373 0001:000090C5  5375 0001:000090CD  5376 0001:000090D8  5384 0001:000090DC
+  5385 0001:00009102  5386 0001:00009122  5388 0001:0000918F  5393 0001:00009198
+  5394 0001:000091B1  5395 0001:000091FE  5398 0001:00009204  5399 0001:0000920D
+  5401 0001:0000926B  5403 0001:00009271  5405 0001:00009277  5409 0001:0000927D
+  5411 0001:00009283  5413 0001:00009289  5416 0001:0000928F  5418 0001:00009295
+  5420 0001:0000929B  5422 0001:000092A1  5424 0001:000092A7  5426 0001:000092AD
+  5428 0001:000092B4  5433 0001:000092B8  5434 0001:000092C1  5435 0001:000092CC
+  5436 0001:000092DE  5448 0001:000092E4  5449 0001:0000930C  5451 0001:00009315
+  5452 0001:0000931E  5453 0001:0000932D  5454 0001:0000933A  5455 0001:00009343
+  5456 0001:00009355  5458 0001:0000937F  5461 0001:0000941C  5464 0001:000094AD
+  5466 0001:000094B4  5467 0001:000094D0  5468 0001:000094E0  5470 0001:000094F3
+  5471 0001:00009517  5473 0001:00009523  5475 0001:00009554  5477 0001:0000957D
+  5482 0001:00009584  5483 0001:00009590  5484 0001:0000959B  5485 0001:000095A5
+  5488 0001:000095AC  5489 0001:000095BF  5490 0001:000095E0  5491 0001:00009601
+  5492 0001:0000960C  5493 0001:00009617  5494 0001:00009624  5495 0001:0000962F
+  5496 0001:0000963A  5497 0001:00009645  5498 0001:0000966D  5501 0001:00009670
+  5502 0001:00009673  5503 0001:0000967C  5504 0001:00009686  5505 0001:0000968D
+  5506 0001:00009697  5507 0001:0000969E  5508 0001:000096A7  5509 0001:000096B0
+  5510 0001:000096B9  5511 0001:000096C2  5512 0001:000096CB  5513 0001:000096D4
+  5518 0001:000096D8  5519 0001:000096E1  5520 0001:000096EB  5523 0001:000096FB
+  5524 0001:00009706  5525 0001:00009711  5526 0001:0000971C  5527 0001:00009727
+  5529 0001:00009739  5539 0001:00009740  5540 0001:0000974C  5541 0001:00009750
+  5543 0001:00009756  5547 0001:00009773  5548 0001:000097A4  5549 0001:000097AA
+  5550 0001:000097C1  5552 0001:000097C8  5555 0001:000097CC  5556 0001:000097D8
+  5557 0001:000097DC  5558 0001:000097E5  5559 0001:00009805  5562 0001:0000980C
+  5563 0001:00009818  5564 0001:0000981C  5565 0001:00009825  5566 0001:00009836
+  5569 0001:0000983C  5570 0001:00009848  5571 0001:00009860  5572 0001:00009871
+  5577 0001:00009878  5578 0001:00009884  5579 0001:00009889  5580 0001:0000989C
+  5581 0001:000098A2  5582 0001:000098AB  5583 0001:000098B2  5584 0001:000098B7
+  5586 0001:000098BF  5587 0001:000098E2  5588 0001:000098ED  5584 0001:000098F8
+  5590 0001:00009903  5595 0001:00009908  5596 0001:00009917  5597 0001:00009922
+  5598 0001:00009929  5601 0001:00009932  5602 0001:0000993D  5603 0001:00009960
+  5599 0001:0000996B  5605 0001:0000997B  5606 0001:000099AE  5607 0001:000099B6
+  5608 0001:000099BE  5613 0001:000099C4  5614 0001:000099D0  5615 0001:000099D5
+  5616 0001:000099E8  5618 0001:000099F7  5619 0001:00009A13  5620 0001:00009A32
+  5622 0001:00009A39  5625 0001:00009A46  5626 0001:00009A4F  5631 0001:00009A54
+  5632 0001:00009A60  5633 0001:00009A65  5634 0001:00009A6B  5635 0001:00009A83
+  5637 0001:00009A8C  5638 0001:00009A9E  5639 0001:00009AAB  5642 0001:00009AB8
+  5643 0001:00009AC1  5646 0001:00009AC8  5647 0001:00009AD4  5649 0001:00009B0F
+  5652 0001:00009B14  5653 0001:00009B23  5654 0001:00009B27  5655 0001:00009B49
+  5656 0001:00009B69  5661 0001:00009B70  5662 0001:00009B7C  5663 0001:00009B81
+  5664 0001:00009B9B  5665 0001:00009BA1  5666 0001:00009BC5  5676 0001:00009BCC
+  5677 0001:00009BD9  5679 0001:00009BE6  5680 0001:00009BF1  5681 0001:00009BFC
+  5682 0001:00009C03  5684 0001:00009C0F  5685 0001:00009C28  5687 0001:00009C40
+  5688 0001:00009C4B  5691 0001:00009C66  5692 0001:00009C8F  5682 0001:00009C9A
+  5696 0001:00009CA8  5697 0001:00009CB3  5729 0001:00009CB8  5730 0001:00009CC4
+  5731 0001:00009CC9  5732 0001:00009CF5  5733 0001:00009D00  5734 0001:00009D0B
+  5737 0001:00009D1B  5738 0001:00009D33  5740 0001:00009D5A  5741 0001:00009D64
+  5742 0001:00009D68  5735 0001:00009D76  5744 0001:00009D9A  5745 0001:00009DA2
+  5748 0001:00009DA8  5749 0001:00009DB4  5750 0001:00009DC2  5751 0001:00009DC8
+  5753 0001:00009DCE  5755 0001:00009DD4  5756 0001:00009DDA  5757 0001:00009DDE
+  5753 0001:00009DEC  5760 0001:00009DF5  5763 0001:00009DFC  5764 0001:00009E08
+  5765 0001:00009E16  5767 0001:00009E1C  5769 0001:00009E39  5771 0001:00009E3D
+  5772 0001:00009E41  5765 0001:00009E4F  5774 0001:00009E58  5783 0001:00009E5C
+  5785 0001:00009E62  5786 0001:00009E6C  5787 0001:00009E75  5788 0001:00009E7E
+  5790 0001:00009E85  5791 0001:00009E8D  5793 0001:00009E9B  5794 0001:00009EA2
+  5796 0001:00009EA9  5797 0001:00009EB7  5800 0001:00009EC4  5801 0001:00009ED5
+  5803 0001:00009EDE  5806 0001:00009EE9  5809 0001:00009EF0  5810 0001:00009F09
+  5809 0001:00009F1B  5811 0001:00009F20  5807 0001:00009F2B  5814 0001:00009F41
+  6125 0001:00009F48  6126 0001:00009F64  6127 0001:00009F6C  6128 0001:00009F72
+  6131 0001:00009FB8  6132 0001:00009FD7  6133 0001:00009FE0  6134 0001:0000A00A
+  6139 0001:0000A010  6140 0001:0000A019  6141 0001:0000A024  6142 0001:0000A02D
+  6167 0001:0000A034  6168 0001:0000A03B  6169 0001:0000A03F  6172 0001:0000A049
+  6173 0001:0000A052  6170 0001:0000A05A  6175 0001:0000A069  6180 0001:0000A070
+  6183 0001:0000A076  6184 0001:0000A07E  6185 0001:0000A088  6181 0001:0000A095
+  6187 0001:0000A09E  6289 0001:0000AC88  6290 0001:0000ACAA  6292 0001:0000ADC6
+  6280 0001:0000ADC8  6281 0001:0000ADEC  6282 0001:0000ADF1  6283 0001:0000ADF6
+  6284 0001:0000ADFB  6285 0001:0000AE09  6286 0001:0000AE0E  6288 0001:0000AE28
+
+Line numbers for Consts(Consts.pas) segment .text
+
+   260 0001:0000B14B
+
+Line numbers for ml990403(ml990403.pas) segment .text
+
+    37 0001:000301E4    38 0001:000301F6    39 0001:00030203    40 0001:00030214
+    41 0001:0003022F    47 0001:00030254    48 0001:00030275    49 0001:0003027E
+    51 0001:0003028E    52 0001:0003029C    53 0001:000302BB    54 0001:000302D4
+    55 0001:000302E2    56 0001:000302FA    57 0001:00030313    58 0001:0003032C
+    60 0001:00030352    63 0001:00030371    65 0001:000303D6    73 0001:00030408
+    74 0001:0003042A    75 0001:00030436    76 0001:00030444    77 0001:00030457
+    80 0001:0003047E    86 0001:00030484    87 0001:000304A8    88 0001:000304B1
+    90 0001:000304C1    91 0001:000304CF    92 0001:000304EE    93 0001:00030507
+    94 0001:00030515    95 0001:0003052E    96 0001:00030547    97 0001:00030560
+    99 0001:00030585   102 0001:000305A4   104 0001:00030611   106 0001:0003067B
+
+Line numbers for datafile(C:\fls\dev\19attr\b\datafile.dpr) segment .text
+
+    11 0001:0003076C    12 0001:0003077C    13 0001:00030788    14 0001:00030799
+    15 0001:000307B1    16 0001:000307BD
+
+Program entry point at 0001:0003076C

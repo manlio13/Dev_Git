@@ -1,0 +1,40 @@
+[#1]
+        Agenda 2.0 e' una rubrica di indirizzi con
+		accesso sequenziale o da ricerca.
+
+	Ha una struttura particolarmente ampia che
+		consente di registrare ogni dato che
+		normalmente occorre ricordare di un
+		indirizzo.
+
+[#2]
+	Agenda ti consente di mantenere aggiornato
+            facilmente il tuo indirizzario.
+
+	Potrai creare tutte le suddivisioni che vorrai.
+
+	Ricercare facilmente anche i nomi che non
+	ricordi esattamente.
+
+
+
+[#3]
+
+        Agenda e' facile da usare, compatta,
+            la tieni in un angolo del tuo schermo.
+
+	Usa un motore di ricerca particolarmente veloce.
+
+[#4]
+	
+
+     Agenda ti permette di stampare un'etichetta postale
+            dell'indizzo, tramite un normale Editore di Testi
+            es Word della Microsoft (leggi l'Help di Agenda)
+
+
+[#5]
+
+     Se, al termine del periodo di prova, ritieni Agenda utile,
+            registrala, seguendo le istruzioni contenute nel
+            file Registra.doc.

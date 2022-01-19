@@ -1,0 +1,29 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls,
+  Vcl.DBCtrls,Data.DB, ABSMain;
+
+type
+  TForm2 = class(TForm)
+    DBNavigator1: TDBNavigator;
+    DBGrid1: TDBGrid;
+    DataSource1: TDataSource;
+    ABSQuery1: TABSQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,18 @@
+
+[OPTIONS]
+ERRORLOG=RICORDA.ERR
+COMPRESS=NO
+CONTENTS=Ricorda_Help
+TITLE=Ricorda
+COPYRIGHT=Copyright ¸M.L. 1997
+CITATION=lasc@iol.it
+ICON=help.ico
+
+[WINDOWS]
+main=,,0,,,0
+
+[FILES]
+RICORDA.RTF
+
+[MAP]
+#define Attualizzazione	1

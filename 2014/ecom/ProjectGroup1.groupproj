@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0FBD1D46-CE57-407F-94E5-96DCFA227AE8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Ecom.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ENU\Ecom_ENU.bdsproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Ecom">
+        <MSBuild Projects="Ecom.dproj"/>
+    </Target>
+    <Target Name="Ecom:Clean">
+        <MSBuild Projects="Ecom.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Ecom:Make">
+        <MSBuild Projects="Ecom.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Ecom_ENU">
+        <MSBuild Projects="ENU\Ecom_ENU.bdsproj"/>
+    </Target>
+    <Target Name="Ecom_ENU:Clean">
+        <MSBuild Projects="ENU\Ecom_ENU.bdsproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Ecom_ENU:Make">
+        <MSBuild Projects="ENU\Ecom_ENU.bdsproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Ecom;Ecom_ENU"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Ecom:Clean;Ecom_ENU:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Ecom:Make;Ecom_ENU:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

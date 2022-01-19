@@ -1,0 +1,108 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Grid'
+  ClientHeight = 200
+  ClientWidth = 711
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DBNavigator1: TDBNavigator
+    Left = 247
+    Top = 160
+    Width = 240
+    Height = 25
+    DataSource = Form1.DataSource1
+    TabOrder = 0
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 711
+    Height = 145
+    DataSource = Form1.DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'Title'
+        Width = 361
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Author'
+        Width = 232
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Column'
+        Width = 43
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Row'
+        Width = 39
+        Visible = True
+      end>
+  end
+  object Button1: TButton
+    Left = 511
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'Done'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 614
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'Exit'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Lucida Sans'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 64
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'Button3'
+    TabOrder = 4
+  end
+end

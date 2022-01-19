@@ -1,0 +1,27 @@
+unit Unit1;
+
+interface
+
+uses WinTypes, WinProcs, Classes, Graphics, Forms, Controls, StdCtrls,
+  Buttons;
+
+type
+  TPasswordDlg = class(TForm)
+    Label1: TLabel;
+    Password: TEdit;
+    OKBtn: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  PasswordDlg: TPasswordDlg;
+
+implementation
+
+{$R *.DFM}
+ uses ml960417;
+end.
+ 

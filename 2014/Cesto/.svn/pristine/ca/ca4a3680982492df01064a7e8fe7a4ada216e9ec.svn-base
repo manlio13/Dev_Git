@@ -1,0 +1,26 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <DCC_LongStrings>false</DCC_LongStrings>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_MajorVer>2</VerInfo_MajorVer>
+        <VerInfo_MinorVer>3</VerInfo_MinorVer>
+        <VerInfo_Build>8</VerInfo_Build>
+        <BRCC_OutputDir>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</BRCC_OutputDir>
+        <Icon_MainIcon>Cesto_Icon.ico</Icon_MainIcon>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Release>1</VerInfo_Release>
+        <VerInfo_Keys>CompanyName=MLSoft;FileDescription=Log with memo and pic;FileVersion=2.3.1.8;InternalName=Cesto;LegalCopyright=MLSoft - Milan - 2014;LegalTrademarks=;OriginalFilename=;ProductName=Bucket;ProductVersion=1.0.0.0;Comments=mailto:MLSoft@iol.it</VerInfo_Keys>
+        <DCC_ExeOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_ExeOutput>
+        <DCC_DcpOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_DcpOutput>
+        <DCC_DcuOutput>C:\Users\Manlio Laschena\Documents\RAD Studio\Projects\2014\Cesto\</DCC_DcuOutput>
+    </PropertyGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>OptionSet</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality/>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+</Project>

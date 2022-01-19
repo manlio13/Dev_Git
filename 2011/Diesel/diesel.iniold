@@ -1,0 +1,10 @@
+[data]
+burned=0
+range=360
+[settings]
+speed=6
+consump=2,5
+rate=6
+[resource]
+tank=435
+actual=150
